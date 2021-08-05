@@ -1,6 +1,7 @@
 #include<iostream>
 #include "Listacirc.cpp"
-#include"Lista.cpp"
+#include "Lista.cpp"
+#include "alumno.cpp"
 
 
 
@@ -9,7 +10,7 @@ using namespace std;
 
 int main(){
 	
-	Listacirc<int> *lst =new Listacirc<int>();
+/*	Listacirc<int> *lst =new Listacirc<int>();
 	lst->insertar(1);
 	lst->insertar(2);
 	lst->insertar(3);
@@ -18,13 +19,7 @@ int main(){
 	lst->insertar(6);
 	lst->insertar(7);
 	lst->insertar(8);
-/*	lst->imprimir();
-	
-	lst->eliminar(5);
-	
-	lst->eliminar(2);
-	
-	lst->imprimir();*/
+
 	
 	lst->printStep();
 	
@@ -44,7 +39,17 @@ int main(){
 	
 	lst2->imprimir();
 	
+	*/
 	
+	Alumno Nalumno = Alumno(201700603,2112217590301,"selvin Hernandez","ingenieria ","charlyyuman@gmail.com","1234tatatan",200,29);
+	
+	
+	cout<<"el  carnet del alumno es: "<<Nalumno.getCarnet()<<endl;
+	
+	Nalumno.setCarnet(201700628);
+	
+	cout<<"el cambio de carnet es:"<<Nalumno.getCarnet()<<endl;
+	cout<<"el nombre del alumno es: "<<Nalumno.getNombre()<<endl;
 	
 	system("pause");
 	
