@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab10b02b-8af1-44a7-ab19-a040a2d55548" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Lista.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lista.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Listacirc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Listacirc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nodo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Nodo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nodoc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Nodoc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alumno.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/alumno.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wdLpxyejo40DWbq8QRRXhVOzls" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab10b02b-8af1-44a7-ab19-a040a2d55548" name="Default Changelist" comment="" />
+      <created>1628783707489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628783707489</updated>
+    </task>
+    <servers />
+  </component>
+</project>

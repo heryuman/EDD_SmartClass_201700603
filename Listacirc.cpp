@@ -1,23 +1,29 @@
 #include<stdlib.h>
 #include<iostream>
 #include"Nodoc.cpp"
+#include "Alumno.cpp"
 using namespace std;
 
 template <typename T>
 class Listacirc{
 	public:
+		int size=0;
 		Nodoc<T> * primero;
 		Nodoc<T> * ultimo;
-		Lista();
-		void insertar(T val);
+		Listacirc();
+		void insertar(T *val);
 		void imprimir();
-		void eliminar(T val);
+		void eliminar(int val);
 		void printStep();
+		int  getSize();
+		T *getObjeto(int pos);
+		bool existCarnet(string val);
+		
 };
 
 template <typename T>
 
-Listacirc<T>::Lista(){
+Listacirc<T>::Listacirc(){
 	
 	this->primero=NULL;
 	this->ultimo=NULL;
@@ -25,15 +31,17 @@ Listacirc<T>::Lista(){
 
 
 template <typename T>
-void Listacirc<T>::insertar(T val){
+void Listacirc<T>::insertar(T *val){
 	
-	Nodoc<T> * nuevo = new Nodoc<T>(val);
+	Nodoc<Alumno> * nuevo = new Nodoc<T>(val);
 	
 	
 	if(this->primero==NULL){
 		
 		this->primero=nuevo;
 		this->ultimo=nuevo;
+		
+		this->size++;
 	}else{
 		
 		this->ultimo->siguiente =nuevo;
@@ -41,6 +49,7 @@ void Listacirc<T>::insertar(T val){
 		this->ultimo =nuevo;
 		nuevo->siguiente= this->primero;
 		this->primero->anterior=nuevo;
+		this->size++;
 	}
 }
 
@@ -58,6 +67,53 @@ void Listacirc<T>::imprimir(){
 		
 	}
 	
+}
+
+
+
+template <typename T>
+
+ T * Listacirc<T>::getObjeto(int pos){
+	int iterador=0;
+	Nodoc<T>  * temp = this->primero;
+	
+	while (iterador < pos){
+		
+		
+		temp =temp->siguiente;
+		
+		iterador++;
+	}
+	
+	return temp->getValor();
+	
+}
+
+
+
+template <typename T>
+
+bool Listacirc<T>::existCarnet(string valor){
+	int iterador=0;
+	Nodoc<T>  * temp = this->primero;
+	
+	while (temp != NULL){
+		
+		if(temp->getValor()->getCarnet()== valor){
+
+			return true;
+			break;
+		}else{
+
+			temp =temp->siguiente;
+		}
+		
+		
+		
+	}
+	
+	
+  	
 }
 
 template <typename T>
@@ -82,29 +138,67 @@ void Listacirc<T>::printStep(){
 
 
 template <typename T>
-void Listacirc<T>::eliminar(T val){
+void Listacirc<T>::eliminar(int val){
 	Nodoc<T> * tmp= this-> primero;
-	
-	while (tmp !=NULL){
+	Nodoc<T> * tmp2= this->ultimo;
+	int i=0;
+
+	while(i<val){
+		tmp=tmp->siguiente;
+		i++;
+	}
+	cout<<"indice a eliminar "<<i<<endl;
+	//Eliminando enla cabeza
+	if(val==0){
 		
-		if (tmp->valor== val){
-			
-			cout<<"se encontro el valor"<<endl;
-			tmp->anterior->siguiente = tmp->siguiente;
-			tmp->siguiente->anterior = tmp->anterior;
-			break;
+		this->primero=tmp->siguiente;
+		tmp->siguiente->anterior=this->ultimo;
+		this->ultimo->siguiente=tmp->siguiente;
 		
-		
-			
-			
-		}else{
-			
-			tmp= tmp->siguiente;
-		}
-		
-		
+		tmp->siguiente=NULL;
+		tmp->anterior=NULL;
+		delete tmp;
+		this->size--;
+		cout<<"eliminado el primero"<<endl;
+
+
 	}
 
+	//eliminando en la cola
+
+	else if(val==this->size-1){
+
+		tmp->anterior->siguiente=this->primero;
+		this->primero->anterior=tmp->anterior;
+		this->ultimo=tmp->anterior;
+		tmp->siguiente=NULL;
+		tmp->anterior=NULL;
+		delete tmp;
+		this->size--;
+		cout<<"eliminado el ultimo"<<endl;
 
 
+	}
+
+	//Eliminando en medio:
+	else if(tmp->anterior != NULL|| tmp->siguiente!=NULL){
+
+			tmp->anterior->siguiente = tmp->siguiente;
+			tmp->siguiente->anterior = tmp->anterior;
+			tmp->siguiente=NULL;
+			tmp->anterior=NULL;
+			delete tmp;
+			cout<<"eliinando en medio"<<endl;
+			this->size--;
+	}
+
+	
+
+
+}
+
+template <typename T>
+int Listacirc<T>::getSize(){
+	
+	return this->size;
 }

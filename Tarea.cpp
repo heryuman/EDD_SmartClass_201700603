@@ -1,3 +1,8 @@
+#ifndef TAREA_H
+#define TAREA_H
+#include <string>
+
+using namespace std;
 class Tarea{
 	
 	private:
@@ -12,7 +17,8 @@ class Tarea{
 		
 	public:
 		Tarea(int, int, string,string, string, string, string, string);//Constructor
-		
+		Tarea();
+		~Tarea();
 		//Seters
 		void setId(int);
 		void setCarnet(int);
@@ -43,52 +49,59 @@ Tarea::Tarea(int _Id, int _carnet,string _nomTarea, string _desc, string _materi
 	this->idTarea = _Id;
 	this->carnet = _carnet;
 	this->nombreTarea = _nomTarea;
-	this->descripcion = desc;
+	this->descripcion = _desc;
 	this->materia = _materia;
 	this->fecha = _fecha;
-	this->hora = hora;
+	this->hora = _hora;
 	this->estado = _estado;
 	
 }
 
+Tarea::Tarea(){
+	
+}
+Tarea::~Tarea(){
+	
+	
+}
 //METODOS SETTERS
 
-Tarea::setId(int _id){
+void Tarea::setId(int _id){
 	
 	this->idTarea = _id;
 }
 
-Tarea::setCarnet(int _carnet){
+void Tarea::setCarnet(int _carnet){
 	
 	this->carnet = _carnet;
 }
 
-Tarea::setNombreTarea(string _nombre){
+void Tarea::setNombreTarea(string _nombre){
 	
 	this->nombreTarea = _nombre;
 }
 
-Tarea::setDescripcion(string _desc){
+void Tarea::setDescripcion(string _desc){
 	this->descripcion = _desc;
 	
 }
 
-Tarea::setMateria(string _materia){
+void Tarea::setMateria(string _materia){
 	
 	this->materia = _materia;
 }
 
-Tarea::setFecha(string _fecha){
+void Tarea::setFecha(string _fecha){
 	
 	this->fecha = _fecha;
 }
 
-Tarea::setHora(string _hora){
+void Tarea::setHora(string _hora){
 	
 	this->hora = _hora;
 }
 
-Tarea::setEstado(string _estado){
+void Tarea::setEstado(string _estado){
 	
 	this->estado = _estado;
 }
@@ -124,8 +137,13 @@ string Tarea::gettFecha(){
 	
 	return this->fecha;
 }
-
+string Tarea::gettHora(){
+	
+	return this->hora;
+}
 string Tarea::gettEstado(){
 	
 	return this->estado;
 }
+
+#endif
