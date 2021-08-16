@@ -1,0 +1,109 @@
+/*	Listacirc<int> *lst =new Listacirc<int>();
+	lst->insertar(1);
+	lst->insertar(2);
+	lst->insertar(3);
+	lst->insertar(4);
+	lst->insertar(5);
+	lst->insertar(6);
+	lst->insertar(7);
+	lst->insertar(8);
+
+	
+	lst->printStep();
+	
+	
+	Lista<int> *lst2 =new Lista<int>();
+	lst2->insertar(10);
+	lst2->insertar(11);
+	lst2->insertar(12);
+	lst2->insertar(13);
+	lst2->insertar(14);
+	lst2->insertar(15);
+	
+	lst2->imprimir();
+	
+	
+	lst2->eliminar(13);
+	
+	lst2->imprimir();
+	
+	*/
+	/*
+	Alumno *Nalumno = new Alumno(1,"201700603","2112217590301","selvin Hernandez","ingenieria ","charlyyuman@gmail.com","1234tatatan","200","29");
+	
+	
+	cout<<"el  carnet del alumno es: "<<Nalumno->getCarnet()<<endl;
+	
+	Nalumno->setCarnet("201700628");
+	
+	cout<<"el cambio de carnet es:"<<Nalumno->getCarnet()<<endl;
+	cout<<"el nombre del alumno es: "<<Nalumno->getNombre()<<endl;
+	
+	L_alumnos->insertar(Nalumno);
+	
+	Alumno *Nalumno2 = new Alumno(2,"201700600","2112217590101","carlos Hernandez","Derecho ","charly@gmail.com","12tatatan","220","22");
+	
+	
+	cout<<"el  carnet del alumno es: "<<Nalumno2->getCarnet()<<endl;
+	
+	Nalumno2->setCarnet("201700618");
+	
+	cout<<"el cambio de carnet es:"<<Nalumno2->getCarnet()<<endl;
+	cout<<"el nombre del alumno es: "<<Nalumno2->getNombre()<<endl;
+	
+	cout<<"estamos imprimiendo lo insertado"<<endl;
+	cout<<L_alumnos->getObjeto(0)->getNombre()<<endl;
+	L_alumnos->getObjeto(0)->setCarnet("123456789");
+	cout<<"seteado"<<L_alumnos->getObjeto(0)->getCarnet()<<endl;
+	
+/*	Tarea nTarea = Tarea(01,201700603,"matematica","ejercicios de ecuaciones","Intermedia1","08/08/2021","08","pendiente");
+	
+	cout<<"Carne: "<<nTarea.gettCarnet()<<endl;
+	cout<<"Nombre: "<<nTarea.gettNombreTarea()<<endl;
+	cout<<"Id Tarea: "<<nTarea.gettCarnet()<<endl;
+	
+	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes.csv
+	
+	system("pause");*/
+	
+	
+	
+	
+	
+	/*Cola<Tarea> ncl =  Cola<Tarea>();
+	
+	Tarea tarea1 =  Tarea(01,201700603,"ProbarCola","crear una serie de tareas para insertar en la cola","EDD","12/08/2021","07","Entregado");
+
+	ncl.enqueue(tarea1);
+	ncl.imprimir();*/
+	
+
+
+
+//		prueba de ingresos a la lista por posicion
+
+Lista<Alumno> *ls =new Lista<Alumno>();
+	Alumno *nAlumno = new Alumno(1,"201700603","21122121","selvin","sistemas","asfd","12345","200","29");
+	Alumno *nAlumno2 = new Alumno(2,"201700603","21122121","selvin","sistemas","asfd","12345","200","29");
+	Alumno *nAlumno3 = new Alumno(0,"201700603","21122121","selvin","sistemas","asfd","12345","200","29");
+	Alumno *nAlumno4 = new Alumno(3,"201700603","21122121","selvin","sistemas","asfd","12345","200","29");
+	Alumno *nAlumno5 = new Alumno(4,"201700603","21122121","selvin","sistemas","asfd","12345","200","29");
+
+	ls->insertIn(nAlumno,0);
+	ls->insertIn(nAlumno2,2);
+	ls->insertIn(nAlumno3,100);
+	ls->insertIn(nAlumno4,1);
+	ls->insertIn(nAlumno5,3);
+	/*
+			0 3 2 4 1
+			1 3 2 4 0
+			
+	*/
+
+	cout<<"insertado correcto..size: "<<ls->getSize()<<endl;
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout<<"id alumno: "<<ls->getObjeto(i)->getNumReg()<<endl;
+	}
+	
