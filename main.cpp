@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <regex>
 #include <conio.h>
+#include "Grafo.cpp"
 Listacirc<Alumno> *L_alumnos = new  Listacirc<Alumno>();
 Cola<Error> *ColaErrores = new Cola<Error>();
 Lista<Tarea> *L_Tareas= new Lista<Tarea>();
@@ -25,7 +26,15 @@ using namespace std;
 
 //PROTOTIPO DE FUNCIONES
 void menu();
+void generarArchivoSalida();
+void buscarEnlaLinealizada();
+void buscarPosicion();
+void graficarEstudiantes();
+void graficarTareas();
+void graficarErrores();
+void colaDeErrores();
 void mostrarEstudiante();
+void menuReportes();
 void mostrarTarea();
 void eliminarTArea();
 void modificarTarea();
@@ -37,6 +46,8 @@ void cargarAlumno();
 void eliminarEstudiante();
 void cargarTarea();
 void seteando();
+void corregirTarea(int registro);
+void corregirAlumno(int registro);
 bool validarMail(const string&);
 int getHora(int);
 int getMes(int);
@@ -47,6 +58,7 @@ int main(){
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes.csv
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Tareas.csv
 	menu();
+
 
 	return 0;
 	
@@ -172,6 +184,12 @@ void menu(){
 
 		}
 
+		else if(opcion == 4){
+
+			menuReportes();
+
+		}
+
 	}
 	
 }
@@ -218,7 +236,7 @@ void cargarAlumno(){
 			
 		}else{
 			
-			if(carnet.length()!= 9){
+			if(carnet.length()!= 9 && dpi.length()==13 and validarMail(correo)==true){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				
@@ -228,7 +246,7 @@ void cargarAlumno(){
 				idRegistros++;
 				idErrores++;
 			}
-			else if(dpi.length()!=13){
+			else if(dpi.length()!=13 && carnet.length()==9 && validarMail(correo)==true){
 				
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
@@ -240,7 +258,7 @@ void cargarAlumno(){
 				idErrores++;
 			}
 
-			else if(validarMail(correo)!= true){
+			else if(validarMail(correo)!= true && dpi.length()==13 && carnet.length()==9){
 
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
@@ -365,8 +383,9 @@ void cargaManualTareas(){
 				
 
 						if(fechaConc==fecha){
+							fechaConc=dia+"/"+mes+"/2021";
 							cout<<"tarea con fecha: "<<fechaConc<<"hora "<<horaConv<<endl;
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
 							//matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 
 							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
@@ -390,14 +409,35 @@ void cargaManualTareas(){
 			
 			}
 			else{
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
+
+					if(fechaConc==fecha){
+							fechaConc=dia+"/"+mes+"/2021";
+							cout<<"tarea con fecha: "<<fechaConc<<"hora "<<horaConv<<endl;
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							
+
 							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
 							L_Tareas->insertIn(nTarea,pos);
-							Error *nError = new Error(idErrores,"Tarea","Error,No existe coincidencia del carnet",idTarea);
+
+							Error *nError = new Error(idErrores,"Tarea","Error,  carnet inexistente",idTarea);
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
-							cout<<"tarea cargada con error,carnet inexistente"<<endl;
+							cout<<"Tarea cargada con error, carnet inexistente"<<endl;
+						}else{
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
+							
+							L_Tareas->insertIn(nTarea,pos);
+
+							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta y carnet inexistente",idTarea);
+							ColaErrores->enqueue(nError);
+							idTarea++;
+							idErrores++;
+							cout<<"tarea cargada con error, formato de fecha o fecha incorrecta, y carnet inexistente"<<endl;
+						}
+				
+							
 						}
 
 				
@@ -432,17 +472,18 @@ void cargaManualEstudiante(){
 	cout<<"Ingrese la edad: "<<endl; 
 	cin>>edad;
 
-	if (carnet.length()==9 && dpi.length()==13 and validarMail(correo)){
+		
+		if (carnet.length()==9 && dpi.length()==13 and validarMail(correo)){
 			
 		    Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 			idRegistros++;
 			L_alumnos->insertar(nAlumno);
-		
-		
+		//	arrayPersona[contador]=nAlumno;
+			
 			
 		}else{
 			
-			if(carnet.length()!= 9){
+			if(carnet.length()!= 9 && dpi.length()==13 and validarMail(correo)==true){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				
@@ -452,7 +493,7 @@ void cargaManualEstudiante(){
 				idRegistros++;
 				idErrores++;
 			}
-			else if(dpi.length()!=13){
+			else if(dpi.length()!=13 && carnet.length()==9 && validarMail(correo)==true){
 				
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
@@ -464,7 +505,7 @@ void cargaManualEstudiante(){
 				idErrores++;
 			}
 
-			else if(validarMail(correo)!= true){
+			else if(validarMail(correo)!= true && dpi.length()==13 && carnet.length()==9){
 
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
@@ -707,18 +748,19 @@ void cargarTarea(){
 	
 	
 
-			if ( L_alumnos->existCarnet(carnet)==true){
+				if ( L_alumnos->existCarnet(carnet)==true){
 				//cout<<"existe el carnet: "<<carnet<<endl;
 				
 
 						if(fechaConc==fecha){
-							cout<<"tarea con fecha: "<<fechaConc<<"hora "<<horaConv<<endl;
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
+							cout<<"tarea con fecha: "<<fechaConc<<" hora "<<horaConv<<endl;
+							fechaConc= dia+"/"+mes+"/2021";
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							idTarea++;
 							cout<<"Tarea cargada exitosamente..."<<endl;
 						}else{
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta",idTarea);
 							ColaErrores->enqueue(nError);
@@ -729,17 +771,33 @@ void cargarTarea(){
 				
 			
 			}
-			else{
+			else if(L_alumnos->existCarnet(carnet)==false){
+
+					if(fechaConc==fecha){
+							cout<<"tarea con fecha: "<<fechaConc<<" hora "<<horaConv<<endl;
+							fechaConc= dia+"/"+mes+"/2021";
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
+							Error *nError = new Error(idErrores,"Tarea","Error, Carnet inexistente",idTarea);
+							ColaErrores->enqueue(nError);
+							idErrores++;
+							idTarea++;
+							cout<<"Tarea cargada con error, carnet inexistente."<<endl;
+						}else{
 							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
-							Error *nError = new Error(idErrores,"Tarea","Error,No existe coincidencia del carnet",idTarea);
+							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta y carnet inexistente",idTarea);
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
-							cout<<"tarea cargada con error,carnet inexistente"<<endl;
+							cout<<"tarea cargada con error, formato de fecha o fecha incorrecta y carnet inexistente"<<endl;
 						}
+						
 
+						
+						
 
+						}
 		
 	
 	
@@ -917,7 +975,7 @@ void linealizacion(){
 
 				if(matrixTarea[j][k][i]==NULL){
 
-					Tarea *nullTarea= new Tarea(-1,-1,"","","","","","");
+					Tarea *nullTarea= new Tarea(-1,-1,"-1","-1","-1","-1","-1","-1");
 					matrixTarea[j][k][i]=nullTarea;
 					cout<<" -1 ";
 
@@ -938,12 +996,12 @@ void linealizacion(){
 			{
 				for (int k = 0; k < 5; k++)
 				{
-				if(matrixTarea[i][j][k]->gettIdTarea() != -1)	{
+				
 
-						cout<<"pos["<<i<<"]["<<j<<"]["<<k<<"] "<<matrixTarea[i][j][k]->gettHora()<<" id: "<<matrixTarea[i][j][k]->gettIdTarea()<<"Pos lineal: "<<((((j*9)+i)*5)+k)<<endl;
+					//	cout<<"pos["<<i<<"]["<<j<<"]["<<k<<"] "<<matrixTarea[i][j][k]->gettHora()<<" id: "<<matrixTarea[i][j][k]->gettIdTarea()<<"Pos lineal: "<<((((j*9)+i)*5)+k)<<endl;
 						int posi=((((j*9)+i)*5)+k);
 						L_Tareas->insertIn(matrixTarea[i][j][k],posi);
-					}
+					
 				}
 				
 			}
@@ -956,7 +1014,10 @@ void linealizacion(){
 
 	for (int i = 0; i < L_Tareas->getSize(); i++)
 	{
-		cout<<"linealizado: "<<L_Tareas->getObjeto(i)->gettIdTarea()<<" posLineal: "<<L_Tareas->getNodeIndex(i)<<endl;
+		if(L_Tareas->getObjeto(i)->gettCarnet()!=-1){
+
+			cout<<"linealizado: "<<L_Tareas->getObjeto(i)->gettIdTarea()<<" posLineal: "<<L_Tareas->getNodeIndex(i)<<endl;
+		}
 	}
 	
 
@@ -1001,4 +1062,518 @@ void mostrarTarea(){
 	}
 	
 }
+//SECCION DE REPORTES
+
+void menuReportes(){
+
+	int op=0;
+	while (op!=7){
+
+		
+	cout<<"/*/*/*/*/*/*/* SECCION DE REPORTES/*/*/*/*/*/*/*/*"<<endl;
+	cout<<"/* 1.- Graficar Estudiantes                     /*"<<endl;
+	cout<<"/* 2.- Graficar Lista de tareas                 /*"<<endl;
+	cout<<"/* 3.- Busqueda en lista linealizada            /*"<<endl;
+	cout<<"/* 4.- Busqueda por posicion en lista de Tareas /*"<<endl;
+	cout<<"/* 5.- Cola de Errores                          /*"<<endl;
+	cout<<"/* 6.- Codigo generado de salid                 /*"<<endl;
+	cout<<"/* 7.- Salir al menu principal                  /*"<<endl;
+	cout<<"/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*"<<endl;
+	cout<<"Elija una opcion: ";cin>>op;
+
+	if(op==1){
+
+			if(L_alumnos->getSize()>0){
+				graficarEstudiantes();
+			}else{
+				cout<<"No existen estudiantes en la lista"<<endl;
+			}
+	}
+
+	else if(op==2){
+
+		if(L_Tareas->getSize()>0){
+
+			graficarTareas();
+
+		}else{
+			cout<<"No existen Tareas en la lista"<<endl;
+		}
+
+	}
+
+	else if(op==3){
+	
+		buscarEnlaLinealizada();
+		
+	}
+
+	else if(op==4){
+		buscarPosicion();
+	}
+
+	else if(op==5){
+		colaDeErrores();
+	}
+
+	else if(op==6){
+
+		 generarArchivoSalida();
+		
+	}
+
+
+		
+	}
+	
+
+
+}
+
+void colaDeErrores(){
+
+	int op=0;
+	while (op!=3)
+	{
+		cout<<" /*/*/*/* OPCIONES DE LA COLA DE ERRORES */*/*/*/"<<endl;
+		cout<<"/* 1.- Mostrar los Errores                      */"<<endl;
+		cout<<"/* 2.- Corregir los errores                     */"<<endl;
+		cout<<"/* 3.- Salir                                    */"<<endl;
+		cout<<" /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*"<<endl;
+		cin>>op;
+		if(op==1){
+
+			cout<<"*/*/* COLA DE ERRORES /*/*/"<<endl;
+			//ColaErrores->imprimir();//no funciona el metodo imprimir
+
+
+		}
+
+		else if(op==2){
+
+			for (int i = 0; i < ColaErrores->getSize(); i++)
+			{
+				if(ColaErrores->getError(i)->getCorregido() != true){
+					
+					string ops;
+					cout<<"id del error: "<<ColaErrores->getError(i)->getId()<<endl;
+					cout<<"Tipo de error: "<<ColaErrores->getError(i)->getTipo()<<endl;
+					cout<<"Descripcion: "<<ColaErrores->getError(i)->getDesc()<<endl;
+					cout<<"Id del Registro con error:"<<ColaErrores->getError(i)->getNumReg()<<endl;
+					cout<<"Desea corregirlo? presione Y,o N para continuar: "<<endl;
+					cin>>ops;
+
+					
+
+					if(ops=="y"||ops=="Y"){
+
+						if(ColaErrores->getError(i)->getTipo()=="Estudiante"){
+
+							 corregirAlumno(ColaErrores->getError(i)->getNumReg());
+							ColaErrores->getError(i)->setCorregido(true);
+
+						}
+						else if(ColaErrores->getError(i)->getTipo()=="Tarea"){
+							 corregirTarea(ColaErrores->getError(i)->getNumReg());
+							ColaErrores->getError(i)->setCorregido(true);
+						}
+
+					}
+
+
+				}
+			}
+			
+
+
+
+		}
+	}
+	
+}
+
+void corregirAlumno(int registro){
+
+	cout<<"Registro a modificar: "<<registro<<endl;
+	for(int i= 0; i< L_alumnos->getSize();i++){
+
+		if (L_alumnos->getObjeto(i)->getNumReg()== registro)
+		{		
+			int op=0;
+
+			
+				while(op!=9){
+
+					cout<<"<<<<<< ELIJA EL ATRIBUTO A MODIFICAR >>>>>>"<<endl;
+					cout<<"<< 1.- Nombre                             >>"<<endl;
+					cout<<"<< 2.- Carnet                             >>"<<endl;
+					cout<<"<< 3.- DPI                                >>"<<endl;
+					cout<<"<< 4.- Carrera                            >>"<<endl;
+					cout<<"<< 5.- correo                             >>"<<endl;
+					cout<<"<< 6.- password                           >>"<<endl;
+					cout<<"<< 7.- creditos                           >>"<<endl;
+					cout<<"<< 8.- Edad                               >>"<<endl;
+					cout<<"<< 9.- Salir                              >>"<<endl;
+					cout<<"<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>"<<endl;
+					cin>>op;
+					string modificador;
+
+					if(op==1){
+						
+						cout<<"Nuevo Nombre: "; 
+						cin.ignore();
+						getline(cin,modificador);
+						L_alumnos->getObjeto(i)->setNombre(modificador);
+						cout<<"Nombre modificado correctamente..."<<endl;
+
+					}
+
+					else if(op==2){
+						cout<<"Nuevo carnet: ";cin>>modificador;
+
+						if(modificador.length()==9){
+
+								L_alumnos->getObjeto(i)->setCarnet(modificador);
+							cout<<"Carnet modificado correctamente..."<<endl;
+
+						}else{
+
+							cout<<"Cantidad de digitos en el carnet incorrectos"<<endl;
+						}
+					
+					}
+					else if(op==3){
+
+						cout<<"Nuevo DPI: ";cin>>modificador;
+						if(modificador.length()==13){
+
+							L_alumnos->getObjeto(i)->setDpi(modificador);
+							cout<<"DPI modificado correctamente..."<<endl;
+
+						}else{
+
+							cout<<"Error, cantidad de digitos en el dpi incorrectos"<<endl;
+						}
+
+					}
+
+					else if(op==4){
+
+						cout<<"Nueva Carrera: ";
+						cin.ignore();
+						getline(cin,modificador);
+						L_alumnos->getObjeto(i)->setCarrera(modificador);
+						cout<<"Carrera modificada correctamente..."<<endl;
+
+
+					}
+
+					else if(op==5){
+						cout<<"Nuevo correo: ";cin>>modificador;
+						if(validarMail(modificador)){
+
+								L_alumnos->getObjeto(i)->setCorreo(modificador);
+								cout<<"Correo modificado correctamente..."<<endl;
+						}else{
+
+							cout<<"Error, correo no valido"<<endl;
+						}
+					
+
+					}
+
+					else if(op==6){
+
+						cout<<"Nuevo password: "; cin>>modificador;
+						L_alumnos->getObjeto(i)->setPass(modificador);
+						cout<<"contraseña modificada correctamente"<<endl;
+
+					
+					}
+
+					else if (op==7){
+
+						cout<<"Nuevos Creditos: "; cin>>modificador;
+						L_alumnos->getObjeto(i)->setCredits(modificador);
+						cout<<"Creditos modificados correctamente"<<endl;
+
+					}
+
+					else if(op==8){
+
+						cout<<"Nueva edad: "; cin>>modificador;
+						L_alumnos->getObjeto(i)->setEdad(modificador);
+						cout<<"Edad modificada correctamente"<<endl;
+
+
+					}
+
+				}
+		}
+		
+		
+	}
+}
+
+void corregirTarea(int registro){
+
+cout<<"Registro a modificar:"<<registro<<endl;
+	
+	for (int i = 0; i < L_Tareas->getSize(); i++)
+	{
+		if(L_Tareas->getObjeto(i)->gettIdTarea()==registro){
+
+			int op=0;
+			while(op!=8){
+
+				
+					cout<<"<<<<<< ELIJA EL ATRIBUTO A MODIFICAR >>>>>>>"<<endl;
+					cout<<"<< 1.- Carnet                             >>"<<endl;
+					cout<<"<< 2.- Nombre                             >>"<<endl;
+					cout<<"<< 3.- Descripcion                        >>"<<endl;
+					cout<<"<< 4.- materia                            >>"<<endl;
+					cout<<"<< 5.- fecha                              >>"<<endl;
+					cout<<"<< 6.- hora                               >>"<<endl;
+					cout<<"<< 7.- Estado                             >>"<<endl;
+					cout<<"<< 8.- Salir                              >>"<<endl;
+					cout<<"<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>"<<endl;
+					cin>>op;
+					string modificador;
+
+
+					if(op==1){
+
+						cout<<"Nuevo Carnet:"<<endl;
+						cin>>modificador;
+						if(modificador.length()==9){
+
+							L_Tareas->getObjeto(i)->setCarnet(atoi(modificador.c_str()));
+							cout<<"Carnet modificado con extito..."<<endl;
+						}
+					
+
+					}
+
+					else if(op==2){
+
+						cout<<"Nuevo Nombre: "<<endl;
+						cin.ignore();
+						getline(cin,modificador);
+						L_Tareas->getObjeto(i)->setNombreTarea(modificador);
+						cout<<"Nombre modificado con extito..."<<endl;
+
+					}
+
+					else if(op==3){
+						cout<<"Nueva descripcion: "<<endl;
+						cin.ignore();
+						getline(cin,modificador);
+						L_Tareas->getObjeto(i)->setDescripcion(modificador);
+						cout<<"Descripcion modificada con extito..."<<endl;
+					}
+
+					else if(op==4){
+
+						cout<<"Nueva Materia: "<<endl;
+						cin.ignore();
+						getline(cin,modificador);
+						L_Tareas->getObjeto(i)->setMateria(modificador);
+						cout<<"Materia modificada con extito..."<<endl;
+						
+						
+					}
+
+					else if(op==5){
+
+						cout<<"Nueva Fecha: "<<endl;
+						cin.ignore();
+						getline(cin,modificador);
+						L_Tareas->getObjeto(i)->setFecha(modificador);
+						cout<<"Fecha modificada con extito..."<<endl;
+						
+					}
+
+					else if(op==6){
+						cout<<"Nueva hora: "<<endl;
+						cin>>modificador;
+						L_Tareas->getObjeto(i)->setHora(modificador);
+						cout<<"Hora modificada con extito..."<<endl;
+					}
+
+					else if(op==7){
+
+						cout<<"Nuevo Estado: "<<endl;
+						cin>>modificador;
+						L_Tareas->getObjeto(i)->setEstado(modificador);
+						cout<<"Estado modificada con extito..."<<endl;
+						
+					}
+			}
+
+
+		}
+	}
+
+
+}
+
+void graficarEstudiantes(){
+
+	Grafo<Alumno> *unGrafo = new Grafo<Alumno>();
+	unGrafo->generarGrafo(&*L_alumnos);
+	cout<<"Grafo generado con exito..."<<endl;
+
+}
+
+void graficarTareas(){
+
+
+
+	Grafo<Tarea> *unGrafo =new Grafo<Tarea>();
+	unGrafo->generarGrafoTareas(&*L_Tareas);
+	cout<<"Grafo generado con exito..."<<endl;
+}
+
+void graficarErrores(){
+
+	Grafo<Error> *unGrafo =new Grafo<Error>();
+	unGrafo->generarGrafoErrores(&*ColaErrores);
+	cout<<"Grafo de errores generado conexito"<<endl;
+}
+
+void buscarEnlaLinealizada(){
+
+		//   
+		//   i     j k     columnM= (j*tamfila + i)*profund + k
+		int hora,dia,mes,pos;
+		cout<<" PARA BUSCAR EN LA LISTA TAREAS INGRESE: "<<endl;
+		cout<<"La hora "<<endl;
+		cin>>hora;
+		cout<<"El dia: "<<endl;
+		cin>>dia;
+		cout<<"El mes: "<<endl;
+		cin>>mes;
+		pos=(((dia*9)+hora)*5)+mes;
+		
+		for(int i=0; i<L_Tareas->getSize();i++){
+
+			if(L_Tareas->getNodeIndex(i)==pos){
+
+				cout<<"/*/*/*/*/*/*/*/ TAREA */*/*/*/*/*/*/*/"<<endl;
+				cout<<"idTarea: "<<L_Tareas->getObjeto(i)->gettIdTarea()<<endl;
+				cout<<"carnet: "<<L_Tareas->getObjeto(i)->gettCarnet()<<endl;
+				cout<<"nombre: "<<L_Tareas->getObjeto(i)->gettNombreTarea()<<endl;
+				cout<<"descripcion: "<<L_Tareas->getObjeto(i)->gettDesc()<<endl;
+				cout<<"materia: "<<L_Tareas->getObjeto(i)->gettMateria()<<endl;
+				cout<<"fecha: "<<L_Tareas->getObjeto(i)->gettFecha()<<endl;
+				cout<<"hora: "<<L_Tareas->getObjeto(i)->gettHora()<<endl;
+				cout<<"estado: "<<L_Tareas->getObjeto(i)->gettEstado()<<endl;
+				cout<<"/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*"<<endl;
+
+			}
+
+
+		}
+}
+
+void buscarPosicion(){
+
+	int hora,dia,mes,pos;
+	cout<<"/*/*/*/ INGRESE LOS SIGUIENTES VALORES PARA CALCULAR LA POSICION /*/*/*/"<<endl;
+	cout<<"hora:"<<endl;
+	cin>>hora;
+	cout<<"dia: "<<endl;
+	cin>>dia;
+	cout<<"Mes:"<<endl;
+	cin>>mes;
+
+	pos=(( (dia*9)+hora)*5)+mes;
+
+	cout<<"La posicion de los datos ingresados en la lista es: "<<pos<<endl;
+
+
+
+
+
+
+}
+
+void generarArchivoSalida(){
+
+	int setError=0;//contador que verifica si los errores dentro de la cola están corregidos
+
+	for (int i=0; i<ColaErrores->getSize();i++){
+
+		if(ColaErrores->getError(i)->getCorregido()==true){
+
+			setError++;
+			cout<<"verificando si se setearon los errores"<<endl;
+		}
+	}
+
+	cout<<"tam setError: "<<setError<<" size cola: "<<ColaErrores->getSize()<<endl;;
+	if(setError==ColaErrores->getSize()){
+
+		cout<<"se empieza a crear el archivo"<<endl;
+		ofstream archivo;
+		archivo.open("SalidaSmartClas.txt",ios::out);
+		if(archivo.fail()){
+
+			cout<<"No se pudo crear el fichero!"<<endl;
+			exit(1);
+
+		}
+
+		archivo<<"¿Elements?"<<endl;
+		for (int i = 0; i < L_alumnos->getSize(); i++)
+		{
+			
+			archivo<<"	¿element type=\"user\"?"<<endl;
+			archivo<<"		¿item Carnet = "<<"\""<<L_alumnos->getObjeto(i)->getCarnet()<<"\" $?"<<endl;
+			archivo<<"		¿item DPI = "<<"\""<<L_alumnos->getObjeto(i)->getDpi()<<"\" $?"<<endl;
+			archivo<<"		¿item Nombre = "<<"\""<<L_alumnos->getObjeto(i)->getNombre()<<"\""<<endl;
+			archivo<<"		¿item Carrera = "<<"\""<<L_alumnos->getObjeto(i)->getCarrera()<<"\" $?"<<endl;
+			archivo<<"		¿item Password = "<<"\""<<L_alumnos->getObjeto(i)->getPassword()<<"\" $?"<<endl;
+			archivo<<"		¿item Creditos = "<<"\""<<L_alumnos->getObjeto(i)->getCredits()<<"\" $?"<<endl;
+			archivo<<"		¿item Edad = "<<"\""<<L_alumnos->getObjeto(i)->getEdad()<<"\" $?"<<endl;
+			archivo<<"	¿$element?"<<endl;
+		
+		}
+
+		for(int i=0; i<L_Tareas->getSize();i++){
+
+				if(L_Tareas->getObjeto(i)->gettCarnet()!=-1){
+
+						archivo<<"	¿element type=\"task\"?"<<endl;
+						archivo<<"		¿item Carnet = "<<"\""<<L_Tareas->getObjeto(i)->gettCarnet()<<"\" $?"<<endl;
+						archivo<<"		¿item Nombre = "<<"\""<<L_Tareas->getObjeto(i)->gettNombreTarea()<<"\" $?"<<endl;
+						archivo<<"		¿item Descripcion = "<<"\""<<L_Tareas->getObjeto(i)->gettDesc()<<"\" $?"<<endl;
+						archivo<<"		¿item Materia = "<<"\""<<L_Tareas->getObjeto(i)->gettMateria()<<"\" $?"<<endl;
+						archivo<<"		¿item Fecha = "<<"\""<<L_Tareas->getObjeto(i)->gettFecha()<<"\" $?"<<endl;
+						archivo<<"		¿item Hora = "<<"\""<<L_Tareas->getObjeto(i)->gettHora()<<"\" $?"<<endl;
+						archivo<<"		¿item Estado = "<<"\""<<L_Tareas->getObjeto(i)->gettEstado()<<"\" $?"<<endl;
+						archivo<<"	¿$element?"<<endl;
+
+				}
+
+		
+		}
+
+
+		archivo<<"¿$Elements?";
+		
+
+		archivo.close();
+
+
+	}
+
+
+
+	cout<<"salida SmartClass gtenerado con exito!"<<endl;
+}
+
+
+
+
 

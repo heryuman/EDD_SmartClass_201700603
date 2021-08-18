@@ -1,6 +1,9 @@
+#ifndef LISTACIRC_H
+#define LISTACIRC_H
+
 #include<stdlib.h>
 #include<iostream>
-#include"Nodoc.cpp"
+#include"Nodo.cpp"
 #include "Alumno.cpp"
 using namespace std;
 
@@ -8,8 +11,8 @@ template <typename T>
 class Listacirc{
 	public:
 		int size=0;
-		Nodoc<T> * primero;
-		Nodoc<T> * ultimo;
+		Nodo<T> * primero;
+		Nodo<T> * ultimo;
 		Listacirc();
 		void insertar(T *val);
 		void imprimir();
@@ -33,7 +36,7 @@ Listacirc<T>::Listacirc(){
 template <typename T>
 void Listacirc<T>::insertar(T *val){
 	
-	Nodoc<Alumno> * nuevo = new Nodoc<T>(val);
+	Nodo<Alumno> * nuevo = new Nodo<T>(val);
 	
 	
 	if(this->primero==NULL){
@@ -57,7 +60,7 @@ template <typename T>
 
 void Listacirc<T>::imprimir(){
 	
-	Nodoc<T>  * temp = this->primero;
+	Nodo<T>  * temp = this->primero;
 	
 	while (temp !=NULL){
 		
@@ -75,7 +78,7 @@ template <typename T>
 
  T * Listacirc<T>::getObjeto(int pos){
 	int iterador=0;
-	Nodoc<T>  * temp = this->primero;
+	Nodo<T>  * temp = this->primero;
 	
 	while (iterador < pos){
 		
@@ -94,23 +97,23 @@ template <typename T>
 template <typename T>
 
 bool Listacirc<T>::existCarnet(string valor){
-	int iterador=0;
-	Nodoc<T>  * temp = this->primero;
-	
-	while (temp != NULL){
-		
-		if(temp->getValor()->getCarnet()== valor){
-
-			return true;
-			break;
-		}else{
-
-			temp =temp->siguiente;
-		}
-		
-		
-		
+	int i=0;
+	Nodo<T>  * temp = this->primero;
+	bool existe;
+	while (temp->getValor()->getCarnet()!=valor && i < this->size)
+	{
+		//cout<<"comparando carnet"<<i<<endl;
+		temp=temp->siguiente;
+		i++;
+		existe=false;
 	}
+
+	if(temp->getValor()->getCarnet()==valor){
+		existe=true;
+	}
+
+	return existe;
+	
 	
 	
   	
@@ -119,7 +122,7 @@ bool Listacirc<T>::existCarnet(string valor){
 template <typename T>
 void Listacirc<T>::printStep(){
 	
-	Nodoc<T>  * temp = this->primero;
+	Nodo<T>  * temp = this->primero;
 	
 	int op=1;
 	
@@ -139,8 +142,8 @@ void Listacirc<T>::printStep(){
 
 template <typename T>
 void Listacirc<T>::eliminar(int val){
-	Nodoc<T> * tmp= this-> primero;
-	Nodoc<T> * tmp2= this->ultimo;
+	Nodo<T> * tmp= this-> primero;
+	Nodo<T> * tmp2= this->ultimo;
 	int i=0;
 
 	while(i<val){
@@ -202,3 +205,6 @@ int Listacirc<T>::getSize(){
 	
 	return this->size;
 }
+
+
+#endif

@@ -83,7 +83,7 @@ T * Cola<T>::getError(int pos){
 } 
 
 
-/*
+
 template <typename T>
 void Cola<T>::imprimir(){
 	
@@ -102,7 +102,8 @@ void Cola<T>::imprimir(){
 		cout<<"**********************************************"<<endl;
 		tmp=tmp->siguiente;
 	}
-}*/
+}
+
 template <typename T>
 int Cola<T>::getSize(){
 	

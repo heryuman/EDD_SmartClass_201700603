@@ -1,3 +1,5 @@
+#ifndef LISTA_H
+#define LISTA_H
 #include<stdlib.h>
 #include<iostream>
 #include"Nodo.cpp"
@@ -47,6 +49,7 @@ void Lista<T>::insertar(T *val){
 		this->ultimo->siguiente =nuevo;
 		nuevo->anterior = this->ultimo;
 		this->ultimo =nuevo;
+		nuevo->siguiente=NULL;
 		this->size++;
 	}
 }
@@ -259,3 +262,7 @@ bool Lista<T>::existNode(int pos){
 	
 
 }
+
+
+
+#endif

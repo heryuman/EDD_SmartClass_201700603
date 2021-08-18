@@ -1,0 +1,28 @@
+digraph G{
+ rankdir = LR; 
+node [shape=box]; 
+compound=true; 
+"0x801d10"[label="idError: 1 desc: Estudiante"];
+"0x807570"[label="idError: 2 desc: Estudiante"];
+"0x807360"[label="idError: 3 desc: Estudiante"];
+"0x807450"[label="idError: 4 desc: Estudiante"];
+"0x25537f0"[label="idError: 5 desc: Estudiante"];
+"0x2553af0"[label="idError: 6 desc: Estudiante"];
+"0x25536a0"[label="idError: 7 desc: Tarea"];
+"0x2553a60"[label="idError: 8 desc: Tarea"];
+"0x2553c70"[label="idError: 9 desc: Tarea"];
+"0x2553880"[label="idError: 10 desc: Tarea"];
+"0x2553730"[label="idError: 11 desc: Tarea"];
+"0x801d10" -> "0x807570"[dir="both"];
+"0x807570" -> "0x807360"[dir="both"];
+"0x807360" -> "0x807450"[dir="both"];
+"0x807450" -> "0x25537f0"[dir="both"];
+"0x25537f0" -> "0x2553af0"[dir="both"];
+"0x2553af0" -> "0x25536a0"[dir="both"];
+"0x25536a0" -> "0x2553a60"[dir="both"];
+"0x2553a60" -> "0x2553c70"[dir="both"];
+"0x2553c70" -> "0x2553880"[dir="both"];
+"0x2553880" -> "0x2553730"[dir="both"];
+
+}
+
