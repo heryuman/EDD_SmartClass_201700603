@@ -46,9 +46,9 @@ void cargarAlumno();
 void eliminarEstudiante();
 void cargarTarea();
 void seteando();
-void corregirTarea(int registro);
-void corregirAlumno(int registro);
-bool validarMail(const string&);
+void corregirTarea(int registro, int posError);
+void corregirAlumno(int registro,int posError);
+bool validarMail(const string& mail);
 int getHora(int);
 int getMes(int);
 
@@ -56,6 +56,7 @@ Tarea  *matrixTarea[9][30][5];
 int main(){
 	
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes.csv
+	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes2.csv
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Tareas.csv
 	menu();
 
@@ -226,7 +227,7 @@ void cargarAlumno(){
 		
 		
 		
-		if (carnet.length()==9 && dpi.length()==13 and validarMail(correo)){
+		if (carnet.length()==9 && dpi.length()==13 && validarMail(correo)){
 			
 		    Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 			idRegistros++;
@@ -236,11 +237,12 @@ void cargarAlumno(){
 			
 		}else{
 			
-			if(carnet.length()!= 9 && dpi.length()==13 and validarMail(correo)==true){
+			if(carnet.length()!= 9 && dpi.length()==13 && validarMail(correo)==true){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				
 				Error *unError = new Error(idErrores,"Estudiante","La cantidad de digitos del Carnet es incorrecta",idRegistros);
+				unError->setCorregido(1);
 				ColaErrores->enqueue(unError);
 				
 				idRegistros++;
@@ -252,6 +254,7 @@ void cargarAlumno(){
 				L_alumnos->insertar(nAlumno);
 				
 				Error *unError = new Error(idErrores,"Estudiante","La cantidad de digitos del Cui es incorrecta",idRegistros);
+				unError->setCorregido(1);
 				ColaErrores->enqueue(unError);
 				
 				idRegistros++;
@@ -263,16 +266,63 @@ void cargarAlumno(){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				Error *unError = new Error(idErrores,"Estudiante","El formato del correo es incorrecto",idRegistros);
+				unError->setCorregido(1);
 				ColaErrores->enqueue(unError);
 				idRegistros++;
 				idErrores++;
 			}
 
-			else if (carnet.length()!=9 && dpi.length()!=13 and validarMail(correo)!=true){
+
+			else if (carnet.length()!=9 && dpi.length()!=13 && validarMail(correo)==true){
+
+				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
+				L_alumnos->insertar(nAlumno);
+				Error *unError = new Error(idErrores,"Estudiante","Elcarnet y dpi poseen valores incorrectos",idRegistros);
+				unError->setCorregido(2);
+				ColaErrores->enqueue(unError);
+				idRegistros++;
+				idErrores++;
+
+
+			}
+
+
+			else if (carnet.length()!=9 && dpi.length()==13 && validarMail(correo)!=true){
+
+				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
+				L_alumnos->insertar(nAlumno);
+				Error *unError = new Error(idErrores,"Estudiante","El carnet y correo poseen valores incorrectos",idRegistros);
+				unError->setCorregido(2);
+				ColaErrores->enqueue(unError);
+				idRegistros++;
+				idErrores++;
+
+
+			}
+
+
+			else if (carnet.length()==9 && dpi.length()!=13 and validarMail(correo)!=true){
+
+				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
+				L_alumnos->insertar(nAlumno);
+				Error *unError = new Error(idErrores,"Estudiante","correo y dpi poseen valores incorrectos",idRegistros);
+				unError->setCorregido(2);
+				ColaErrores->enqueue(unError);
+				idRegistros++;
+				idErrores++;
+
+
+			}
+
+
+			
+
+			else if (carnet.length()!=9 && dpi.length()!=13 && validarMail(correo)!=true){
 
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				Error *unError = new Error(idErrores,"Estudiante","El correo,carnet y dpi poseen valores incorrectos",idRegistros);
+				unError->setCorregido(3);
 				ColaErrores->enqueue(unError);
 				idRegistros++;
 				idErrores++;
@@ -400,6 +450,7 @@ void cargaManualTareas(){
 							L_Tareas->insertIn(nTarea,pos);
 
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta",idTarea);
+							nError->setCorregido(1);//agregamos la cantidad de errores que tiene el registro
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
@@ -420,6 +471,7 @@ void cargaManualTareas(){
 							L_Tareas->insertIn(nTarea,pos);
 
 							Error *nError = new Error(idErrores,"Tarea","Error,  carnet inexistente",idTarea);
+							nError->setCorregido(1);
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
@@ -431,6 +483,7 @@ void cargaManualTareas(){
 							L_Tareas->insertIn(nTarea,pos);
 
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta y carnet inexistente",idTarea);
+							nError->setCorregido(2);
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
@@ -473,7 +526,7 @@ void cargaManualEstudiante(){
 	cin>>edad;
 
 		
-		if (carnet.length()==9 && dpi.length()==13 and validarMail(correo)){
+		if (carnet.length()==9 && dpi.length()==13 && validarMail(correo)){
 			
 		    Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 			idRegistros++;
@@ -483,11 +536,12 @@ void cargaManualEstudiante(){
 			
 		}else{
 			
-			if(carnet.length()!= 9 && dpi.length()==13 and validarMail(correo)==true){
+			if(carnet.length()!= 9 && dpi.length()==13 && validarMail(correo)==true){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				
 				Error *unError = new Error(idErrores,"Estudiante","La cantidad de digitos del Carnet es incorrecta",idRegistros);
+				unError->setCorregido(1);
 				ColaErrores->enqueue(unError);
 				
 				idRegistros++;
@@ -499,6 +553,7 @@ void cargaManualEstudiante(){
 				L_alumnos->insertar(nAlumno);
 				
 				Error *unError = new Error(idErrores,"Estudiante","La cantidad de digitos del Cui es incorrecta",idRegistros);
+				unError->setCorregido(1);
 				ColaErrores->enqueue(unError);
 				
 				idRegistros++;
@@ -510,16 +565,63 @@ void cargaManualEstudiante(){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				Error *unError = new Error(idErrores,"Estudiante","El formato del correo es incorrecto",idRegistros);
+				unError->setCorregido(1);
 				ColaErrores->enqueue(unError);
 				idRegistros++;
 				idErrores++;
 			}
 
-			else if (carnet.length()!=9 && dpi.length()!=13 and validarMail(correo)!=true){
+
+			else if (carnet.length()!=9 && dpi.length()!=13 && validarMail(correo)==true){
+
+				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
+				L_alumnos->insertar(nAlumno);
+				Error *unError = new Error(idErrores,"Estudiante","Elcarnet y dpi poseen valores incorrectos",idRegistros);
+				unError->setCorregido(2);
+				ColaErrores->enqueue(unError);
+				idRegistros++;
+				idErrores++;
+
+
+			}
+
+
+			else if (carnet.length()!=9 && dpi.length()==13 && validarMail(correo)!=true){
+
+				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
+				L_alumnos->insertar(nAlumno);
+				Error *unError = new Error(idErrores,"Estudiante","El carnet y correo poseen valores incorrectos",idRegistros);
+				unError->setCorregido(2);
+				ColaErrores->enqueue(unError);
+				idRegistros++;
+				idErrores++;
+
+
+			}
+
+
+			else if (carnet.length()==9 && dpi.length()!=13 and validarMail(correo)!=true){
+
+				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
+				L_alumnos->insertar(nAlumno);
+				Error *unError = new Error(idErrores,"Estudiante","correo y dpi poseen valores incorrectos",idRegistros);
+				unError->setCorregido(2);
+				ColaErrores->enqueue(unError);
+				idRegistros++;
+				idErrores++;
+
+
+			}
+
+
+			
+
+			else if (carnet.length()!=9 && dpi.length()!=13 && validarMail(correo)!=true){
 
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 				L_alumnos->insertar(nAlumno);
 				Error *unError = new Error(idErrores,"Estudiante","El correo,carnet y dpi poseen valores incorrectos",idRegistros);
+				unError->setCorregido(3);
 				ColaErrores->enqueue(unError);
 				idRegistros++;
 				idErrores++;
@@ -693,7 +795,7 @@ void cargarTarea(){
 	string dir;
 	cout<<"Ingrese la  direccion del archivo CSV: ";
   	cin>>dir;
-  	cout<<endl;
+  	cout<<"la dir es:"<<dir<<endl;
 	ifstream archivo(dir.c_str());
 	
 
@@ -701,7 +803,7 @@ void cargarTarea(){
 	char delimitador = ',';
 	
 	getline(archivo,linea);
-	
+	cout<<"llego abajo del 1er getline"<<endl;
 	while(getline(archivo,linea)){
 		
 		string mes, dia, hora, carnet, nombre, descripcion,materia, fecha, estado;
@@ -717,7 +819,7 @@ void cargarTarea(){
 		getline(stream,fecha,delimitador);
 		getline(stream,estado,delimitador);
 		
-
+		cout<<"llego abajo de los getline"<<endl;
 		string fechaConc;
 
 		if (dia.length()==1 && mes.length()==1){
@@ -748,7 +850,7 @@ void cargarTarea(){
 	
 	
 
-				if ( L_alumnos->existCarnet(carnet)==true){
+				if ( L_alumnos->existCarnet(carnet)==true ){
 				//cout<<"existe el carnet: "<<carnet<<endl;
 				
 
@@ -763,15 +865,19 @@ void cargarTarea(){
 							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta",idTarea);
+							nError->setCorregido(1);//ingresamos el numero de erroes que posee el registro
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
 							cout<<"tarea cargada con error, formato de fecha o fecha incorrecta"<<endl;
+
 						}
 				
 			
 			}
 			else if(L_alumnos->existCarnet(carnet)==false){
+						
+						
 
 					if(fechaConc==fecha){
 							cout<<"tarea con fecha: "<<fechaConc<<" hora "<<horaConv<<endl;
@@ -779,6 +885,7 @@ void cargarTarea(){
 							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, Carnet inexistente",idTarea);
+							nError->setCorregido(1);
 							ColaErrores->enqueue(nError);
 							idErrores++;
 							idTarea++;
@@ -787,6 +894,7 @@ void cargarTarea(){
 							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta y carnet inexistente",idTarea);
+							nError->setCorregido(2);
 							ColaErrores->enqueue(nError);
 							idTarea++;
 							idErrores++;
@@ -798,6 +906,7 @@ void cargarTarea(){
 						
 
 						}
+			
 		
 	
 	
@@ -997,10 +1106,15 @@ void linealizacion(){
 				for (int k = 0; k < 5; k++)
 				{
 				
+					if( matrixTarea[i][j][k]->gettCarnet()!= -1){
 
-					//	cout<<"pos["<<i<<"]["<<j<<"]["<<k<<"] "<<matrixTarea[i][j][k]->gettHora()<<" id: "<<matrixTarea[i][j][k]->gettIdTarea()<<"Pos lineal: "<<((((j*9)+i)*5)+k)<<endl;
+						//	cout<<"pos["<<i<<"]["<<j<<"]["<<k<<"] "<<matrixTarea[i][j][k]->gettHora()<<" id: "<<matrixTarea[i][j][k]->gettIdTarea()<<"Pos lineal: "<<((((j*9)+i)*5)+k)<<endl;
 						int posi=((((j*9)+i)*5)+k);
 						L_Tareas->insertIn(matrixTarea[i][j][k],posi);
+					
+
+
+					}
 					
 				}
 				
@@ -1136,24 +1250,40 @@ void colaDeErrores(){
 	while (op!=3)
 	{
 		cout<<" /*/*/*/* OPCIONES DE LA COLA DE ERRORES */*/*/*/"<<endl;
-		cout<<"/* 1.- Mostrar los Errores                      */"<<endl;
+		cout<<"/* 1.- Mostrar los Errores y generar pdf       */"<<endl;
 		cout<<"/* 2.- Corregir los errores                     */"<<endl;
 		cout<<"/* 3.- Salir                                    */"<<endl;
 		cout<<" /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*"<<endl;
 		cin>>op;
 		if(op==1){
 
-			cout<<"*/*/* COLA DE ERRORES /*/*/"<<endl;
-			//ColaErrores->imprimir();//no funciona el metodo imprimir
+			if(ColaErrores->getSize()>0){
 
+						cout<<"*/*/* COLA DE ERRORES /*/*/"<<endl;
+						for (int i = 0; i < ColaErrores->getSize(); i++)
+						{		cout<<"<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>"<<endl;
+								cout<<"id del error: "<<ColaErrores->getError(i)->getId()<<endl;
+								cout<<"Tipo de error: "<<ColaErrores->getError(i)->getTipo()<<endl;
+								cout<<"Descripcion: "<<ColaErrores->getError(i)->getDesc()<<endl;
+								cout<<"Id del Registro con error:"<<ColaErrores->getError(i)->getNumReg()<<endl;
+								cout<<"Cantidad de errores en el registro: "<<ColaErrores->getError(i)->getCorregido()<<endl;
+								cout<<"<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>"<<endl;
+						}
+						graficarErrores();
 
+			}else{
+
+				cout<<"No hay errores en la cola!"<<endl;
+
+			}
+		
 		}
 
 		else if(op==2){
 
 			for (int i = 0; i < ColaErrores->getSize(); i++)
 			{
-				if(ColaErrores->getError(i)->getCorregido() != true){
+				if(ColaErrores->getError(i)->getCorregido() != 0){
 					
 					string ops;
 					cout<<"id del error: "<<ColaErrores->getError(i)->getId()<<endl;
@@ -1163,37 +1293,43 @@ void colaDeErrores(){
 					cout<<"Desea corregirlo? presione Y,o N para continuar: "<<endl;
 					cin>>ops;
 
-					
+
 
 					if(ops=="y"||ops=="Y"){
 
 						if(ColaErrores->getError(i)->getTipo()=="Estudiante"){
 
-							 corregirAlumno(ColaErrores->getError(i)->getNumReg());
-							ColaErrores->getError(i)->setCorregido(true);
+							 corregirAlumno(ColaErrores->getError(i)->getNumReg(),i);
+							
 
 						}
 						else if(ColaErrores->getError(i)->getTipo()=="Tarea"){
-							 corregirTarea(ColaErrores->getError(i)->getNumReg());
-							ColaErrores->getError(i)->setCorregido(true);
+							 corregirTarea(ColaErrores->getError(i)->getNumReg(),i);
+							
 						}
 
 					}
 
 
+
 				}
-			}
+
 			
 
 
 
+			}	
+			
 		}
+
+
+		}
+	
 	}
 	
-}
 
-void corregirAlumno(int registro){
-
+void corregirAlumno(int registro, int  posError){
+	int cantErrores=ColaErrores->getError(posError)->getCorregido();
 	cout<<"Registro a modificar: "<<registro<<endl;
 	for(int i= 0; i< L_alumnos->getSize();i++){
 
@@ -1202,7 +1338,7 @@ void corregirAlumno(int registro){
 			int op=0;
 
 			
-				while(op!=9){
+				while(cantErrores!=0){
 
 					cout<<"<<<<<< ELIJA EL ATRIBUTO A MODIFICAR >>>>>>"<<endl;
 					cout<<"<< 1.- Nombre                             >>"<<endl;
@@ -1224,7 +1360,11 @@ void corregirAlumno(int registro){
 						cin.ignore();
 						getline(cin,modificador);
 						L_alumnos->getObjeto(i)->setNombre(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+						
 						cout<<"Nombre modificado correctamente..."<<endl;
+						cantErrores--;
+						cout<<"Errores en el registro: "<<cantErrores<<endl;
 
 					}
 
@@ -1234,7 +1374,10 @@ void corregirAlumno(int registro){
 						if(modificador.length()==9){
 
 								L_alumnos->getObjeto(i)->setCarnet(modificador);
-							cout<<"Carnet modificado correctamente..."<<endl;
+								ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+								cout<<"Carnet modificado correctamente..."<<endl;
+								cantErrores--;
+							cout<<"Errores en el registro: "<<cantErrores<<endl;
 
 						}else{
 
@@ -1248,7 +1391,10 @@ void corregirAlumno(int registro){
 						if(modificador.length()==13){
 
 							L_alumnos->getObjeto(i)->setDpi(modificador);
+							ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 							cout<<"DPI modificado correctamente..."<<endl;
+							cantErrores--;
+							cout<<"Errores en el registro: "<<cantErrores<<endl;
 
 						}else{
 
@@ -1263,6 +1409,9 @@ void corregirAlumno(int registro){
 						cin.ignore();
 						getline(cin,modificador);
 						L_alumnos->getObjeto(i)->setCarrera(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+						cantErrores--;
+						cout<<"Errores en el registro: "<<cantErrores<<endl;
 						cout<<"Carrera modificada correctamente..."<<endl;
 
 
@@ -1273,7 +1422,10 @@ void corregirAlumno(int registro){
 						if(validarMail(modificador)){
 
 								L_alumnos->getObjeto(i)->setCorreo(modificador);
+								ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 								cout<<"Correo modificado correctamente..."<<endl;
+								cantErrores--;
+								cout<<"Errores en el registro: "<<cantErrores<<endl;
 						}else{
 
 							cout<<"Error, correo no valido"<<endl;
@@ -1286,7 +1438,10 @@ void corregirAlumno(int registro){
 
 						cout<<"Nuevo password: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setPass(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"contraseña modificada correctamente"<<endl;
+						cantErrores--;
+						cout<<"Errores en el registro: "<<cantErrores<<endl;
 
 					
 					}
@@ -1295,7 +1450,10 @@ void corregirAlumno(int registro){
 
 						cout<<"Nuevos Creditos: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setCredits(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Creditos modificados correctamente"<<endl;
+						cantErrores--;
+						cout<<"Errores en el registro: "<<cantErrores<<endl;
 
 					}
 
@@ -1303,7 +1461,10 @@ void corregirAlumno(int registro){
 
 						cout<<"Nueva edad: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setEdad(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Edad modificada correctamente"<<endl;
+						cantErrores--;
+						cout<<"Errores en el registro: "<<cantErrores<<endl;
 
 
 					}
@@ -1315,8 +1476,8 @@ void corregirAlumno(int registro){
 	}
 }
 
-void corregirTarea(int registro){
-
+void corregirTarea(int registro,int posError){
+int cantErrores = ColaErrores->getError(posError)->getCorregido();
 cout<<"Registro a modificar:"<<registro<<endl;
 	
 	for (int i = 0; i < L_Tareas->getSize(); i++)
@@ -1324,7 +1485,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 		if(L_Tareas->getObjeto(i)->gettIdTarea()==registro){
 
 			int op=0;
-			while(op!=8){
+			while(cantErrores!=0){
 
 				
 					cout<<"<<<<<< ELIJA EL ATRIBUTO A MODIFICAR >>>>>>>"<<endl;
@@ -1348,6 +1509,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						if(modificador.length()==9){
 
 							L_Tareas->getObjeto(i)->setCarnet(atoi(modificador.c_str()));
+							ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 							cout<<"Carnet modificado con extito..."<<endl;
 						}
 					
@@ -1360,6 +1522,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setNombreTarea(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Nombre modificado con extito..."<<endl;
 
 					}
@@ -1369,6 +1532,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setDescripcion(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Descripcion modificada con extito..."<<endl;
 					}
 
@@ -1378,6 +1542,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setMateria(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Materia modificada con extito..."<<endl;
 						
 						
@@ -1389,6 +1554,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setFecha(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Fecha modificada con extito..."<<endl;
 						
 					}
@@ -1397,6 +1563,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						cout<<"Nueva hora: "<<endl;
 						cin>>modificador;
 						L_Tareas->getObjeto(i)->setHora(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Hora modificada con extito..."<<endl;
 					}
 
@@ -1405,6 +1572,7 @@ cout<<"Registro a modificar:"<<registro<<endl;
 						cout<<"Nuevo Estado: "<<endl;
 						cin>>modificador;
 						L_Tareas->getObjeto(i)->setEstado(modificador);
+						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Estado modificada con extito..."<<endl;
 						
 					}
@@ -1504,11 +1672,11 @@ void generarArchivoSalida(){
 
 	for (int i=0; i<ColaErrores->getSize();i++){
 
-		if(ColaErrores->getError(i)->getCorregido()==true){
+		if(ColaErrores->getError(i)->getCorregido()==0){
 
 			setError++;
 			cout<<"verificando si se setearon los errores"<<endl;
-		}
+		}else{ cout<<"existen: "<<ColaErrores->getError(i)->getCorregido()<<" errores en el registro: "<<ColaErrores->getError(i)->getNumReg()<<endl;;}
 	}
 
 	cout<<"tam setError: "<<setError<<" size cola: "<<ColaErrores->getSize()<<endl;;
@@ -1516,7 +1684,7 @@ void generarArchivoSalida(){
 
 		cout<<"se empieza a crear el archivo"<<endl;
 		ofstream archivo;
-		archivo.open("SalidaSmartClas.txt",ios::out);
+		archivo.open("SalidaSmartClass.txt",ios::out);
 		if(archivo.fail()){
 
 			cout<<"No se pudo crear el fichero!"<<endl;

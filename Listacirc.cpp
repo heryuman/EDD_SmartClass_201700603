@@ -99,17 +99,19 @@ template <typename T>
 bool Listacirc<T>::existCarnet(string valor){
 	int i=0;
 	Nodo<T>  * temp = this->primero;
-	bool existe;
-	while (temp->getValor()->getCarnet()!=valor && i < this->size)
-	{
-		//cout<<"comparando carnet"<<i<<endl;
-		temp=temp->siguiente;
-		i++;
-		existe=false;
-	}
+	bool existe=false;
+	if(this->size>0){
 
-	if(temp->getValor()->getCarnet()==valor){
-		existe=true;
+					while (temp->getValor()->getCarnet()!=valor && i < this->size){
+		//cout<<"comparando carnet"<<i<<endl;
+								temp=temp->siguiente;
+								i++;
+								existe=false;
+							}
+
+							if(temp->getValor()->getCarnet()==valor){
+								existe=true;
+							}
 	}
 
 	return existe;

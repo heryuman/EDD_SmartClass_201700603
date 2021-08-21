@@ -8,7 +8,7 @@ class Error{
 		int id;
 		string tipo;
 		string desc;
-		bool corregido=false;
+		int corregido=0;
 		int numReg;
 		
 		
@@ -20,12 +20,12 @@ class Error{
 		 void setId(int);
 		 void setTipo(string);
 		 void setDesc(string);
-		 void setCorregido(bool);
+		 void setCorregido(int);
 		 
 		 int getId();
 		 string getTipo();
 		 string getDesc();
-		 bool  getCorregido();
+		 int  getCorregido();
 		 int getNumReg();
 		 
 };
@@ -63,12 +63,12 @@ void Error::setDesc(string desc){
 	
 	this->desc = desc;
 }
-void Error::setCorregido(bool val){
+void Error::setCorregido(int val){
 
 	this->corregido=val;
 }
 
-bool Error::getCorregido(){
+int Error::getCorregido(){
 
 	return  this->corregido;
 }
