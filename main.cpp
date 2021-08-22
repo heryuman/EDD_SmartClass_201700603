@@ -226,17 +226,22 @@ void cargarAlumno(){
 		getline(stream,edad,delimitador);
 		getline(stream,correo,delimitador);
 		
+		//	cout<<"comparando carnet"<<carnet<<" tamlista; "<<L_alumnos->getSize()<<" existe carnet?: "<<L_alumnos->existCarnet(carnet)<<endl;
 		
-		
-		if (carnet.length()==9 && dpi.length()==13 && validarMail(correo)){
+		if(L_alumnos->existCarnet(carnet)!=true && L_alumnos->existDPI(dpi)!=true){
+				//cout<<"comparando carnet"<<carnet<<" tamlista; "<<L_alumnos->getSize()<<" existe carnet?: "<<L_alumnos->existCarnet(carnet)<<endl;
+				if (carnet.length()==9 && dpi.length()==13 && validarMail(correo)){
 			
 		    Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 			idRegistros++;
 			L_alumnos->insertar(nAlumno);
+			cout<<"carnet: "<<carnet<<"cargado exitosamente"<<endl;
 		//	arrayPersona[contador]=nAlumno;
 			
 			
-		}else{
+		}
+		
+		else{
 			
 			if(carnet.length()!= 9 && dpi.length()==13 && validarMail(correo)==true){
 				Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
@@ -333,6 +338,11 @@ void cargarAlumno(){
 			
 			
 		}
+
+	 }else{
+
+		 cout<<"No se puede cargar porque el carnet ya existe"<<endl;
+	 }
 	
 
 	}
@@ -536,7 +546,9 @@ void cargaManualEstudiante(){
 	cin>>edad;
 
 		
-		if (carnet.length()==9 && dpi.length()==13 && validarMail(correo)){
+		if(L_alumnos->existCarnet(carnet)!=true && L_alumnos->existDPI(dpi)!=true){
+
+			if (carnet.length()==9 && dpi.length()==13 && validarMail(correo)){
 			
 		    Alumno *nAlumno = new Alumno(idRegistros,carnet,dpi,nombre,carrera,correo,pass,creditos,edad);
 			idRegistros++;
@@ -640,6 +652,10 @@ void cargaManualEstudiante(){
 			}
 			
 			
+		}
+		}else{
+
+			cout<<"NO se puede agregar porque el dpi o Carnet se repiten"<<endl;
 		}
 
 }

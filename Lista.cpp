@@ -42,14 +42,15 @@ void Lista<T>::insertar(T *val){
 		
 		this->primero=nuevo;
 		this->ultimo=nuevo;
-		nuevo->anterior=NULL;
+		nuevo->anterior=this->primero;
+		nuevo->siguiente=this->ultimo;
 		this->size++;
 	}else{
 		
 		this->ultimo->siguiente =nuevo;
 		nuevo->anterior = this->ultimo;
 		this->ultimo =nuevo;
-		nuevo->siguiente=NULL;
+		nuevo->siguiente=this->ultimo;
 		this->size++;
 	}
 }

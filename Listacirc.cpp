@@ -44,6 +44,8 @@ void Listacirc<T>::insertar(T *val){
 		
 		this->primero=nuevo;
 		this->ultimo=nuevo;
+		nuevo->anterior=this->primero;
+		nuevo->siguiente=this->ultimo;
 		
 		this->size++;
 	}else{
@@ -99,21 +101,29 @@ template <typename T>
 
 bool Listacirc<T>::existCarnet(string valor){
 	int i=0;
+	//cout<<"invoca el metodo Exist carnte"<<endl;
 	Nodo<T>  * temp = this->primero;
 	bool existe=false;
 	if(this->size>0){
+	//cout<<"cuando size vale:"<<this->size<<endl;
 
-					while (temp->getValor()->getCarnet()!=valor && i < this->size){
+					while (temp->getValor()->getCarnet()!=valor && temp->siguiente !=this->primero){
 		//cout<<"comparando carnet"<<i<<endl;
 								temp=temp->siguiente;
 								i++;
-								existe=false;
+								//cout<<"paso por el whiel: "<<i<<" veces"<<endl;
 							}
 
-							if(temp->getValor()->getCarnet()==valor){
+							if(temp!=NULL){
+
+								if(temp->getValor()->getCarnet()==valor){
 								existe=true;
+								//cout<<"seteo el exisst"<<endl;
+							}
+
 							}
 	}
+	//cout<<"vamos a retornar: "<<existe<<endl;
 
 	return existe;
 	
@@ -135,8 +145,10 @@ bool Listacirc<T>::existDPI(string valor){
 								existe=false;
 							}
 
-							if(temp->getValor()->getDpi()==valor){
+							if(temp!=NULL){
+								if(temp->getValor()->getDpi()==valor){
 								existe=true;
+							}
 							}
 	}
 
