@@ -21,6 +21,7 @@ class Listacirc{
 		int  getSize();
 		T *getObjeto(int pos);
 		bool existCarnet(string val);
+		bool existDPI(string val);
 		
 };
 
@@ -120,6 +121,32 @@ bool Listacirc<T>::existCarnet(string valor){
 	
   	
 }
+template <typename T>				   
+bool Listacirc<T>::existDPI(string valor){
+	int i=0;
+	Nodo<T>  * temp = this->primero;
+	bool existe=false;
+	if(this->size>0){
+
+					while (temp->getValor()->getDpi()!=valor && i < this->size){
+		//cout<<"comparando carnet"<<i<<endl;
+								temp=temp->siguiente;
+								i++;
+								existe=false;
+							}
+
+							if(temp->getValor()->getDpi()==valor){
+								existe=true;
+							}
+	}
+
+	return existe;
+	
+	
+	
+  	
+}
+
 
 template <typename T>
 void Listacirc<T>::printStep(){

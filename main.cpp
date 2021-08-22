@@ -58,6 +58,7 @@ int main(){
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes.csv
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes2.csv
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Tareas.csv
+	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Tareas2.csv
 	menu();
 
 
@@ -423,7 +424,9 @@ void cargaManualTareas(){
 		int horaConv= atoi(hora.c_str());//i
 		int carnetConv= atoi(carnet.c_str());
 
-	
+		if(diaConv>0 && diaConv<31 && mesConv>6 && mesConv<12 && horaConv>7 && horaConv<17){
+
+					
 			int pos2=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
 
 			if(L_Tareas->existNode(pos2)!=true){
@@ -435,7 +438,7 @@ void cargaManualTareas(){
 						if(fechaConc==fecha){
 							fechaConc=dia+"/"+mes+"/2021";
 							cout<<"tarea con fecha: "<<fechaConc<<"hora "<<horaConv<<endl;
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado,diaConv,mesConv);
 							//matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 
 							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
@@ -444,7 +447,7 @@ void cargaManualTareas(){
 							idTarea++;
 							cout<<"Tarea cargada exitosamente..."<<endl;
 						}else{
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado,diaConv,mesConv);
 							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
 							
 							L_Tareas->insertIn(nTarea,pos);
@@ -458,13 +461,13 @@ void cargaManualTareas(){
 						}
 				
 			
-			}
-			else{
+				}
+					else {
 
 					if(fechaConc==fecha){
 							fechaConc=dia+"/"+mes+"/2021";
 							cout<<"tarea con fecha: "<<fechaConc<<"hora "<<horaConv<<endl;
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado,diaConv,mesConv);
 							
 
 							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
@@ -477,7 +480,7 @@ void cargaManualTareas(){
 							idErrores++;
 							cout<<"Tarea cargada con error, carnet inexistente"<<endl;
 						}else{
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado,diaConv,mesConv);
 							int pos=((((diaConv-1)*9)+getHora(horaConv))*5)+getMes(mesConv);
 							
 							L_Tareas->insertIn(nTarea,pos);
@@ -491,13 +494,20 @@ void cargaManualTareas(){
 						}
 				
 							
-						}
+				}
 
 				
-			}else{
+			}
+			
+		else{
 				cout<<"No se puede ingresar la tarea porque ya esta  ocupado el espacio"<<endl;
 
 			}
+
+		}else{
+
+			cout<<"no se puede cargar la tarea porque el dia, mes u hora estan fuera de rango, verificar por favor"<<endl;
+		}
 
 
 
@@ -662,7 +672,7 @@ void modificarEstudiante(){
 					string modificador;
 
 					if(op==1){
-						
+						cout<<"Nombre Actual: "<<L_alumnos->getObjeto(i)->getNombre()<<endl;
 						cout<<"Nuevo Nombre: "; 
 						cin.ignore();
 						getline(cin,modificador);
@@ -672,6 +682,7 @@ void modificarEstudiante(){
 					}
 
 					else if(op==2){
+						cout<<"Carnet actual: "<<L_alumnos->getObjeto(i)->getCarnet()<<endl;
 						cout<<"Nuevo carnet: ";cin>>modificador;
 
 						if(modificador.length()==9){
@@ -686,7 +697,7 @@ void modificarEstudiante(){
 					
 					}
 					else if(op==3){
-
+						cout<<"DPI actual: "<<L_alumnos->getObjeto(i)->getDpi()<<endl;
 						cout<<"Nuevo DPI: ";cin>>modificador;
 						if(modificador.length()==13){
 
@@ -701,7 +712,7 @@ void modificarEstudiante(){
 					}
 
 					else if(op==4){
-
+						cout<<"Carrera actual: "<<L_alumnos->getObjeto(i)->getCarrera()<<endl;
 						cout<<"Nueva Carrera: ";
 						cin.ignore();
 						getline(cin,modificador);
@@ -712,6 +723,7 @@ void modificarEstudiante(){
 					}
 
 					else if(op==5){
+						cout<<"Correo Actual: "<<L_alumnos->getObjeto(i)->getCorreo()<<endl;
 						cout<<"Nuevo correo: ";cin>>modificador;
 						if(validarMail(modificador)){
 
@@ -726,7 +738,7 @@ void modificarEstudiante(){
 					}
 
 					else if(op==6){
-
+						cout<<"Password: "<<L_alumnos->getObjeto(i)->getPassword()<<endl;
 						cout<<"Nuevo password: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setPass(modificador);
 						cout<<"contraseña modificada correctamente"<<endl;
@@ -735,7 +747,7 @@ void modificarEstudiante(){
 					}
 
 					else if (op==7){
-
+						cout<<"Creditos actuales: "<<L_alumnos->getObjeto(i)->getCredits()<<endl;
 						cout<<"Nuevos Creditos: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setCredits(modificador);
 						cout<<"Creditos modificados correctamente"<<endl;
@@ -743,7 +755,7 @@ void modificarEstudiante(){
 					}
 
 					else if(op==8){
-
+						cout<<"Edad actual: "<<L_alumnos->getObjeto(i)->getEdad()<<endl;
 						cout<<"Nueva edad: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setEdad(modificador);
 						cout<<"Edad modificada correctamente"<<endl;
@@ -795,7 +807,7 @@ void cargarTarea(){
 	string dir;
 	cout<<"Ingrese la  direccion del archivo CSV: ";
   	cin>>dir;
-  	cout<<"la dir es:"<<dir<<endl;
+  //	cout<<"la dir es:"<<dir<<endl;
 	ifstream archivo(dir.c_str());
 	
 
@@ -803,7 +815,7 @@ void cargarTarea(){
 	char delimitador = ',';
 	
 	getline(archivo,linea);
-	cout<<"llego abajo del 1er getline"<<endl;
+	//cout<<"llego abajo del 1er getline"<<endl;
 	while(getline(archivo,linea)){
 		
 		string mes, dia, hora, carnet, nombre, descripcion,materia, fecha, estado;
@@ -857,12 +869,12 @@ void cargarTarea(){
 						if(fechaConc==fecha){
 							cout<<"tarea con fecha: "<<fechaConc<<" hora "<<horaConv<<endl;
 							fechaConc= dia+"/"+mes+"/2021";
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado,diaConv,mesConv);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							idTarea++;
 							cout<<"Tarea cargada exitosamente..."<<endl;
 						}else{
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado,diaConv,mesConv);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta",idTarea);
 							nError->setCorregido(1);//ingresamos el numero de erroes que posee el registro
@@ -882,7 +894,7 @@ void cargarTarea(){
 					if(fechaConc==fecha){
 							cout<<"tarea con fecha: "<<fechaConc<<" hora "<<horaConv<<endl;
 							fechaConc= dia+"/"+mes+"/2021";
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fechaConc,hora,estado,diaConv,mesConv);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, Carnet inexistente",idTarea);
 							nError->setCorregido(1);
@@ -891,7 +903,7 @@ void cargarTarea(){
 							idTarea++;
 							cout<<"Tarea cargada con error, carnet inexistente."<<endl;
 						}else{
-							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado);
+							Tarea *nTarea = new Tarea(idTarea,carnetConv,nombre,descripcion,materia,fecha,hora,estado,diaConv,mesConv);
 							matrixTarea[getHora(horaConv)][diaConv-1][getMes(mesConv)]=nTarea;
 							Error *nError = new Error(idErrores,"Tarea","Error, formato de fecha o fecha incorrecta y carnet inexistente",idTarea);
 							nError->setCorregido(2);
@@ -950,20 +962,28 @@ void modificarTarea(){
 
 
 					if(op==1){
-
+						cout<<"Carnet actual: "<<L_Tareas->getObjeto(i)->gettCarnet()<<endl;
 						cout<<"Nuevo Carnet:"<<endl;
 						cin>>modificador;
-						if(modificador.length()==9){
+						if(L_alumnos->existCarnet(modificador) && modificador.length()==9){
+
+								
 
 							L_Tareas->getObjeto(i)->setCarnet(atoi(modificador.c_str()));
 							cout<<"Carnet modificado con extito..."<<endl;
+						
+
+
+						}else{
+
+							cout<<"El carnet ingresado no existe en la lista de alumnos o su longitud es incorrecta"<<endl;
 						}
 					
 
 					}
 
 					else if(op==2){
-
+						cout<<"Nombre actual: "<<L_Tareas->getObjeto(i)->gettNombreTarea()<<endl;
 						cout<<"Nuevo Nombre: "<<endl;
 						cin.ignore();
 						getline(cin,modificador);
@@ -973,6 +993,7 @@ void modificarTarea(){
 					}
 
 					else if(op==3){
+						cout<<"Descripcion actual: "<<L_Tareas->getObjeto(i)->gettDesc()<<endl;
 						cout<<"Nueva descripcion: "<<endl;
 						cin.ignore();
 						getline(cin,modificador);
@@ -981,7 +1002,7 @@ void modificarTarea(){
 					}
 
 					else if(op==4){
-
+						cout<<"Materia actual: "<<L_Tareas->getObjeto(i)->gettMateria()<<endl;
 						cout<<"Nueva Materia: "<<endl;
 						cin.ignore();
 						getline(cin,modificador);
@@ -992,16 +1013,41 @@ void modificarTarea(){
 					}
 
 					else if(op==5){
+						cout<<"La fecha actual: "<< L_Tareas->getObjeto(i)->gettFecha()<<endl;
+						int mes,dia=0;
+						cout<<"Nueva Fecha "<<endl;
+						cout<<"ingrese el dia"<<endl;
+						cin>>dia;
+						cout<<"ingrese el mes: "<<endl;
+						cin>>mes;
 
-						cout<<"Nueva Fecha: "<<endl;
-						cin.ignore();
-						getline(cin,modificador);
-						L_Tareas->getObjeto(i)->setFecha(modificador);
-						cout<<"Fecha modificada con extito..."<<endl;
+						if(dia>0 && dia<31 && mes>6 &&mes<12 && L_Tareas->getObjeto(i)->getDia()==dia && L_Tareas->getObjeto(i)->getMes()==mes){
+
+										string diaTostring = to_string(dia);
+										string mesTostring= to_string(mes);
+										 if(diaTostring.length()<2){
+
+											 diaTostring="0"+diaTostring;
+
+										 }
+
+										 else if(mesTostring.length()<2){
+											 mesTostring="0"+mesTostring;
+										 }
+										 modificador=diaTostring+"/"+mesTostring+"/2021";
+
+										L_Tareas->getObjeto(i)->setFecha(modificador);
+										
+										cout<<"Fecha modificada con extito..."<<endl;
+										
+						}else{
+							cout<<"Rango de fecha invalida"<<endl;
+						}
 						
 					}
 
 					else if(op==6){
+						cout<<"Hora actual: "<<	L_Tareas->getObjeto(i)->gettHora()<<endl;
 						cout<<"Nueva hora: "<<endl;
 						cin>>modificador;
 						L_Tareas->getObjeto(i)->setHora(modificador);
@@ -1009,7 +1055,7 @@ void modificarTarea(){
 					}
 
 					else if(op==7){
-
+						cout<<"Estado actual: "<<	L_Tareas->getObjeto(i)->gettEstado()<<endl;
 						cout<<"Nuevo Estado: "<<endl;
 						cin>>modificador;
 						L_Tareas->getObjeto(i)->setEstado(modificador);
@@ -1084,7 +1130,7 @@ void linealizacion(){
 
 				if(matrixTarea[j][k][i]==NULL){
 
-					Tarea *nullTarea= new Tarea(-1,-1,"-1","-1","-1","-1","-1","-1");
+					Tarea *nullTarea= new Tarea(-1,-1,"-1","-1","-1","-1","-1","-1",-1,-1);
 					matrixTarea[j][k][i]=nullTarea;
 					cout<<" -1 ";
 
@@ -1355,7 +1401,7 @@ void corregirAlumno(int registro, int  posError){
 					string modificador;
 
 					if(op==1){
-						
+						cout<<"Nombre acual: "<<L_alumnos->getObjeto(i)->getNombre()<<endl;
 						cout<<"Nuevo Nombre: "; 
 						cin.ignore();
 						getline(cin,modificador);
@@ -1369,6 +1415,7 @@ void corregirAlumno(int registro, int  posError){
 					}
 
 					else if(op==2){
+						cout<<"Carnet actual: "<<L_alumnos->getObjeto(i)->getCarnet()<<endl;
 						cout<<"Nuevo carnet: ";cin>>modificador;
 
 						if(modificador.length()==9){
@@ -1386,7 +1433,7 @@ void corregirAlumno(int registro, int  posError){
 					
 					}
 					else if(op==3){
-
+						cout<<"DPI actual: "<<L_alumnos->getObjeto(i)->getDpi()<<endl;
 						cout<<"Nuevo DPI: ";cin>>modificador;
 						if(modificador.length()==13){
 
@@ -1404,7 +1451,7 @@ void corregirAlumno(int registro, int  posError){
 					}
 
 					else if(op==4){
-
+						cout<<"Carrera actual: "<<L_alumnos->getObjeto(i)->getCarrera()<<endl;
 						cout<<"Nueva Carrera: ";
 						cin.ignore();
 						getline(cin,modificador);
@@ -1418,6 +1465,7 @@ void corregirAlumno(int registro, int  posError){
 					}
 
 					else if(op==5){
+						cout<<"Correo actual: "<<L_alumnos->getObjeto(i)->getCorreo()<<endl;
 						cout<<"Nuevo correo: ";cin>>modificador;
 						if(validarMail(modificador)){
 
@@ -1435,7 +1483,7 @@ void corregirAlumno(int registro, int  posError){
 					}
 
 					else if(op==6){
-
+						cout<<"Password actual: "<<L_alumnos->getObjeto(i)->getPassword()<<endl;
 						cout<<"Nuevo password: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setPass(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
@@ -1447,7 +1495,7 @@ void corregirAlumno(int registro, int  posError){
 					}
 
 					else if (op==7){
-
+						cout<<"Creditos actual: "<<L_alumnos->getObjeto(i)->getCredits()<<endl;
 						cout<<"Nuevos Creditos: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setCredits(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
@@ -1458,7 +1506,7 @@ void corregirAlumno(int registro, int  posError){
 					}
 
 					else if(op==8){
-
+						cout<<"Edad actual: "<<L_alumnos->getObjeto(i)->getEdad()<<endl;
 						cout<<"Nueva edad: "; cin>>modificador;
 						L_alumnos->getObjeto(i)->setEdad(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
@@ -1503,78 +1551,110 @@ cout<<"Registro a modificar:"<<registro<<endl;
 
 
 					if(op==1){
-
+						cout<<"Carnet Actual: "<<L_Tareas->getObjeto(i)->gettCarnet()<<endl;
 						cout<<"Nuevo Carnet:"<<endl;
 						cin>>modificador;
-						if(modificador.length()==9){
+						if(modificador.length()==9 && L_alumnos->existCarnet(modificador)){
 
 							L_Tareas->getObjeto(i)->setCarnet(atoi(modificador.c_str()));
 							ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 							cout<<"Carnet modificado con extito..."<<endl;
+							cantErrores--;
+						}else{
+							cout<<"El carnet no existe o su longitud es incorrecta"<<endl;
 						}
 					
 
 					}
 
 					else if(op==2){
-
+						cout<<"Nombre actual: "<<L_Tareas->getObjeto(i)->gettNombreTarea()<<endl;
 						cout<<"Nuevo Nombre: "<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setNombreTarea(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+						cantErrores--;
 						cout<<"Nombre modificado con extito..."<<endl;
 
 					}
 
 					else if(op==3){
+						cout<<"Descripcion actual: "<<L_Tareas->getObjeto(i)->gettDesc()<<endl;
 						cout<<"Nueva descripcion: "<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setDescripcion(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+						cantErrores--;
 						cout<<"Descripcion modificada con extito..."<<endl;
 					}
 
 					else if(op==4){
-
+						cout<<"Materia actual: "<<L_Tareas->getObjeto(i)->gettMateria()<<endl;
 						cout<<"Nueva Materia: "<<endl;
 						cin.ignore();
 						getline(cin,modificador);
 						L_Tareas->getObjeto(i)->setMateria(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+						cantErrores--;
 						cout<<"Materia modificada con extito..."<<endl;
 						
 						
 					}
 
 					else if(op==5){
+						cout<<"los datos en el registro son, dia: "<< L_Tareas->getObjeto(i)->getDia()<<" mes: "<< L_Tareas->getObjeto(i)->getMes()<<endl;
+						int mes,dia=0;
+						cout<<"Nueva Fecha "<<endl;
+						cout<<"ingrese el dia"<<endl;
+						cin>>dia;
+						cout<<"ingrese el mes: "<<endl;
+						cin>>mes;
 
-						cout<<"Nueva Fecha: "<<endl;
-						cin.ignore();
-						getline(cin,modificador);
-						L_Tareas->getObjeto(i)->setFecha(modificador);
-						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
-						cout<<"Fecha modificada con extito..."<<endl;
+						if(dia>0 && dia<31 && mes>6 &&mes<12 && L_Tareas->getObjeto(i)->getDia()==dia && L_Tareas->getObjeto(i)->getMes()==mes){
+
+										string diaTostring = to_string(dia);
+										string mesTostring= to_string(mes);
+										 if(diaTostring.length()<2){
+
+											 diaTostring="0"+diaTostring;
+
+										 }
+
+										 else if(mesTostring.length()<2){
+											 mesTostring="0"+mesTostring;
+										 }
+										 modificador=diaTostring+"/"+mesTostring+"/2021";
+
+										L_Tareas->getObjeto(i)->setFecha(modificador);
+										ColaErrores->getError(posError)->setCorregido(cantErrores-1);
+										cout<<"Fecha modificada con extito..."<<endl;
+										cantErrores--;
+						}else{
+							cout<<"Rango de fecha invalida"<<endl;
+						}
 						
 					}
 
 					else if(op==6){
+						cout<<"Hora actual "<<L_Tareas->getObjeto(i)->gettHora()<<endl;
 						cout<<"Nueva hora: "<<endl;
 						cin>>modificador;
 						L_Tareas->getObjeto(i)->setHora(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Hora modificada con extito..."<<endl;
+						cantErrores--;
 					}
 
 					else if(op==7){
-
+						cout<<"Estado actual: "<<L_Tareas->getObjeto(i)->gettEstado()<<endl;
 						cout<<"Nuevo Estado: "<<endl;
 						cin>>modificador;
 						L_Tareas->getObjeto(i)->setEstado(modificador);
 						ColaErrores->getError(posError)->setCorregido(cantErrores-1);
 						cout<<"Estado modificada con extito..."<<endl;
-						
+						cantErrores--;
 					}
 			}
 
@@ -1732,13 +1812,13 @@ void generarArchivoSalida(){
 		
 
 		archivo.close();
-
+		cout<<"salida SmartClass gtenerado con exito!"<<endl;
 
 	}
 
 
 
-	cout<<"salida SmartClass gtenerado con exito!"<<endl;
+	
 }
 
 
