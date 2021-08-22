@@ -1207,8 +1207,16 @@ void mostrarEstudiante(){
 
 		cout<<"*/*/*/*/*/*/ LISTA DE ESTUDIANTES */*/*/*/*/*/*/*/*"<<endl;
 	for (int i = 0; i < L_alumnos->getSize(); i++){
-
-		cout<<"Estudiante ["<<i<<"] "<<L_alumnos->getObjeto(i)->getCarnet()<<endl;
+		cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<["<<i+1<<"]<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"<<endl;
+		cout<<"Carnet:"<<L_alumnos->getObjeto(i)->getCarnet()<<endl;
+		cout<<"Dpi: "<<L_alumnos->getObjeto(i)->getDpi()<<endl;
+		cout<<"Nombre: "<<L_alumnos->getObjeto(i)->getNombre()<<endl;
+		cout<<"Carrera: "<<L_alumnos->getObjeto(i)->getCarrera()<<endl;
+		cout<<"Correo: "<<L_alumnos->getObjeto(i)->getCorreo()<<endl;
+		cout<<"Password: "<<L_alumnos->getObjeto(i)->getPassword()<<endl;
+		cout<<"creditos: "<<L_alumnos->getObjeto(i)->getCredits()<<endl;
+		cout<<"Edad: "<<L_alumnos->getObjeto(i)->getEdad()<<endl;
+		cout<<">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"<<endl;
 		
 	}
 	cout<<"*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*"<<endl;
@@ -1227,7 +1235,16 @@ void mostrarTarea(){
 		cout<<"*/*/*/*/*/*/*/*/*/* LISTA DE TAREAS /*/*/*/*/*/*/*/*/*/*/*/"<<endl;
 	for (int i = 0; i < L_Tareas->getSize(); i++)
 	{
-		cout<<"Tarea:["<<i<<"] id:"<<L_Tareas->getObjeto(i)->gettIdTarea()<<" Nombre: "<<L_Tareas->getObjeto(i)->gettNombreTarea()<<" posLineal:"<<L_Tareas->getNodeIndex(i)<<endl;
+		cout<<">>>>>>>>>>>>>>>>>>>>>>["<<i+1<<"]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"<<endl;
+		cout<<"Id Tarea: "<<L_Tareas->getObjeto(i)->gettIdTarea()<<endl;
+		cout<<"carnet: "<<L_Tareas->getObjeto(i)->gettCarnet()<<endl;
+		cout<<"Nombre: "<<L_Tareas->getObjeto(i)->gettNombreTarea()<<endl;
+		cout<<"Materia: "<<L_Tareas->getObjeto(i)->gettMateria()<<endl;
+		cout<<"Descripcion: "<<L_Tareas->getObjeto(i)->gettDesc()<<endl;
+		cout<<"fecha: "<<L_Tareas->getObjeto(i)->gettFecha()<<endl;
+		cout<<"Hora: "<<L_Tareas->getObjeto(i)->gettHora()<<endl;
+		cout<<"Estado: "<<L_Tareas->getObjeto(i)->gettEstado()<<endl;
+		cout<<"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"<<endl;
 	}
 
 	cout<<"*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/"<<endl;
