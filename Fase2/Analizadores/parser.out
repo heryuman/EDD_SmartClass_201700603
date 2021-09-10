@@ -1,0 +1,468 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> INICIO
+Rule 1     INICIO -> QO ELEMENTS QC elementos QO DOLLAR ELEMENTS QC
+Rule 2     elementos -> elementos elemento
+Rule 3     elementos -> elemento
+Rule 4     elemento -> QO ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC
+Rule 5     tip_elem -> TYPE EQUAL CHAIN
+Rule 6     items -> items item
+Rule 7     items -> item
+Rule 8     item -> QO T_ITEM tipoItem EQUAL valorItem DOLLAR QC
+Rule 9     valorItem -> CHAIN
+Rule 10    valorItem -> NUMBER
+Rule 11    tipoItem -> CARNET
+Rule 12    tipoItem -> DPI
+Rule 13    tipoItem -> NOMBRE
+Rule 14    tipoItem -> CARRERA
+Rule 15    tipoItem -> PASSWORD
+Rule 16    tipoItem -> CREDITOS
+Rule 17    tipoItem -> EDAD
+Rule 18    tipoItem -> CORREO
+Rule 19    tipoItem -> DESC
+Rule 20    tipoItem -> MATERIA
+Rule 21    tipoItem -> FECHA
+Rule 22    tipoItem -> HORA
+Rule 23    tipoItem -> ESTADO
+Rule 24    tipoItem -> ID
+
+Terminals, with rules where they appear
+
+CARNET               : 11
+CARRERA              : 14
+CHAIN                : 5 9
+CORREO               : 18
+CREDITOS             : 16
+DESC                 : 19
+DOLLAR               : 1 4 8
+DPI                  : 12
+EDAD                 : 17
+ELEMENT              : 4 4
+ELEMENTS             : 1 1
+EQUAL                : 5 8
+ESTADO               : 23
+FECHA                : 21
+HORA                 : 22
+ID                   : 24
+MATERIA              : 20
+NOMBRE               : 13
+NUMBER               : 10
+PASSWORD             : 15
+QC                   : 1 1 4 4 8
+QO                   : 1 1 4 4 8
+TYPE                 : 5
+T_ITEM               : 8
+error                : 
+
+Nonterminals, with rules where they appear
+
+INICIO               : 0
+elemento             : 2 3
+elementos            : 1 2
+item                 : 6 7
+items                : 4 6
+tip_elem             : 4
+tipoItem             : 8
+valorItem            : 8
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . INICIO
+    (1) INICIO -> . QO ELEMENTS QC elementos QO DOLLAR ELEMENTS QC
+
+    QO              shift and go to state 2
+
+    INICIO                         shift and go to state 1
+
+state 1
+
+    (0) S' -> INICIO .
+
+
+
+state 2
+
+    (1) INICIO -> QO . ELEMENTS QC elementos QO DOLLAR ELEMENTS QC
+
+    ELEMENTS        shift and go to state 3
+
+
+state 3
+
+    (1) INICIO -> QO ELEMENTS . QC elementos QO DOLLAR ELEMENTS QC
+
+    QC              shift and go to state 4
+
+
+state 4
+
+    (1) INICIO -> QO ELEMENTS QC . elementos QO DOLLAR ELEMENTS QC
+    (2) elementos -> . elementos elemento
+    (3) elementos -> . elemento
+    (4) elemento -> . QO ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC
+
+    QO              shift and go to state 5
+
+    elementos                      shift and go to state 6
+    elemento                       shift and go to state 7
+
+state 5
+
+    (4) elemento -> QO . ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC
+
+    ELEMENT         shift and go to state 8
+
+
+state 6
+
+    (1) INICIO -> QO ELEMENTS QC elementos . QO DOLLAR ELEMENTS QC
+    (2) elementos -> elementos . elemento
+    (4) elemento -> . QO ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC
+
+    QO              shift and go to state 9
+
+    elemento                       shift and go to state 10
+
+state 7
+
+    (3) elementos -> elemento .
+
+    QO              reduce using rule 3 (elementos -> elemento .)
+
+
+state 8
+
+    (4) elemento -> QO ELEMENT . tip_elem QC items QO DOLLAR ELEMENT QC
+    (5) tip_elem -> . TYPE EQUAL CHAIN
+
+    TYPE            shift and go to state 12
+
+    tip_elem                       shift and go to state 11
+
+state 9
+
+    (1) INICIO -> QO ELEMENTS QC elementos QO . DOLLAR ELEMENTS QC
+    (4) elemento -> QO . ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC
+
+    DOLLAR          shift and go to state 13
+    ELEMENT         shift and go to state 8
+
+
+state 10
+
+    (2) elementos -> elementos elemento .
+
+    QO              reduce using rule 2 (elementos -> elementos elemento .)
+
+
+state 11
+
+    (4) elemento -> QO ELEMENT tip_elem . QC items QO DOLLAR ELEMENT QC
+
+    QC              shift and go to state 14
+
+
+state 12
+
+    (5) tip_elem -> TYPE . EQUAL CHAIN
+
+    EQUAL           shift and go to state 15
+
+
+state 13
+
+    (1) INICIO -> QO ELEMENTS QC elementos QO DOLLAR . ELEMENTS QC
+
+    ELEMENTS        shift and go to state 16
+
+
+state 14
+
+    (4) elemento -> QO ELEMENT tip_elem QC . items QO DOLLAR ELEMENT QC
+    (6) items -> . items item
+    (7) items -> . item
+    (8) item -> . QO T_ITEM tipoItem EQUAL valorItem DOLLAR QC
+
+    QO              shift and go to state 17
+
+    items                          shift and go to state 18
+    item                           shift and go to state 19
+
+state 15
+
+    (5) tip_elem -> TYPE EQUAL . CHAIN
+
+    CHAIN           shift and go to state 20
+
+
+state 16
+
+    (1) INICIO -> QO ELEMENTS QC elementos QO DOLLAR ELEMENTS . QC
+
+    QC              shift and go to state 21
+
+
+state 17
+
+    (8) item -> QO . T_ITEM tipoItem EQUAL valorItem DOLLAR QC
+
+    T_ITEM          shift and go to state 22
+
+
+state 18
+
+    (4) elemento -> QO ELEMENT tip_elem QC items . QO DOLLAR ELEMENT QC
+    (6) items -> items . item
+    (8) item -> . QO T_ITEM tipoItem EQUAL valorItem DOLLAR QC
+
+    QO              shift and go to state 23
+
+    item                           shift and go to state 24
+
+state 19
+
+    (7) items -> item .
+
+    QO              reduce using rule 7 (items -> item .)
+
+
+state 20
+
+    (5) tip_elem -> TYPE EQUAL CHAIN .
+
+    QC              reduce using rule 5 (tip_elem -> TYPE EQUAL CHAIN .)
+
+
+state 21
+
+    (1) INICIO -> QO ELEMENTS QC elementos QO DOLLAR ELEMENTS QC .
+
+    $end            reduce using rule 1 (INICIO -> QO ELEMENTS QC elementos QO DOLLAR ELEMENTS QC .)
+
+
+state 22
+
+    (8) item -> QO T_ITEM . tipoItem EQUAL valorItem DOLLAR QC
+    (11) tipoItem -> . CARNET
+    (12) tipoItem -> . DPI
+    (13) tipoItem -> . NOMBRE
+    (14) tipoItem -> . CARRERA
+    (15) tipoItem -> . PASSWORD
+    (16) tipoItem -> . CREDITOS
+    (17) tipoItem -> . EDAD
+    (18) tipoItem -> . CORREO
+    (19) tipoItem -> . DESC
+    (20) tipoItem -> . MATERIA
+    (21) tipoItem -> . FECHA
+    (22) tipoItem -> . HORA
+    (23) tipoItem -> . ESTADO
+    (24) tipoItem -> . ID
+
+    CARNET          shift and go to state 26
+    DPI             shift and go to state 27
+    NOMBRE          shift and go to state 28
+    CARRERA         shift and go to state 29
+    PASSWORD        shift and go to state 30
+    CREDITOS        shift and go to state 31
+    EDAD            shift and go to state 32
+    CORREO          shift and go to state 33
+    DESC            shift and go to state 34
+    MATERIA         shift and go to state 35
+    FECHA           shift and go to state 36
+    HORA            shift and go to state 37
+    ESTADO          shift and go to state 38
+    ID              shift and go to state 39
+
+    tipoItem                       shift and go to state 25
+
+state 23
+
+    (4) elemento -> QO ELEMENT tip_elem QC items QO . DOLLAR ELEMENT QC
+    (8) item -> QO . T_ITEM tipoItem EQUAL valorItem DOLLAR QC
+
+    DOLLAR          shift and go to state 40
+    T_ITEM          shift and go to state 22
+
+
+state 24
+
+    (6) items -> items item .
+
+    QO              reduce using rule 6 (items -> items item .)
+
+
+state 25
+
+    (8) item -> QO T_ITEM tipoItem . EQUAL valorItem DOLLAR QC
+
+    EQUAL           shift and go to state 41
+
+
+state 26
+
+    (11) tipoItem -> CARNET .
+
+    EQUAL           reduce using rule 11 (tipoItem -> CARNET .)
+
+
+state 27
+
+    (12) tipoItem -> DPI .
+
+    EQUAL           reduce using rule 12 (tipoItem -> DPI .)
+
+
+state 28
+
+    (13) tipoItem -> NOMBRE .
+
+    EQUAL           reduce using rule 13 (tipoItem -> NOMBRE .)
+
+
+state 29
+
+    (14) tipoItem -> CARRERA .
+
+    EQUAL           reduce using rule 14 (tipoItem -> CARRERA .)
+
+
+state 30
+
+    (15) tipoItem -> PASSWORD .
+
+    EQUAL           reduce using rule 15 (tipoItem -> PASSWORD .)
+
+
+state 31
+
+    (16) tipoItem -> CREDITOS .
+
+    EQUAL           reduce using rule 16 (tipoItem -> CREDITOS .)
+
+
+state 32
+
+    (17) tipoItem -> EDAD .
+
+    EQUAL           reduce using rule 17 (tipoItem -> EDAD .)
+
+
+state 33
+
+    (18) tipoItem -> CORREO .
+
+    EQUAL           reduce using rule 18 (tipoItem -> CORREO .)
+
+
+state 34
+
+    (19) tipoItem -> DESC .
+
+    EQUAL           reduce using rule 19 (tipoItem -> DESC .)
+
+
+state 35
+
+    (20) tipoItem -> MATERIA .
+
+    EQUAL           reduce using rule 20 (tipoItem -> MATERIA .)
+
+
+state 36
+
+    (21) tipoItem -> FECHA .
+
+    EQUAL           reduce using rule 21 (tipoItem -> FECHA .)
+
+
+state 37
+
+    (22) tipoItem -> HORA .
+
+    EQUAL           reduce using rule 22 (tipoItem -> HORA .)
+
+
+state 38
+
+    (23) tipoItem -> ESTADO .
+
+    EQUAL           reduce using rule 23 (tipoItem -> ESTADO .)
+
+
+state 39
+
+    (24) tipoItem -> ID .
+
+    EQUAL           reduce using rule 24 (tipoItem -> ID .)
+
+
+state 40
+
+    (4) elemento -> QO ELEMENT tip_elem QC items QO DOLLAR . ELEMENT QC
+
+    ELEMENT         shift and go to state 42
+
+
+state 41
+
+    (8) item -> QO T_ITEM tipoItem EQUAL . valorItem DOLLAR QC
+    (9) valorItem -> . CHAIN
+    (10) valorItem -> . NUMBER
+
+    CHAIN           shift and go to state 44
+    NUMBER          shift and go to state 45
+
+    valorItem                      shift and go to state 43
+
+state 42
+
+    (4) elemento -> QO ELEMENT tip_elem QC items QO DOLLAR ELEMENT . QC
+
+    QC              shift and go to state 46
+
+
+state 43
+
+    (8) item -> QO T_ITEM tipoItem EQUAL valorItem . DOLLAR QC
+
+    DOLLAR          shift and go to state 47
+
+
+state 44
+
+    (9) valorItem -> CHAIN .
+
+    DOLLAR          reduce using rule 9 (valorItem -> CHAIN .)
+
+
+state 45
+
+    (10) valorItem -> NUMBER .
+
+    DOLLAR          reduce using rule 10 (valorItem -> NUMBER .)
+
+
+state 46
+
+    (4) elemento -> QO ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC .
+
+    QO              reduce using rule 4 (elemento -> QO ELEMENT tip_elem QC items QO DOLLAR ELEMENT QC .)
+
+
+state 47
+
+    (8) item -> QO T_ITEM tipoItem EQUAL valorItem DOLLAR . QC
+
+    QC              shift and go to state 48
+
+
+state 48
+
+    (8) item -> QO T_ITEM tipoItem EQUAL valorItem DOLLAR QC .
+
+    QO              reduce using rule 8 (item -> QO T_ITEM tipoItem EQUAL valorItem DOLLAR QC .)
+

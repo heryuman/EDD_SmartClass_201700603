@@ -2,50 +2,35 @@ digraph G{
  rankdir = LR; 
 node [shape=box]; 
 compound=true; 
-"0x1d1b20"[label="idError: 1
- tipo: Estudiante
- descripcion: El correo,carnet y dpi poseen valores incorrectos
- NoRegistro: 1"];
-"0x1d7570"[label="idError: 2
+"0x10c1ab0"[label="idError: 1
  tipo: Estudiante
  descripcion: La cantidad de digitos del Carnet es incorrecta
- NoRegistro: 3"];
-"0x1d78a0"[label="idError: 3
- tipo: Estudiante
- descripcion: El formato del correo es incorrecto
- NoRegistro: 5"];
-"0x1d77b0"[label="idError: 4
- tipo: Estudiante
- descripcion: La cantidad de digitos del Carnet es incorrecta
- NoRegistro: 6"];
-"0x1d9b60"[label="idError: 5
- tipo: Estudiante
- descripcion: La cantidad de digitos del Carnet es incorrecta
- NoRegistro: 8"];
-"0x1d9980"[label="idError: 6
+ NoRegistro: 2"];
+"0x10c1d90"[label="idError: 2
  tipo: Estudiante
  descripcion: La cantidad de digitos del Cui es incorrecta
- NoRegistro: 9"];
-"0x1d9e00"[label="idError: 7
- tipo: Tarea
- descripcion: Error, Carnet inexistente
- NoRegistro: 2"];
-"0x1d9cb0"[label="idError: 8
- tipo: Tarea
- descripcion: Error, Carnet inexistente
+ NoRegistro: 3"];
+"0x10c8e20"[label="idError: 3
+ tipo: Estudiante
+ descripcion: El formato del correo es incorrecto
  NoRegistro: 4"];
-"0x1d9e30"[label="idError: 9
+"0x687e50"[label="idError: 4
+ tipo: Tarea
+ descripcion: Error, formato de fecha o fecha incorrecta
+ NoRegistro: 1"];
+"0x688470"[label="idError: 5
  tipo: Tarea
  descripcion: Error, Carnet inexistente
- NoRegistro: 8"];
-"0x1d1b20" -> "0x1d7570";
-"0x1d7570" -> "0x1d78a0";
-"0x1d78a0" -> "0x1d77b0";
-"0x1d77b0" -> "0x1d9b60";
-"0x1d9b60" -> "0x1d9980";
-"0x1d9980" -> "0x1d9e00";
-"0x1d9e00" -> "0x1d9cb0";
-"0x1d9cb0" -> "0x1d9e30";
+ NoRegistro: 11"];
+"0x6a4b00"[label="idError: 6
+ tipo: Tarea
+ descripcion: Error, Carnet inexistente
+ NoRegistro: 267"];
+"0x10c1ab0" -> "0x10c1d90";
+"0x10c1d90" -> "0x10c8e20";
+"0x10c8e20" -> "0x687e50";
+"0x687e50" -> "0x688470";
+"0x688470" -> "0x6a4b00";
 
 }
 

@@ -59,6 +59,9 @@ int main(){
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Estudiantes2.csv
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Tareas.csv
 	//C:/Users/ASUS/Documents/ProyectosEDDS2021/Entrada/Tareas2.csv
+	//C:/Users/ASUS/Documents/ProyectosEDDS2021/entradascalificacion/salida_tareas.csv
+	//C:/Users/ASUS/Documents/ProyectosEDDS2021/entradascalificacion/prueba_estudiantes.csv
+
 	menu();
 
 
@@ -374,7 +377,7 @@ void cargarAlumno(){
 
 bool validarMail(const string& mail){
 
-	const regex expr("[a-z0-9]+(.[a-z0-9]+)*@[a-z0-9]+(.[a-z0-9]+)*(.[a-z]{2,4})");
+	const regex expr("[A-Za-z0-9]+(.[A-Za-z0-9]+)*@[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*(.[A-Za-z]{2,4})");
 	
 	return regex_match(mail,expr);
 

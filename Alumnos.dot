@@ -1,0 +1,607 @@
+digraph G{
+ rankdir = LR; 
+node [shape=box]; 
+compound=true; 
+"0x1c2020"[label="Carnet:201183728
+ dpi 2050740201006
+ nombre:Alvin Huckett
+ carrera:Ingenieria Quimica
+ pass: DGHS2Xi
+ creditos: 222
+ edad: 20"];
+"0x1c1a80"[label="Carnet:2010244
+ dpi 5970926381748
+ nombre:Nertie Laurenzi
+ carrera:Ingenieria Mecanica Industrial
+ pass: 198yxel
+ creditos: 139
+ edad: 19"];
+"0x1c1980"[label="Carnet:201210811
+ dpi 879575888
+ nombre:Lamont Barthrup
+ carrera:Ingenieria Mecanica
+ pass: j60uy9
+ creditos: 53
+ edad: 25"];
+"0x1c8df0"[label="Carnet:201315898
+ dpi 5531711621404
+ nombre:Bernadette Pescud
+ carrera:Ingenieria Mecanica Industrial
+ pass: TXz6b
+ creditos: 190
+ edad: 28"];
+"0x1c8e20"[label="Carnet:201582352
+ dpi 4172564417242
+ nombre:Bobina Delacroux
+ carrera:Ingenieria Mecanica Industrial
+ pass: m6ILxd
+ creditos: 113
+ edad: 23"];
+"0x1c8c70"[label="Carnet:201115140
+ dpi 8429519350118
+ nombre:Pebrook Gircke
+ carrera:Ingenieria Mecanica
+ pass: Ysgy3Vt
+ creditos: 172
+ edad: 19"];
+"0x1c8cd0"[label="Carnet:201350393
+ dpi 9029374304090
+ nombre:Laurie Tumilty
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: UKazTS0
+ creditos: 124
+ edad: 20"];
+"0x6c30f0"[label="Carnet:201698163
+ dpi 8010354636352
+ nombre:Barn Killingbeck
+ carrera:Ingenieria Mecanica Electrica
+ pass: 38KWHL
+ creditos: 130
+ edad: 20"];
+"0x6c2eb0"[label="Carnet:201402462
+ dpi 3594915493584
+ nombre:Joscelin Fewings
+ carrera:Ingenieria Mecanica
+ pass: tF7ZroZ
+ creditos: 202
+ edad: 25"];
+"0x6c2f10"[label="Carnet:201643353
+ dpi 9692561360208
+ nombre:Llywellyn Woodnutt
+ carrera:Ingenieria Mecanica Electrica
+ pass: ui708GE
+ creditos: 44
+ edad: 27"];
+"0x6c2f70"[label="Carnet:201043689
+ dpi 0714796787404
+ nombre:Ardene Benediktovich
+ carrera:Ingenieria Mecanica
+ pass: muiPC17
+ creditos: 13
+ edad: 23"];
+"0x6c3180"[label="Carnet:201489697
+ dpi 3310894947855
+ nombre:Judye Rossborough
+ carrera:Ingenieria Mecanica Electrica
+ pass: k9oGtrw
+ creditos: 3
+ edad: 26"];
+"0x6c3210"[label="Carnet:201818908
+ dpi 2689202578134
+ nombre:Wilbur Alberts
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: SSeRj8d
+ creditos: 64
+ edad: 18"];
+"0x6c2cd0"[label="Carnet:201816850
+ dpi 0154497044345
+ nombre:Emili Palleske
+ carrera:Ingenieria Mecanica
+ pass: 17x8L
+ creditos: 28
+ edad: 21"];
+"0x6c2be0"[label="Carnet:201232485
+ dpi 3762365704505
+ nombre:Vivian Currer
+ carrera:Ingenieria Quimica
+ pass: xe7yeho
+ creditos: 218
+ edad: 28"];
+"0x6c2e80"[label="Carnet:201131811
+ dpi 3347258005328
+ nombre:Eloise Trevarthen
+ carrera:Ingenieria Mecanica
+ pass: B8FP4
+ creditos: 201
+ edad: 22"];
+"0x6c3060"[label="Carnet:201476680
+ dpi 4293824642888
+ nombre:Kim Westphal
+ carrera:Ingenieria Quimica
+ pass: qtry5
+ creditos: 159
+ edad: 19"];
+"0x1c8c10"[label="Carnet:201511649
+ dpi 5648266954532
+ nombre:Aylmar Raubenheimer
+ carrera:Ingenieria Mecanica
+ pass: 76816q
+ creditos: 163
+ edad: 23"];
+"0x6c3e00"[label="Carnet:201255643
+ dpi 7672150791181
+ nombre:Alvin Huckett
+ carrera:Ingenieria Industrial
+ pass: g4X4Ak
+ creditos: 65
+ edad: 29"];
+"0x6c3c50"[label="Carnet:201947729
+ dpi 1430797138430
+ nombre:Camila Dibbert
+ carrera:Ingenieria Mecanica Industrial
+ pass: b4wdeP
+ creditos: 188
+ edad: 21"];
+"0x6c3740"[label="Carnet:201173540
+ dpi 3235002226847
+ nombre:Alvin Huckett
+ carrera:Ingenieria Industrial
+ pass: ITrpSM0
+ creditos: 104
+ edad: 22"];
+"0x6c3950"[label="Carnet:201704168
+ dpi 3379162068993
+ nombre:Tim Goldspink
+ carrera:Ingenieria Mecanica Electrica
+ pass: Cmg7g
+ creditos: 137
+ edad: 19"];
+"0x6c3ec0"[label="Carnet:201661519
+ dpi 9302712249273
+ nombre:Harvey Darbyshire
+ carrera:Ingenieria Mecanica
+ pass: Asv30
+ creditos: 55
+ edad: 26"];
+"0x6c3800"[label="Carnet:201309890
+ dpi 6364119505269
+ nombre:Grayce Poltone
+ carrera:Ingenieria Industrial
+ pass: bCp3F57
+ creditos: 133
+ edad: 18"];
+"0x6c3b90"[label="Carnet:201740604
+ dpi 2625352358554
+ nombre:Llywellyn Woodnutt
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: Bk8jU
+ creditos: 3
+ edad: 19"];
+"0x6c3cb0"[label="Carnet:201646518
+ dpi 8696013129504
+ nombre:Aylmar Raubenheimer
+ carrera:Ingenieria Mecanica Electrica
+ pass: 3j9MHF
+ creditos: 192
+ edad: 22"];
+"0x6c3a10"[label="Carnet:201766242
+ dpi 3780452896411
+ nombre:Franky Viney
+ carrera:Ingenieria Mecanica Electrica
+ pass: UC1hKp
+ creditos: 164
+ edad: 20"];
+"0x6c3a70"[label="Carnet:201537627
+ dpi 6000394094296
+ nombre:Aylmar Raubenheimer
+ carrera:Ingenieria Mecanica Electrica
+ pass: 82MID7
+ creditos: 3
+ edad: 24"];
+"0x6c3bc0"[label="Carnet:201327675
+ dpi 5005953751371
+ nombre:Lamont Barthrup
+ carrera:Ingenieria Mecanica Electrica
+ pass: CAt1n
+ creditos: 171
+ edad: 20"];
+"0x6c3150"[label="Carnet:201897987
+ dpi 2193345266141
+ nombre:Michelle Glanister
+ carrera:Ingenieria Quimica
+ pass: 8cIUD
+ creditos: 226
+ edad: 25"];
+"0x6c4070"[label="Carnet:201500866
+ dpi 7040168688236
+ nombre:Claybourne Nelmes
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: 4xCS04
+ creditos: 121
+ edad: 19"];
+"0x6c46a0"[label="Carnet:201359507
+ dpi 6474775706799
+ nombre:Olly Brunelleschi
+ carrera:Ingenieria Quimica
+ pass: rdjy6j
+ creditos: 52
+ edad: 22"];
+"0x6c43a0"[label="Carnet:201954202
+ dpi 2496399691941
+ nombre:Eloise Trevarthen
+ carrera:Ingenieria Mecanica Industrial
+ pass: 6RNgz
+ creditos: 196
+ edad: 29"];
+"0x6c42e0"[label="Carnet:201412244
+ dpi 3239472177167
+ nombre:Eba Keitley
+ carrera:Ingenieria Industrial
+ pass: BRdQj
+ creditos: 238
+ edad: 22"];
+"0x6c3fb0"[label="Carnet:201234795
+ dpi 9082300809939
+ nombre:Wilbur Alberts
+ carrera:Ingenieria Mecanica Industrial
+ pass: 0oXnv
+ creditos: 80
+ edad: 29"];
+"0x6c4310"[label="Carnet:201594265
+ dpi 2831630574772
+ nombre:Ardene Benediktovich
+ carrera:Ingenieria Mecanica Industrial
+ pass: 15Asd
+ creditos: 242
+ edad: 26"];
+"0x6c4460"[label="Carnet:201790782
+ dpi 3168522176927
+ nombre:Claybourne Nelmes
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: d70Vi
+ creditos: 0
+ edad: 22"];
+"0x6c3f80"[label="Carnet:201374369
+ dpi 8311431297185
+ nombre:Lionel Messi
+ carrera:Ingenieria Mecanica Industrial
+ pass: cVzaR8
+ creditos: 93
+ edad: 20"];
+"0x6c44f0"[label="Carnet:201709702
+ dpi 4245428187625
+ nombre:Dillon Blandamere
+ carrera:Ingenieria Industrial
+ pass: 3f5qj
+ creditos: 84
+ edad: 20"];
+"0x6c41f0"[label="Carnet:201635991
+ dpi 2702608963916
+ nombre:Boycie Langlais
+ carrera:Ingenieria Industrial
+ pass: vCGgb2
+ creditos: 113
+ edad: 29"];
+"0x6c40d0"[label="Carnet:201389879
+ dpi 1332692632257
+ nombre:Darn Studdal
+ carrera:Ingenieria Industrial
+ pass: r80ja
+ creditos: 244
+ edad: 23"];
+"0x6c3d70"[label="Carnet:201375524
+ dpi 3164173770900
+ nombre:Tim Goldspink
+ carrera:Ingenieria Quimica
+ pass: Nu96Sq3
+ creditos: 1
+ edad: 20"];
+"0x6c47f0"[label="Carnet:201428558
+ dpi 8783633019549
+ nombre:Llywellyn Woodnutt
+ carrera:Ingenieria Mecanica
+ pass: qWlnP7
+ creditos: 5
+ edad: 24"];
+"0x6c4ee0"[label="Carnet:201933753
+ dpi 6467642780621
+ nombre:Bobina Delacroux
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: 8DGPFmN
+ creditos: 147
+ edad: 25"];
+"0x6c4790"[label="Carnet:201774497
+ dpi 6327689577005
+ nombre:Llywellyn Woodnutt
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: RN1Dgbd
+ creditos: 90
+ edad: 26"];
+"0x6c4e50"[label="Carnet:201145786
+ dpi 4820546644233
+ nombre:Harvey Darbyshire
+ carrera:Ingenieria Mecanica
+ pass: uJW2Q
+ creditos: 88
+ edad: 22"];
+"0x6c4e20"[label="Carnet:201509061
+ dpi 3761268073554
+ nombre:Tim Goldspink
+ carrera:Ingenieria Mecanica Electrica
+ pass: DPx0LQ0
+ creditos: 108
+ edad: 23"];
+"0x6c4d00"[label="Carnet:201068965
+ dpi 7207003476187
+ nombre:Tim Goldspink
+ carrera:Ingenieria Mecanica Industrial
+ pass: MF4vc6
+ creditos: 112
+ edad: 26"];
+"0x6c4a30"[label="Carnet:201991578
+ dpi 7437219208336
+ nombre:Olly Brunelleschi
+ carrera:Ingenieria Mecanica Industrial
+ pass: H1xi3
+ creditos: 102
+ edad: 29"];
+"0x6c4760"[label="Carnet:201803912
+ dpi 3995410773680
+ nombre:Emili Palleske
+ carrera:Ingenieria Mecanica Industrial
+ pass: ODYgI
+ creditos: 205
+ edad: 26"];
+"0x6c4970"[label="Carnet:201921767
+ dpi 5042024988582
+ nombre:Consolata Reskelly
+ carrera:Ingenieria Mecanica
+ pass: cBP1bt7
+ creditos: 200
+ edad: 27"];
+"0x6c4b80"[label="Carnet:201157605
+ dpi 2503385887437
+ nombre:Alonzo Seagrove
+ carrera:Ingenieria Industrial
+ pass: 92V6h
+ creditos: 226
+ edad: 22"];
+"0x6c4850"[label="Carnet:201761573
+ dpi 5372214388411
+ nombre:Alonzo Seagrove
+ carrera:Ingenieria Quimica
+ pass: 24ldm
+ creditos: 51
+ edad: 22"];
+"0x6c4640"[label="Carnet:201825364
+ dpi 6772854332066
+ nombre:Phillis Syrie
+ carrera:Ingenieria Quimica
+ pass: rU2QYr
+ creditos: 111
+ edad: 28"];
+"0x6c5210"[label="Carnet:201022466
+ dpi 0579054127201
+ nombre:Wash Sedgemore
+ carrera:Ingenieria Mecanica Electrica
+ pass: 1E8vp8
+ creditos: 130
+ edad: 29"];
+"0x6c52a0"[label="Carnet:201006295
+ dpi 6483009710551
+ nombre:Roderigo Gomme
+ carrera:Ingenieria Mecanica Electrica
+ pass: w1E8BW
+ creditos: 23
+ edad: 24"];
+"0x6c5630"[label="Carnet:201116100
+ dpi 7247421869888
+ nombre:Franky Viney
+ carrera:Ingenieria Quimica
+ pass: 5K0p7N
+ creditos: 42
+ edad: 26"];
+"0x6c5030"[label="Carnet:201773473
+ dpi 1563507262381
+ nombre:Krystal Crellin
+ carrera:Ingenieria Mecanica
+ pass: 3KgBk
+ creditos: 88
+ edad: 26"];
+"0x6c5510"[label="Carnet:201119966
+ dpi 9030770152211
+ nombre:Michelle Glanister
+ carrera:Ingenieria Industrial
+ pass: J9Tq39
+ creditos: 225
+ edad: 23"];
+"0x6c54b0"[label="Carnet:201669286
+ dpi 3126321523297
+ nombre:Tim Goldspink
+ carrera:Ingenieria Mecanica
+ pass: QQNPe8
+ creditos: 187
+ edad: 21"];
+"0x6c50f0"[label="Carnet:201147451
+ dpi 9093933675701
+ nombre:Ellerey Sherwyn
+ carrera:Ingenieria Mecanica Electrica
+ pass: 20H3Hx
+ creditos: 80
+ edad: 23"];
+"0x6c5390"[label="Carnet:201864201
+ dpi 8208413026556
+ nombre:Claybourne Nelmes
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: 69548z
+ creditos: 25
+ edad: 25"];
+"0x6c54e0"[label="Carnet:201667272
+ dpi 9443025623424
+ nombre:Adriaens Timms
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: Pe8Ucp
+ creditos: 237
+ edad: 21"];
+"0x6c5000"[label="Carnet:201668149
+ dpi 6435886693765
+ nombre:Harvey Darbyshire
+ carrera:Ingenieria Mecanica
+ pass: u4jxe57
+ creditos: 31
+ edad: 27"];
+"0x6c5540"[label="Carnet:201764124
+ dpi 6773833243077
+ nombre:Harvey Darbyshire
+ carrera:Ingenieria Industrial
+ pass: 0DDF8
+ creditos: 219
+ edad: 21"];
+"0x6c77f0"[label="Carnet:201516603
+ dpi 4062043125856
+ nombre:Aylmar Raubenheimer
+ carrera:Ingenieria Mecanica Industrial
+ pass: Sv4HFP
+ creditos: 168
+ edad: 19"];
+"0x6c7e20"[label="Carnet:201327079
+ dpi 8292286385716
+ nombre:Franky Viney
+ carrera:Ingenieria Industrial
+ pass: GhhLi
+ creditos: 179
+ edad: 21"];
+"0x6c7970"[label="Carnet:201906670
+ dpi 2245119831085
+ nombre:Franky Viney
+ carrera:Ingenieria Mecanica Industrial
+ pass: PCAanL
+ creditos: 198
+ edad: 23"];
+"0x6c7b80"[label="Carnet:201461415
+ dpi 8579079230016
+ nombre:Roderigo Gomme
+ carrera:Ingenieria Mecanica Industrial
+ pass: 6GEfOg
+ creditos: 113
+ edad: 20"];
+"0x6c7cd0"[label="Carnet:201009015
+ dpi 1962623323417
+ nombre:Afton Hounson
+ carrera:Ingenieria Mecanica
+ pass: PQvEC5
+ creditos: 12
+ edad: 23"];
+"0x6c7d30"[label="Carnet:201137248
+ dpi 4264540703955
+ nombre:Eba Keitley
+ carrera:Ingenieria Mecanica
+ pass: K8ZY0mI
+ creditos: 35
+ edad: 22"];
+"0x6c7c10"[label="Carnet:201339503
+ dpi 1169570189320
+ nombre:Drusilla Louca
+ carrera:Ingenieria Mecanica Industrial
+ pass: xW0NS
+ creditos: 41
+ edad: 29"];
+"0x6c7880"[label="Carnet:201110247
+ dpi 7882408800987
+ nombre:Aylmar Raubenheimer
+ carrera:Ingenieria Mecanica Electrica
+ pass: oKlY9O7
+ creditos: 171
+ edad: 19"];
+"0x6c7940"[label="Carnet:201125580
+ dpi 1846903502498
+ nombre:Boycie Langlais
+ carrera:Ingenieria en Ciencias y Sistemas
+ pass: MhBaUtl
+ creditos: 190
+ edad: 21"];
+"0x6c7b20"[label="Carnet:201315288
+ dpi 7044319749868
+ nombre:Joscelin Fewings
+ carrera:Ingenieria Mecanica Electrica
+ pass: 3htilF
+ creditos: 89
+ edad: 27"];
+"0x1c2020" -> "0x1c1a80"[dir="both"];
+"0x1c1a80" -> "0x1c1980"[dir="both"];
+"0x1c1980" -> "0x1c8df0"[dir="both"];
+"0x1c8df0" -> "0x1c8e20"[dir="both"];
+"0x1c8e20" -> "0x1c8c70"[dir="both"];
+"0x1c8c70" -> "0x1c8cd0"[dir="both"];
+"0x1c8cd0" -> "0x6c30f0"[dir="both"];
+"0x6c30f0" -> "0x6c2eb0"[dir="both"];
+"0x6c2eb0" -> "0x6c2f10"[dir="both"];
+"0x6c2f10" -> "0x6c2f70"[dir="both"];
+"0x6c2f70" -> "0x6c3180"[dir="both"];
+"0x6c3180" -> "0x6c3210"[dir="both"];
+"0x6c3210" -> "0x6c2cd0"[dir="both"];
+"0x6c2cd0" -> "0x6c2be0"[dir="both"];
+"0x6c2be0" -> "0x6c2e80"[dir="both"];
+"0x6c2e80" -> "0x6c3060"[dir="both"];
+"0x6c3060" -> "0x1c8c10"[dir="both"];
+"0x1c8c10" -> "0x6c3e00"[dir="both"];
+"0x6c3e00" -> "0x6c3c50"[dir="both"];
+"0x6c3c50" -> "0x6c3740"[dir="both"];
+"0x6c3740" -> "0x6c3950"[dir="both"];
+"0x6c3950" -> "0x6c3ec0"[dir="both"];
+"0x6c3ec0" -> "0x6c3800"[dir="both"];
+"0x6c3800" -> "0x6c3b90"[dir="both"];
+"0x6c3b90" -> "0x6c3cb0"[dir="both"];
+"0x6c3cb0" -> "0x6c3a10"[dir="both"];
+"0x6c3a10" -> "0x6c3a70"[dir="both"];
+"0x6c3a70" -> "0x6c3bc0"[dir="both"];
+"0x6c3bc0" -> "0x6c3150"[dir="both"];
+"0x6c3150" -> "0x6c4070"[dir="both"];
+"0x6c4070" -> "0x6c46a0"[dir="both"];
+"0x6c46a0" -> "0x6c43a0"[dir="both"];
+"0x6c43a0" -> "0x6c42e0"[dir="both"];
+"0x6c42e0" -> "0x6c3fb0"[dir="both"];
+"0x6c3fb0" -> "0x6c4310"[dir="both"];
+"0x6c4310" -> "0x6c4460"[dir="both"];
+"0x6c4460" -> "0x6c3f80"[dir="both"];
+"0x6c3f80" -> "0x6c44f0"[dir="both"];
+"0x6c44f0" -> "0x6c41f0"[dir="both"];
+"0x6c41f0" -> "0x6c40d0"[dir="both"];
+"0x6c40d0" -> "0x6c3d70"[dir="both"];
+"0x6c3d70" -> "0x6c47f0"[dir="both"];
+"0x6c47f0" -> "0x6c4ee0"[dir="both"];
+"0x6c4ee0" -> "0x6c4790"[dir="both"];
+"0x6c4790" -> "0x6c4e50"[dir="both"];
+"0x6c4e50" -> "0x6c4e20"[dir="both"];
+"0x6c4e20" -> "0x6c4d00"[dir="both"];
+"0x6c4d00" -> "0x6c4a30"[dir="both"];
+"0x6c4a30" -> "0x6c4760"[dir="both"];
+"0x6c4760" -> "0x6c4970"[dir="both"];
+"0x6c4970" -> "0x6c4b80"[dir="both"];
+"0x6c4b80" -> "0x6c4850"[dir="both"];
+"0x6c4850" -> "0x6c4640"[dir="both"];
+"0x6c4640" -> "0x6c5210"[dir="both"];
+"0x6c5210" -> "0x6c52a0"[dir="both"];
+"0x6c52a0" -> "0x6c5630"[dir="both"];
+"0x6c5630" -> "0x6c5030"[dir="both"];
+"0x6c5030" -> "0x6c5510"[dir="both"];
+"0x6c5510" -> "0x6c54b0"[dir="both"];
+"0x6c54b0" -> "0x6c50f0"[dir="both"];
+"0x6c50f0" -> "0x6c5390"[dir="both"];
+"0x6c5390" -> "0x6c54e0"[dir="both"];
+"0x6c54e0" -> "0x6c5000"[dir="both"];
+"0x6c5000" -> "0x6c5540"[dir="both"];
+"0x6c5540" -> "0x6c77f0"[dir="both"];
+"0x6c77f0" -> "0x6c7e20"[dir="both"];
+"0x6c7e20" -> "0x6c7970"[dir="both"];
+"0x6c7970" -> "0x6c7b80"[dir="both"];
+"0x6c7b80" -> "0x6c7cd0"[dir="both"];
+"0x6c7cd0" -> "0x6c7d30"[dir="both"];
+"0x6c7d30" -> "0x6c7c10"[dir="both"];
+"0x6c7c10" -> "0x6c7880"[dir="both"];
+"0x6c7880" -> "0x6c7940"[dir="both"];
+"0x6c7940" -> "0x6c7b20"[dir="both"];
+"0x6c7b20" -> "0x1c2020"[dir="both"];
+
+}
+

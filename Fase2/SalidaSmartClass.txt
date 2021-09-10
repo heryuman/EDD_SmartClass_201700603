@@ -1,0 +1,282 @@
+¿Elements?
+	¿element type="user"?
+		¿item Carnet = "201226238" $?
+		¿item DPI = "6392116180861" $?
+		¿item Nombre = "Lionel Messi"  $?
+		¿item Carrera = "ingenieria Mecanica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "0MPs7C3" $?
+		¿item Creditos = "223" $?
+		¿item Edad = "29" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201551265" $?
+		¿item DPI = "7409348386473" $?
+		¿item Nombre = "Luis Garcia" $?
+		¿item Carrera = "ingenieria Electrica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "5XjTg" $?
+		¿item Creditos = "84" $?
+		¿item Edad = "28" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201350621" $?
+		¿item DPI = "8422078653292" $?
+		¿item Nombre = "Lionel Messi" $?
+		¿item Carrera = "ingenieria Quimica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "PsJKx4" $?
+		¿item Creditos = "179" $?
+		¿item Edad = "29" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201314874" $?
+		¿item DPI = "3168264245957" $?
+		¿item Nombre = "josue perez" $?
+		¿item Carrera = "ingenieria Mecanica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "Yng8ABo" $?
+		¿item Creditos = "191" $?
+		¿item Edad = "21" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201632828" $?
+		¿item DPI = "2728745823021" $?
+		¿item Nombre = "josue perez" $?
+		¿item Carrera = "ingenieria Mecanica industrial" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "8tp1I89" $?
+		¿item Creditos = "14" $?
+		¿item Edad = "27" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201493615" $?
+		¿item DPI = "8772777408541" $?
+		¿item Nombre = "josue perez" $?
+		¿item Carrera = "ingenieria Quimica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "01z3hxz" $?
+		¿item Creditos = "79" $?
+		¿item Edad = "20" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201309035" $?
+		¿item DPI = "6759320499265" $?
+		¿item Nombre = "Alma Maria Hernandez" $?
+		¿item Carrera = "ingenieria industrial" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "tF00KX" $?
+		¿item Creditos = "41" $?
+		¿item Edad = "25" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201261302" $?
+		¿item DPI = "8624856009690" $?
+		¿item Nombre = "Alma Maria Hernandez" $?
+		¿item Carrera = "ingenieria Electrica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "LqYd45" $?
+		¿item Creditos = "215" $?
+		¿item Edad = "26" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201413927" $?
+		¿item DPI = "3088610119922" $?
+		¿item Nombre = "josue perez" $?
+		¿item Carrera = "ingenieria Electrica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "0C9430X" $?
+		¿item Creditos = "184" $?
+		¿item Edad = "24" $?
+	¿$element?
+	¿element type="user"?
+		¿item Carnet = "201043472" $?
+		¿item DPI = "8408036295895" $?
+		¿item Nombre = "Lionel Messi" $?
+		¿item Carrera = "ingenieria Electrica" $?
+		¿item Correo = "elcorreo@gmail.com" $?
+		¿item Password = "2E4IWf" $?
+		¿item Creditos = "229" $?
+		¿item Edad = "23" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201632828" $?
+		¿item Nombre = "tarea de mate" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "matematica intermedia 1" $?
+		¿item Fecha = "01/07/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201309035" $?
+		¿item Nombre = "practica edd" $?
+		¿item Descripcion = "terminar la practica" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "01/08/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201314874" $?
+		¿item Nombre = "tarea de mate" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "matematica intermedia 1" $?
+		¿item Fecha = "03/07/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201493615" $?
+		¿item Nombre = "estudiar para examen" $?
+		¿item Descripcion = "leer las presentaciones de la 1 a la 5" $?
+		¿item Materia = "Investigacion de operaciones" $?
+		¿item Fecha = "03/09/2021" $?
+		¿item Hora = "13" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201261302" $?
+		¿item Nombre = "investigar edd" $?
+		¿item Descripcion = "empezar a investigar las estructuras en python" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "06/07/2021" $?
+		¿item Hora = "13" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201226238" $?
+		¿item Nombre = "practica edd" $?
+		¿item Descripcion = "terminar la practica" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "07/08/2021" $?
+		¿item Hora = "13" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201632828" $?
+		¿item Nombre = "investigar edd" $?
+		¿item Descripcion = "empezar a investigar las estructuras en python" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "10/09/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201551265" $?
+		¿item Nombre = "estudiar para examen" $?
+		¿item Descripcion = "leer las presentaciones de la 1 a la 5" $?
+		¿item Materia = "Investigacion de operaciones" $?
+		¿item Fecha = "10/07/2021" $?
+		¿item Hora = "10" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201261302" $?
+		¿item Nombre = "tarea de mate" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "matematica intermedia 1" $?
+		¿item Fecha = "11/07/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201493615" $?
+		¿item Nombre = "tarea 2 fisica1" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "Fisica 2" $?
+		¿item Fecha = "12/09/2021" $?
+		¿item Hora = "15" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201261302" $?
+		¿item Nombre = "tarea de mate" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "matematica intermedia 1" $?
+		¿item Fecha = "14/08/2021" $?
+		¿item Hora = "11" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201493615" $?
+		¿item Nombre = "estudiar para examen" $?
+		¿item Descripcion = "leer las presentaciones de la 1 a la 5" $?
+		¿item Materia = "Investigacion de operaciones" $?
+		¿item Fecha = "16/09/2021" $?
+		¿item Hora = "10" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201309035" $?
+		¿item Nombre = "tarea 2 fisica1" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "Fisica 2" $?
+		¿item Fecha = "16/09/2021" $?
+		¿item Hora = "13" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201226238" $?
+		¿item Nombre = "practica edd" $?
+		¿item Descripcion = "terminar la practica" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "19/09/2021" $?
+		¿item Hora = "13" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201493615" $?
+		¿item Nombre = "practica edd" $?
+		¿item Descripcion = "terminar la practica" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "20/07/2021" $?
+		¿item Hora = "12" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201261302" $?
+		¿item Nombre = "investigar edd" $?
+		¿item Descripcion = "empezar a investigar las estructuras en python" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "25/09/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201551265" $?
+		¿item Nombre = "tarea 2 fisica1" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "Fisica 2" $?
+		¿item Fecha = "26/07/2021" $?
+		¿item Hora = "13" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201314874" $?
+		¿item Nombre = "tarea de mate" $?
+		¿item Descripcion = "realizar la tarea para el primer parcial" $?
+		¿item Materia = "matematica intermedia 1" $?
+		¿item Fecha = "28/08/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201413927" $?
+		¿item Nombre = "estudiar para examen" $?
+		¿item Descripcion = "leer las presentaciones de la 1 a la 5" $?
+		¿item Materia = "Investigacion de operaciones" $?
+		¿item Fecha = "28/07/2021" $?
+		¿item Hora = "11" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+	¿element type="task"?
+		¿item Carnet = "201551265" $?
+		¿item Nombre = "practica edd" $?
+		¿item Descripcion = "terminar la practica" $?
+		¿item Materia = "Estructuras de datos" $?
+		¿item Fecha = "29/09/2021" $?
+		¿item Hora = "9" $?
+		¿item Estado = "Incumplido" $?
+	¿$element?
+¿$Elements?
