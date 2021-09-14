@@ -1,22 +1,32 @@
 from Analizadores.ASintactico import parser
 from Analizadores.ASintactico import lista as datosTXT
-from objetos.arbol import tree
+from Estructuras.arbolAVL import AVLTree
 from objetos.estudiante import estudiant
 from objetos.tarea import task
+from Estructuras.arbolB import Arbol_B
 
 if __name__ == '__main__':
     f=open('SalidaSmartClass.txt',"r", encoding="utf-8")
     entrada=f.read()
     f.close()
     parser.parse(entrada)
-    T_estudiantes= tree()
-    T_tareas=tree()
+    T_estudiantes= AVLTree()
+    T_tareas=AVLTree()
 
     for i in  range(len(datosTXT)):
-        print("task",i+1)
+        
         if datosTXT[i]=='user':
+            """print("carnet user: ",datosTXT[i+1],
+            "dpi: ",datosTXT[i+2],
+            "nombre: ",datosTXT[i+3],
+            "carrera: ",datosTXT[i+4],
+            "correo: ",datosTXT[i+5],
+            "pass: ",datosTXT[i+6],
+            "creditos: ",datosTXT[i+7],
+            "edad: ", datosTXT[i+8]
+            )"""
             nEstudiante=estudiant(
-                datosTXT[i+1],
+                int(datosTXT[i+1]),
                 datosTXT[i+2],
                 datosTXT[i+3],
                 datosTXT[i+4],
@@ -24,14 +34,24 @@ if __name__ == '__main__':
                 datosTXT[i+6],
                 datosTXT[i+7],
                 datosTXT[i+8],
-                datosTXT[i+9]
+                ""
             )
-            T_estudiantes.insert(nEstudiante)
+            T_estudiantes.put(nEstudiante)
 
-        elif datosTXT[i]=='task':
-         
+       
+
+        if datosTXT[i]=='task':
+            
+            """print("carnet task: ",datosTXT[i+1],
+            "nombre: ",datosTXT[i+2],
+            "desc: ",datosTXT[i+3],
+            "materia: ",datosTXT[i+4],
+            "fecha: ",datosTXT[i+5],
+            "hora: ",datosTXT[i+6],
+            "estado: ",datosTXT[i+7]
+            )"""
             nTarea=task(
-                datosTXT[i+1],
+                int(datosTXT[i+1]),
                 datosTXT[i+2],
                 datosTXT[i+3],
                 datosTXT[i+4],
@@ -39,12 +59,23 @@ if __name__ == '__main__':
                 datosTXT[i+6],
                 datosTXT[i+7]
             )
-            T_tareas.insert(nTarea)
-    print("Carnets de tareas:")
-    T_tareas.EnOrden(T_tareas.root)
-    print("Carnet Estudiantes: ")
-    T_estudiantes.EnOrden(T_estudiantes.root)
-    print("se insertaron los elementos correctamente")
+            T_tareas.put(nTarea)
+    #print("Carnets de tareas:")
+    #T_tareas.mostrar(T_tareas.root)
+   # print("Carnet Estudiantes: ")
+   # T_estudiantes.mostrar(T_estudiantes.root)
+    #print("se insertaron los elementos correctamente")
+
+
+nuevoB=Arbol_B(5)
+
+for i in range(1,51):
+    nuevoB.insertar(i)
+
+
+nuevoB.Graficar()
+
+
 
 
 

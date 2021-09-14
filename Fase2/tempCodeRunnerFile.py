@@ -1,0 +1,2 @@
+
+nuevoB.insertar(3)

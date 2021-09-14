@@ -2,2705 +2,2485 @@ digraph G{
  rankdir = LR; 
 node [shape=box]; 
 compound=true; 
-"0x26029d0"[label="idTarea: 0"];
-"0x26028e0"[label="idTarea: -1 "];
-"0x2602a00"[label="idTarea: -1 "];
-"0x2602a30"[label="idTarea: -1 "];
-"0x2602a60"[label="idTarea: -1 "];
-"0x2652470"[label="idTarea: -1 "];
-"0x2652320"[label="idTarea: -1 "];
-"0x2652110"[label="idTarea: -1 "];
-"0x2652050"[label="idTarea: -1 "];
-"0x2651e70"[label="idTarea: -1 "];
-"0x2654970"[label="idTarea: -1 "];
-"0x26549d0"[label="idTarea: -1 "];
-"0x2654760"[label="idTarea: -1 "];
-"0x2654220"[label="idTarea: -1 "];
-"0x26546a0"[label="idTarea: -1 "];
-"0x2655fb0"[label="idTarea: 15"];
-"0x2655d70"[label="idTarea: -1 "];
-"0x2655e60"[label="idTarea: -1 "];
-"0x2656010"[label="idTarea: -1 "];
-"0x2656040"[label="idTarea: -1 "];
-"0x26571f0"[label="idTarea: -1 "];
-"0x2657be0"[label="idTarea: -1 "];
-"0x2657c10"[label="idTarea: -1 "];
-"0x2657c40"[label="idTarea: -1 "];
-"0x2657ca0"[label="idTarea: -1 "];
-"0x2659410"[label="idTarea: -1 "];
-"0x26595c0"[label="idTarea: -1 "];
-"0x26594d0"[label="idTarea: -1 "];
-"0x2659440"[label="idTarea: -1 "];
-"0x2659560"[label="idTarea: -1 "];
-"0x265bbd0"[label="idTarea: -1 "];
-"0x265bc00"[label="idTarea: -1 "];
-"0x265a400"[label="idTarea: -1 "];
-"0x265a970"[label="idTarea: -1 "];
-"0x265a9a0"[label="idTarea: -1 "];
-"0x265dca0"[label="idTarea: -1 "];
-"0x265de50"[label="idTarea: -1 "];
-"0x265daf0"[label="idTarea: -1 "];
-"0x265dcd0"[label="idTarea: -1 "];
-"0x265df70"[label="idTarea: -1 "];
-"0x265f9e0"[label="idTarea: -1 "];
-"0x265ff80"[label="idTarea: -1 "];
-"0x265fbf0"[label="idTarea: -1 "];
-"0x265ff50"[label="idTarea: -1 "];
-"0x265fc50"[label="idTarea: -1 "];
-"0x2602af0"[label="idTarea: -1 "];
-"0x2602bb0"[label="idTarea: -1 "];
-"0x2602c40"[label="idTarea: -1 "];
-"0x2602be0"[label="idTarea: -1 "];
-"0xe474c0"[label="idTarea: -1 "];
-"0x2652350"[label="idTarea: -1 "];
-"0x2651cf0"[label="idTarea: -1 "];
-"0x26521d0"[label="idTarea: -1 "];
-"0x2652380"[label="idTarea: -1 "];
-"0x26523e0"[label="idTarea: -1 "];
-"0x26547c0"[label="idTarea: -1 "];
-"0x2654ca0"[label="idTarea: -1 "];
-"0x2654730"[label="idTarea: -1 "];
-"0x2654c70"[label="idTarea: -1 "];
-"0x2654cd0"[label="idTarea: -1 "];
-"0x2655ef0"[label="idTarea: -1 "];
-"0x2655e30"[label="idTarea: -1 "];
-"0x2655d40"[label="idTarea: -1 "];
-"0x2655e90"[label="idTarea: -1 "];
-"0x2655da0"[label="idTarea: -1 "];
-"0x2657cd0"[label="idTarea: -1 "];
-"0x2657d00"[label="idTarea: -1 "];
-"0x26571c0"[label="idTarea: -1 "];
-"0x2657310"[label="idTarea: -1 "];
-"0x2657220"[label="idTarea: -1 "];
-"0x26595f0"[label="idTarea: -1 "];
-"0x2659770"[label="idTarea: -1 "];
-"0x2659830"[label="idTarea: -1 "];
-"0x26599b0"[label="idTarea: -1 "];
-"0x2659980"[label="idTarea: -1 "];
-"0x265a190"[label="idTarea: -1 "];
-"0x265a520"[label="idTarea: -1 "];
-"0x265a850"[label="idTarea: -1 "];
-"0x265a940"[label="idTarea: -1 "];
-"0x265a760"[label="idTarea: -1 "];
-"0x265db50"[label="idTarea: -1 "];
-"0x265dd00"[label="idTarea: -1 "];
-"0x265dd60"[label="idTarea: -1 "];
-"0x265de80"[label="idTarea: -1 "];
-"0x265dee0"[label="idTarea: -1 "];
-"0x265f9b0"[label="idTarea: -1 "];
-"0x265fe90"[label="idTarea: -1 "];
-"0x265fce0"[label="idTarea: -1 "];
-"0x265faa0"[label="idTarea: -1 "];
-"0x265fad0"[label="idTarea: -1 "];
-"0xe47610"[label="idTarea: -1 "];
-"0x2650820"[label="idTarea: -1 "];
-"0x26507f0"[label="idTarea: -1 "];
-"0x2650940"[label="idTarea: -1 "];
-"0x2650b50"[label="idTarea: -1 "];
-"0x26520b0"[label="idTarea: -1 "];
-"0x2651d50"[label="idTarea: -1 "];
-"0x2652200"[label="idTarea: -1 "];
-"0x26520e0"[label="idTarea: -1 "];
-"0x2651ea0"[label="idTarea: -1 "];
-"0x2654430"[label="idTarea: -1 "];
-"0x2654130"[label="idTarea: -1 "];
-"0x2654640"[label="idTarea: -1 "];
-"0x2654a90"[label="idTarea: -1 "];
-"0x2654340"[label="idTarea: -1 "];
-"0x2655f50"[label="idTarea: -1 "];
-"0x2655f20"[label="idTarea: -1 "];
-"0x2655f80"[label="idTarea: -1 "];
-"0x26560a0"[label="idTarea: -1 "];
-"0x2656690"[label="idTarea: -1 "];
-"0x2657280"[label="idTarea: -1 "];
-"0x2657f10"[label="idTarea: -1 "];
-"0x2657eb0"[label="idTarea: -1 "];
-"0x2657fd0"[label="idTarea: -1 "];
-"0x2658090"[label="idTarea: -1 "];
-"0x2659cb0"[label="idTarea: -1 "];
-"0x26599e0"[label="idTarea: -1 "];
-"0x2659a40"[label="idTarea: -1 "];
-"0x2659b60"[label="idTarea: -1 "];
-"0x2659b90"[label="idTarea: -1 "];
-"0x265a4c0"[label="idTarea: -1 "];
-"0x265a430"[label="idTarea: -1 "];
-"0x265a730"[label="idTarea: -1 "];
-"0x265a4f0"[label="idTarea: -1 "];
-"0x265a9d0"[label="idTarea: -1 "];
-"0x265df10"[label="idTarea: -1 "];
-"0x265e000"[label="idTarea: -1 "];
-"0x265e030"[label="idTarea: -1 "];
-"0x265e060"[label="idTarea: -1 "];
-"0x265da30"[label="idTarea: -1 "];
-"0x265ffb0"[label="idTarea: -1 "];
-"0x265fd10"[label="idTarea: -1 "];
-"0x265fda0"[label="idTarea: -1 "];
-"0x265fd40"[label="idTarea: -1 "];
-"0x265fa10"[label="idTarea: -1 "];
-"0x26505e0"[label="idTarea: -1 "];
-"0x2650640"[label="idTarea: -1 "];
-"0x2650670"[label="idTarea: -1 "];
-"0x2650970"[label="idTarea: -1 "];
-"0x26506a0"[label="idTarea: -1 "];
-"0x2651ed0"[label="idTarea: -1 "];
-"0x2652410"[label="idTarea: -1 "];
-"0x2652290"[label="idTarea: -1 "];
-"0x26522c0"[label="idTarea: 143"];
-"0x2652440"[label="idTarea: -1 "];
-"0x2654a00"[label="idTarea: -1 "];
-"0x26541f0"[label="idTarea: -1 "];
-"0x2654550"[label="idTarea: -1 "];
-"0x2654b20"[label="idTarea: -1 "];
-"0x2654be0"[label="idTarea: -1 "];
-"0x2656180"[label="idTarea: -1 "];
-"0x2656600"[label="idTarea: -1 "];
-"0x26562a0"[label="idTarea: -1 "];
-"0x2656540"[label="idTarea: 153"];
-"0x26568d0"[label="idTarea: -1 "];
-"0x2657f70"[label="idTarea: -1 "];
-"0x2658000"[label="idTarea: -1 "];
-"0x2657d90"[label="idTarea: -1 "];
-"0x2657dc0"[label="idTarea: -1 "];
-"0x26580c0"[label="idTarea: -1 "];
-"0x2659ec0"[label="idTarea: -1 "];
-"0x265a040"[label="idTarea: -1 "];
-"0x2659a10"[label="idTarea: -1 "];
-"0x2659ef0"[label="idTarea: -1 "];
-"0x265a0d0"[label="idTarea: -1 "];
-"0x265a460"[label="idTarea: -1 "];
-"0x265a2e0"[label="idTarea: -1 "];
-"0x265a6d0"[label="idTarea: -1 "];
-"0x265a490"[label="idTarea: -1 "];
-"0x265a3d0"[label="idTarea: -1 "];
-"0x265da90"[label="idTarea: -1 "];
-"0x265db20"[label="idTarea: -1 "];
-"0x265dbb0"[label="idTarea: -1 "];
-"0x265dbe0"[label="idTarea: -1 "];
-"0x265dc10"[label="idTarea: -1 "];
-"0x265fa40"[label="idTarea: -1 "];
-"0x265fb00"[label="idTarea: -1 "];
-"0x265ffe0"[label="idTarea: -1 "];
-"0x265fb30"[label="idTarea: -1 "];
-"0x2660010"[label="idTarea: -1 "];
-"0x26507c0"[label="idTarea: -1 "];
-"0x2650910"[label="idTarea: -1 "];
-"0x2650850"[label="idTarea: -1 "];
-"0x2650880"[label="idTarea: -1 "];
-"0x26509a0"[label="idTarea: -1 "];
-"0x2651d80"[label="idTarea: -1 "];
-"0x2651f00"[label="idTarea: -1 "];
-"0x2651f60"[label="idTarea: -1 "];
-"0x2651fc0"[label="idTarea: -1 "];
-"0x2651ff0"[label="idTarea: -1 "];
-"0x2654670"[label="idTarea: -1 "];
-"0x2654370"[label="idTarea: -1 "];
-"0x2654190"[label="idTarea: -1 "];
-"0x26543a0"[label="idTarea: -1 "];
-"0x2654160"[label="idTarea: -1 "];
-"0x26567e0"[label="idTarea: -1 "];
-"0x2656810"[label="idTarea: -1 "];
-"0x2656d20"[label="idTarea: -1 "];
-"0x2656630"[label="idTarea: -1 "];
-"0x26569c0"[label="idTarea: -1 "];
-"0x2657df0"[label="idTarea: -1 "];
-"0x2657e20"[label="idTarea: -1 "];
-"0x2657ee0"[label="idTarea: -1 "];
-"0x2657f40"[label="idTarea: -1 "];
-"0x2657fa0"[label="idTarea: -1 "];
-"0x2659a70"[label="idTarea: -1 "];
-"0x2659e90"[label="idTarea: -1 "];
-"0x2659fb0"[label="idTarea: -1 "];
-"0x2659fe0"[label="idTarea: -1 "];
-"0x2659e60"[label="idTarea: -1 "];
-"0x265a5b0"[label="idTarea: -1 "];
-"0x265aa30"[label="idTarea: -1 "];
-"0x265a580"[label="idTarea: -1 "];
-"0x265a910"[label="idTarea: -1 "];
-"0x265a880"[label="idTarea: -1 "];
-"0x265c1a0"[label="idTarea: -1 "];
-"0x265c530"[label="idTarea: -1 "];
-"0x265c860"[label="idTarea: -1 "];
-"0x265c950"[label="idTarea: -1 "];
-"0x265c770"[label="idTarea: -1 "];
-"0x265fb60"[label="idTarea: -1 "];
-"0x265fb90"[label="idTarea: -1 "];
-"0x265fbc0"[label="idTarea: -1 "];
-"0x2660040"[label="idTarea: -1 "];
-"0x265fcb0"[label="idTarea: -1 "];
-"0x2650c10"[label="idTarea: -1 "];
-"0x2650610"[label="idTarea: -1 "];
-"0x26506d0"[label="idTarea: -1 "];
-"0x2650a30"[label="idTarea: -1 "];
-"0x2650bb0"[label="idTarea: -1 "];
-"0x2652b00"[label="idTarea: -1 "];
-"0x2652b30"[label="idTarea: -1 "];
-"0x2652c80"[label="idTarea: -1 "];
-"0x2652860"[label="idTarea: -1 "];
-"0x26529e0"[label="idTarea: -1 "];
-"0x2654250"[label="idTarea: -1 "];
-"0x26547f0"[label="idTarea: -1 "];
-"0x26541c0"[label="idTarea: -1 "];
-"0x2654280"[label="idTarea: -1 "];
-"0x2654c10"[label="idTarea: -1 "];
-"0x2656150"[label="idTarea: -1 "];
-"0x26564b0"[label="idTarea: -1 "];
-"0x26569f0"[label="idTarea: -1 "];
-"0x2656b70"[label="idTarea: -1 "];
-"0x2656b40"[label="idTarea: -1 "];
-"0x2658060"[label="idTarea: -1 "];
-"0x2657e50"[label="idTarea: -1 "];
-"0x2657e80"[label="idTarea: -1 "];
-"0x2658030"[label="idTarea: -1 "];
-"0x2657d60"[label="idTarea: -1 "];
-"0x2659b30"[label="idTarea: -1 "];
-"0x2659e00"[label="idTarea: -1 "];
-"0x2659f20"[label="idTarea: -1 "];
-"0x2659aa0"[label="idTarea: -1 "];
-"0x2659f50"[label="idTarea: -1 "];
-"0x265ab20"[label="idTarea: -1 "];
-"0x265a370"[label="idTarea: -1 "];
-"0x265a3a0"[label="idTarea: -1 "];
-"0x265aa00"[label="idTarea: -1 "];
-"0x265a8e0"[label="idTarea: -1 "];
-"0x265c4d0"[label="idTarea: -1 "];
-"0x265c440"[label="idTarea: -1 "];
-"0x265c740"[label="idTarea: -1 "];
-"0x265c500"[label="idTarea: -1 "];
-"0x265c9b0"[label="idTarea: -1 "];
-"0x265fe60"[label="idTarea: -1 "];
-"0x2660070"[label="idTarea: -1 "];
-"0x26600a0"[label="idTarea: -1 "];
-"0x265fc20"[label="idTarea: -1 "];
-"0x265fd70"[label="idTarea: -1 "];
-"0x2650580"[label="idTarea: -1 "];
-"0x2650be0"[label="idTarea: -1 "];
-"0x26508b0"[label="idTarea: -1 "];
-"0x26508e0"[label="idTarea: -1 "];
-"0x2650700"[label="idTarea: -1 "];
-"0x2652a10"[label="idTarea: -1 "];
-"0x2652500"[label="idTarea: -1 "];
-"0x2652770"[label="idTarea: -1 "];
-"0x2652980"[label="idTarea: -1 "];
-"0x2652a40"[label="idTarea: -1 "];
-"0x26542b0"[label="idTarea: -1 "];
-"0x26543d0"[label="idTarea: -1 "];
-"0x2654460"[label="idTarea: -1 "];
-"0x26542e0"[label="idTarea: -1 "];
-"0x2654310"[label="idTarea: -1 "];
-"0x2656420"[label="idTarea: -1 "];
-"0x2656a20"[label="idTarea: -1 "];
-"0x26564e0"[label="idTarea: -1 "];
-"0x2656660"[label="idTarea: -1 "];
-"0x26561b0"[label="idTarea: -1 "];
-"0x2658cc0"[label="idTarea: -1 "];
-"0x2658390"[label="idTarea: -1 "];
-"0x2658d50"[label="idTarea: -1 "];
-"0x26581b0"[label="idTarea: -1 "];
-"0x26585a0"[label="idTarea: -1 "];
-"0x2659ad0"[label="idTarea: -1 "];
-"0x2659b00"[label="idTarea: -1 "];
-"0x2659da0"[label="idTarea: -1 "];
-"0x2659bc0"[label="idTarea: -1 "];
-"0x2659f80"[label="idTarea: -1 "];
-"0x265aa60"[label="idTarea: -1 "];
-"0x265a790"[label="idTarea: -1 "];
-"0x265a310"[label="idTarea: -1 "];
-"0x265ab80"[label="idTarea: -1 "];
-"0x265a550"[label="idTarea: -1 "];
-"0x265c410"[label="idTarea: -1 "];
-"0x265c2f0"[label="idTarea: -1 "];
-"0x265c6e0"[label="idTarea: -1 "];
-"0x265c470"[label="idTarea: -1 "];
-"0x265c3e0"[label="idTarea: -1 "];
-"0x265fec0"[label="idTarea: -1 "];
-"0x265ff20"[label="idTarea: -1 "];
-"0x265fdd0"[label="idTarea: -1 "];
-"0x26600d0"[label="idTarea: -1 "];
-"0x265fe00"[label="idTarea: -1 "];
-"0x26509d0"[label="idTarea: -1 "];
-"0x2650c40"[label="idTarea: -1 "];
-"0x26505b0"[label="idTarea: -1 "];
-"0x2650a00"[label="idTarea: -1 "];
-"0x2650730"[label="idTarea: -1 "];
-"0x26528f0"[label="idTarea: -1 "];
-"0x2652710"[label="idTarea: -1 "];
-"0x26526e0"[label="idTarea: -1 "];
-"0x26528c0"[label="idTarea: -1 "];
-"0x2652740"[label="idTarea: -1 "];
-"0x2654820"[label="idTarea: -1 "];
-"0x2654850"[label="idTarea: -1 "];
-"0x2654880"[label="idTarea: -1 "];
-"0x2654400"[label="idTarea: -1 "];
-"0x26545e0"[label="idTarea: -1 "];
-"0x2656ba0"[label="idTarea: -1 "];
-"0x2656ae0"[label="idTarea: -1 "];
-"0x2656210"[label="idTarea: -1 "];
-"0x26562d0"[label="idTarea: -1 "];
-"0x26561e0"[label="idTarea: -1 "];
-"0x2658b10"[label="idTarea: -1 "];
-"0x2658360"[label="idTarea: -1 "];
-"0x26584e0"[label="idTarea: -1 "];
-"0x2658a20"[label="idTarea: -1 "];
-"0x2658c90"[label="idTarea: -1 "];
-"0x2659bf0"[label="idTarea: -1 "];
-"0x2659d70"[label="idTarea: -1 "];
-"0x2659c20"[label="idTarea: -1 "];
-"0x2659ce0"[label="idTarea: -1 "];
-"0x265a010"[label="idTarea: -1 "];
-"0x265a5e0"[label="idTarea: -1 "];
-"0x265a610"[label="idTarea: -1 "];
-"0x265aca0"[label="idTarea: -1 "];
-"0x265a220"[label="idTarea: -1 "];
-"0x265a7c0"[label="idTarea: -1 "];
-"0x265c5c0"[label="idTarea: -1 "];
-"0x265ca40"[label="idTarea: -1 "];
-"0x265c590"[label="idTarea: -1 "];
-"0x265c920"[label="idTarea: -1 "];
-"0x265c890"[label="idTarea: -1 "];
-"0x265fef0"[label="idTarea: -1 "];
-"0x2660100"[label="idTarea: -1 "];
-"0x265fe30"[label="idTarea: -1 "];
-"0x265e3c0"[label="idTarea: -1 "];
-"0x265e5a0"[label="idTarea: -1 "];
-"0x2650a60"[label="idTarea: -1 "];
-"0x2650b80"[label="idTarea: -1 "];
-"0x26504c0"[label="idTarea: -1 "];
-"0x2650a90"[label="idTarea: -1 "];
-"0x26504f0"[label="idTarea: -1 "];
-"0x2652a70"[label="idTarea: -1 "];
-"0x26526b0"[label="idTarea: -1 "];
-"0x26525f0"[label="idTarea: -1 "];
-"0x2652890"[label="idTarea: -1 "];
-"0x26527a0"[label="idTarea: -1 "];
-"0x26549a0"[label="idTarea: -1 "];
-"0x2654490"[label="idTarea: -1 "];
-"0x26544c0"[label="idTarea: -1 "];
-"0x2654a30"[label="idTarea: -1 "];
-"0x2654b50"[label="idTarea: -1 "];
-"0x2656750"[label="idTarea: -1 "];
-"0x26563c0"[label="idTarea: -1 "];
-"0x2656c30"[label="idTarea: -1 "];
-"0x2656c00"[label="idTarea: -1 "];
-"0x26566c0"[label="idTarea: -1 "];
-"0x26582d0"[label="idTarea: -1 "];
-"0x2658cf0"[label="idTarea: -1 "];
-"0x2658660"[label="idTarea: -1 "];
-"0x2658720"[label="idTarea: -1 "];
-"0x2658540"[label="idTarea: -1 "];
-"0x2659c50"[label="idTarea: -1 "];
-"0x2659c80"[label="idTarea: -1 "];
-"0x265a070"[label="idTarea: -1 "];
-"0x265a0a0"[label="idTarea: -1 "];
-"0x2659d40"[label="idTarea: -1 "];
-"0x265a280"[label="idTarea: -1 "];
-"0x265a700"[label="idTarea: -1 "];
-"0x265a820"[label="idTarea: -1 "];
-"0x265ad00"[label="idTarea: -1 "];
-"0x265a7f0"[label="idTarea: -1 "];
-"0x265cb30"[label="idTarea: -1 "];
-"0x265c380"[label="idTarea: -1 "];
-"0x265c3b0"[label="idTarea: -1 "];
-"0x265c9e0"[label="idTarea: -1 "];
-"0x265c8f0"[label="idTarea: -1 "];
-"0x265e6f0"[label="idTarea: -1 "];
-"0x265e570"[label="idTarea: -1 "];
-"0x265e7b0"[label="idTarea: -1 "];
-"0x265e510"[label="idTarea: -1 "];
-"0x265e930"[label="idTarea: -1 "];
-"0x2650520"[label="idTarea: -1 "];
-"0x2650b20"[label="idTarea: -1 "];
-"0x2650760"[label="idTarea: -1 "];
-"0x2650790"[label="idTarea: -1 "];
-"0x2650ac0"[label="idTarea: -1 "];
-"0x2652680"[label="idTarea: -1 "];
-"0x26527d0"[label="idTarea: -1 "];
-"0x2652aa0"[label="idTarea: -1 "];
-"0x2652800"[label="idTarea: -1 "];
-"0x2652ad0"[label="idTarea: -1 "];
-"0x2654b80"[label="idTarea: -1 "];
-"0x26544f0"[label="idTarea: -1 "];
-"0x2654a60"[label="idTarea: -1 "];
-"0x2654520"[label="idTarea: -1 "];
-"0x2654610"[label="idTarea: -1 "];
-"0x2656570"[label="idTarea: -1 "];
-"0x26568a0"[label="idTarea: -1 "];
-"0x2656720"[label="idTarea: -1 "];
-"0x2656900"[label="idTarea: -1 "];
-"0x2656990"[label="idTarea: -1 "];
-"0x2658630"[label="idTarea: -1 "];
-"0x2658930"[label="idTarea: -1 "];
-"0x2658ba0"[label="idTarea: -1 "];
-"0x2658510"[label="idTarea: -1 "];
-"0x2658570"[label="idTarea: -1 "];
-"0x2659d10"[label="idTarea: -1 "];
-"0x2659dd0"[label="idTarea: -1 "];
-"0x2659e30"[label="idTarea: -1 "];
-"0x265b240"[label="idTarea: -1 "];
-"0x265b660"[label="idTarea: -1 "];
-"0x265acd0"[label="idTarea: -1 "];
-"0x265ad30"[label="idTarea: -1 "];
-"0x265a640"[label="idTarea: -1 "];
-"0x265ad60"[label="idTarea: -1 "];
-"0x265a6a0"[label="idTarea: -1 "];
-"0x265c980"[label="idTarea: -1 "];
-"0x265c7a0"[label="idTarea: -1 "];
-"0x265c320"[label="idTarea: -1 "];
-"0x265cb90"[label="idTarea: -1 "];
-"0x265c560"[label="idTarea: -1 "];
-"0x265e840"[label="idTarea: -1 "];
-"0x265eae0"[label="idTarea: -1 "];
-"0x265ed80"[label="idTarea: -1 "];
-"0x265e1e0"[label="idTarea: -1 "];
-"0x265e870"[label="idTarea: -1 "];
-"0x2650af0"[label="idTarea: -1 "];
-"0x2650550"[label="idTarea: -1 "];
-"0x2650cd0"[label="idTarea: -1 "];
-"0x2651330"[label="idTarea: -1 "];
-"0x2650f70"[label="idTarea: -1 "];
-"0x26529b0"[label="idTarea: -1 "];
-"0x2652b60"[label="idTarea: -1 "];
-"0x2652650"[label="idTarea: -1 "];
-"0x2652830"[label="idTarea: -1 "];
-"0x2652b90"[label="idTarea: -1 "];
-"0x2654580"[label="idTarea: -1 "];
-"0x2654bb0"[label="idTarea: -1 "];
-"0x2654ac0"[label="idTarea: -1 "];
-"0x26545b0"[label="idTarea: -1 "];
-"0x26546d0"[label="idTarea: -1 "];
-"0x2656300"[label="idTarea: -1 "];
-"0x2656330"[label="idTarea: -1 "];
-"0x2656360"[label="idTarea: -1 "];
-"0x2656510"[label="idTarea: -1 "];
-"0x2656840"[label="idTarea: -1 "];
-"0x2658ae0"[label="idTarea: -1 "];
-"0x2658480"[label="idTarea: -1 "];
-"0x2658180"[label="idTarea: -1 "];
-"0x2658690"[label="idTarea: -1 "];
-"0x26581e0"[label="idTarea: -1 "];
-"0x265b480"[label="idTarea: -1 "];
-"0x265b2d0"[label="idTarea: -1 "];
-"0x265adc0"[label="idTarea: -1 "];
-"0x265b270"[label="idTarea: -1 "];
-"0x265aee0"[label="idTarea: -1 "];
-"0x265aaf0"[label="idTarea: -1 "];
-"0x265a670"[label="idTarea: -1 "];
-"0x265aa90"[label="idTarea: -1 "];
-"0x265a250"[label="idTarea: -1 "];
-"0x265a8b0"[label="idTarea: -1 "];
-"0x265c4a0"[label="idTarea: -1 "];
-"0x265c5f0"[label="idTarea: -1 "];
-"0x265ccb0"[label="idTarea: -1 "];
-"0x265c230"[label="idTarea: -1 "];
-"0x265c620"[label="idTarea: -1 "];
-"0x265e420"[label="idTarea: -1 "];
-"0x265e990"[label="idTarea: -1 "];
-"0x265e9c0"[label="idTarea: -1 "];
-"0x265e1b0"[label="idTarea: -1 "];
-"0x265e540"[label="idTarea: -1 "];
-"0x2650eb0"[label="idTarea: -1 "];
-"0x2651210"[label="idTarea: -1 "];
-"0x2651180"[label="idTarea: -1 "];
-"0x2651030"[label="idTarea: -1 "];
-"0x26511e0"[label="idTarea: -1 "];
-"0x2652bc0"[label="idTarea: -1 "];
-"0x2652bf0"[label="idTarea: -1 "];
-"0x2652920"[label="idTarea: -1 "];
-"0x2652620"[label="idTarea: -1 "];
-"0x2652c20"[label="idTarea: -1 "];
-"0x2654700"[label="idTarea: -1 "];
-"0x26548b0"[label="idTarea: -1 "];
-"0x26548e0"[label="idTarea: -1 "];
-"0x2654c40"[label="idTarea: -1 "];
-"0x2654910"[label="idTarea: -1 "];
-"0x2656240"[label="idTarea: -1 "];
-"0x2656b10"[label="idTarea: -1 "];
-"0x2656a50"[label="idTarea: -1 "];
-"0x2656270"[label="idTarea: -1 "];
-"0x2656390"[label="idTarea: -1 "];
-"0x2658c60"[label="idTarea: -1 "];
-"0x2658ab0"[label="idTarea: -1 "];
-"0x26583c0"[label="idTarea: -1 "];
-"0x26583f0"[label="idTarea: -1 "];
-"0x2658990"[label="idTarea: -1 "];
-"0x265b180"[label="idTarea: -1 "];
-"0x265b510"[label="idTarea: -1 "];
-"0x265b420"[label="idTarea: -1 "];
-"0x265b450"[label="idTarea: -1 "];
-"0x265b960"[label="idTarea: -1 "];
-"0x265abb0"[label="idTarea: -1 "];
-"0x265ac40"[label="idTarea: -1 "];
-"0x265aac0"[label="idTarea: -1 "];
-"0x265ab50"[label="idTarea: -1 "];
-"0x265abe0"[label="idTarea: -1 "];
-"0x265ca10"[label="idTarea: -1 "];
-"0x265c650"[label="idTarea: -1 "];
-"0x265c680"[label="idTarea: -1 "];
-"0x265ca70"[label="idTarea: -1 "];
-"0x265cc50"[label="idTarea: -1 "];
-"0x265e8a0"[label="idTarea: -1 "];
-"0x265e960"[label="idTarea: -1 "];
-"0x265e780"[label="idTarea: -1 "];
-"0x265e4e0"[label="idTarea: -1 "];
-"0x265e450"[label="idTarea: -1 "];
-"0x2650f40"[label="idTarea: -1 "];
-"0x26510c0"[label="idTarea: -1 "];
-"0x2650d00"[label="idTarea: -1 "];
-"0x2650d60"[label="idTarea: -1 "];
-"0x2650d30"[label="idTarea: -1 "];
-"0x2652950"[label="idTarea: -1 "];
-"0x2652c50"[label="idTarea: -1 "];
-"0x2652530"[label="idTarea: -1 "];
-"0x2652560"[label="idTarea: -1 "];
-"0x2652590"[label="idTarea: -1 "];
-"0x2654940"[label="idTarea: -1 "];
-"0x2654af0"[label="idTarea: -1 "];
-"0x2654f40"[label="idTarea: -1 "];
-"0x2654ee0"[label="idTarea: -1 "];
-"0x2654f70"[label="idTarea: -1 "];
-"0x2656bd0"[label="idTarea: -1 "];
-"0x26563f0"[label="idTarea: -1 "];
-"0x2656450"[label="idTarea: -1 "];
-"0x26565d0"[label="idTarea: -1 "];
-"0x2656480"[label="idTarea: -1 "];
-"0x2658d20"[label="idTarea: -1 "];
-"0x2658900"[label="idTarea: -1 "];
-"0x26586c0"[label="idTarea: -1 "];
-"0x2658210"[label="idTarea: -1 "];
-"0x2658b40"[label="idTarea: -1 "];
-"0x265b2a0"[label="idTarea: -1 "];
-"0x265b600"[label="idTarea: -1 "];
-"0x265ad90"[label="idTarea: -1 "];
-"0x265b0f0"[label="idTarea: -1 "];
-"0x265b630"[label="idTarea: -1 "];
-"0x265ac10"[label="idTarea: -1 "];
-"0x265a2b0"[label="idTarea: -1 "];
-"0x265ac70"[label="idTarea: -1 "];
-"0x265a1c0"[label="idTarea: -1 "];
-"0x265a1f0"[label="idTarea: -1 "];
-"0x265c6b0"[label="idTarea: -1 "];
-"0x265c350"[label="idTarea: -1 "];
-"0x265caa0"[label="idTarea: -1 "];
-"0x265c290"[label="idTarea: -1 "];
-"0x265c7d0"[label="idTarea: -1 "];
-"0x265e750"[label="idTarea: -1 "];
-"0x265e5d0"[label="idTarea: -1 "];
-"0x265e9f0"[label="idTarea: -1 "];
-"0x265e480"[label="idTarea: -1 "];
-"0x265e300"[label="idTarea: -1 "];
-"0x2651060"[label="idTarea: -1 "];
-"0x2650d90"[label="idTarea: -1 "];
-"0x2650df0"[label="idTarea: -1 "];
-"0x2650fa0"[label="idTarea: -1 "];
-"0x2650fd0"[label="idTarea: -1 "];
-"0x26525c0"[label="idTarea: -1 "];
-"0x2652e60"[label="idTarea: -1 "];
-"0x2652f80"[label="idTarea: -1 "];
-"0x26531f0"[label="idTarea: -1 "];
-"0x26533d0"[label="idTarea: -1 "];
-"0x2654fa0"[label="idTarea: 595"];
-"0x2654d90"[label="idTarea: -1 "];
-"0x2654dc0"[label="idTarea: -1 "];
-"0x2654df0"[label="idTarea: -1 "];
-"0x2654e20"[label="idTarea: -1 "];
-"0x26565a0"[label="idTarea: -1 "];
-"0x2656c60"[label="idTarea: -1 "];
-"0x26566f0"[label="idTarea: -1 "];
-"0x2656a80"[label="idTarea: -1 "];
-"0x2656780"[label="idTarea: -1 "];
-"0x26585d0"[label="idTarea: -1 "];
-"0x2658450"[label="idTarea: -1 "];
-"0x26589c0"[label="idTarea: -1 "];
-"0x26588d0"[label="idTarea: -1 "];
-"0x26586f0"[label="idTarea: -1 "];
-"0x265b7b0"[label="idTarea: -1 "];
-"0x265b780"[label="idTarea: -1 "];
-"0x265b060"[label="idTarea: -1 "];
-"0x265b690"[label="idTarea: -1 "];
-"0x265b120"[label="idTarea: -1 "];
-"0x265a340"[label="idTarea: -1 "];
-"0x265d640"[label="idTarea: -1 "];
-"0x265d730"[label="idTarea: -1 "];
-"0x265d250"[label="idTarea: -1 "];
-"0x265d760"[label="idTarea: -1 "];
-"0x265c710"[label="idTarea: -1 "];
-"0x265cad0"[label="idTarea: -1 "];
-"0x265cce0"[label="idTarea: -1 "];
-"0x265c8c0"[label="idTarea: -1 "];
-"0x265cb00"[label="idTarea: -1 "];
-"0x265e720"[label="idTarea: 625"];
-"0x265e4b0"[label="idTarea: -1 "];
-"0x265e3f0"[label="idTarea: -1 "];
-"0x265e600"[label="idTarea: -1 "];
-"0x265ea50"[label="idTarea: -1 "];
-"0x26512a0"[label="idTarea: -1 "];
-"0x26513f0"[label="idTarea: -1 "];
-"0x2650dc0"[label="idTarea: -1 "];
-"0x2650e80"[label="idTarea: -1 "];
-"0x2651000"[label="idTarea: -1 "];
-"0x2652f20"[label="idTarea: -1 "];
-"0x2652dd0"[label="idTarea: -1 "];
-"0x2653220"[label="idTarea: -1 "];
-"0x2652da0"[label="idTarea: -1 "];
-"0x26530a0"[label="idTarea: -1 "];
-"0x2654f10"[label="idTarea: -1 "];
-"0x2654d30"[label="idTarea: -1 "];
-"0x2655030"[label="idTarea: -1 "];
-"0x2654fd0"[label="idTarea: -1 "];
-"0x2654e50"[label="idTarea: -1 "];
-"0x26567b0"[label="idTarea: -1 "];
-"0x2656930"[label="idTarea: -1 "];
-"0x2656870"[label="idTarea: -1 "];
-"0x2656960"[label="idTarea: -1 "];
-"0x2656ab0"[label="idTarea: -1 "];
-"0x2658960"[label="idTarea: -1 "];
-"0x2658600"[label="idTarea: -1 "];
-"0x2658750"[label="idTarea: -1 "];
-"0x2658240"[label="idTarea: -1 "];
-"0x2658270"[label="idTarea: -1 "];
-"0x265b300"[label="idTarea: -1 "];
-"0x265adf0"[label="idTarea: -1 "];
-"0x265b7e0"[label="idTarea: -1 "];
-"0x265b720"[label="idTarea: -1 "];
-"0x265ae50"[label="idTarea: -1 "];
-"0x265ce30"[label="idTarea: -1 "];
-"0x265d220"[label="idTarea: -1 "];
-"0x265d430"[label="idTarea: -1 "];
-"0x265d460"[label="idTarea: -1 "];
-"0x265d970"[label="idTarea: -1 "];
-"0x265c260"[label="idTarea: -1 "];
-"0x265c800"[label="idTarea: -1 "];
-"0x265cd40"[label="idTarea: -1 "];
-"0x265c2c0"[label="idTarea: -1 "];
-"0x265c830"[label="idTarea: -1 "];
-"0x265e630"[label="idTarea: -1 "];
-"0x265ea20"[label="idTarea: -1 "];
-"0x265e8d0"[label="idTarea: -1 "];
-"0x265eb40"[label="idTarea: -1 "];
-"0x265e390"[label="idTarea: -1 "];
-"0x2650e20"[label="idTarea: -1 "];
-"0x2651420"[label="idTarea: -1 "];
-"0x2650ee0"[label="idTarea: -1 "];
-"0x2651450"[label="idTarea: -1 "];
-"0x26510f0"[label="idTarea: -1 "];
-"0x2652fe0"[label="idTarea: -1 "];
-"0x2653280"[label="idTarea: -1 "];
-"0x2653430"[label="idTarea: -1 "];
-"0x2653190"[label="idTarea: -1 "];
-"0x26532b0"[label="idTarea: -1 "];
-"0x2654d60"[label="idTarea: -1 "];
-"0x2654e80"[label="idTarea: -1 "];
-"0x2655090"[label="idTarea: -1 "];
-"0x2655060"[label="idTarea: -1 "];
-"0x2655000"[label="idTarea: -1 "];
-"0x2656c90"[label="idTarea: -1 "];
-"0x2656cc0"[label="idTarea: -1 "];
-"0x2656cf0"[label="idTarea: -1 "];
-"0x2656ea0"[label="idTarea: -1 "];
-"0x26570b0"[label="idTarea: -1 "];
-"0x26582a0"[label="idTarea: -1 "];
-"0x2658780"[label="idTarea: -1 "];
-"0x2658300"[label="idTarea: -1 "];
-"0x2658330"[label="idTarea: -1 "];
-"0x2658420"[label="idTarea: -1 "];
-"0x265af10"[label="idTarea: -1 "];
-"0x265ae20"[label="idTarea: -1 "];
-"0x265b390"[label="idTarea: -1 "];
-"0x265b000"[label="idTarea: -1 "];
-"0x265b870"[label="idTarea: -1 "];
-"0x265d280"[label="idTarea: -1 "];
-"0x265d610"[label="idTarea: -1 "];
-"0x265cda0"[label="idTarea: -1 "];
-"0x265d100"[label="idTarea: -1 "];
-"0x265d670"[label="idTarea: -1 "];
-"0x265cb60"[label="idTarea: -1 "];
-"0x265cbc0"[label="idTarea: -1 "];
-"0x265cbf0"[label="idTarea: -1 "];
-"0x265cc20"[label="idTarea: -1 "];
-"0x265cc80"[label="idTarea: -1 "];
-"0x265e660"[label="idTarea: -1 "];
-"0x265ea80"[label="idTarea: -1 "];
-"0x265e900"[label="idTarea: -1 "];
-"0x265eab0"[label="idTarea: -1 "];
-"0x265e7e0"[label="idTarea: -1 "];
-"0x26512d0"[label="idTarea: -1 "];
-"0x26511b0"[label="idTarea: -1 "];
-"0x2651270"[label="idTarea: -1 "];
-"0x2650e50"[label="idTarea: -1 "];
-"0x2651300"[label="idTarea: -1 "];
-"0x2652d70"[label="idTarea: -1 "];
-"0x2652e00"[label="idTarea: -1 "];
-"0x2653460"[label="idTarea: -1 "];
-"0x2652e30"[label="idTarea: -1 "];
-"0x2652ef0"[label="idTarea: -1 "];
-"0x2654eb0"[label="idTarea: -1 "];
-"0x2655ad0"[label="idTarea: -1 "];
-"0x26554d0"[label="idTarea: -1 "];
-"0x2655a40"[label="idTarea: -1 "];
-"0x2655590"[label="idTarea: -1 "];
-"0x2657080"[label="idTarea: -1 "];
-"0x2656d50"[label="idTarea: -1 "];
-"0x2656f60"[label="idTarea: -1 "];
-"0x2656d80"[label="idTarea: -1 "];
-"0x2656f90"[label="idTarea: -1 "];
-"0x26584b0"[label="idTarea: -1 "];
-"0x26589f0"[label="idTarea: -1 "];
-"0x2658b70"[label="idTarea: -1 "];
-"0x26587b0"[label="idTarea: -1 "];
-"0x26587e0"[label="idTarea: -1 "];
-"0x265b840"[label="idTarea: -1 "];
-"0x265b330"[label="idTarea: -1 "];
-"0x265b1b0"[label="idTarea: -1 "];
-"0x265b4e0"[label="idTarea: -1 "];
-"0x265b360"[label="idTarea: -1 "];
-"0x265d7c0"[label="idTarea: -1 "];
-"0x265d790"[label="idTarea: -1 "];
-"0x265d070"[label="idTarea: -1 "];
-"0x265d6a0"[label="idTarea: -1 "];
-"0x265d130"[label="idTarea: -1 "];
-"0x265cd10"[label="idTarea: -1 "];
-"0x265cd70"[label="idTarea: -1 "];
-"0x265c1d0"[label="idTarea: -1 "];
-"0x265c200"[label="idTarea: -1 "];
-"0x265f770"[label="idTarea: -1 "];
-"0x265e330"[label="idTarea: -1 "];
-"0x265eba0"[label="idTarea: -1 "];
-"0x265e690"[label="idTarea: -1 "];
-"0x265e6c0"[label="idTarea: -1 "];
-"0x265e810"[label="idTarea: -1 "];
-"0x2650f10"[label="idTarea: -1 "];
-"0x2651090"[label="idTarea: -1 "];
-"0x2651360"[label="idTarea: -1 "];
-"0x2651120"[label="idTarea: -1 "];
-"0x2651150"[label="idTarea: -1 "];
-"0x2653070"[label="idTarea: -1 "];
-"0x2653040"[label="idTarea: -1 "];
-"0x26531c0"[label="idTarea: -1 "];
-"0x26533a0"[label="idTarea: -1 "];
-"0x2652e90"[label="idTarea: -1 "];
-"0x2655140"[label="idTarea: -1 "];
-"0x2655890"[label="idTarea: -1 "];
-"0x26555c0"[label="idTarea: -1 "];
-"0x2655230"[label="idTarea: -1 "];
-"0x26551d0"[label="idTarea: -1 "];
-"0x2656db0"[label="idTarea: -1 "];
-"0x2656de0"[label="idTarea: -1 "];
-"0x2656e10"[label="idTarea: -1 "];
-"0x2656fc0"[label="idTarea: -1 "];
-"0x2656e70"[label="idTarea: -1 "];
-"0x2658a50"[label="idTarea: -1 "];
-"0x2658810"[label="idTarea: -1 "];
-"0x2658840"[label="idTarea: -1 "];
-"0x2658a80"[label="idTarea: -1 "];
-"0x2658c30"[label="idTarea: -1 "];
-"0x265b540"[label="idTarea: -1 "];
-"0x265b5d0"[label="idTarea: -1 "];
-"0x265af40"[label="idTarea: -1 "];
-"0x265af70"[label="idTarea: -1 "];
-"0x265afa0"[label="idTarea: -1 "];
-"0x265d2b0"[label="idTarea: -1 "];
-"0x265cdd0"[label="idTarea: -1 "];
-"0x265d7f0"[label="idTarea: -1 "];
-"0x265d820"[label="idTarea: -1 "];
-"0x265ce60"[label="idTarea: -1 "];
-"0x265ef30"[label="idTarea: -1 "];
-"0x265ede0"[label="idTarea: -1 "];
-"0x265f290"[label="idTarea: -1 "];
-"0x265f050"[label="idTarea: -1 "];
-"0x265ef90"[label="idTarea: -1 "];
-"0x265ecc0"[label="idTarea: -1 "];
-"0x265e240"[label="idTarea: -1 "];
-"0x265eb10"[label="idTarea: -1 "];
-"0x265eb70"[label="idTarea: -1 "];
-"0x265ebd0"[label="idTarea: -1 "];
-"0x2651240"[label="idTarea: -1 "];
-"0x2651390"[label="idTarea: -1 "];
-"0x26513c0"[label="idTarea: -1 "];
-"0x2651780"[label="idTarea: -1 "];
-"0x2651b40"[label="idTarea: -1 "];
-"0x2652ec0"[label="idTarea: -1 "];
-"0x2652f50"[label="idTarea: -1 "];
-"0x2653250"[label="idTarea: -1 "];
-"0x2652fb0"[label="idTarea: -1 "];
-"0x2653010"[label="idTarea: -1 "];
-"0x2655a10"[label="idTarea: -1 "];
-"0x26555f0"[label="idTarea: -1 "];
-"0x2655710"[label="idTarea: -1 "];
-"0x2655620"[label="idTarea: -1 "];
-"0x2655ce0"[label="idTarea: -1 "];
-"0x2656f30"[label="idTarea: -1 "];
-"0x2657020"[label="idTarea: -1 "];
-"0x2656ff0"[label="idTarea: -1 "];
-"0x2656ed0"[label="idTarea: -1 "];
-"0x2656e40"[label="idTarea: -1 "];
-"0x2658870"[label="idTarea: -1 "];
-"0x26588a0"[label="idTarea: -1 "];
-"0x2658bd0"[label="idTarea: -1 "];
-"0x2658c00"[label="idTarea: -1 "];
-"0x2659320"[label="idTarea: -1 "];
-"0x265b150"[label="idTarea: -1 "];
-"0x265b4b0"[label="idTarea: -1 "];
-"0x265ae80"[label="idTarea: -1 "];
-"0x265b750"[label="idTarea: -1 "];
-"0x265b6c0"[label="idTarea: -1 "];
-"0x265cf20"[label="idTarea: -1 "];
-"0x265ce00"[label="idTarea: -1 "];
-"0x265d3a0"[label="idTarea: -1 "];
-"0x265d010"[label="idTarea: -1 "];
-"0x265d880"[label="idTarea: -1 "];
-"0x265f110"[label="idTarea: -1 "];
-"0x265f650"[label="idTarea: -1 "];
-"0x265f8c0"[label="idTarea: -1 "];
-"0x265ef00"[label="idTarea: -1 "];
-"0x265f8f0"[label="idTarea: -1 "];
-"0x265ec00"[label="idTarea: -1 "];
-"0x265ec30"[label="idTarea: -1 "];
-"0x265ec60"[label="idTarea: -1 "];
-"0x265ec90"[label="idTarea: -1 "];
-"0x265e360"[label="idTarea: -1 "];
-"0x2651ba0"[label="idTarea: -1 "];
-"0x2651810"[label="idTarea: -1 "];
-"0x2651630"[label="idTarea: -1 "];
-"0x2651510"[label="idTarea: -1 "];
-"0x2651660"[label="idTarea: -1 "];
-"0x2653160"[label="idTarea: -1 "];
-"0x26530d0"[label="idTarea: -1 "];
-"0x2653100"[label="idTarea: -1 "];
-"0x26532e0"[label="idTarea: -1 "];
-"0x2653490"[label="idTarea: -1 "];
-"0x2655c50"[label="idTarea: -1 "];
-"0x2655cb0"[label="idTarea: -1 "];
-"0x26557d0"[label="idTarea: -1 "];
-"0x2655170"[label="idTarea: -1 "];
-"0x26557a0"[label="idTarea: -1 "];
-"0x2657050"[label="idTarea: -1 "];
-"0x2656f00"[label="idTarea: -1 "];
-"0x2657520"[label="idTarea: -1 "];
-"0x2657730"[label="idTarea: -1 "];
-"0x2657250"[label="idTarea: -1 "];
-"0x2659200"[label="idTarea: -1 "];
-"0x2659620"[label="idTarea: -1 "];
-"0x2659890"[label="idTarea: -1 "];
-"0x26594a0"[label="idTarea: -1 "];
-"0x2659650"[label="idTarea: -1 "];
-"0x265aeb0"[label="idTarea: -1 "];
-"0x265afd0"[label="idTarea: -1 "];
-"0x265b810"[label="idTarea: -1 "];
-"0x265b030"[label="idTarea: -1 "];
-"0x265b090"[label="idTarea: -1 "];
-"0x265d850"[label="idTarea: -1 "];
-"0x265d2e0"[label="idTarea: -1 "];
-"0x265d1c0"[label="idTarea: -1 "];
-"0x265d4f0"[label="idTarea: -1 "];
-"0x265d370"[label="idTarea: -1 "];
-"0x265f2c0"[label="idTarea: -1 "];
-"0x265f350"[label="idTarea: -1 "];
-"0x265f170"[label="idTarea: -1 "];
-"0x265f260"[label="idTarea: -1 "];
-"0x265f560"[label="idTarea: -1 "];
-"0x265ecf0"[label="idTarea: -1 "];
-"0x265e2a0"[label="idTarea: -1 "];
-"0x265ed20"[label="idTarea: -1 "];
-"0x265ed50"[label="idTarea: -1 "];
-"0x265e210"[label="idTarea: -1 "];
-"0x2651c60"[label="idTarea: -1 "];
-"0x2651570"[label="idTarea: -1 "];
-"0x26518d0"[label="idTarea: -1 "];
-"0x2651540"[label="idTarea: 903"];
-"0x26514e0"[label="idTarea: -1 "];
-"0x2653130"[label="idTarea: -1 "];
-"0x2653310"[label="idTarea: -1 "];
-"0x2653340"[label="idTarea: -1 "];
-"0x2653400"[label="idTarea: -1 "];
-"0x2653370"[label="idTarea: -1 "];
-"0x2655b00"[label="idTarea: -1 "];
-"0x2655b30"[label="idTarea: -1 "];
-"0x2655d10"[label="idTarea: -1 "];
-"0x2655680"[label="idTarea: -1 "];
-"0x2655200"[label="idTarea: -1 "];
-"0x2657550"[label="idTarea: -1 "];
-"0x26579a0"[label="idTarea: -1 "];
-"0x2657370"[label="idTarea: -1 "];
-"0x2657580"[label="idTarea: -1 "];
-"0x26576a0"[label="idTarea: -1 "];
-"0x2658e10"[label="idTarea: -1 "];
-"0x2658f30"[label="idTarea: -1 "];
-"0x2659920"[label="idTarea: -1 "];
-"0x2658e40"[label="idTarea: -1 "];
-"0x2659080"[label="idTarea: -1 "];
-"0x265b210"[label="idTarea: -1 "];
-"0x265b0c0"[label="idTarea: -1 "];
-"0x265b1e0"[label="idTarea: -1 "];
-"0x265b8a0"[label="idTarea: 928"];
-"0x265b3c0"[label="idTarea: -1 "];
-"0x265d520"[label="idTarea: -1 "];
-"0x265d5e0"[label="idTarea: -1 "];
-"0x265cf50"[label="idTarea: -1 "];
-"0x265cf80"[label="idTarea: -1 "];
-"0x265cfb0"[label="idTarea: -1 "];
-"0x265f7d0"[label="idTarea: -1 "];
-"0x265f140"[label="idTarea: -1 "];
-"0x265f1a0"[label="idTarea: -1 "];
-"0x265f710"[label="idTarea: -1 "];
-"0x265f0b0"[label="idTarea: -1 "];
-"0x265e270"[label="idTarea: -1 "];
-"0x265e2d0"[label="idTarea: -1 "];
-"0x2661660"[label="idTarea: -1 "];
-"0x2661210"[label="idTarea: -1 "];
-"0x2661360"[label="idTarea: -1 "];
-"0x26515a0"[label="idTarea: -1 "];
-"0x26515d0"[label="idTarea: -1 "];
-"0x26517b0"[label="idTarea: -1 "];
-"0x26517e0"[label="idTarea: -1 "];
-"0x2651600"[label="idTarea: -1 "];
-"0x2652d10"[label="idTarea: -1 "];
-"0x2652d40"[label="idTarea: -1 "];
-"0x2653b90"[label="idTarea: -1 "];
-"0x2653c20"[label="idTarea: -1 "];
-"0x2653e00"[label="idTarea: -1 "];
-"0x2655500"[label="idTarea: -1 "];
-"0x2655800"[label="idTarea: -1 "];
-"0x2655650"[label="idTarea: -1 "];
-"0x2655380"[label="idTarea: -1 "];
-"0x2655a70"[label="idTarea: -1 "];
-"0x26575b0"[label="idTarea: -1 "];
-"0x2657760"[label="idTarea: -1 "];
-"0x26574c0"[label="idTarea: -1 "];
-"0x26578e0"[label="idTarea: -1 "];
-"0x26577f0"[label="idTarea: -1 "];
-"0x26592f0"[label="idTarea: -1 "];
-"0x2659290"[label="idTarea: -1 "];
-"0x2659470"[label="idTarea: -1 "];
-"0x26597d0"[label="idTarea: -1 "];
-"0x2658f60"[label="idTarea: -1 "];
-"0x265b6f0"[label="idTarea: -1 "];
-"0x265b3f0"[label="idTarea: -1 "];
-"0x265b570"[label="idTarea: -1 "];
-"0x265b5a0"[label="idTarea: -1 "];
-"0x265b8d0"[label="idTarea: -1 "];
-"0x265d160"[label="idTarea: -1 "];
-"0x265d490"[label="idTarea: -1 "];
-"0x265ce90"[label="idTarea: -1 "];
-"0x265d8b0"[label="idTarea: -1 "];
-"0x265d6d0"[label="idTarea: -1 "];
-"0x265f980"[label="idTarea: -1 "];
-"0x265f2f0"[label="idTarea: -1 "];
-"0x265ee10"[label="idTarea: -1 "];
-"0x265f890"[label="idTarea: -1 "];
-"0x265f6e0"[label="idTarea: -1 "];
-"0x2660e50"[label="idTarea: -1 "];
-"0x26610c0"[label="idTarea: -1 "];
-"0x2661330"[label="idTarea: -1 "];
-"0x26612d0"[label="idTarea: -1 "];
-"0x26614b0"[label="idTarea: -1 "];
-"0x2651840"[label="idTarea: -1 "];
-"0x2651ae0"[label="idTarea: -1 "];
-"0x2651ab0"[label="idTarea: -1 "];
-"0x2651b10"[label="idTarea: -1 "];
-"0x2651690"[label="idTarea: -1 "];
-"0x2653f80"[label="idTarea: -1 "];
-"0x2653b60"[label="idTarea: -1 "];
-"0x2653bc0"[label="idTarea: -1 "];
-"0x2653f20"[label="idTarea: -1 "];
-"0x2653b00"[label="idTarea: -1 "];
-"0x2655260"[label="idTarea: -1 "];
-"0x2655b60"[label="idTarea: -1 "];
-"0x2655aa0"[label="idTarea: -1 "];
-"0x2655560"[label="idTarea: -1 "];
-"0x2655290"[label="idTarea: -1 "];
-"0x2657a90"[label="idTarea: -1 "];
-"0x2657d30"[label="idTarea: -1 "];
-"0x2657190"[label="idTarea: -1 "];
-"0x2657820"[label="idTarea: -1 "];
-"0x26573d0"[label="idTarea: -1 "];
-"0x2658fc0"[label="idTarea: -1 "];
-"0x2659050"[label="idTarea: -1 "];
-"0x2659800"[label="idTarea: -1 "];
-"0x26593b0"[label="idTarea: -1 "];
-"0x26598c0"[label="idTarea: -1 "];
-"0x265b900"[label="idTarea: -1 "];
-"0x265b930"[label="idTarea: -1 "];
-"0x265bf00"[label="idTarea: -1 "];
-"0x265bc60"[label="idTarea: -1 "];
-"0x265bd20"[label="idTarea: -1 "];
-"0x265cec0"[label="idTarea: -1 "];
-"0x265cef0"[label="idTarea: -1 "];
-"0x265d8e0"[label="idTarea: -1 "];
-"0x265cfe0"[label="idTarea: -1 "];
-"0x265d040"[label="idTarea: -1 "];
-"0x265efc0"[label="idTarea: -1 "];
-"0x265f020"[label="idTarea: -1 "];
-"0x265f5c0"[label="idTarea: -1 "];
-"0x265f920"[label="idTarea: -1 "];
-"0x265f530"[label="idTarea: -1 "];
-"0x2661810"[label="idTarea: -1 "];
-"0x2660fa0"[label="idTarea: -1 "];
-"0x2661000"[label="idTarea: -1 "];
-"0x2661090"[label="idTarea: -1 "];
-"0x2660f40"[label="idTarea: -1 "];
-"0x26519c0"[label="idTarea: -1 "];
-"0x2651c00"[label="idTarea: -1 "];
-"0x26516c0"[label="idTarea: -1 "];
-"0x2651900"[label="idTarea: -1 "];
-"0x26516f0"[label="idTarea: -1 "];
-"0x26540a0"[label="idTarea: -1 "];
-"0x2653c50"[label="idTarea: -1 "];
-"0x2653920"[label="idTarea: -1 "];
-"0x2654040"[label="idTarea: -1 "];
-"0x2653f50"[label="idTarea: -1 "];
-"0x26552c0"[label="idTarea: -1 "];
-"0x2655530"[label="idTarea: -1 "];
-"0x2655980"[label="idTarea: -1 "];
-"0x2655350"[label="idTarea: -1 "];
-"0x26556b0"[label="idTarea: -1 "];
-"0x2657940"[label="idTarea: -1 "];
-"0x2657970"[label="idTarea: -1 "];
-"0x2657160"[label="idTarea: -1 "];
-"0x26574f0"[label="idTarea: -1 "];
-"0x2657850"[label="idTarea: -1 "];
-"0x2658f90"[label="idTarea: -1 "];
-"0x2659950"[label="idTarea: -1 "];
-"0x2658db0"[label="idTarea: -1 "];
-"0x26591a0"[label="idTarea: -1 "];
-"0x2659710"[label="idTarea: -1 "];
-"0x265bc90"[label="idTarea: -1 "];
-"0x265c0b0"[label="idTarea: -1 "];
-"0x265c080"[label="idTarea: -1 "];
-"0x265c0e0"[label="idTarea: -1 "];
-"0x265bdb0"[label="idTarea: -1 "];
-"0x265d310"[label="idTarea: -1 "];
-"0x265d0a0"[label="idTarea: -1 "];
-"0x265d0d0"[label="idTarea: -1 "];
-"0x265d910"[label="idTarea: -1 "];
-"0x265d190"[label="idTarea: -1 "];
-"0x265f320"[label="idTarea: -1 "];
-"0x265ee40"[label="idTarea: -1 "];
-"0x265f7a0"[label="idTarea: -1 "];
-"0x265f1d0"[label="idTarea: -1 "];
-"0x265f080"[label="idTarea: -1 "];
-"0x2661390"[label="idTarea: -1 "];
-"0x26611e0"[label="idTarea: -1 "];
-"0x2661780"[label="idTarea: -1 "];
-"0x2660f70"[label="idTarea: -1 "];
-"0x2660df0"[label="idTarea: -1 "];
-"0x2651720"[label="idTarea: -1 "];
-"0x2651750"[label="idTarea: -1 "];
-"0x2651a20"[label="idTarea: -1 "];
-"0x2651870"[label="idTarea: -1 "];
-"0x2651b70"[label="idTarea: -1 "];
-"0x2653aa0"[label="idTarea: -1 "];
-"0x2653ad0"[label="idTarea: -1 "];
-"0x2653e60"[label="idTarea: -1 "];
-"0x2653950"[label="idTarea: -1 "];
-"0x2653e30"[label="idTarea: -1 "];
-"0x26556e0"[label="idTarea: -1 "];
-"0x2655740"[label="idTarea: -1 "];
-"0x2655770"[label="idTarea: -1 "];
-"0x26554a0"[label="idTarea: -1 "];
-"0x26558c0"[label="idTarea: -1 "];
-"0x2657910"[label="idTarea: -1 "];
-"0x2657790"[label="idTarea: -1 "];
-"0x2657490"[label="idTarea: -1 "];
-"0x2657400"[label="idTarea: -1 "];
-"0x2657700"[label="idTarea: -1 "];
-"0x2658ff0"[label="idTarea: -1 "];
-"0x26590e0"[label="idTarea: -1 "];
-"0x2659680"[label="idTarea: -1 "];
-"0x26598f0"[label="idTarea: -1 "];
-"0x2658ed0"[label="idTarea: -1 "];
-"0x265b990"[label="idTarea: -1 "];
-"0x265bde0"[label="idTarea: -1 "];
-"0x265bf90"[label="idTarea: -1 "];
-"0x265bfc0"[label="idTarea: -1 "];
-"0x265b9c0"[label="idTarea: -1 "];
-"0x265d700"[label="idTarea: -1 "];
-"0x265d1f0"[label="idTarea: -1 "];
-"0x265d340"[label="idTarea: -1 "];
-"0x265d550"[label="idTarea: -1 "];
-"0x265d3d0"[label="idTarea: -1 "];
-"0x265f5f0"[label="idTarea: -1 "];
-"0x265f500"[label="idTarea: -1 "];
-"0x265f380"[label="idTarea: -1 "];
-"0x265f590"[label="idTarea: -1 "];
-"0x265f200"[label="idTarea: -1 "];
-"0x26612a0"[label="idTarea: -1 "];
-"0x2661060"[label="idTarea: -1 "];
-"0x2660fd0"[label="idTarea: -1 "];
-"0x2661120"[label="idTarea: -1 "];
-"0x2661690"[label="idTarea: -1 "];
-"0x2651bd0"[label="idTarea: -1 "];
-"0x26518a0"[label="idTarea: -1 "];
-"0x2651930"[label="idTarea: -1 "];
-"0x2651960"[label="idTarea: -1 "];
-"0x2651990"[label="idTarea: -1 "];
-"0x2653cb0"[label="idTarea: -1 "];
-"0x2653980"[label="idTarea: -1 "];
-"0x2653fe0"[label="idTarea: -1 "];
-"0x2653c80"[label="idTarea: -1 "];
-"0x2653bf0"[label="idTarea: -1 "];
-"0x2655830"[label="idTarea: -1 "];
-"0x2655b90"[label="idTarea: -1 "];
-"0x26551a0"[label="idTarea: -1 "];
-"0x26552f0"[label="idTarea: -1 "];
-"0x2655860"[label="idTarea: -1 "];
-"0x26575e0"[label="idTarea: -1 "];
-"0x26579d0"[label="idTarea: -1 "];
-"0x2657430"[label="idTarea: -1 "];
-"0x26572b0"[label="idTarea: -1 "];
-"0x26576d0"[label="idTarea: -1 "];
-"0x2658d80"[label="idTarea: -1 "];
-"0x2659260"[label="idTarea: -1 "];
-"0x2659350"[label="idTarea: -1 "];
-"0x2659140"[label="idTarea: -1 "];
-"0x2659230"[label="idTarea: -1 "];
-"0x265bd50"[label="idTarea: -1 "];
-"0x265ba50"[label="idTarea: -1 "];
-"0x265bc30"[label="idTarea: -1 "];
-"0x265be10"[label="idTarea: -1 "];
-"0x265bd80"[label="idTarea: -1 "];
-"0x265d400"[label="idTarea: -1 "];
-"0x265d4c0"[label="idTarea: -1 "];
-"0x265d940"[label="idTarea: -1 "];
-"0x265d580"[label="idTarea: -1 "];
-"0x265d5b0"[label="idTarea: -1 "];
-"0x265f3b0"[label="idTarea: -1 "];
-"0x265ee70"[label="idTarea: -1 "];
-"0x265eea0"[label="idTarea: -1 "];
-"0x265eed0"[label="idTarea: -1 "];
-"0x265f230"[label="idTarea: -1 "];
-"0x26618d0"[label="idTarea: -1 "];
-"0x2660f10"[label="idTarea: -1 "];
-"0x2661900"[label="idTarea: -1 "];
-"0x2661300"[label="idTarea: -1 "];
-"0x26613c0"[label="idTarea: -1 "];
-"0x26519f0"[label="idTarea: -1 "];
-"0x2651a50"[label="idTarea: -1 "];
-"0x2651a80"[label="idTarea: -1 "];
-"0x2651c30"[label="idTarea: -1 "];
-"0x26523b0"[label="idTarea: -1 "];
-"0x2653ec0"[label="idTarea: -1 "];
-"0x2653e90"[label="idTarea: -1 "];
-"0x2653ce0"[label="idTarea: -1 "];
-"0x2653ef0"[label="idTarea: -1 "];
-"0x2653d10"[label="idTarea: -1 "];
-"0x26553b0"[label="idTarea: -1 "];
-"0x26558f0"[label="idTarea: -1 "];
-"0x2655bc0"[label="idTarea: -1 "];
-"0x2655320"[label="idTarea: -1 "];
-"0x2655920"[label="idTarea: -1 "];
-"0x2657460"[label="idTarea: -1 "];
-"0x26573a0"[label="idTarea: -1 "];
-"0x2657610"[label="idTarea: -1 "];
-"0x2657a00"[label="idTarea: -1 "];
-"0x2657640"[label="idTarea: -1 "];
-"0x2659530"[label="idTarea: -1 "];
-"0x26597a0"[label="idTarea: -1 "];
-"0x2659110"[label="idTarea: -1 "];
-"0x2659170"[label="idTarea: -1 "];
-"0x26596e0"[label="idTarea: -1 "];
-"0x265bf30"[label="idTarea: -1 "];
-"0x265b9f0"[label="idTarea: -1 "];
-"0x265bab0"[label="idTarea: -1 "];
-"0x265bb70"[label="idTarea: -1 "];
-"0x265bea0"[label="idTarea: -1 "];
-"0x265dc70"[label="idTarea: -1 "];
-"0x265e0c0"[label="idTarea: -1 "];
-"0x265e090"[label="idTarea: -1 "];
-"0x265e0f0"[label="idTarea: -1 "];
-"0x265ddc0"[label="idTarea: -1 "];
-"0x265f950"[label="idTarea: -1 "];
-"0x265ef60"[label="idTarea: -1 "];
-"0x265eff0"[label="idTarea: -1 "];
-"0x265f0e0"[label="idTarea: -1 "];
-"0x265f620"[label="idTarea: -1 "];
-"0x2661180"[label="idTarea: -1 "];
-"0x2661270"[label="idTarea: -1 "];
-"0x2661570"[label="idTarea: -1 "];
-"0x26617e0"[label="idTarea: -1 "];
-"0x2661150"[label="idTarea: -1 "];
-"0x2652020"[label="idTarea: -1 "];
-"0x2651f90"[label="idTarea: -1 "];
-"0x26521a0"[label="idTarea: -1 "];
-"0x2652080"[label="idTarea: -1 "];
-"0x2652170"[label="idTarea: -1 "];
-"0x2653d70"[label="idTarea: -1 "];
-"0x26539b0"[label="idTarea: -1 "];
-"0x2653a10"[label="idTarea: -1 "];
-"0x26539e0"[label="idTarea: -1 "];
-"0x2653d40"[label="idTarea: -1 "];
-"0x26559b0"[label="idTarea: -1 "];
-"0x26559e0"[label="idTarea: -1 "];
-"0x2655950"[label="idTarea: -1 "];
-"0x26553e0"[label="idTarea: -1 "];
-"0x2655bf0"[label="idTarea: -1 "];
-"0x2657a30"[label="idTarea: -1 "];
-"0x2657880"[label="idTarea: -1 "];
-"0x2657af0"[label="idTarea: -1 "];
-"0x2657340"[label="idTarea: -1 "];
-"0x2657670"[label="idTarea: -1 "];
-"0x26590b0"[label="idTarea: -1 "];
-"0x2658de0"[label="idTarea: -1 "];
-"0x26592c0"[label="idTarea: -1 "];
-"0x2658e70"[label="idTarea: -1 "];
-"0x2659860"[label="idTarea: -1 "];
-"0x265bcc0"[label="idTarea: -1 "];
-"0x265be40"[label="idTarea: -1 "];
-"0x265bae0"[label="idTarea: -1 "];
-"0x265bcf0"[label="idTarea: -1 "];
-"0x265bf60"[label="idTarea: -1 "];
-"0x265d9a0"[label="idTarea: -1 "];
-"0x265ddf0"[label="idTarea: -1 "];
-"0x265dfa0"[label="idTarea: -1 "];
-"0x265dfd0"[label="idTarea: -1 "];
-"0x265d9d0"[label="idTarea: -1 "];
-"0x265f800"[label="idTarea: -1 "];
-"0x265edb0"[label="idTarea: -1 "];
-"0x265f4a0"[label="idTarea: -1 "];
-"0x265f830"[label="idTarea: -1 "];
-"0x265f3e0"[label="idTarea: -1 "];
-"0x26611b0"[label="idTarea: -1 "];
-"0x2661720"[label="idTarea: -1 "];
-"0x26610f0"[label="idTarea: -1 "];
-"0x2661990"[label="idTarea: -1 "];
-"0x26613f0"[label="idTarea: -1 "];
-"0x2652230"[label="idTarea: -1 "];
-"0x2651de0"[label="idTarea: -1 "];
-"0x2651e10"[label="idTarea: -1 "];
-"0x2651e40"[label="idTarea: -1 "];
-"0x2651f30"[label="idTarea: -1 "];
-"0x2653a40"[label="idTarea: -1 "];
-"0x2653b30"[label="idTarea: -1 "];
-"0x2653da0"[label="idTarea: -1 "];
-"0x2653dd0"[label="idTarea: -1 "];
-"0x2653fb0"[label="idTarea: -1 "];
-"0x2655c20"[label="idTarea: -1 "];
-"0x2655410"[label="idTarea: -1 "];
-"0x2655c80"[label="idTarea: -1 "];
-"0x2655440"[label="idTarea: -1 "];
-"0x2655470"[label="idTarea: -1 "];
-"0x2657a60"[label="idTarea: -1 "];
-"0x26578b0"[label="idTarea: -1 "];
-"0x2657ac0"[label="idTarea: -1 "];
-"0x26577c0"[label="idTarea: -1 "];
-"0x26572e0"[label="idTarea: -1 "];
-"0x26596b0"[label="idTarea: -1 "];
-"0x2659020"[label="idTarea: -1 "];
-"0x26591d0"[label="idTarea: -1 "];
-"0x2659590"[label="idTarea: -1 "];
-"0x2658ea0"[label="idTarea: -1 "];
-"0x265bb40"[label="idTarea: -1 "];
-"0x265be70"[label="idTarea: -1 "];
-"0x265bed0"[label="idTarea: -1 "];
-"0x265bff0"[label="idTarea: -1 "];
-"0x265c020"[label="idTarea: -1 "];
-"0x265dd30"[label="idTarea: -1 "];
-"0x265da60"[label="idTarea: -1 "];
-"0x265dc40"[label="idTarea: -1 "];
-"0x265de20"[label="idTarea: -1 "];
-"0x265dd90"[label="idTarea: -1 "];
-"0x265f410"[label="idTarea: -1 "];
-"0x265f680"[label="idTarea: -1 "];
-"0x265f6b0"[label="idTarea: -1 "];
-"0x265f440"[label="idTarea: -1 "];
-"0x265f470"[label="idTarea: -1 "];
-"0x2660e20"[label="idTarea: -1 "];
-"0x26618a0"[label="idTarea: -1 "];
-"0x26616f0"[label="idTarea: -1 "];
-"0x2661030"[label="idTarea: -1 "];
-"0x2661240"[label="idTarea: -1 "];
-"0x2652140"[label="idTarea: -1 "];
-"0x2651d20"[label="idTarea: -1 "];
-"0x26522f0"[label="idTarea: -1 "];
-"0x2652260"[label="idTarea: -1 "];
-"0x2651db0"[label="idTarea: -1 "];
-"0x2653a70"[label="idTarea: -1 "];
-"0x2654010"[label="idTarea: -1 "];
-"0x2654070"[label="idTarea: -1 "];
-"0x2654d00"[label="idTarea: -1 "];
-"0x2654790"[label="idTarea: -1 "];
-"0x2655e00"[label="idTarea: -1 "];
-"0x2656070"[label="idTarea: -1 "];
-"0x2655ec0"[label="idTarea: -1 "];
-"0x2655fe0"[label="idTarea: -1 "];
-"0x2655dd0"[label="idTarea: -1 "];
-"0x2657b50"[label="idTarea: -1 "];
-"0x2657b20"[label="idTarea: -1 "];
-"0x2657b80"[label="idTarea: -1 "];
-"0x2657bb0"[label="idTarea: -1 "];
-"0x2657c70"[label="idTarea: -1 "];
-"0x2659500"[label="idTarea: -1 "];
-"0x2659380"[label="idTarea: -1 "];
-"0x2658f00"[label="idTarea: -1 "];
-"0x2659740"[label="idTarea: -1 "];
-"0x26593e0"[label="idTarea: -1 "];
-"0x265c050"[label="idTarea: -1 "];
-"0x265ba20"[label="idTarea: -1 "];
-"0x265ba80"[label="idTarea: -1 "];
-"0x265bb10"[label="idTarea: -1 "];
-"0x265bba0"[label="idTarea: -1 "];
-"0x265df40"[label="idTarea: -1 "];
-"0x265da00"[label="idTarea: -1 "];
-"0x265dac0"[label="idTarea: -1 "];
-"0x265db80"[label="idTarea: -1 "];
-"0x265deb0"[label="idTarea: -1 "];
-"0x265f860"[label="idTarea: -1 "];
-"0x265f4d0"[label="idTarea: -1 "];
-"0x265f740"[label="idTarea: -1 "];
-"0x265fc80"[label="idTarea: -1 "];
-"0x265fa70"[label="idTarea: -1 "];
-"0x26615d0"[label="idTarea: -1 "];
-"0x2661930"[label="idTarea: -1 "];
-"0x2661540"[label="idTarea: -1 "];
-"0x2661420"[label="idTarea: -1 "];
-"0x2660e80"[label="idTarea: 1349"];
-"0x26029d0" -> "0x26028e0"[dir="both"];
-"0x26028e0" -> "0x2602a00"[dir="both"];
-"0x2602a00" -> "0x2602a30"[dir="both"];
-"0x2602a30" -> "0x2602a60"[dir="both"];
-"0x2602a60" -> "0x2652470"[dir="both"];
-"0x2652470" -> "0x2652320"[dir="both"];
-"0x2652320" -> "0x2652110"[dir="both"];
-"0x2652110" -> "0x2652050"[dir="both"];
-"0x2652050" -> "0x2651e70"[dir="both"];
-"0x2651e70" -> "0x2654970"[dir="both"];
-"0x2654970" -> "0x26549d0"[dir="both"];
-"0x26549d0" -> "0x2654760"[dir="both"];
-"0x2654760" -> "0x2654220"[dir="both"];
-"0x2654220" -> "0x26546a0"[dir="both"];
-"0x26546a0" -> "0x2655fb0"[dir="both"];
-"0x2655fb0" -> "0x2655d70"[dir="both"];
-"0x2655d70" -> "0x2655e60"[dir="both"];
-"0x2655e60" -> "0x2656010"[dir="both"];
-"0x2656010" -> "0x2656040"[dir="both"];
-"0x2656040" -> "0x26571f0"[dir="both"];
-"0x26571f0" -> "0x2657be0"[dir="both"];
-"0x2657be0" -> "0x2657c10"[dir="both"];
-"0x2657c10" -> "0x2657c40"[dir="both"];
-"0x2657c40" -> "0x2657ca0"[dir="both"];
-"0x2657ca0" -> "0x2659410"[dir="both"];
-"0x2659410" -> "0x26595c0"[dir="both"];
-"0x26595c0" -> "0x26594d0"[dir="both"];
-"0x26594d0" -> "0x2659440"[dir="both"];
-"0x2659440" -> "0x2659560"[dir="both"];
-"0x2659560" -> "0x265bbd0"[dir="both"];
-"0x265bbd0" -> "0x265bc00"[dir="both"];
-"0x265bc00" -> "0x265a400"[dir="both"];
-"0x265a400" -> "0x265a970"[dir="both"];
-"0x265a970" -> "0x265a9a0"[dir="both"];
-"0x265a9a0" -> "0x265dca0"[dir="both"];
-"0x265dca0" -> "0x265de50"[dir="both"];
-"0x265de50" -> "0x265daf0"[dir="both"];
-"0x265daf0" -> "0x265dcd0"[dir="both"];
-"0x265dcd0" -> "0x265df70"[dir="both"];
-"0x265df70" -> "0x265f9e0"[dir="both"];
-"0x265f9e0" -> "0x265ff80"[dir="both"];
-"0x265ff80" -> "0x265fbf0"[dir="both"];
-"0x265fbf0" -> "0x265ff50"[dir="both"];
-"0x265ff50" -> "0x265fc50"[dir="both"];
-"0x265fc50" -> "0x2602af0"[dir="both"];
-"0x2602af0" -> "0x2602bb0"[dir="both"];
-"0x2602bb0" -> "0x2602c40"[dir="both"];
-"0x2602c40" -> "0x2602be0"[dir="both"];
-"0x2602be0" -> "0xe474c0"[dir="both"];
-"0xe474c0" -> "0x2652350"[dir="both"];
-"0x2652350" -> "0x2651cf0"[dir="both"];
-"0x2651cf0" -> "0x26521d0"[dir="both"];
-"0x26521d0" -> "0x2652380"[dir="both"];
-"0x2652380" -> "0x26523e0"[dir="both"];
-"0x26523e0" -> "0x26547c0"[dir="both"];
-"0x26547c0" -> "0x2654ca0"[dir="both"];
-"0x2654ca0" -> "0x2654730"[dir="both"];
-"0x2654730" -> "0x2654c70"[dir="both"];
-"0x2654c70" -> "0x2654cd0"[dir="both"];
-"0x2654cd0" -> "0x2655ef0"[dir="both"];
-"0x2655ef0" -> "0x2655e30"[dir="both"];
-"0x2655e30" -> "0x2655d40"[dir="both"];
-"0x2655d40" -> "0x2655e90"[dir="both"];
-"0x2655e90" -> "0x2655da0"[dir="both"];
-"0x2655da0" -> "0x2657cd0"[dir="both"];
-"0x2657cd0" -> "0x2657d00"[dir="both"];
-"0x2657d00" -> "0x26571c0"[dir="both"];
-"0x26571c0" -> "0x2657310"[dir="both"];
-"0x2657310" -> "0x2657220"[dir="both"];
-"0x2657220" -> "0x26595f0"[dir="both"];
-"0x26595f0" -> "0x2659770"[dir="both"];
-"0x2659770" -> "0x2659830"[dir="both"];
-"0x2659830" -> "0x26599b0"[dir="both"];
-"0x26599b0" -> "0x2659980"[dir="both"];
-"0x2659980" -> "0x265a190"[dir="both"];
-"0x265a190" -> "0x265a520"[dir="both"];
-"0x265a520" -> "0x265a850"[dir="both"];
-"0x265a850" -> "0x265a940"[dir="both"];
-"0x265a940" -> "0x265a760"[dir="both"];
-"0x265a760" -> "0x265db50"[dir="both"];
-"0x265db50" -> "0x265dd00"[dir="both"];
-"0x265dd00" -> "0x265dd60"[dir="both"];
-"0x265dd60" -> "0x265de80"[dir="both"];
-"0x265de80" -> "0x265dee0"[dir="both"];
-"0x265dee0" -> "0x265f9b0"[dir="both"];
-"0x265f9b0" -> "0x265fe90"[dir="both"];
-"0x265fe90" -> "0x265fce0"[dir="both"];
-"0x265fce0" -> "0x265faa0"[dir="both"];
-"0x265faa0" -> "0x265fad0"[dir="both"];
-"0x265fad0" -> "0xe47610"[dir="both"];
-"0xe47610" -> "0x2650820"[dir="both"];
-"0x2650820" -> "0x26507f0"[dir="both"];
-"0x26507f0" -> "0x2650940"[dir="both"];
-"0x2650940" -> "0x2650b50"[dir="both"];
-"0x2650b50" -> "0x26520b0"[dir="both"];
-"0x26520b0" -> "0x2651d50"[dir="both"];
-"0x2651d50" -> "0x2652200"[dir="both"];
-"0x2652200" -> "0x26520e0"[dir="both"];
-"0x26520e0" -> "0x2651ea0"[dir="both"];
-"0x2651ea0" -> "0x2654430"[dir="both"];
-"0x2654430" -> "0x2654130"[dir="both"];
-"0x2654130" -> "0x2654640"[dir="both"];
-"0x2654640" -> "0x2654a90"[dir="both"];
-"0x2654a90" -> "0x2654340"[dir="both"];
-"0x2654340" -> "0x2655f50"[dir="both"];
-"0x2655f50" -> "0x2655f20"[dir="both"];
-"0x2655f20" -> "0x2655f80"[dir="both"];
-"0x2655f80" -> "0x26560a0"[dir="both"];
-"0x26560a0" -> "0x2656690"[dir="both"];
-"0x2656690" -> "0x2657280"[dir="both"];
-"0x2657280" -> "0x2657f10"[dir="both"];
-"0x2657f10" -> "0x2657eb0"[dir="both"];
-"0x2657eb0" -> "0x2657fd0"[dir="both"];
-"0x2657fd0" -> "0x2658090"[dir="both"];
-"0x2658090" -> "0x2659cb0"[dir="both"];
-"0x2659cb0" -> "0x26599e0"[dir="both"];
-"0x26599e0" -> "0x2659a40"[dir="both"];
-"0x2659a40" -> "0x2659b60"[dir="both"];
-"0x2659b60" -> "0x2659b90"[dir="both"];
-"0x2659b90" -> "0x265a4c0"[dir="both"];
-"0x265a4c0" -> "0x265a430"[dir="both"];
-"0x265a430" -> "0x265a730"[dir="both"];
-"0x265a730" -> "0x265a4f0"[dir="both"];
-"0x265a4f0" -> "0x265a9d0"[dir="both"];
-"0x265a9d0" -> "0x265df10"[dir="both"];
-"0x265df10" -> "0x265e000"[dir="both"];
-"0x265e000" -> "0x265e030"[dir="both"];
-"0x265e030" -> "0x265e060"[dir="both"];
-"0x265e060" -> "0x265da30"[dir="both"];
-"0x265da30" -> "0x265ffb0"[dir="both"];
-"0x265ffb0" -> "0x265fd10"[dir="both"];
-"0x265fd10" -> "0x265fda0"[dir="both"];
-"0x265fda0" -> "0x265fd40"[dir="both"];
-"0x265fd40" -> "0x265fa10"[dir="both"];
-"0x265fa10" -> "0x26505e0"[dir="both"];
-"0x26505e0" -> "0x2650640"[dir="both"];
-"0x2650640" -> "0x2650670"[dir="both"];
-"0x2650670" -> "0x2650970"[dir="both"];
-"0x2650970" -> "0x26506a0"[dir="both"];
-"0x26506a0" -> "0x2651ed0"[dir="both"];
-"0x2651ed0" -> "0x2652410"[dir="both"];
-"0x2652410" -> "0x2652290"[dir="both"];
-"0x2652290" -> "0x26522c0"[dir="both"];
-"0x26522c0" -> "0x2652440"[dir="both"];
-"0x2652440" -> "0x2654a00"[dir="both"];
-"0x2654a00" -> "0x26541f0"[dir="both"];
-"0x26541f0" -> "0x2654550"[dir="both"];
-"0x2654550" -> "0x2654b20"[dir="both"];
-"0x2654b20" -> "0x2654be0"[dir="both"];
-"0x2654be0" -> "0x2656180"[dir="both"];
-"0x2656180" -> "0x2656600"[dir="both"];
-"0x2656600" -> "0x26562a0"[dir="both"];
-"0x26562a0" -> "0x2656540"[dir="both"];
-"0x2656540" -> "0x26568d0"[dir="both"];
-"0x26568d0" -> "0x2657f70"[dir="both"];
-"0x2657f70" -> "0x2658000"[dir="both"];
-"0x2658000" -> "0x2657d90"[dir="both"];
-"0x2657d90" -> "0x2657dc0"[dir="both"];
-"0x2657dc0" -> "0x26580c0"[dir="both"];
-"0x26580c0" -> "0x2659ec0"[dir="both"];
-"0x2659ec0" -> "0x265a040"[dir="both"];
-"0x265a040" -> "0x2659a10"[dir="both"];
-"0x2659a10" -> "0x2659ef0"[dir="both"];
-"0x2659ef0" -> "0x265a0d0"[dir="both"];
-"0x265a0d0" -> "0x265a460"[dir="both"];
-"0x265a460" -> "0x265a2e0"[dir="both"];
-"0x265a2e0" -> "0x265a6d0"[dir="both"];
-"0x265a6d0" -> "0x265a490"[dir="both"];
-"0x265a490" -> "0x265a3d0"[dir="both"];
-"0x265a3d0" -> "0x265da90"[dir="both"];
-"0x265da90" -> "0x265db20"[dir="both"];
-"0x265db20" -> "0x265dbb0"[dir="both"];
-"0x265dbb0" -> "0x265dbe0"[dir="both"];
-"0x265dbe0" -> "0x265dc10"[dir="both"];
-"0x265dc10" -> "0x265fa40"[dir="both"];
-"0x265fa40" -> "0x265fb00"[dir="both"];
-"0x265fb00" -> "0x265ffe0"[dir="both"];
-"0x265ffe0" -> "0x265fb30"[dir="both"];
-"0x265fb30" -> "0x2660010"[dir="both"];
-"0x2660010" -> "0x26507c0"[dir="both"];
-"0x26507c0" -> "0x2650910"[dir="both"];
-"0x2650910" -> "0x2650850"[dir="both"];
-"0x2650850" -> "0x2650880"[dir="both"];
-"0x2650880" -> "0x26509a0"[dir="both"];
-"0x26509a0" -> "0x2651d80"[dir="both"];
-"0x2651d80" -> "0x2651f00"[dir="both"];
-"0x2651f00" -> "0x2651f60"[dir="both"];
-"0x2651f60" -> "0x2651fc0"[dir="both"];
-"0x2651fc0" -> "0x2651ff0"[dir="both"];
-"0x2651ff0" -> "0x2654670"[dir="both"];
-"0x2654670" -> "0x2654370"[dir="both"];
-"0x2654370" -> "0x2654190"[dir="both"];
-"0x2654190" -> "0x26543a0"[dir="both"];
-"0x26543a0" -> "0x2654160"[dir="both"];
-"0x2654160" -> "0x26567e0"[dir="both"];
-"0x26567e0" -> "0x2656810"[dir="both"];
-"0x2656810" -> "0x2656d20"[dir="both"];
-"0x2656d20" -> "0x2656630"[dir="both"];
-"0x2656630" -> "0x26569c0"[dir="both"];
-"0x26569c0" -> "0x2657df0"[dir="both"];
-"0x2657df0" -> "0x2657e20"[dir="both"];
-"0x2657e20" -> "0x2657ee0"[dir="both"];
-"0x2657ee0" -> "0x2657f40"[dir="both"];
-"0x2657f40" -> "0x2657fa0"[dir="both"];
-"0x2657fa0" -> "0x2659a70"[dir="both"];
-"0x2659a70" -> "0x2659e90"[dir="both"];
-"0x2659e90" -> "0x2659fb0"[dir="both"];
-"0x2659fb0" -> "0x2659fe0"[dir="both"];
-"0x2659fe0" -> "0x2659e60"[dir="both"];
-"0x2659e60" -> "0x265a5b0"[dir="both"];
-"0x265a5b0" -> "0x265aa30"[dir="both"];
-"0x265aa30" -> "0x265a580"[dir="both"];
-"0x265a580" -> "0x265a910"[dir="both"];
-"0x265a910" -> "0x265a880"[dir="both"];
-"0x265a880" -> "0x265c1a0"[dir="both"];
-"0x265c1a0" -> "0x265c530"[dir="both"];
-"0x265c530" -> "0x265c860"[dir="both"];
-"0x265c860" -> "0x265c950"[dir="both"];
-"0x265c950" -> "0x265c770"[dir="both"];
-"0x265c770" -> "0x265fb60"[dir="both"];
-"0x265fb60" -> "0x265fb90"[dir="both"];
-"0x265fb90" -> "0x265fbc0"[dir="both"];
-"0x265fbc0" -> "0x2660040"[dir="both"];
-"0x2660040" -> "0x265fcb0"[dir="both"];
-"0x265fcb0" -> "0x2650c10"[dir="both"];
-"0x2650c10" -> "0x2650610"[dir="both"];
-"0x2650610" -> "0x26506d0"[dir="both"];
-"0x26506d0" -> "0x2650a30"[dir="both"];
-"0x2650a30" -> "0x2650bb0"[dir="both"];
-"0x2650bb0" -> "0x2652b00"[dir="both"];
-"0x2652b00" -> "0x2652b30"[dir="both"];
-"0x2652b30" -> "0x2652c80"[dir="both"];
-"0x2652c80" -> "0x2652860"[dir="both"];
-"0x2652860" -> "0x26529e0"[dir="both"];
-"0x26529e0" -> "0x2654250"[dir="both"];
-"0x2654250" -> "0x26547f0"[dir="both"];
-"0x26547f0" -> "0x26541c0"[dir="both"];
-"0x26541c0" -> "0x2654280"[dir="both"];
-"0x2654280" -> "0x2654c10"[dir="both"];
-"0x2654c10" -> "0x2656150"[dir="both"];
-"0x2656150" -> "0x26564b0"[dir="both"];
-"0x26564b0" -> "0x26569f0"[dir="both"];
-"0x26569f0" -> "0x2656b70"[dir="both"];
-"0x2656b70" -> "0x2656b40"[dir="both"];
-"0x2656b40" -> "0x2658060"[dir="both"];
-"0x2658060" -> "0x2657e50"[dir="both"];
-"0x2657e50" -> "0x2657e80"[dir="both"];
-"0x2657e80" -> "0x2658030"[dir="both"];
-"0x2658030" -> "0x2657d60"[dir="both"];
-"0x2657d60" -> "0x2659b30"[dir="both"];
-"0x2659b30" -> "0x2659e00"[dir="both"];
-"0x2659e00" -> "0x2659f20"[dir="both"];
-"0x2659f20" -> "0x2659aa0"[dir="both"];
-"0x2659aa0" -> "0x2659f50"[dir="both"];
-"0x2659f50" -> "0x265ab20"[dir="both"];
-"0x265ab20" -> "0x265a370"[dir="both"];
-"0x265a370" -> "0x265a3a0"[dir="both"];
-"0x265a3a0" -> "0x265aa00"[dir="both"];
-"0x265aa00" -> "0x265a8e0"[dir="both"];
-"0x265a8e0" -> "0x265c4d0"[dir="both"];
-"0x265c4d0" -> "0x265c440"[dir="both"];
-"0x265c440" -> "0x265c740"[dir="both"];
-"0x265c740" -> "0x265c500"[dir="both"];
-"0x265c500" -> "0x265c9b0"[dir="both"];
-"0x265c9b0" -> "0x265fe60"[dir="both"];
-"0x265fe60" -> "0x2660070"[dir="both"];
-"0x2660070" -> "0x26600a0"[dir="both"];
-"0x26600a0" -> "0x265fc20"[dir="both"];
-"0x265fc20" -> "0x265fd70"[dir="both"];
-"0x265fd70" -> "0x2650580"[dir="both"];
-"0x2650580" -> "0x2650be0"[dir="both"];
-"0x2650be0" -> "0x26508b0"[dir="both"];
-"0x26508b0" -> "0x26508e0"[dir="both"];
-"0x26508e0" -> "0x2650700"[dir="both"];
-"0x2650700" -> "0x2652a10"[dir="both"];
-"0x2652a10" -> "0x2652500"[dir="both"];
-"0x2652500" -> "0x2652770"[dir="both"];
-"0x2652770" -> "0x2652980"[dir="both"];
-"0x2652980" -> "0x2652a40"[dir="both"];
-"0x2652a40" -> "0x26542b0"[dir="both"];
-"0x26542b0" -> "0x26543d0"[dir="both"];
-"0x26543d0" -> "0x2654460"[dir="both"];
-"0x2654460" -> "0x26542e0"[dir="both"];
-"0x26542e0" -> "0x2654310"[dir="both"];
-"0x2654310" -> "0x2656420"[dir="both"];
-"0x2656420" -> "0x2656a20"[dir="both"];
-"0x2656a20" -> "0x26564e0"[dir="both"];
-"0x26564e0" -> "0x2656660"[dir="both"];
-"0x2656660" -> "0x26561b0"[dir="both"];
-"0x26561b0" -> "0x2658cc0"[dir="both"];
-"0x2658cc0" -> "0x2658390"[dir="both"];
-"0x2658390" -> "0x2658d50"[dir="both"];
-"0x2658d50" -> "0x26581b0"[dir="both"];
-"0x26581b0" -> "0x26585a0"[dir="both"];
-"0x26585a0" -> "0x2659ad0"[dir="both"];
-"0x2659ad0" -> "0x2659b00"[dir="both"];
-"0x2659b00" -> "0x2659da0"[dir="both"];
-"0x2659da0" -> "0x2659bc0"[dir="both"];
-"0x2659bc0" -> "0x2659f80"[dir="both"];
-"0x2659f80" -> "0x265aa60"[dir="both"];
-"0x265aa60" -> "0x265a790"[dir="both"];
-"0x265a790" -> "0x265a310"[dir="both"];
-"0x265a310" -> "0x265ab80"[dir="both"];
-"0x265ab80" -> "0x265a550"[dir="both"];
-"0x265a550" -> "0x265c410"[dir="both"];
-"0x265c410" -> "0x265c2f0"[dir="both"];
-"0x265c2f0" -> "0x265c6e0"[dir="both"];
-"0x265c6e0" -> "0x265c470"[dir="both"];
-"0x265c470" -> "0x265c3e0"[dir="both"];
-"0x265c3e0" -> "0x265fec0"[dir="both"];
-"0x265fec0" -> "0x265ff20"[dir="both"];
-"0x265ff20" -> "0x265fdd0"[dir="both"];
-"0x265fdd0" -> "0x26600d0"[dir="both"];
-"0x26600d0" -> "0x265fe00"[dir="both"];
-"0x265fe00" -> "0x26509d0"[dir="both"];
-"0x26509d0" -> "0x2650c40"[dir="both"];
-"0x2650c40" -> "0x26505b0"[dir="both"];
-"0x26505b0" -> "0x2650a00"[dir="both"];
-"0x2650a00" -> "0x2650730"[dir="both"];
-"0x2650730" -> "0x26528f0"[dir="both"];
-"0x26528f0" -> "0x2652710"[dir="both"];
-"0x2652710" -> "0x26526e0"[dir="both"];
-"0x26526e0" -> "0x26528c0"[dir="both"];
-"0x26528c0" -> "0x2652740"[dir="both"];
-"0x2652740" -> "0x2654820"[dir="both"];
-"0x2654820" -> "0x2654850"[dir="both"];
-"0x2654850" -> "0x2654880"[dir="both"];
-"0x2654880" -> "0x2654400"[dir="both"];
-"0x2654400" -> "0x26545e0"[dir="both"];
-"0x26545e0" -> "0x2656ba0"[dir="both"];
-"0x2656ba0" -> "0x2656ae0"[dir="both"];
-"0x2656ae0" -> "0x2656210"[dir="both"];
-"0x2656210" -> "0x26562d0"[dir="both"];
-"0x26562d0" -> "0x26561e0"[dir="both"];
-"0x26561e0" -> "0x2658b10"[dir="both"];
-"0x2658b10" -> "0x2658360"[dir="both"];
-"0x2658360" -> "0x26584e0"[dir="both"];
-"0x26584e0" -> "0x2658a20"[dir="both"];
-"0x2658a20" -> "0x2658c90"[dir="both"];
-"0x2658c90" -> "0x2659bf0"[dir="both"];
-"0x2659bf0" -> "0x2659d70"[dir="both"];
-"0x2659d70" -> "0x2659c20"[dir="both"];
-"0x2659c20" -> "0x2659ce0"[dir="both"];
-"0x2659ce0" -> "0x265a010"[dir="both"];
-"0x265a010" -> "0x265a5e0"[dir="both"];
-"0x265a5e0" -> "0x265a610"[dir="both"];
-"0x265a610" -> "0x265aca0"[dir="both"];
-"0x265aca0" -> "0x265a220"[dir="both"];
-"0x265a220" -> "0x265a7c0"[dir="both"];
-"0x265a7c0" -> "0x265c5c0"[dir="both"];
-"0x265c5c0" -> "0x265ca40"[dir="both"];
-"0x265ca40" -> "0x265c590"[dir="both"];
-"0x265c590" -> "0x265c920"[dir="both"];
-"0x265c920" -> "0x265c890"[dir="both"];
-"0x265c890" -> "0x265fef0"[dir="both"];
-"0x265fef0" -> "0x2660100"[dir="both"];
-"0x2660100" -> "0x265fe30"[dir="both"];
-"0x265fe30" -> "0x265e3c0"[dir="both"];
-"0x265e3c0" -> "0x265e5a0"[dir="both"];
-"0x265e5a0" -> "0x2650a60"[dir="both"];
-"0x2650a60" -> "0x2650b80"[dir="both"];
-"0x2650b80" -> "0x26504c0"[dir="both"];
-"0x26504c0" -> "0x2650a90"[dir="both"];
-"0x2650a90" -> "0x26504f0"[dir="both"];
-"0x26504f0" -> "0x2652a70"[dir="both"];
-"0x2652a70" -> "0x26526b0"[dir="both"];
-"0x26526b0" -> "0x26525f0"[dir="both"];
-"0x26525f0" -> "0x2652890"[dir="both"];
-"0x2652890" -> "0x26527a0"[dir="both"];
-"0x26527a0" -> "0x26549a0"[dir="both"];
-"0x26549a0" -> "0x2654490"[dir="both"];
-"0x2654490" -> "0x26544c0"[dir="both"];
-"0x26544c0" -> "0x2654a30"[dir="both"];
-"0x2654a30" -> "0x2654b50"[dir="both"];
-"0x2654b50" -> "0x2656750"[dir="both"];
-"0x2656750" -> "0x26563c0"[dir="both"];
-"0x26563c0" -> "0x2656c30"[dir="both"];
-"0x2656c30" -> "0x2656c00"[dir="both"];
-"0x2656c00" -> "0x26566c0"[dir="both"];
-"0x26566c0" -> "0x26582d0"[dir="both"];
-"0x26582d0" -> "0x2658cf0"[dir="both"];
-"0x2658cf0" -> "0x2658660"[dir="both"];
-"0x2658660" -> "0x2658720"[dir="both"];
-"0x2658720" -> "0x2658540"[dir="both"];
-"0x2658540" -> "0x2659c50"[dir="both"];
-"0x2659c50" -> "0x2659c80"[dir="both"];
-"0x2659c80" -> "0x265a070"[dir="both"];
-"0x265a070" -> "0x265a0a0"[dir="both"];
-"0x265a0a0" -> "0x2659d40"[dir="both"];
-"0x2659d40" -> "0x265a280"[dir="both"];
-"0x265a280" -> "0x265a700"[dir="both"];
-"0x265a700" -> "0x265a820"[dir="both"];
-"0x265a820" -> "0x265ad00"[dir="both"];
-"0x265ad00" -> "0x265a7f0"[dir="both"];
-"0x265a7f0" -> "0x265cb30"[dir="both"];
-"0x265cb30" -> "0x265c380"[dir="both"];
-"0x265c380" -> "0x265c3b0"[dir="both"];
-"0x265c3b0" -> "0x265c9e0"[dir="both"];
-"0x265c9e0" -> "0x265c8f0"[dir="both"];
-"0x265c8f0" -> "0x265e6f0"[dir="both"];
-"0x265e6f0" -> "0x265e570"[dir="both"];
-"0x265e570" -> "0x265e7b0"[dir="both"];
-"0x265e7b0" -> "0x265e510"[dir="both"];
-"0x265e510" -> "0x265e930"[dir="both"];
-"0x265e930" -> "0x2650520"[dir="both"];
-"0x2650520" -> "0x2650b20"[dir="both"];
-"0x2650b20" -> "0x2650760"[dir="both"];
-"0x2650760" -> "0x2650790"[dir="both"];
-"0x2650790" -> "0x2650ac0"[dir="both"];
-"0x2650ac0" -> "0x2652680"[dir="both"];
-"0x2652680" -> "0x26527d0"[dir="both"];
-"0x26527d0" -> "0x2652aa0"[dir="both"];
-"0x2652aa0" -> "0x2652800"[dir="both"];
-"0x2652800" -> "0x2652ad0"[dir="both"];
-"0x2652ad0" -> "0x2654b80"[dir="both"];
-"0x2654b80" -> "0x26544f0"[dir="both"];
-"0x26544f0" -> "0x2654a60"[dir="both"];
-"0x2654a60" -> "0x2654520"[dir="both"];
-"0x2654520" -> "0x2654610"[dir="both"];
-"0x2654610" -> "0x2656570"[dir="both"];
-"0x2656570" -> "0x26568a0"[dir="both"];
-"0x26568a0" -> "0x2656720"[dir="both"];
-"0x2656720" -> "0x2656900"[dir="both"];
-"0x2656900" -> "0x2656990"[dir="both"];
-"0x2656990" -> "0x2658630"[dir="both"];
-"0x2658630" -> "0x2658930"[dir="both"];
-"0x2658930" -> "0x2658ba0"[dir="both"];
-"0x2658ba0" -> "0x2658510"[dir="both"];
-"0x2658510" -> "0x2658570"[dir="both"];
-"0x2658570" -> "0x2659d10"[dir="both"];
-"0x2659d10" -> "0x2659dd0"[dir="both"];
-"0x2659dd0" -> "0x2659e30"[dir="both"];
-"0x2659e30" -> "0x265b240"[dir="both"];
-"0x265b240" -> "0x265b660"[dir="both"];
-"0x265b660" -> "0x265acd0"[dir="both"];
-"0x265acd0" -> "0x265ad30"[dir="both"];
-"0x265ad30" -> "0x265a640"[dir="both"];
-"0x265a640" -> "0x265ad60"[dir="both"];
-"0x265ad60" -> "0x265a6a0"[dir="both"];
-"0x265a6a0" -> "0x265c980"[dir="both"];
-"0x265c980" -> "0x265c7a0"[dir="both"];
-"0x265c7a0" -> "0x265c320"[dir="both"];
-"0x265c320" -> "0x265cb90"[dir="both"];
-"0x265cb90" -> "0x265c560"[dir="both"];
-"0x265c560" -> "0x265e840"[dir="both"];
-"0x265e840" -> "0x265eae0"[dir="both"];
-"0x265eae0" -> "0x265ed80"[dir="both"];
-"0x265ed80" -> "0x265e1e0"[dir="both"];
-"0x265e1e0" -> "0x265e870"[dir="both"];
-"0x265e870" -> "0x2650af0"[dir="both"];
-"0x2650af0" -> "0x2650550"[dir="both"];
-"0x2650550" -> "0x2650cd0"[dir="both"];
-"0x2650cd0" -> "0x2651330"[dir="both"];
-"0x2651330" -> "0x2650f70"[dir="both"];
-"0x2650f70" -> "0x26529b0"[dir="both"];
-"0x26529b0" -> "0x2652b60"[dir="both"];
-"0x2652b60" -> "0x2652650"[dir="both"];
-"0x2652650" -> "0x2652830"[dir="both"];
-"0x2652830" -> "0x2652b90"[dir="both"];
-"0x2652b90" -> "0x2654580"[dir="both"];
-"0x2654580" -> "0x2654bb0"[dir="both"];
-"0x2654bb0" -> "0x2654ac0"[dir="both"];
-"0x2654ac0" -> "0x26545b0"[dir="both"];
-"0x26545b0" -> "0x26546d0"[dir="both"];
-"0x26546d0" -> "0x2656300"[dir="both"];
-"0x2656300" -> "0x2656330"[dir="both"];
-"0x2656330" -> "0x2656360"[dir="both"];
-"0x2656360" -> "0x2656510"[dir="both"];
-"0x2656510" -> "0x2656840"[dir="both"];
-"0x2656840" -> "0x2658ae0"[dir="both"];
-"0x2658ae0" -> "0x2658480"[dir="both"];
-"0x2658480" -> "0x2658180"[dir="both"];
-"0x2658180" -> "0x2658690"[dir="both"];
-"0x2658690" -> "0x26581e0"[dir="both"];
-"0x26581e0" -> "0x265b480"[dir="both"];
-"0x265b480" -> "0x265b2d0"[dir="both"];
-"0x265b2d0" -> "0x265adc0"[dir="both"];
-"0x265adc0" -> "0x265b270"[dir="both"];
-"0x265b270" -> "0x265aee0"[dir="both"];
-"0x265aee0" -> "0x265aaf0"[dir="both"];
-"0x265aaf0" -> "0x265a670"[dir="both"];
-"0x265a670" -> "0x265aa90"[dir="both"];
-"0x265aa90" -> "0x265a250"[dir="both"];
-"0x265a250" -> "0x265a8b0"[dir="both"];
-"0x265a8b0" -> "0x265c4a0"[dir="both"];
-"0x265c4a0" -> "0x265c5f0"[dir="both"];
-"0x265c5f0" -> "0x265ccb0"[dir="both"];
-"0x265ccb0" -> "0x265c230"[dir="both"];
-"0x265c230" -> "0x265c620"[dir="both"];
-"0x265c620" -> "0x265e420"[dir="both"];
-"0x265e420" -> "0x265e990"[dir="both"];
-"0x265e990" -> "0x265e9c0"[dir="both"];
-"0x265e9c0" -> "0x265e1b0"[dir="both"];
-"0x265e1b0" -> "0x265e540"[dir="both"];
-"0x265e540" -> "0x2650eb0"[dir="both"];
-"0x2650eb0" -> "0x2651210"[dir="both"];
-"0x2651210" -> "0x2651180"[dir="both"];
-"0x2651180" -> "0x2651030"[dir="both"];
-"0x2651030" -> "0x26511e0"[dir="both"];
-"0x26511e0" -> "0x2652bc0"[dir="both"];
-"0x2652bc0" -> "0x2652bf0"[dir="both"];
-"0x2652bf0" -> "0x2652920"[dir="both"];
-"0x2652920" -> "0x2652620"[dir="both"];
-"0x2652620" -> "0x2652c20"[dir="both"];
-"0x2652c20" -> "0x2654700"[dir="both"];
-"0x2654700" -> "0x26548b0"[dir="both"];
-"0x26548b0" -> "0x26548e0"[dir="both"];
-"0x26548e0" -> "0x2654c40"[dir="both"];
-"0x2654c40" -> "0x2654910"[dir="both"];
-"0x2654910" -> "0x2656240"[dir="both"];
-"0x2656240" -> "0x2656b10"[dir="both"];
-"0x2656b10" -> "0x2656a50"[dir="both"];
-"0x2656a50" -> "0x2656270"[dir="both"];
-"0x2656270" -> "0x2656390"[dir="both"];
-"0x2656390" -> "0x2658c60"[dir="both"];
-"0x2658c60" -> "0x2658ab0"[dir="both"];
-"0x2658ab0" -> "0x26583c0"[dir="both"];
-"0x26583c0" -> "0x26583f0"[dir="both"];
-"0x26583f0" -> "0x2658990"[dir="both"];
-"0x2658990" -> "0x265b180"[dir="both"];
-"0x265b180" -> "0x265b510"[dir="both"];
-"0x265b510" -> "0x265b420"[dir="both"];
-"0x265b420" -> "0x265b450"[dir="both"];
-"0x265b450" -> "0x265b960"[dir="both"];
-"0x265b960" -> "0x265abb0"[dir="both"];
-"0x265abb0" -> "0x265ac40"[dir="both"];
-"0x265ac40" -> "0x265aac0"[dir="both"];
-"0x265aac0" -> "0x265ab50"[dir="both"];
-"0x265ab50" -> "0x265abe0"[dir="both"];
-"0x265abe0" -> "0x265ca10"[dir="both"];
-"0x265ca10" -> "0x265c650"[dir="both"];
-"0x265c650" -> "0x265c680"[dir="both"];
-"0x265c680" -> "0x265ca70"[dir="both"];
-"0x265ca70" -> "0x265cc50"[dir="both"];
-"0x265cc50" -> "0x265e8a0"[dir="both"];
-"0x265e8a0" -> "0x265e960"[dir="both"];
-"0x265e960" -> "0x265e780"[dir="both"];
-"0x265e780" -> "0x265e4e0"[dir="both"];
-"0x265e4e0" -> "0x265e450"[dir="both"];
-"0x265e450" -> "0x2650f40"[dir="both"];
-"0x2650f40" -> "0x26510c0"[dir="both"];
-"0x26510c0" -> "0x2650d00"[dir="both"];
-"0x2650d00" -> "0x2650d60"[dir="both"];
-"0x2650d60" -> "0x2650d30"[dir="both"];
-"0x2650d30" -> "0x2652950"[dir="both"];
-"0x2652950" -> "0x2652c50"[dir="both"];
-"0x2652c50" -> "0x2652530"[dir="both"];
-"0x2652530" -> "0x2652560"[dir="both"];
-"0x2652560" -> "0x2652590"[dir="both"];
-"0x2652590" -> "0x2654940"[dir="both"];
-"0x2654940" -> "0x2654af0"[dir="both"];
-"0x2654af0" -> "0x2654f40"[dir="both"];
-"0x2654f40" -> "0x2654ee0"[dir="both"];
-"0x2654ee0" -> "0x2654f70"[dir="both"];
-"0x2654f70" -> "0x2656bd0"[dir="both"];
-"0x2656bd0" -> "0x26563f0"[dir="both"];
-"0x26563f0" -> "0x2656450"[dir="both"];
-"0x2656450" -> "0x26565d0"[dir="both"];
-"0x26565d0" -> "0x2656480"[dir="both"];
-"0x2656480" -> "0x2658d20"[dir="both"];
-"0x2658d20" -> "0x2658900"[dir="both"];
-"0x2658900" -> "0x26586c0"[dir="both"];
-"0x26586c0" -> "0x2658210"[dir="both"];
-"0x2658210" -> "0x2658b40"[dir="both"];
-"0x2658b40" -> "0x265b2a0"[dir="both"];
-"0x265b2a0" -> "0x265b600"[dir="both"];
-"0x265b600" -> "0x265ad90"[dir="both"];
-"0x265ad90" -> "0x265b0f0"[dir="both"];
-"0x265b0f0" -> "0x265b630"[dir="both"];
-"0x265b630" -> "0x265ac10"[dir="both"];
-"0x265ac10" -> "0x265a2b0"[dir="both"];
-"0x265a2b0" -> "0x265ac70"[dir="both"];
-"0x265ac70" -> "0x265a1c0"[dir="both"];
-"0x265a1c0" -> "0x265a1f0"[dir="both"];
-"0x265a1f0" -> "0x265c6b0"[dir="both"];
-"0x265c6b0" -> "0x265c350"[dir="both"];
-"0x265c350" -> "0x265caa0"[dir="both"];
-"0x265caa0" -> "0x265c290"[dir="both"];
-"0x265c290" -> "0x265c7d0"[dir="both"];
-"0x265c7d0" -> "0x265e750"[dir="both"];
-"0x265e750" -> "0x265e5d0"[dir="both"];
-"0x265e5d0" -> "0x265e9f0"[dir="both"];
-"0x265e9f0" -> "0x265e480"[dir="both"];
-"0x265e480" -> "0x265e300"[dir="both"];
-"0x265e300" -> "0x2651060"[dir="both"];
-"0x2651060" -> "0x2650d90"[dir="both"];
-"0x2650d90" -> "0x2650df0"[dir="both"];
-"0x2650df0" -> "0x2650fa0"[dir="both"];
-"0x2650fa0" -> "0x2650fd0"[dir="both"];
-"0x2650fd0" -> "0x26525c0"[dir="both"];
-"0x26525c0" -> "0x2652e60"[dir="both"];
-"0x2652e60" -> "0x2652f80"[dir="both"];
-"0x2652f80" -> "0x26531f0"[dir="both"];
-"0x26531f0" -> "0x26533d0"[dir="both"];
-"0x26533d0" -> "0x2654fa0"[dir="both"];
-"0x2654fa0" -> "0x2654d90"[dir="both"];
-"0x2654d90" -> "0x2654dc0"[dir="both"];
-"0x2654dc0" -> "0x2654df0"[dir="both"];
-"0x2654df0" -> "0x2654e20"[dir="both"];
-"0x2654e20" -> "0x26565a0"[dir="both"];
-"0x26565a0" -> "0x2656c60"[dir="both"];
-"0x2656c60" -> "0x26566f0"[dir="both"];
-"0x26566f0" -> "0x2656a80"[dir="both"];
-"0x2656a80" -> "0x2656780"[dir="both"];
-"0x2656780" -> "0x26585d0"[dir="both"];
-"0x26585d0" -> "0x2658450"[dir="both"];
-"0x2658450" -> "0x26589c0"[dir="both"];
-"0x26589c0" -> "0x26588d0"[dir="both"];
-"0x26588d0" -> "0x26586f0"[dir="both"];
-"0x26586f0" -> "0x265b7b0"[dir="both"];
-"0x265b7b0" -> "0x265b780"[dir="both"];
-"0x265b780" -> "0x265b060"[dir="both"];
-"0x265b060" -> "0x265b690"[dir="both"];
-"0x265b690" -> "0x265b120"[dir="both"];
-"0x265b120" -> "0x265a340"[dir="both"];
-"0x265a340" -> "0x265d640"[dir="both"];
-"0x265d640" -> "0x265d730"[dir="both"];
-"0x265d730" -> "0x265d250"[dir="both"];
-"0x265d250" -> "0x265d760"[dir="both"];
-"0x265d760" -> "0x265c710"[dir="both"];
-"0x265c710" -> "0x265cad0"[dir="both"];
-"0x265cad0" -> "0x265cce0"[dir="both"];
-"0x265cce0" -> "0x265c8c0"[dir="both"];
-"0x265c8c0" -> "0x265cb00"[dir="both"];
-"0x265cb00" -> "0x265e720"[dir="both"];
-"0x265e720" -> "0x265e4b0"[dir="both"];
-"0x265e4b0" -> "0x265e3f0"[dir="both"];
-"0x265e3f0" -> "0x265e600"[dir="both"];
-"0x265e600" -> "0x265ea50"[dir="both"];
-"0x265ea50" -> "0x26512a0"[dir="both"];
-"0x26512a0" -> "0x26513f0"[dir="both"];
-"0x26513f0" -> "0x2650dc0"[dir="both"];
-"0x2650dc0" -> "0x2650e80"[dir="both"];
-"0x2650e80" -> "0x2651000"[dir="both"];
-"0x2651000" -> "0x2652f20"[dir="both"];
-"0x2652f20" -> "0x2652dd0"[dir="both"];
-"0x2652dd0" -> "0x2653220"[dir="both"];
-"0x2653220" -> "0x2652da0"[dir="both"];
-"0x2652da0" -> "0x26530a0"[dir="both"];
-"0x26530a0" -> "0x2654f10"[dir="both"];
-"0x2654f10" -> "0x2654d30"[dir="both"];
-"0x2654d30" -> "0x2655030"[dir="both"];
-"0x2655030" -> "0x2654fd0"[dir="both"];
-"0x2654fd0" -> "0x2654e50"[dir="both"];
-"0x2654e50" -> "0x26567b0"[dir="both"];
-"0x26567b0" -> "0x2656930"[dir="both"];
-"0x2656930" -> "0x2656870"[dir="both"];
-"0x2656870" -> "0x2656960"[dir="both"];
-"0x2656960" -> "0x2656ab0"[dir="both"];
-"0x2656ab0" -> "0x2658960"[dir="both"];
-"0x2658960" -> "0x2658600"[dir="both"];
-"0x2658600" -> "0x2658750"[dir="both"];
-"0x2658750" -> "0x2658240"[dir="both"];
-"0x2658240" -> "0x2658270"[dir="both"];
-"0x2658270" -> "0x265b300"[dir="both"];
-"0x265b300" -> "0x265adf0"[dir="both"];
-"0x265adf0" -> "0x265b7e0"[dir="both"];
-"0x265b7e0" -> "0x265b720"[dir="both"];
-"0x265b720" -> "0x265ae50"[dir="both"];
-"0x265ae50" -> "0x265ce30"[dir="both"];
-"0x265ce30" -> "0x265d220"[dir="both"];
-"0x265d220" -> "0x265d430"[dir="both"];
-"0x265d430" -> "0x265d460"[dir="both"];
-"0x265d460" -> "0x265d970"[dir="both"];
-"0x265d970" -> "0x265c260"[dir="both"];
-"0x265c260" -> "0x265c800"[dir="both"];
-"0x265c800" -> "0x265cd40"[dir="both"];
-"0x265cd40" -> "0x265c2c0"[dir="both"];
-"0x265c2c0" -> "0x265c830"[dir="both"];
-"0x265c830" -> "0x265e630"[dir="both"];
-"0x265e630" -> "0x265ea20"[dir="both"];
-"0x265ea20" -> "0x265e8d0"[dir="both"];
-"0x265e8d0" -> "0x265eb40"[dir="both"];
-"0x265eb40" -> "0x265e390"[dir="both"];
-"0x265e390" -> "0x2650e20"[dir="both"];
-"0x2650e20" -> "0x2651420"[dir="both"];
-"0x2651420" -> "0x2650ee0"[dir="both"];
-"0x2650ee0" -> "0x2651450"[dir="both"];
-"0x2651450" -> "0x26510f0"[dir="both"];
-"0x26510f0" -> "0x2652fe0"[dir="both"];
-"0x2652fe0" -> "0x2653280"[dir="both"];
-"0x2653280" -> "0x2653430"[dir="both"];
-"0x2653430" -> "0x2653190"[dir="both"];
-"0x2653190" -> "0x26532b0"[dir="both"];
-"0x26532b0" -> "0x2654d60"[dir="both"];
-"0x2654d60" -> "0x2654e80"[dir="both"];
-"0x2654e80" -> "0x2655090"[dir="both"];
-"0x2655090" -> "0x2655060"[dir="both"];
-"0x2655060" -> "0x2655000"[dir="both"];
-"0x2655000" -> "0x2656c90"[dir="both"];
-"0x2656c90" -> "0x2656cc0"[dir="both"];
-"0x2656cc0" -> "0x2656cf0"[dir="both"];
-"0x2656cf0" -> "0x2656ea0"[dir="both"];
-"0x2656ea0" -> "0x26570b0"[dir="both"];
-"0x26570b0" -> "0x26582a0"[dir="both"];
-"0x26582a0" -> "0x2658780"[dir="both"];
-"0x2658780" -> "0x2658300"[dir="both"];
-"0x2658300" -> "0x2658330"[dir="both"];
-"0x2658330" -> "0x2658420"[dir="both"];
-"0x2658420" -> "0x265af10"[dir="both"];
-"0x265af10" -> "0x265ae20"[dir="both"];
-"0x265ae20" -> "0x265b390"[dir="both"];
-"0x265b390" -> "0x265b000"[dir="both"];
-"0x265b000" -> "0x265b870"[dir="both"];
-"0x265b870" -> "0x265d280"[dir="both"];
-"0x265d280" -> "0x265d610"[dir="both"];
-"0x265d610" -> "0x265cda0"[dir="both"];
-"0x265cda0" -> "0x265d100"[dir="both"];
-"0x265d100" -> "0x265d670"[dir="both"];
-"0x265d670" -> "0x265cb60"[dir="both"];
-"0x265cb60" -> "0x265cbc0"[dir="both"];
-"0x265cbc0" -> "0x265cbf0"[dir="both"];
-"0x265cbf0" -> "0x265cc20"[dir="both"];
-"0x265cc20" -> "0x265cc80"[dir="both"];
-"0x265cc80" -> "0x265e660"[dir="both"];
-"0x265e660" -> "0x265ea80"[dir="both"];
-"0x265ea80" -> "0x265e900"[dir="both"];
-"0x265e900" -> "0x265eab0"[dir="both"];
-"0x265eab0" -> "0x265e7e0"[dir="both"];
-"0x265e7e0" -> "0x26512d0"[dir="both"];
-"0x26512d0" -> "0x26511b0"[dir="both"];
-"0x26511b0" -> "0x2651270"[dir="both"];
-"0x2651270" -> "0x2650e50"[dir="both"];
-"0x2650e50" -> "0x2651300"[dir="both"];
-"0x2651300" -> "0x2652d70"[dir="both"];
-"0x2652d70" -> "0x2652e00"[dir="both"];
-"0x2652e00" -> "0x2653460"[dir="both"];
-"0x2653460" -> "0x2652e30"[dir="both"];
-"0x2652e30" -> "0x2652ef0"[dir="both"];
-"0x2652ef0" -> "0x2654eb0"[dir="both"];
-"0x2654eb0" -> "0x2655ad0"[dir="both"];
-"0x2655ad0" -> "0x26554d0"[dir="both"];
-"0x26554d0" -> "0x2655a40"[dir="both"];
-"0x2655a40" -> "0x2655590"[dir="both"];
-"0x2655590" -> "0x2657080"[dir="both"];
-"0x2657080" -> "0x2656d50"[dir="both"];
-"0x2656d50" -> "0x2656f60"[dir="both"];
-"0x2656f60" -> "0x2656d80"[dir="both"];
-"0x2656d80" -> "0x2656f90"[dir="both"];
-"0x2656f90" -> "0x26584b0"[dir="both"];
-"0x26584b0" -> "0x26589f0"[dir="both"];
-"0x26589f0" -> "0x2658b70"[dir="both"];
-"0x2658b70" -> "0x26587b0"[dir="both"];
-"0x26587b0" -> "0x26587e0"[dir="both"];
-"0x26587e0" -> "0x265b840"[dir="both"];
-"0x265b840" -> "0x265b330"[dir="both"];
-"0x265b330" -> "0x265b1b0"[dir="both"];
-"0x265b1b0" -> "0x265b4e0"[dir="both"];
-"0x265b4e0" -> "0x265b360"[dir="both"];
-"0x265b360" -> "0x265d7c0"[dir="both"];
-"0x265d7c0" -> "0x265d790"[dir="both"];
-"0x265d790" -> "0x265d070"[dir="both"];
-"0x265d070" -> "0x265d6a0"[dir="both"];
-"0x265d6a0" -> "0x265d130"[dir="both"];
-"0x265d130" -> "0x265cd10"[dir="both"];
-"0x265cd10" -> "0x265cd70"[dir="both"];
-"0x265cd70" -> "0x265c1d0"[dir="both"];
-"0x265c1d0" -> "0x265c200"[dir="both"];
-"0x265c200" -> "0x265f770"[dir="both"];
-"0x265f770" -> "0x265e330"[dir="both"];
-"0x265e330" -> "0x265eba0"[dir="both"];
-"0x265eba0" -> "0x265e690"[dir="both"];
-"0x265e690" -> "0x265e6c0"[dir="both"];
-"0x265e6c0" -> "0x265e810"[dir="both"];
-"0x265e810" -> "0x2650f10"[dir="both"];
-"0x2650f10" -> "0x2651090"[dir="both"];
-"0x2651090" -> "0x2651360"[dir="both"];
-"0x2651360" -> "0x2651120"[dir="both"];
-"0x2651120" -> "0x2651150"[dir="both"];
-"0x2651150" -> "0x2653070"[dir="both"];
-"0x2653070" -> "0x2653040"[dir="both"];
-"0x2653040" -> "0x26531c0"[dir="both"];
-"0x26531c0" -> "0x26533a0"[dir="both"];
-"0x26533a0" -> "0x2652e90"[dir="both"];
-"0x2652e90" -> "0x2655140"[dir="both"];
-"0x2655140" -> "0x2655890"[dir="both"];
-"0x2655890" -> "0x26555c0"[dir="both"];
-"0x26555c0" -> "0x2655230"[dir="both"];
-"0x2655230" -> "0x26551d0"[dir="both"];
-"0x26551d0" -> "0x2656db0"[dir="both"];
-"0x2656db0" -> "0x2656de0"[dir="both"];
-"0x2656de0" -> "0x2656e10"[dir="both"];
-"0x2656e10" -> "0x2656fc0"[dir="both"];
-"0x2656fc0" -> "0x2656e70"[dir="both"];
-"0x2656e70" -> "0x2658a50"[dir="both"];
-"0x2658a50" -> "0x2658810"[dir="both"];
-"0x2658810" -> "0x2658840"[dir="both"];
-"0x2658840" -> "0x2658a80"[dir="both"];
-"0x2658a80" -> "0x2658c30"[dir="both"];
-"0x2658c30" -> "0x265b540"[dir="both"];
-"0x265b540" -> "0x265b5d0"[dir="both"];
-"0x265b5d0" -> "0x265af40"[dir="both"];
-"0x265af40" -> "0x265af70"[dir="both"];
-"0x265af70" -> "0x265afa0"[dir="both"];
-"0x265afa0" -> "0x265d2b0"[dir="both"];
-"0x265d2b0" -> "0x265cdd0"[dir="both"];
-"0x265cdd0" -> "0x265d7f0"[dir="both"];
-"0x265d7f0" -> "0x265d820"[dir="both"];
-"0x265d820" -> "0x265ce60"[dir="both"];
-"0x265ce60" -> "0x265ef30"[dir="both"];
-"0x265ef30" -> "0x265ede0"[dir="both"];
-"0x265ede0" -> "0x265f290"[dir="both"];
-"0x265f290" -> "0x265f050"[dir="both"];
-"0x265f050" -> "0x265ef90"[dir="both"];
-"0x265ef90" -> "0x265ecc0"[dir="both"];
-"0x265ecc0" -> "0x265e240"[dir="both"];
-"0x265e240" -> "0x265eb10"[dir="both"];
-"0x265eb10" -> "0x265eb70"[dir="both"];
-"0x265eb70" -> "0x265ebd0"[dir="both"];
-"0x265ebd0" -> "0x2651240"[dir="both"];
-"0x2651240" -> "0x2651390"[dir="both"];
-"0x2651390" -> "0x26513c0"[dir="both"];
-"0x26513c0" -> "0x2651780"[dir="both"];
-"0x2651780" -> "0x2651b40"[dir="both"];
-"0x2651b40" -> "0x2652ec0"[dir="both"];
-"0x2652ec0" -> "0x2652f50"[dir="both"];
-"0x2652f50" -> "0x2653250"[dir="both"];
-"0x2653250" -> "0x2652fb0"[dir="both"];
-"0x2652fb0" -> "0x2653010"[dir="both"];
-"0x2653010" -> "0x2655a10"[dir="both"];
-"0x2655a10" -> "0x26555f0"[dir="both"];
-"0x26555f0" -> "0x2655710"[dir="both"];
-"0x2655710" -> "0x2655620"[dir="both"];
-"0x2655620" -> "0x2655ce0"[dir="both"];
-"0x2655ce0" -> "0x2656f30"[dir="both"];
-"0x2656f30" -> "0x2657020"[dir="both"];
-"0x2657020" -> "0x2656ff0"[dir="both"];
-"0x2656ff0" -> "0x2656ed0"[dir="both"];
-"0x2656ed0" -> "0x2656e40"[dir="both"];
-"0x2656e40" -> "0x2658870"[dir="both"];
-"0x2658870" -> "0x26588a0"[dir="both"];
-"0x26588a0" -> "0x2658bd0"[dir="both"];
-"0x2658bd0" -> "0x2658c00"[dir="both"];
-"0x2658c00" -> "0x2659320"[dir="both"];
-"0x2659320" -> "0x265b150"[dir="both"];
-"0x265b150" -> "0x265b4b0"[dir="both"];
-"0x265b4b0" -> "0x265ae80"[dir="both"];
-"0x265ae80" -> "0x265b750"[dir="both"];
-"0x265b750" -> "0x265b6c0"[dir="both"];
-"0x265b6c0" -> "0x265cf20"[dir="both"];
-"0x265cf20" -> "0x265ce00"[dir="both"];
-"0x265ce00" -> "0x265d3a0"[dir="both"];
-"0x265d3a0" -> "0x265d010"[dir="both"];
-"0x265d010" -> "0x265d880"[dir="both"];
-"0x265d880" -> "0x265f110"[dir="both"];
-"0x265f110" -> "0x265f650"[dir="both"];
-"0x265f650" -> "0x265f8c0"[dir="both"];
-"0x265f8c0" -> "0x265ef00"[dir="both"];
-"0x265ef00" -> "0x265f8f0"[dir="both"];
-"0x265f8f0" -> "0x265ec00"[dir="both"];
-"0x265ec00" -> "0x265ec30"[dir="both"];
-"0x265ec30" -> "0x265ec60"[dir="both"];
-"0x265ec60" -> "0x265ec90"[dir="both"];
-"0x265ec90" -> "0x265e360"[dir="both"];
-"0x265e360" -> "0x2651ba0"[dir="both"];
-"0x2651ba0" -> "0x2651810"[dir="both"];
-"0x2651810" -> "0x2651630"[dir="both"];
-"0x2651630" -> "0x2651510"[dir="both"];
-"0x2651510" -> "0x2651660"[dir="both"];
-"0x2651660" -> "0x2653160"[dir="both"];
-"0x2653160" -> "0x26530d0"[dir="both"];
-"0x26530d0" -> "0x2653100"[dir="both"];
-"0x2653100" -> "0x26532e0"[dir="both"];
-"0x26532e0" -> "0x2653490"[dir="both"];
-"0x2653490" -> "0x2655c50"[dir="both"];
-"0x2655c50" -> "0x2655cb0"[dir="both"];
-"0x2655cb0" -> "0x26557d0"[dir="both"];
-"0x26557d0" -> "0x2655170"[dir="both"];
-"0x2655170" -> "0x26557a0"[dir="both"];
-"0x26557a0" -> "0x2657050"[dir="both"];
-"0x2657050" -> "0x2656f00"[dir="both"];
-"0x2656f00" -> "0x2657520"[dir="both"];
-"0x2657520" -> "0x2657730"[dir="both"];
-"0x2657730" -> "0x2657250"[dir="both"];
-"0x2657250" -> "0x2659200"[dir="both"];
-"0x2659200" -> "0x2659620"[dir="both"];
-"0x2659620" -> "0x2659890"[dir="both"];
-"0x2659890" -> "0x26594a0"[dir="both"];
-"0x26594a0" -> "0x2659650"[dir="both"];
-"0x2659650" -> "0x265aeb0"[dir="both"];
-"0x265aeb0" -> "0x265afd0"[dir="both"];
-"0x265afd0" -> "0x265b810"[dir="both"];
-"0x265b810" -> "0x265b030"[dir="both"];
-"0x265b030" -> "0x265b090"[dir="both"];
-"0x265b090" -> "0x265d850"[dir="both"];
-"0x265d850" -> "0x265d2e0"[dir="both"];
-"0x265d2e0" -> "0x265d1c0"[dir="both"];
-"0x265d1c0" -> "0x265d4f0"[dir="both"];
-"0x265d4f0" -> "0x265d370"[dir="both"];
-"0x265d370" -> "0x265f2c0"[dir="both"];
-"0x265f2c0" -> "0x265f350"[dir="both"];
-"0x265f350" -> "0x265f170"[dir="both"];
-"0x265f170" -> "0x265f260"[dir="both"];
-"0x265f260" -> "0x265f560"[dir="both"];
-"0x265f560" -> "0x265ecf0"[dir="both"];
-"0x265ecf0" -> "0x265e2a0"[dir="both"];
-"0x265e2a0" -> "0x265ed20"[dir="both"];
-"0x265ed20" -> "0x265ed50"[dir="both"];
-"0x265ed50" -> "0x265e210"[dir="both"];
-"0x265e210" -> "0x2651c60"[dir="both"];
-"0x2651c60" -> "0x2651570"[dir="both"];
-"0x2651570" -> "0x26518d0"[dir="both"];
-"0x26518d0" -> "0x2651540"[dir="both"];
-"0x2651540" -> "0x26514e0"[dir="both"];
-"0x26514e0" -> "0x2653130"[dir="both"];
-"0x2653130" -> "0x2653310"[dir="both"];
-"0x2653310" -> "0x2653340"[dir="both"];
-"0x2653340" -> "0x2653400"[dir="both"];
-"0x2653400" -> "0x2653370"[dir="both"];
-"0x2653370" -> "0x2655b00"[dir="both"];
-"0x2655b00" -> "0x2655b30"[dir="both"];
-"0x2655b30" -> "0x2655d10"[dir="both"];
-"0x2655d10" -> "0x2655680"[dir="both"];
-"0x2655680" -> "0x2655200"[dir="both"];
-"0x2655200" -> "0x2657550"[dir="both"];
-"0x2657550" -> "0x26579a0"[dir="both"];
-"0x26579a0" -> "0x2657370"[dir="both"];
-"0x2657370" -> "0x2657580"[dir="both"];
-"0x2657580" -> "0x26576a0"[dir="both"];
-"0x26576a0" -> "0x2658e10"[dir="both"];
-"0x2658e10" -> "0x2658f30"[dir="both"];
-"0x2658f30" -> "0x2659920"[dir="both"];
-"0x2659920" -> "0x2658e40"[dir="both"];
-"0x2658e40" -> "0x2659080"[dir="both"];
-"0x2659080" -> "0x265b210"[dir="both"];
-"0x265b210" -> "0x265b0c0"[dir="both"];
-"0x265b0c0" -> "0x265b1e0"[dir="both"];
-"0x265b1e0" -> "0x265b8a0"[dir="both"];
-"0x265b8a0" -> "0x265b3c0"[dir="both"];
-"0x265b3c0" -> "0x265d520"[dir="both"];
-"0x265d520" -> "0x265d5e0"[dir="both"];
-"0x265d5e0" -> "0x265cf50"[dir="both"];
-"0x265cf50" -> "0x265cf80"[dir="both"];
-"0x265cf80" -> "0x265cfb0"[dir="both"];
-"0x265cfb0" -> "0x265f7d0"[dir="both"];
-"0x265f7d0" -> "0x265f140"[dir="both"];
-"0x265f140" -> "0x265f1a0"[dir="both"];
-"0x265f1a0" -> "0x265f710"[dir="both"];
-"0x265f710" -> "0x265f0b0"[dir="both"];
-"0x265f0b0" -> "0x265e270"[dir="both"];
-"0x265e270" -> "0x265e2d0"[dir="both"];
-"0x265e2d0" -> "0x2661660"[dir="both"];
-"0x2661660" -> "0x2661210"[dir="both"];
-"0x2661210" -> "0x2661360"[dir="both"];
-"0x2661360" -> "0x26515a0"[dir="both"];
-"0x26515a0" -> "0x26515d0"[dir="both"];
-"0x26515d0" -> "0x26517b0"[dir="both"];
-"0x26517b0" -> "0x26517e0"[dir="both"];
-"0x26517e0" -> "0x2651600"[dir="both"];
-"0x2651600" -> "0x2652d10"[dir="both"];
-"0x2652d10" -> "0x2652d40"[dir="both"];
-"0x2652d40" -> "0x2653b90"[dir="both"];
-"0x2653b90" -> "0x2653c20"[dir="both"];
-"0x2653c20" -> "0x2653e00"[dir="both"];
-"0x2653e00" -> "0x2655500"[dir="both"];
-"0x2655500" -> "0x2655800"[dir="both"];
-"0x2655800" -> "0x2655650"[dir="both"];
-"0x2655650" -> "0x2655380"[dir="both"];
-"0x2655380" -> "0x2655a70"[dir="both"];
-"0x2655a70" -> "0x26575b0"[dir="both"];
-"0x26575b0" -> "0x2657760"[dir="both"];
-"0x2657760" -> "0x26574c0"[dir="both"];
-"0x26574c0" -> "0x26578e0"[dir="both"];
-"0x26578e0" -> "0x26577f0"[dir="both"];
-"0x26577f0" -> "0x26592f0"[dir="both"];
-"0x26592f0" -> "0x2659290"[dir="both"];
-"0x2659290" -> "0x2659470"[dir="both"];
-"0x2659470" -> "0x26597d0"[dir="both"];
-"0x26597d0" -> "0x2658f60"[dir="both"];
-"0x2658f60" -> "0x265b6f0"[dir="both"];
-"0x265b6f0" -> "0x265b3f0"[dir="both"];
-"0x265b3f0" -> "0x265b570"[dir="both"];
-"0x265b570" -> "0x265b5a0"[dir="both"];
-"0x265b5a0" -> "0x265b8d0"[dir="both"];
-"0x265b8d0" -> "0x265d160"[dir="both"];
-"0x265d160" -> "0x265d490"[dir="both"];
-"0x265d490" -> "0x265ce90"[dir="both"];
-"0x265ce90" -> "0x265d8b0"[dir="both"];
-"0x265d8b0" -> "0x265d6d0"[dir="both"];
-"0x265d6d0" -> "0x265f980"[dir="both"];
-"0x265f980" -> "0x265f2f0"[dir="both"];
-"0x265f2f0" -> "0x265ee10"[dir="both"];
-"0x265ee10" -> "0x265f890"[dir="both"];
-"0x265f890" -> "0x265f6e0"[dir="both"];
-"0x265f6e0" -> "0x2660e50"[dir="both"];
-"0x2660e50" -> "0x26610c0"[dir="both"];
-"0x26610c0" -> "0x2661330"[dir="both"];
-"0x2661330" -> "0x26612d0"[dir="both"];
-"0x26612d0" -> "0x26614b0"[dir="both"];
-"0x26614b0" -> "0x2651840"[dir="both"];
-"0x2651840" -> "0x2651ae0"[dir="both"];
-"0x2651ae0" -> "0x2651ab0"[dir="both"];
-"0x2651ab0" -> "0x2651b10"[dir="both"];
-"0x2651b10" -> "0x2651690"[dir="both"];
-"0x2651690" -> "0x2653f80"[dir="both"];
-"0x2653f80" -> "0x2653b60"[dir="both"];
-"0x2653b60" -> "0x2653bc0"[dir="both"];
-"0x2653bc0" -> "0x2653f20"[dir="both"];
-"0x2653f20" -> "0x2653b00"[dir="both"];
-"0x2653b00" -> "0x2655260"[dir="both"];
-"0x2655260" -> "0x2655b60"[dir="both"];
-"0x2655b60" -> "0x2655aa0"[dir="both"];
-"0x2655aa0" -> "0x2655560"[dir="both"];
-"0x2655560" -> "0x2655290"[dir="both"];
-"0x2655290" -> "0x2657a90"[dir="both"];
-"0x2657a90" -> "0x2657d30"[dir="both"];
-"0x2657d30" -> "0x2657190"[dir="both"];
-"0x2657190" -> "0x2657820"[dir="both"];
-"0x2657820" -> "0x26573d0"[dir="both"];
-"0x26573d0" -> "0x2658fc0"[dir="both"];
-"0x2658fc0" -> "0x2659050"[dir="both"];
-"0x2659050" -> "0x2659800"[dir="both"];
-"0x2659800" -> "0x26593b0"[dir="both"];
-"0x26593b0" -> "0x26598c0"[dir="both"];
-"0x26598c0" -> "0x265b900"[dir="both"];
-"0x265b900" -> "0x265b930"[dir="both"];
-"0x265b930" -> "0x265bf00"[dir="both"];
-"0x265bf00" -> "0x265bc60"[dir="both"];
-"0x265bc60" -> "0x265bd20"[dir="both"];
-"0x265bd20" -> "0x265cec0"[dir="both"];
-"0x265cec0" -> "0x265cef0"[dir="both"];
-"0x265cef0" -> "0x265d8e0"[dir="both"];
-"0x265d8e0" -> "0x265cfe0"[dir="both"];
-"0x265cfe0" -> "0x265d040"[dir="both"];
-"0x265d040" -> "0x265efc0"[dir="both"];
-"0x265efc0" -> "0x265f020"[dir="both"];
-"0x265f020" -> "0x265f5c0"[dir="both"];
-"0x265f5c0" -> "0x265f920"[dir="both"];
-"0x265f920" -> "0x265f530"[dir="both"];
-"0x265f530" -> "0x2661810"[dir="both"];
-"0x2661810" -> "0x2660fa0"[dir="both"];
-"0x2660fa0" -> "0x2661000"[dir="both"];
-"0x2661000" -> "0x2661090"[dir="both"];
-"0x2661090" -> "0x2660f40"[dir="both"];
-"0x2660f40" -> "0x26519c0"[dir="both"];
-"0x26519c0" -> "0x2651c00"[dir="both"];
-"0x2651c00" -> "0x26516c0"[dir="both"];
-"0x26516c0" -> "0x2651900"[dir="both"];
-"0x2651900" -> "0x26516f0"[dir="both"];
-"0x26516f0" -> "0x26540a0"[dir="both"];
-"0x26540a0" -> "0x2653c50"[dir="both"];
-"0x2653c50" -> "0x2653920"[dir="both"];
-"0x2653920" -> "0x2654040"[dir="both"];
-"0x2654040" -> "0x2653f50"[dir="both"];
-"0x2653f50" -> "0x26552c0"[dir="both"];
-"0x26552c0" -> "0x2655530"[dir="both"];
-"0x2655530" -> "0x2655980"[dir="both"];
-"0x2655980" -> "0x2655350"[dir="both"];
-"0x2655350" -> "0x26556b0"[dir="both"];
-"0x26556b0" -> "0x2657940"[dir="both"];
-"0x2657940" -> "0x2657970"[dir="both"];
-"0x2657970" -> "0x2657160"[dir="both"];
-"0x2657160" -> "0x26574f0"[dir="both"];
-"0x26574f0" -> "0x2657850"[dir="both"];
-"0x2657850" -> "0x2658f90"[dir="both"];
-"0x2658f90" -> "0x2659950"[dir="both"];
-"0x2659950" -> "0x2658db0"[dir="both"];
-"0x2658db0" -> "0x26591a0"[dir="both"];
-"0x26591a0" -> "0x2659710"[dir="both"];
-"0x2659710" -> "0x265bc90"[dir="both"];
-"0x265bc90" -> "0x265c0b0"[dir="both"];
-"0x265c0b0" -> "0x265c080"[dir="both"];
-"0x265c080" -> "0x265c0e0"[dir="both"];
-"0x265c0e0" -> "0x265bdb0"[dir="both"];
-"0x265bdb0" -> "0x265d310"[dir="both"];
-"0x265d310" -> "0x265d0a0"[dir="both"];
-"0x265d0a0" -> "0x265d0d0"[dir="both"];
-"0x265d0d0" -> "0x265d910"[dir="both"];
-"0x265d910" -> "0x265d190"[dir="both"];
-"0x265d190" -> "0x265f320"[dir="both"];
-"0x265f320" -> "0x265ee40"[dir="both"];
-"0x265ee40" -> "0x265f7a0"[dir="both"];
-"0x265f7a0" -> "0x265f1d0"[dir="both"];
-"0x265f1d0" -> "0x265f080"[dir="both"];
-"0x265f080" -> "0x2661390"[dir="both"];
-"0x2661390" -> "0x26611e0"[dir="both"];
-"0x26611e0" -> "0x2661780"[dir="both"];
-"0x2661780" -> "0x2660f70"[dir="both"];
-"0x2660f70" -> "0x2660df0"[dir="both"];
-"0x2660df0" -> "0x2651720"[dir="both"];
-"0x2651720" -> "0x2651750"[dir="both"];
-"0x2651750" -> "0x2651a20"[dir="both"];
-"0x2651a20" -> "0x2651870"[dir="both"];
-"0x2651870" -> "0x2651b70"[dir="both"];
-"0x2651b70" -> "0x2653aa0"[dir="both"];
-"0x2653aa0" -> "0x2653ad0"[dir="both"];
-"0x2653ad0" -> "0x2653e60"[dir="both"];
-"0x2653e60" -> "0x2653950"[dir="both"];
-"0x2653950" -> "0x2653e30"[dir="both"];
-"0x2653e30" -> "0x26556e0"[dir="both"];
-"0x26556e0" -> "0x2655740"[dir="both"];
-"0x2655740" -> "0x2655770"[dir="both"];
-"0x2655770" -> "0x26554a0"[dir="both"];
-"0x26554a0" -> "0x26558c0"[dir="both"];
-"0x26558c0" -> "0x2657910"[dir="both"];
-"0x2657910" -> "0x2657790"[dir="both"];
-"0x2657790" -> "0x2657490"[dir="both"];
-"0x2657490" -> "0x2657400"[dir="both"];
-"0x2657400" -> "0x2657700"[dir="both"];
-"0x2657700" -> "0x2658ff0"[dir="both"];
-"0x2658ff0" -> "0x26590e0"[dir="both"];
-"0x26590e0" -> "0x2659680"[dir="both"];
-"0x2659680" -> "0x26598f0"[dir="both"];
-"0x26598f0" -> "0x2658ed0"[dir="both"];
-"0x2658ed0" -> "0x265b990"[dir="both"];
-"0x265b990" -> "0x265bde0"[dir="both"];
-"0x265bde0" -> "0x265bf90"[dir="both"];
-"0x265bf90" -> "0x265bfc0"[dir="both"];
-"0x265bfc0" -> "0x265b9c0"[dir="both"];
-"0x265b9c0" -> "0x265d700"[dir="both"];
-"0x265d700" -> "0x265d1f0"[dir="both"];
-"0x265d1f0" -> "0x265d340"[dir="both"];
-"0x265d340" -> "0x265d550"[dir="both"];
-"0x265d550" -> "0x265d3d0"[dir="both"];
-"0x265d3d0" -> "0x265f5f0"[dir="both"];
-"0x265f5f0" -> "0x265f500"[dir="both"];
-"0x265f500" -> "0x265f380"[dir="both"];
-"0x265f380" -> "0x265f590"[dir="both"];
-"0x265f590" -> "0x265f200"[dir="both"];
-"0x265f200" -> "0x26612a0"[dir="both"];
-"0x26612a0" -> "0x2661060"[dir="both"];
-"0x2661060" -> "0x2660fd0"[dir="both"];
-"0x2660fd0" -> "0x2661120"[dir="both"];
-"0x2661120" -> "0x2661690"[dir="both"];
-"0x2661690" -> "0x2651bd0"[dir="both"];
-"0x2651bd0" -> "0x26518a0"[dir="both"];
-"0x26518a0" -> "0x2651930"[dir="both"];
-"0x2651930" -> "0x2651960"[dir="both"];
-"0x2651960" -> "0x2651990"[dir="both"];
-"0x2651990" -> "0x2653cb0"[dir="both"];
-"0x2653cb0" -> "0x2653980"[dir="both"];
-"0x2653980" -> "0x2653fe0"[dir="both"];
-"0x2653fe0" -> "0x2653c80"[dir="both"];
-"0x2653c80" -> "0x2653bf0"[dir="both"];
-"0x2653bf0" -> "0x2655830"[dir="both"];
-"0x2655830" -> "0x2655b90"[dir="both"];
-"0x2655b90" -> "0x26551a0"[dir="both"];
-"0x26551a0" -> "0x26552f0"[dir="both"];
-"0x26552f0" -> "0x2655860"[dir="both"];
-"0x2655860" -> "0x26575e0"[dir="both"];
-"0x26575e0" -> "0x26579d0"[dir="both"];
-"0x26579d0" -> "0x2657430"[dir="both"];
-"0x2657430" -> "0x26572b0"[dir="both"];
-"0x26572b0" -> "0x26576d0"[dir="both"];
-"0x26576d0" -> "0x2658d80"[dir="both"];
-"0x2658d80" -> "0x2659260"[dir="both"];
-"0x2659260" -> "0x2659350"[dir="both"];
-"0x2659350" -> "0x2659140"[dir="both"];
-"0x2659140" -> "0x2659230"[dir="both"];
-"0x2659230" -> "0x265bd50"[dir="both"];
-"0x265bd50" -> "0x265ba50"[dir="both"];
-"0x265ba50" -> "0x265bc30"[dir="both"];
-"0x265bc30" -> "0x265be10"[dir="both"];
-"0x265be10" -> "0x265bd80"[dir="both"];
-"0x265bd80" -> "0x265d400"[dir="both"];
-"0x265d400" -> "0x265d4c0"[dir="both"];
-"0x265d4c0" -> "0x265d940"[dir="both"];
-"0x265d940" -> "0x265d580"[dir="both"];
-"0x265d580" -> "0x265d5b0"[dir="both"];
-"0x265d5b0" -> "0x265f3b0"[dir="both"];
-"0x265f3b0" -> "0x265ee70"[dir="both"];
-"0x265ee70" -> "0x265eea0"[dir="both"];
-"0x265eea0" -> "0x265eed0"[dir="both"];
-"0x265eed0" -> "0x265f230"[dir="both"];
-"0x265f230" -> "0x26618d0"[dir="both"];
-"0x26618d0" -> "0x2660f10"[dir="both"];
-"0x2660f10" -> "0x2661900"[dir="both"];
-"0x2661900" -> "0x2661300"[dir="both"];
-"0x2661300" -> "0x26613c0"[dir="both"];
-"0x26613c0" -> "0x26519f0"[dir="both"];
-"0x26519f0" -> "0x2651a50"[dir="both"];
-"0x2651a50" -> "0x2651a80"[dir="both"];
-"0x2651a80" -> "0x2651c30"[dir="both"];
-"0x2651c30" -> "0x26523b0"[dir="both"];
-"0x26523b0" -> "0x2653ec0"[dir="both"];
-"0x2653ec0" -> "0x2653e90"[dir="both"];
-"0x2653e90" -> "0x2653ce0"[dir="both"];
-"0x2653ce0" -> "0x2653ef0"[dir="both"];
-"0x2653ef0" -> "0x2653d10"[dir="both"];
-"0x2653d10" -> "0x26553b0"[dir="both"];
-"0x26553b0" -> "0x26558f0"[dir="both"];
-"0x26558f0" -> "0x2655bc0"[dir="both"];
-"0x2655bc0" -> "0x2655320"[dir="both"];
-"0x2655320" -> "0x2655920"[dir="both"];
-"0x2655920" -> "0x2657460"[dir="both"];
-"0x2657460" -> "0x26573a0"[dir="both"];
-"0x26573a0" -> "0x2657610"[dir="both"];
-"0x2657610" -> "0x2657a00"[dir="both"];
-"0x2657a00" -> "0x2657640"[dir="both"];
-"0x2657640" -> "0x2659530"[dir="both"];
-"0x2659530" -> "0x26597a0"[dir="both"];
-"0x26597a0" -> "0x2659110"[dir="both"];
-"0x2659110" -> "0x2659170"[dir="both"];
-"0x2659170" -> "0x26596e0"[dir="both"];
-"0x26596e0" -> "0x265bf30"[dir="both"];
-"0x265bf30" -> "0x265b9f0"[dir="both"];
-"0x265b9f0" -> "0x265bab0"[dir="both"];
-"0x265bab0" -> "0x265bb70"[dir="both"];
-"0x265bb70" -> "0x265bea0"[dir="both"];
-"0x265bea0" -> "0x265dc70"[dir="both"];
-"0x265dc70" -> "0x265e0c0"[dir="both"];
-"0x265e0c0" -> "0x265e090"[dir="both"];
-"0x265e090" -> "0x265e0f0"[dir="both"];
-"0x265e0f0" -> "0x265ddc0"[dir="both"];
-"0x265ddc0" -> "0x265f950"[dir="both"];
-"0x265f950" -> "0x265ef60"[dir="both"];
-"0x265ef60" -> "0x265eff0"[dir="both"];
-"0x265eff0" -> "0x265f0e0"[dir="both"];
-"0x265f0e0" -> "0x265f620"[dir="both"];
-"0x265f620" -> "0x2661180"[dir="both"];
-"0x2661180" -> "0x2661270"[dir="both"];
-"0x2661270" -> "0x2661570"[dir="both"];
-"0x2661570" -> "0x26617e0"[dir="both"];
-"0x26617e0" -> "0x2661150"[dir="both"];
-"0x2661150" -> "0x2652020"[dir="both"];
-"0x2652020" -> "0x2651f90"[dir="both"];
-"0x2651f90" -> "0x26521a0"[dir="both"];
-"0x26521a0" -> "0x2652080"[dir="both"];
-"0x2652080" -> "0x2652170"[dir="both"];
-"0x2652170" -> "0x2653d70"[dir="both"];
-"0x2653d70" -> "0x26539b0"[dir="both"];
-"0x26539b0" -> "0x2653a10"[dir="both"];
-"0x2653a10" -> "0x26539e0"[dir="both"];
-"0x26539e0" -> "0x2653d40"[dir="both"];
-"0x2653d40" -> "0x26559b0"[dir="both"];
-"0x26559b0" -> "0x26559e0"[dir="both"];
-"0x26559e0" -> "0x2655950"[dir="both"];
-"0x2655950" -> "0x26553e0"[dir="both"];
-"0x26553e0" -> "0x2655bf0"[dir="both"];
-"0x2655bf0" -> "0x2657a30"[dir="both"];
-"0x2657a30" -> "0x2657880"[dir="both"];
-"0x2657880" -> "0x2657af0"[dir="both"];
-"0x2657af0" -> "0x2657340"[dir="both"];
-"0x2657340" -> "0x2657670"[dir="both"];
-"0x2657670" -> "0x26590b0"[dir="both"];
-"0x26590b0" -> "0x2658de0"[dir="both"];
-"0x2658de0" -> "0x26592c0"[dir="both"];
-"0x26592c0" -> "0x2658e70"[dir="both"];
-"0x2658e70" -> "0x2659860"[dir="both"];
-"0x2659860" -> "0x265bcc0"[dir="both"];
-"0x265bcc0" -> "0x265be40"[dir="both"];
-"0x265be40" -> "0x265bae0"[dir="both"];
-"0x265bae0" -> "0x265bcf0"[dir="both"];
-"0x265bcf0" -> "0x265bf60"[dir="both"];
-"0x265bf60" -> "0x265d9a0"[dir="both"];
-"0x265d9a0" -> "0x265ddf0"[dir="both"];
-"0x265ddf0" -> "0x265dfa0"[dir="both"];
-"0x265dfa0" -> "0x265dfd0"[dir="both"];
-"0x265dfd0" -> "0x265d9d0"[dir="both"];
-"0x265d9d0" -> "0x265f800"[dir="both"];
-"0x265f800" -> "0x265edb0"[dir="both"];
-"0x265edb0" -> "0x265f4a0"[dir="both"];
-"0x265f4a0" -> "0x265f830"[dir="both"];
-"0x265f830" -> "0x265f3e0"[dir="both"];
-"0x265f3e0" -> "0x26611b0"[dir="both"];
-"0x26611b0" -> "0x2661720"[dir="both"];
-"0x2661720" -> "0x26610f0"[dir="both"];
-"0x26610f0" -> "0x2661990"[dir="both"];
-"0x2661990" -> "0x26613f0"[dir="both"];
-"0x26613f0" -> "0x2652230"[dir="both"];
-"0x2652230" -> "0x2651de0"[dir="both"];
-"0x2651de0" -> "0x2651e10"[dir="both"];
-"0x2651e10" -> "0x2651e40"[dir="both"];
-"0x2651e40" -> "0x2651f30"[dir="both"];
-"0x2651f30" -> "0x2653a40"[dir="both"];
-"0x2653a40" -> "0x2653b30"[dir="both"];
-"0x2653b30" -> "0x2653da0"[dir="both"];
-"0x2653da0" -> "0x2653dd0"[dir="both"];
-"0x2653dd0" -> "0x2653fb0"[dir="both"];
-"0x2653fb0" -> "0x2655c20"[dir="both"];
-"0x2655c20" -> "0x2655410"[dir="both"];
-"0x2655410" -> "0x2655c80"[dir="both"];
-"0x2655c80" -> "0x2655440"[dir="both"];
-"0x2655440" -> "0x2655470"[dir="both"];
-"0x2655470" -> "0x2657a60"[dir="both"];
-"0x2657a60" -> "0x26578b0"[dir="both"];
-"0x26578b0" -> "0x2657ac0"[dir="both"];
-"0x2657ac0" -> "0x26577c0"[dir="both"];
-"0x26577c0" -> "0x26572e0"[dir="both"];
-"0x26572e0" -> "0x26596b0"[dir="both"];
-"0x26596b0" -> "0x2659020"[dir="both"];
-"0x2659020" -> "0x26591d0"[dir="both"];
-"0x26591d0" -> "0x2659590"[dir="both"];
-"0x2659590" -> "0x2658ea0"[dir="both"];
-"0x2658ea0" -> "0x265bb40"[dir="both"];
-"0x265bb40" -> "0x265be70"[dir="both"];
-"0x265be70" -> "0x265bed0"[dir="both"];
-"0x265bed0" -> "0x265bff0"[dir="both"];
-"0x265bff0" -> "0x265c020"[dir="both"];
-"0x265c020" -> "0x265dd30"[dir="both"];
-"0x265dd30" -> "0x265da60"[dir="both"];
-"0x265da60" -> "0x265dc40"[dir="both"];
-"0x265dc40" -> "0x265de20"[dir="both"];
-"0x265de20" -> "0x265dd90"[dir="both"];
-"0x265dd90" -> "0x265f410"[dir="both"];
-"0x265f410" -> "0x265f680"[dir="both"];
-"0x265f680" -> "0x265f6b0"[dir="both"];
-"0x265f6b0" -> "0x265f440"[dir="both"];
-"0x265f440" -> "0x265f470"[dir="both"];
-"0x265f470" -> "0x2660e20"[dir="both"];
-"0x2660e20" -> "0x26618a0"[dir="both"];
-"0x26618a0" -> "0x26616f0"[dir="both"];
-"0x26616f0" -> "0x2661030"[dir="both"];
-"0x2661030" -> "0x2661240"[dir="both"];
-"0x2661240" -> "0x2652140"[dir="both"];
-"0x2652140" -> "0x2651d20"[dir="both"];
-"0x2651d20" -> "0x26522f0"[dir="both"];
-"0x26522f0" -> "0x2652260"[dir="both"];
-"0x2652260" -> "0x2651db0"[dir="both"];
-"0x2651db0" -> "0x2653a70"[dir="both"];
-"0x2653a70" -> "0x2654010"[dir="both"];
-"0x2654010" -> "0x2654070"[dir="both"];
-"0x2654070" -> "0x2654d00"[dir="both"];
-"0x2654d00" -> "0x2654790"[dir="both"];
-"0x2654790" -> "0x2655e00"[dir="both"];
-"0x2655e00" -> "0x2656070"[dir="both"];
-"0x2656070" -> "0x2655ec0"[dir="both"];
-"0x2655ec0" -> "0x2655fe0"[dir="both"];
-"0x2655fe0" -> "0x2655dd0"[dir="both"];
-"0x2655dd0" -> "0x2657b50"[dir="both"];
-"0x2657b50" -> "0x2657b20"[dir="both"];
-"0x2657b20" -> "0x2657b80"[dir="both"];
-"0x2657b80" -> "0x2657bb0"[dir="both"];
-"0x2657bb0" -> "0x2657c70"[dir="both"];
-"0x2657c70" -> "0x2659500"[dir="both"];
-"0x2659500" -> "0x2659380"[dir="both"];
-"0x2659380" -> "0x2658f00"[dir="both"];
-"0x2658f00" -> "0x2659740"[dir="both"];
-"0x2659740" -> "0x26593e0"[dir="both"];
-"0x26593e0" -> "0x265c050"[dir="both"];
-"0x265c050" -> "0x265ba20"[dir="both"];
-"0x265ba20" -> "0x265ba80"[dir="both"];
-"0x265ba80" -> "0x265bb10"[dir="both"];
-"0x265bb10" -> "0x265bba0"[dir="both"];
-"0x265bba0" -> "0x265df40"[dir="both"];
-"0x265df40" -> "0x265da00"[dir="both"];
-"0x265da00" -> "0x265dac0"[dir="both"];
-"0x265dac0" -> "0x265db80"[dir="both"];
-"0x265db80" -> "0x265deb0"[dir="both"];
-"0x265deb0" -> "0x265f860"[dir="both"];
-"0x265f860" -> "0x265f4d0"[dir="both"];
-"0x265f4d0" -> "0x265f740"[dir="both"];
-"0x265f740" -> "0x265fc80"[dir="both"];
-"0x265fc80" -> "0x265fa70"[dir="both"];
-"0x265fa70" -> "0x26615d0"[dir="both"];
-"0x26615d0" -> "0x2661930"[dir="both"];
-"0x2661930" -> "0x2661540"[dir="both"];
-"0x2661540" -> "0x2661420"[dir="both"];
-"0x2661420" -> "0x2660e80"[dir="both"];
+"0x6e4560"[label="Carnet: 201991578
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 2021/08/01
+ hora: 8
+ Estado: Incumplido"];
+"0x6e4bc0"[label="Carnet: 201309890
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 1/9/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x6e5a30"[label="Carnet: 201234795
+ nombre: Proyecto 1 de IPC1
+ descripcio: Entregar el Proyecto 1 de IPC1
+ materia: IPC1
+ fecha: 1/10/2021
+ hora: 9
+ Estado: Realizado"];
+"0x728710"[label="Carnet: 201643353
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 1/9/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x729610"[label="Carnet: 201509061
+ nombre: Proyecto 2 de Matematica Basica 2
+ descripcio: Terminar el Proyecto 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 1/9/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729370"[label="Carnet: 201315898
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 1
+ descripcio: Entregar la Hoja de trabajo 1 de Matematica Intermedia 1
+ materia: Matematica Intermedia 1
+ fecha: 1/11/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x7297c0"[label="Carnet: 201210811
+ nombre: Estudiar para el examen
+ descripcio: Leer las presentaciones de la 1 a la 5
+ materia: Investigacion de operaciones
+ fecha: 1/7/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x728e00"[label="Carnet: 201667272
+ nombre: Investigacion de EDD
+ descripcio: empezar a investigar las estructuras en python
+ materia: Estructuras de datos
+ fecha: 1/11/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729d60"[label="Carnet: 201864201
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 1/10/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a540"[label="Carnet: 201183728
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 1/11/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e5370"[label="Carnet: 201232485
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 2/8/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e5880"[label="Carnet: 201500866
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 2/10/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e5940"[label="Carnet: 201509061
+ nombre: Tarea 2 de IPC1
+ descripcio: Hacer la Tarea 2 de IPC1
+ materia: IPC1
+ fecha: 2/11/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x6e5520"[label="Carnet: 201125580
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 2/9/2021
+ hora: 10
+ Estado: Realizado"];
+"0x729190"[label="Carnet: 201131811
+ nombre: Practica 2 de Sistemas de Bases de Datos 2
+ descripcio: Entregar la Practica 2 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 2/11/2021
+ hora: 12
+ Estado: Realizado"];
+"0x7294f0"[label="Carnet: 201709702
+ nombre: Proyecto 2 de Matematica Basica 2
+ descripcio: Terminar el Proyecto 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 2/10/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x7290d0"[label="Carnet: 201315898
+ nombre: Hoja de trabajo 2 de Sistemas Operativos 1
+ descripcio: Empezar la Hoja de trabajo 2 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 2/11/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x728ef0"[label="Carnet: 201635991
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 2/8/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x7295b0"[label="Carnet: 201582352
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 2/9/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x7295e0"[label="Carnet: 201125580
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 2/10/2021
+ hora: 14
+ Estado: Realizado"];
+"0x728c50"[label="Carnet: 201309890
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 2/11/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729e80"[label="Carnet: 201006295
+ nombre: Ensayo de Organizacion de Lenguajes y Compiladores 1
+ descripcio: Terminar el Ensayo de Organizacion de Lenguajes y Compiladores 1
+ materia: Organizacion de Lenguajes y Compiladores 1
+ fecha: 2/8/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x729850"[label="Carnet: 201234795
+ nombre: Tarea de mate
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Matematica Intermedia 1
+ fecha: 2/9/2021
+ hora: 15
+ Estado: Realizado"];
+"0x729ee0"[label="Carnet: 201803912
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 2/10/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x729c10"[label="Carnet: 201022466
+ nombre: Hoja de trabajo 2 de Practica Intermedia
+ descripcio: Terminar la Hoja de trabajo 2 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 2/11/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72ab70"[label="Carnet: 201119966
+ nombre: Hoja de trabajo 2 de Sistemas Operativos 1
+ descripcio: Empezar la Hoja de trabajo 2 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 2/7/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a510"[label="Carnet: 201476680
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 2/8/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a480"[label="Carnet: 201803912
+ nombre: Proyecto 2 de Lenguajes Formales y de Programacion
+ descripcio: Hacer el Proyecto 2 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 2/11/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e4fb0"[label="Carnet: 201774497
+ nombre: Tarea de mate
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Matematica Intermedia 1
+ fecha: 3/8/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5280"[label="Carnet: 201803912
+ nombre: Hoja de trabajo 2 de Sistemas Operativos 1
+ descripcio: Empezar la Hoja de trabajo 2 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 3/11/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e5400"[label="Carnet: 201582352
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 3/7/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e5850"[label="Carnet: 201537627
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 3/9/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e5490"[label="Carnet: 201183728
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 3/10/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6de780"[label="Carnet: 201412244
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 3/7/2021
+ hora: 10
+ Estado: Realizado"];
+"0x6de4e0"[label="Carnet: 201210811
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 3/9/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728d70"[label="Carnet: 201921767
+ nombre: Ensayo de Sistemas Operativos 1
+ descripcio: Terminar el Ensayo de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 3/10/2021
+ hora: 13
+ Estado: Realizado"];
+"0x7291f0"[label="Carnet: 201119966
+ nombre: Examen de Sistemas de Bases de Datos 1
+ descripcio: Realizar el Examen de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 3/7/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x728cb0"[label="Carnet: 201115140
+ nombre: Practica 1 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Practica 1 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 3/10/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729a30"[label="Carnet: 201145786
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 3/8/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x729f40"[label="Carnet: 201773473
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 3/10/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x6e4920"[label="Carnet: 201933753
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 4/7/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e4950"[label="Carnet: 201709702
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 4/9/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e4e00"[label="Carnet: 201933753
+ nombre: Practica 2 de Sistemas de Bases de Datos 2
+ descripcio: Entregar la Practica 2 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 4/10/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e5610"[label="Carnet: 201489697
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 4/9/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e5580"[label="Carnet: 201489697
+ nombre: Ensayo de Sistemas Operativos 1
+ descripcio: Terminar el Ensayo de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 4/11/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6d35b0"[label="Carnet: 201933753
+ nombre: Ensayo de Manejo e Implementacion de Archios
+ descripcio: Entregar el Ensayo de Manejo e Implementacion de Archios
+ materia: Manejo e Implementacion de Archios
+ fecha: 4/9/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728650"[label="Carnet: 201991578
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 4/11/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728020"[label="Carnet: 201389879
+ nombre: Practica edd
+ descripcio: Terminar la practica
+ materia: Estructuras de datos
+ fecha: 4/9/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x728410"[label="Carnet: 201511649
+ nombre: Hoja de trabajo 1 de Social Humanistica 1
+ descripcio: Entregar la Hoja de trabajo 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 4/10/2021
+ hora: 11
+ Estado: Realizado"];
+"0x7284d0"[label="Carnet: 201509061
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 4/11/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x728c20"[label="Carnet: 201173540
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 4/8/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x728f50"[label="Carnet: 201110247
+ nombre: Tarea 2 de Matematica Basica 2
+ descripcio: Entregar la Tarea 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 4/8/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x728fe0"[label="Carnet: 201537627
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 4/8/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729eb0"[label="Carnet: 201210811
+ nombre: Tarea 2 Fisica 2
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Fisica 2
+ fecha: 4/8/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x729910"[label="Carnet: 201803912
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 4/11/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a570"[label="Carnet: 201412244
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 4/8/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4da0"[label="Carnet: 201476680
+ nombre: Practica edd
+ descripcio: Terminar la practica
+ materia: Estructuras de datos
+ fecha: 5/8/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e5040"[label="Carnet: 201698163
+ nombre: Ensayo de Manejo e Implementacion de Archios
+ descripcio: Entregar el Ensayo de Manejo e Implementacion de Archios
+ materia: Manejo e Implementacion de Archios
+ fecha: 5/10/2021
+ hora: 8
+ Estado: Realizado"];
+"0x728140"[label="Carnet: 201157605
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 5/8/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728ad0"[label="Carnet: 201709702
+ nombre: Tarea 5 de Lenguajes Formales y de Programacion
+ descripcio: Terminar la Tarea 5 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 5/9/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728b60"[label="Carnet: 201991578
+ nombre: Tarea 1 de Social Humanistica 1
+ descripcio: Empezar la Tarea 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 5/9/2021
+ hora: 11
+ Estado: Realizado"];
+"0x728ec0"[label="Carnet: 201698163
+ nombre: Tarea 2 Fisica 2
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Fisica 2
+ fecha: 5/9/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x7298b0"[label="Carnet: 201461415
+ nombre: Hoja de trabajo 1 de Social Humanistica 1
+ descripcio: Entregar la Hoja de trabajo 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 5/11/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a4e0"[label="Carnet: 201210811
+ nombre: Proyecto 2 de Matematica Basica 2
+ descripcio: Terminar el Proyecto 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 5/7/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a660"[label="Carnet: 201173540
+ nombre: Ensayo de Manejo e Implementacion de Archios
+ descripcio: Entregar el Ensayo de Manejo e Implementacion de Archios
+ materia: Manejo e Implementacion de Archios
+ fecha: 5/10/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4cb0"[label="Carnet: 201897987
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 6/9/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e5910"[label="Carnet: 201500866
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Realizar el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 6/9/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6e5760"[label="Carnet: 201350393
+ nombre: Tarea 3 de Sistemas Operativos 1
+ descripcio: Empezar la Tarea 3 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 6/10/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x6e5a90"[label="Carnet: 201698163
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 6/11/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x729130"[label="Carnet: 201803912
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 6/8/2021
+ hora: 14
+ Estado: Realizado"];
+"0x72a900"[label="Carnet: 201389879
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 6/7/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a5a0"[label="Carnet: 201635991
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 6/9/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e4fe0"[label="Carnet: 201509061
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 7/7/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e59d0"[label="Carnet: 201774497
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 7/10/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x728a70"[label="Carnet: 201125580
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 3
+ descripcio: Terminar la Hoja de trabajo 1 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 7/11/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728bc0"[label="Carnet: 201006295
+ nombre: Practica 2 de Fisica 2
+ descripcio: Realizar la Practica 2 de Fisica 2
+ materia: Fisica 2
+ fecha: 7/10/2021
+ hora: 11
+ Estado: Realizado"];
+"0x7296d0"[label="Carnet: 201234795
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 7/7/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729970"[label="Carnet: 201461415
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Hacer la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 7/7/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a120"[label="Carnet: 201461415
+ nombre: Tarea 2 de Matematica Basica 2
+ descripcio: Entregar la Tarea 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 7/10/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e5190"[label="Carnet: 201635991
+ nombre: Ensayo de Sistemas Operativos 1
+ descripcio: Terminar el Ensayo de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 8/9/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e49b0"[label="Carnet: 201947729
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 8/11/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x728260"[label="Carnet: 201043689
+ nombre: Ensayo de Organizacion de Lenguajes y Compiladores 1
+ descripcio: Terminar el Ensayo de Organizacion de Lenguajes y Compiladores 1
+ materia: Organizacion de Lenguajes y Compiladores 1
+ fecha: 8/8/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x728d40"[label="Carnet: 201375524
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 1
+ descripcio: Entregar la Hoja de trabajo 1 de Matematica Intermedia 1
+ materia: Matematica Intermedia 1
+ fecha: 8/10/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x728bf0"[label="Carnet: 201476680
+ nombre: Practica 2 de Sistemas de Bases de Datos 2
+ descripcio: Entregar la Practica 2 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 8/7/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x729010"[label="Carnet: 201661519
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 8/10/2021
+ hora: 13
+ Estado: Realizado"];
+"0x729ca0"[label="Carnet: 201803912
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 8/10/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x729940"[label="Carnet: 201661519
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 8/10/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a6c0"[label="Carnet: 201698163
+ nombre: Ensayo de IPC2
+ descripcio: Empezar el Ensayo de IPC2
+ materia: IPC2
+ fecha: 8/7/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a240"[label="Carnet: 201412244
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 8/9/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4ec0"[label="Carnet: 201183728
+ nombre: Proyecto 1 de IPC1
+ descripcio: Entregar el Proyecto 1 de IPC1
+ materia: IPC1
+ fecha: 9/11/2021
+ hora: 8
+ Estado: Realizado"];
+"0x728470"[label="Carnet: 201818908
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 9/7/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x728830"[label="Carnet: 201594265
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 9/8/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728560"[label="Carnet: 201906670
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Hacer la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 9/10/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728170"[label="Carnet: 201661519
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 9/11/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x728e30"[label="Carnet: 201402462
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 9/7/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x728fb0"[label="Carnet: 201773473
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 9/10/2021
+ hora: 12
+ Estado: Realizado"];
+"0x7293a0"[label="Carnet: 201125580
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 9/7/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x729ac0"[label="Carnet: 201119966
+ nombre: Practica 3 de Quimica General 1
+ descripcio: Terminar la Practica 3 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 9/9/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x7299d0"[label="Carnet: 201147451
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 9/7/2021
+ hora: 15
+ Estado: Realizado"];
+"0x729b50"[label="Carnet: 201704168
+ nombre: Ensayo de Quimica General 1
+ descripcio: Entregar el Ensayo de Quimica General 1
+ materia: Quimica General 1
+ fecha: 9/11/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a690"[label="Carnet: 201864201
+ nombre: Hoja de trabajo 2 de Practica Intermedia
+ descripcio: Terminar la Hoja de trabajo 2 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 9/10/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e5640"[label="Carnet: 201210811
+ nombre: Hoja de trabajo 1 de Sistemas Operativos 2
+ descripcio: Hacer la Hoja de trabajo 1 de Sistemas Operativos 2
+ materia: Sistemas Operativos 2
+ fecha: 10/9/2021
+ hora: 9
+ Estado: Realizado"];
+"0x728a10"[label="Carnet: 201669286
+ nombre: Ensayo de Organizacion de Lenguajes y Compiladores 1
+ descripcio: Terminar el Ensayo de Organizacion de Lenguajes y Compiladores 1
+ materia: Organizacion de Lenguajes y Compiladores 1
+ fecha: 10/8/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x7287d0"[label="Carnet: 201790782
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 1
+ descripcio: Entregar la Hoja de trabajo 1 de Matematica Intermedia 1
+ materia: Matematica Intermedia 1
+ fecha: 10/11/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x7280b0"[label="Carnet: 201897987
+ nombre: Practica 2 de Fisica 2
+ descripcio: Realizar la Practica 2 de Fisica 2
+ materia: Fisica 2
+ fecha: 10/7/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x728a40"[label="Carnet: 201906670
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 10/10/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729520"[label="Carnet: 201327675
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 10/9/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x729c70"[label="Carnet: 201668149
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 10/7/2021
+ hora: 14
+ Estado: Realizado"];
+"0x729be0"[label="Carnet: 201582352
+ nombre: Estudiar para el examen
+ descripcio: Leer las presentaciones de la 1 a la 5
+ materia: Investigacion de operaciones
+ fecha: 10/9/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x729a00"[label="Carnet: 201790782
+ nombre: Proyecto 1 de IPC1
+ descripcio: Entregar el Proyecto 1 de IPC1
+ materia: IPC1
+ fecha: 10/7/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a6f0"[label="Carnet: 201766242
+ nombre: Tarea 2 de IPC1
+ descripcio: Hacer la Tarea 2 de IPC1
+ materia: IPC1
+ fecha: 10/7/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a150"[label="Carnet: 201131811
+ nombre: Tarea 4 de Matematica Computo 1
+ descripcio: Realizar la Tarea 4 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 10/10/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e4c50"[label="Carnet: 201761573
+ nombre: Hoja de trabajo 2 de Matematica Intermedia 2
+ descripcio: Empezar la Hoja de trabajo 2 de Matematica Intermedia 2
+ materia: Matematica Intermedia 2
+ fecha: 11/8/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e4e90"[label="Carnet: 201350393
+ nombre: Investigacion de Social Humanistica 1
+ descripcio: Hacer la Investigacion de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 11/9/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5340"[label="Carnet: 201825364
+ nombre: Tarea 2 de IPC1
+ descripcio: Hacer la Tarea 2 de IPC1
+ materia: IPC1
+ fecha: 11/8/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x729700"[label="Carnet: 201764124
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 11/8/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729730"[label="Carnet: 201210811
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 11/11/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x729550"[label="Carnet: 201500866
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 11/7/2021
+ hora: 13
+ Estado: Realizado"];
+"0x729d30"[label="Carnet: 201954202
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 11/8/2021
+ hora: 14
+ Estado: Realizado"];
+"0x729b80"[label="Carnet: 201803912
+ nombre: Hoja de trabajo 1 de Sistemas Operativos 2
+ descripcio: Hacer la Hoja de trabajo 1 de Sistemas Operativos 2
+ materia: Sistemas Operativos 2
+ fecha: 11/10/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x7298e0"[label="Carnet: 201068965
+ nombre: Tarea 1 de Matematica Computo 1
+ descripcio: Entregar la Tarea 1 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 11/11/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x729bb0"[label="Carnet: 201309890
+ nombre: Estudiar para el examen
+ descripcio: Leer las presentaciones de la 1 a la 5
+ materia: Investigacion de operaciones
+ fecha: 11/11/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72aae0"[label="Carnet: 201864201
+ nombre: Investigacion de EDD
+ descripcio: empezar a investigar las estructuras en python
+ materia: Estructuras de datos
+ fecha: 11/7/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4dd0"[label="Carnet: 201947729
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 12/10/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5070"[label="Carnet: 201210811
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 12/11/2021
+ hora: 8
+ Estado: Realizado"];
+"0x7287a0"[label="Carnet: 201646518
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Realizar el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 12/8/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729100"[label="Carnet: 201740604
+ nombre: Estudiar para el examen
+ descripcio: Leer las presentaciones de la 1 a la 5
+ materia: Investigacion de operaciones
+ fecha: 12/10/2021
+ hora: 13
+ Estado: Realizado"];
+"0x72aa80"[label="Carnet: 201764124
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 12/8/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a720"[label="Carnet: 201137248
+ nombre: Ensayo de IPC2
+ descripcio: Empezar el Ensayo de IPC2
+ materia: IPC2
+ fecha: 12/10/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e4d10"[label="Carnet: 201234795
+ nombre: Ensayo de Manejo e Implementacion de Archios
+ descripcio: Entregar el Ensayo de Manejo e Implementacion de Archios
+ materia: Manejo e Implementacion de Archios
+ fecha: 13/7/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e4980"[label="Carnet: 201359507
+ nombre: Hoja de trabajo 2 de Matematica Intermedia 2
+ descripcio: Empezar la Hoja de trabajo 2 de Matematica Intermedia 2
+ materia: Matematica Intermedia 2
+ fecha: 13/8/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e52b0"[label="Carnet: 201309890
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 13/11/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e5670"[label="Carnet: 201009015
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 13/7/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x6e5550"[label="Carnet: 201359507
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 13/10/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x7288f0"[label="Carnet: 201131811
+ nombre: Practica 1 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Practica 1 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 13/8/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x729250"[label="Carnet: 201661519
+ nombre: Tarea 5 de Lenguajes Formales y de Programacion
+ descripcio: Terminar la Tarea 5 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 13/9/2021
+ hora: 13
+ Estado: Realizado"];
+"0x729d90"[label="Carnet: 201991578
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 13/9/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a840"[label="Carnet: 201022466
+ nombre: Hoja de trabajo 2 de Matematica Intermedia 2
+ descripcio: Empezar la Hoja de trabajo 2 de Matematica Intermedia 2
+ materia: Matematica Intermedia 2
+ fecha: 13/7/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e56a0"[label="Carnet: 201669286
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Realizar el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 14/8/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x6e5970"[label="Carnet: 201906670
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 14/9/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x728920"[label="Carnet: 201402462
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 14/11/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729dc0"[label="Carnet: 201009015
+ nombre: Examen de Sistemas de Bases de Datos 1
+ descripcio: Realizar el Examen de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 14/9/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x6e53a0"[label="Carnet: 201412244
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 15/8/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6e55e0"[label="Carnet: 201991578
+ nombre: Hoja de trabajo 2 de Sistemas Operativos 1
+ descripcio: Empezar la Hoja de trabajo 2 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 15/9/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x7286b0"[label="Carnet: 201906670
+ nombre: Practica 3 de Quimica General 1
+ descripcio: Terminar la Practica 3 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 15/9/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x729670"[label="Carnet: 201147451
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 15/10/2021
+ hora: 12
+ Estado: Realizado"];
+"0x729640"[label="Carnet: 201389879
+ nombre: Tarea 4 de Matematica Computo 1
+ descripcio: Realizar la Tarea 4 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 15/8/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x728da0"[label="Carnet: 201402462
+ nombre: Tarea 2 de IPC1
+ descripcio: Hacer la Tarea 2 de IPC1
+ materia: IPC1
+ fecha: 15/9/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x728dd0"[label="Carnet: 201210811
+ nombre: Hoja de trabajo 1 de Social Humanistica 1
+ descripcio: Entregar la Hoja de trabajo 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 15/10/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x728f80"[label="Carnet: 201157605
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 15/11/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x729f10"[label="Carnet: 201933753
+ nombre: Proyecto 2 de Matematica Basica 2
+ descripcio: Terminar el Proyecto 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 15/10/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729a60"[label="Carnet: 201428558
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 15/7/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a750"[label="Carnet: 201125580
+ nombre: Estudiar para el examen
+ descripcio: Leer las presentaciones de la 1 a la 5
+ materia: Investigacion de operaciones
+ fecha: 15/9/2021
+ hora: 16
+ Estado: Realizado"];
+"0x72a1b0"[label="Carnet: 201764124
+ nombre: Tarea 2 de Matematica Basica 2
+ descripcio: Entregar la Tarea 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 15/10/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e5a60"[label="Carnet: 201773473
+ nombre: Investigacion de EDD
+ descripcio: empezar a investigar las estructuras en python
+ materia: Estructuras de datos
+ fecha: 16/8/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6e53d0"[label="Carnet: 201402462
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 16/9/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6e55b0"[label="Carnet: 201667272
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 16/11/2021
+ hora: 9
+ Estado: Realizado"];
+"0x728200"[label="Carnet: 201173540
+ nombre: Hoja de trabajo 2 de Practica Intermedia
+ descripcio: Terminar la Hoja de trabajo 2 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 16/7/2021
+ hora: 10
+ Estado: Realizado"];
+"0x7288c0"[label="Carnet: 201210811
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 16/11/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x7286e0"[label="Carnet: 201024489
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 16/7/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x7293d0"[label="Carnet: 201119966
+ nombre: Hoja de trabajo 2 de Matematica Intermedia 2
+ descripcio: Empezar la Hoja de trabajo 2 de Matematica Intermedia 2
+ materia: Matematica Intermedia 2
+ fecha: 16/11/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x729a90"[label="Carnet: 201006295
+ nombre: Practica 2 de Sistemas de Bases de Datos 2
+ descripcio: Entregar la Practica 2 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 16/9/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72aa20"[label="Carnet: 201774497
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 16/7/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x728050"[label="Carnet: 201375524
+ nombre: Investigacion de Practica Intermedia
+ descripcio: Hacer la Investigacion de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 17/8/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728440"[label="Carnet: 201232485
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 17/10/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x7285f0"[label="Carnet: 201210811
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 17/7/2021
+ hora: 11
+ Estado: Realizado"];
+"0x727ff0"[label="Carnet: 201825364
+ nombre: Tarea 4 de Matematica Computo 1
+ descripcio: Realizar la Tarea 4 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 17/9/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x7289b0"[label="Carnet: 201646518
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 17/10/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x729430"[label="Carnet: 201489697
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 17/9/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729e20"[label="Carnet: 201489697
+ nombre: Hoja de trabajo 2 de Practica Intermedia
+ descripcio: Terminar la Hoja de trabajo 2 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 17/8/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x729e50"[label="Carnet: 201643353
+ nombre: Proyecto 2 de Matematica Basica 2
+ descripcio: Terminar el Proyecto 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 17/9/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a7e0"[label="Carnet: 201022466
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Hacer la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 17/7/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a930"[label="Carnet: 201774497
+ nombre: Tarea 1 de Matematica Computo 1
+ descripcio: Entregar la Tarea 1 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 17/9/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e4ce0"[label="Carnet: 201137248
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 18/10/2021
+ hora: 8
+ Estado: Realizado"];
+"0x728680"[label="Carnet: 201933753
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 18/7/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728b30"[label="Carnet: 201428558
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 1
+ descripcio: Entregar la Hoja de trabajo 1 de Matematica Intermedia 1
+ materia: Matematica Intermedia 1
+ fecha: 18/11/2021
+ hora: 10
+ Estado: Realizado"];
+"0x729220"[label="Carnet: 201991578
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 18/7/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729790"[label="Carnet: 201803912
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 18/8/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x72a870"[label="Carnet: 201511649
+ nombre: Tarea 2 de IPC1
+ descripcio: Hacer la Tarea 2 de IPC1
+ materia: IPC1
+ fecha: 18/7/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a300"[label="Carnet: 201125580
+ nombre: Hoja de trabajo 2 de Practica Intermedia
+ descripcio: Terminar la Hoja de trabajo 2 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 18/9/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a2d0"[label="Carnet: 201068965
+ nombre: Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 18/10/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e4e30"[label="Carnet: 201375524
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 19/7/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e56d0"[label="Carnet: 201131811
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 19/7/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x728500"[label="Carnet: 201210811
+ nombre: Proyecto 1 de IPC1
+ descripcio: Entregar el Proyecto 1 de IPC1
+ materia: IPC1
+ fecha: 19/7/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x728890"[label="Carnet: 201635991
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 19/8/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x728e60"[label="Carnet: 201818908
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 19/7/2021
+ hora: 12
+ Estado: Realizado"];
+"0x7296a0"[label="Carnet: 201131811
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 19/8/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x729400"[label="Carnet: 201991578
+ nombre: Investigacion de Social Humanistica 1
+ descripcio: Hacer la Investigacion de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 19/9/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x728c80"[label="Carnet: 201173540
+ nombre: Ensayo de IPC2
+ descripcio: Empezar el Ensayo de IPC2
+ materia: IPC2
+ fecha: 19/10/2021
+ hora: 13
+ Estado: Realizado"];
+"0x72a180"[label="Carnet: 201232485
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 19/11/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a8d0"[label="Carnet: 201389879
+ nombre: Investigacion de Practica Intermedia
+ descripcio: Hacer la Investigacion de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 19/9/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e5100"[label="Carnet: 201667272
+ nombre: Investigacion de EDD
+ descripcio: empezar a investigar las estructuras en python
+ materia: Estructuras de datos
+ fecha: 20/7/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e4e60"[label="Carnet: 201933753
+ nombre: Practica 3 de Quimica General 1
+ descripcio: Terminar la Practica 3 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 20/9/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e57f0"[label="Carnet: 201402462
+ nombre: Tarea 4 de Matematica Computo 1
+ descripcio: Realizar la Tarea 4 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 20/9/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x728800"[label="Carnet: 201359507
+ nombre: Tarea 2 Fisica 2
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Fisica 2
+ fecha: 20/10/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728aa0"[label="Carnet: 201790782
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 20/11/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x728ce0"[label="Carnet: 201921767
+ nombre: Practica 3 de Quimica General 1
+ descripcio: Terminar la Practica 3 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 20/7/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x729b20"[label="Carnet: 201068965
+ nombre: Tarea 3 de Sistemas Operativos 1
+ descripcio: Empezar la Tarea 3 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 20/11/2021
+ hora: 14
+ Estado: Realizado"];
+"0x72a210"[label="Carnet: 201157605
+ nombre: Tarea 1 de Social Humanistica 1
+ descripcio: Empezar la Tarea 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 20/10/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a060"[label="Carnet: 201350393
+ nombre: Proyecto 2 de Lenguajes Formales y de Programacion
+ descripcio: Hacer el Proyecto 2 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 20/11/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4860"[label="Carnet: 201643353
+ nombre: Tarea 3 de Sistemas Operativos 1
+ descripcio: Empezar la Tarea 3 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 21/7/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e4890"[label="Carnet: 201933753
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 21/11/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5700"[label="Carnet: 201327079
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 21/7/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e5430"[label="Carnet: 201761573
+ nombre: Ensayo de Sistemas Operativos 1
+ descripcio: Terminar el Ensayo de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 21/8/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x7281a0"[label="Carnet: 201803912
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 21/7/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x7281d0"[label="Carnet: 201389879
+ nombre: Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 21/8/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x7280e0"[label="Carnet: 201210811
+ nombre: Tarea 3 de Sistemas Operativos 1
+ descripcio: Empezar la Tarea 3 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 21/8/2021
+ hora: 11
+ Estado: Realizado"];
+"0x728950"[label="Carnet: 201006295
+ nombre: Hoja de trabajo 1 de Sistemas Operativos 2
+ descripcio: Hacer la Hoja de trabajo 1 de Sistemas Operativos 2
+ materia: Sistemas Operativos 2
+ fecha: 21/9/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x7291c0"[label="Carnet: 201646518
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 21/9/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x7290a0"[label="Carnet: 201119966
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 21/10/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x729460"[label="Carnet: 201389879
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 21/11/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x72a5d0"[label="Carnet: 201145786
+ nombre: Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 21/7/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x6e50a0"[label="Carnet: 201327675
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 22/7/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e49e0"[label="Carnet: 201315898
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 22/8/2021
+ hora: 8
+ Estado: Pendiente"];
+"0x6e5460"[label="Carnet: 201667272
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 22/9/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x728b90"[label="Carnet: 201375524
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 22/10/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728080"[label="Carnet: 201461415
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 22/11/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x728530"[label="Carnet: 201803912
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 22/9/2021
+ hora: 11
+ Estado: Realizado"];
+"0x729280"[label="Carnet: 201947729
+ nombre: Practica 1 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Practica 1 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 22/8/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729c40"[label="Carnet: 201022466
+ nombre: Examen de Sistemas de Bases de Datos 1
+ descripcio: Realizar el Examen de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 22/7/2021
+ hora: 14
+ Estado: Pendiente"];
+"0x729df0"[label="Carnet: 201327675
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 22/10/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x72a2a0"[label="Carnet: 201137248
+ nombre: Proyecto 2 de Lenguajes Formales y de Programacion
+ descripcio: Hacer el Proyecto 2 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 22/8/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a450"[label="Carnet: 201669286
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 22/10/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a780"[label="Carnet: 201327079
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 22/11/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x6e5130"[label="Carnet: 201790782
+ nombre: Examen de Sistemas de Bases de Datos 1
+ descripcio: Realizar el Examen de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 23/10/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5790"[label="Carnet: 201374369
+ nombre: Ensayo de Organizacion de Lenguajes y Compiladores 1
+ descripcio: Terminar el Ensayo de Organizacion de Lenguajes y Compiladores 1
+ materia: Organizacion de Lenguajes y Compiladores 1
+ fecha: 23/8/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6e5730"[label="Carnet: 201991578
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 23/9/2021
+ hora: 9
+ Estado: Realizado"];
+"0x7282c0"[label="Carnet: 201210811
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 23/8/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x728980"[label="Carnet: 201389879
+ nombre: Investigacion de Practica Intermedia
+ descripcio: Hacer la Investigacion de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 23/11/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x728e90"[label="Carnet: 201232485
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 23/7/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x728d10"[label="Carnet: 201350393
+ nombre: Investigacion de Practica Intermedia
+ descripcio: Hacer la Investigacion de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 23/10/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x72aab0"[label="Carnet: 201661519
+ nombre: Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 23/11/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72ab40"[label="Carnet: 201476680
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 23/8/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a810"[label="Carnet: 201210811
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 1
+ descripcio: Entregar la Hoja de trabajo 1 de Matematica Intermedia 1
+ materia: Matematica Intermedia 1
+ fecha: 23/11/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x728110"[label="Carnet: 201232485
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 24/7/2021
+ hora: 11
+ Estado: Realizado"];
+"0x7282f0"[label="Carnet: 201864201
+ nombre: Investigacion de EDD
+ descripcio: empezar a investigar las estructuras en python
+ materia: Estructuras de datos
+ fecha: 24/9/2021
+ hora: 11
+ Estado: Realizado"];
+"0x729310"[label="Carnet: 201906670
+ nombre: Hoja de trabajo 1 de Sistemas Operativos 2
+ descripcio: Hacer la Hoja de trabajo 1 de Sistemas Operativos 2
+ materia: Sistemas Operativos 2
+ fecha: 24/10/2021
+ hora: 12
+ Estado: Realizado"];
+"0x72a600"[label="Carnet: 201764124
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 24/7/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a000"[label="Carnet: 201374369
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 24/10/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72ab10"[label="Carnet: 201668149
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 24/7/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a1e0"[label="Carnet: 201761573
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 24/8/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a330"[label="Carnet: 201043689
+ nombre: Ensayo de Sistemas Operativos 1
+ descripcio: Terminar el Ensayo de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 24/11/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e48c0"[label="Carnet: 201110247
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 25/10/2021
+ hora: 8
+ Estado: Pendiente"];
+"0x6e5820"[label="Carnet: 201009015
+ nombre: Examen de Matematica Computo 1
+ descripcio: Realizar el Examen de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 25/9/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e54c0"[label="Carnet: 201327675
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 25/11/2021
+ hora: 9
+ Estado: Realizado"];
+"0x728320"[label="Carnet: 201740604
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 25/7/2021
+ hora: 11
+ Estado: Realizado"];
+"0x728590"[label="Carnet: 201157605
+ nombre: Tarea de mate
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Matematica Intermedia 1
+ fecha: 25/10/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729040"[label="Carnet: 201402462
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 25/10/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x729cd0"[label="Carnet: 201359507
+ nombre: Tarea 1 de Social Humanistica 1
+ descripcio: Empezar la Tarea 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 25/11/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x72a270"[label="Carnet: 201234795
+ nombre: Tarea 1 de Social Humanistica 1
+ descripcio: Empezar la Tarea 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 25/7/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a3f0"[label="Carnet: 201119966
+ nombre: Tarea 3 de Sistemas Operativos 1
+ descripcio: Empezar la Tarea 3 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 25/9/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72aba0"[label="Carnet: 201582352
+ nombre: Hoja de trabajo 2 de Sistemas Operativos 1
+ descripcio: Empezar la Hoja de trabajo 2 de Sistemas Operativos 1
+ materia: Sistemas Operativos 1
+ fecha: 25/8/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a090"[label="Carnet: 201137248
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Realizar el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 25/10/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x72a7b0"[label="Carnet: 201489697
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 25/11/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e51f0"[label="Carnet: 201119966
+ nombre: Hoja de trabajo 2 de Matematica Intermedia 2
+ descripcio: Empezar la Hoja de trabajo 2 de Matematica Intermedia 2
+ materia: Matematica Intermedia 2
+ fecha: 26/7/2021
+ hora: 8
+ Estado: Pendiente"];
+"0x6e5220"[label="Carnet: 201234795
+ nombre: Investigacion de Social Humanistica 1
+ descripcio: Hacer la Investigacion de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 26/8/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e4a40"[label="Carnet: 201667272
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 26/9/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5250"[label="Carnet: 201157605
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 26/10/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e4a70"[label="Carnet: 201582352
+ nombre: Proyecto 2 de Matematica Basica 2
+ descripcio: Terminar el Proyecto 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 26/11/2021
+ hora: 8
+ Estado: Incumplido"];
+"0x6e58b0"[label="Carnet: 201897987
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 26/8/2021
+ hora: 9
+ Estado: Realizado"];
+"0x6e57c0"[label="Carnet: 201255643
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 1
+ descripcio: Entregar la Hoja de trabajo 1 de Matematica Intermedia 1
+ materia: Matematica Intermedia 1
+ fecha: 26/10/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x728620"[label="Carnet: 201173540
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 26/11/2021
+ hora: 11
+ Estado: Realizado"];
+"0x729070"[label="Carnet: 201375524
+ nombre: Ensayo de IPC2
+ descripcio: Empezar el Ensayo de IPC2
+ materia: IPC2
+ fecha: 26/9/2021
+ hora: 12
+ Estado: Realizado"];
+"0x729160"[label="Carnet: 201137248
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 26/8/2021
+ hora: 13
+ Estado: Realizado"];
+"0x729580"[label="Carnet: 201646518
+ nombre: Practica 1 de Fisica 1
+ descripcio: Realizar la Practica 1 de Fisica 1
+ materia: Fisica 1
+ fecha: 26/10/2021
+ hora: 13
+ Estado: Pendiente"];
+"0x72a630"[label="Carnet: 201173540
+ nombre: Hoja de trabajo 3 de IPC2
+ descripcio: Terminar la Hoja de trabajo 3 de IPC2
+ materia: IPC2
+ fecha: 26/7/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a420"[label="Carnet: 201125580
+ nombre: Tarea 2 de Quimica General 1
+ descripcio: Empezar la Tarea 2 de Quimica General 1
+ materia: Quimica General 1
+ fecha: 26/11/2021
+ hora: 15
+ Estado: Pendiente"];
+"0x72a360"[label="Carnet: 201635991
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Realizar el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 26/8/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4aa0"[label="Carnet: 201210811
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 27/7/2021
+ hora: 8
+ Estado: Pendiente"];
+"0x6e58e0"[label="Carnet: 201024489
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 27/8/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e59a0"[label="Carnet: 201537627
+ nombre: Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 27/10/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x7285c0"[label="Carnet: 201764124
+ nombre: Hoja de trabajo 1 de Matematica Intermedia 3
+ descripcio: Terminar la Hoja de trabajo 1 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 27/9/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x728350"[label="Carnet: 201110247
+ nombre: Tarea 5 de Lenguajes Formales y de Programacion
+ descripcio: Terminar la Tarea 5 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 27/10/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729760"[label="Carnet: 201740604
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 27/8/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x7292e0"[label="Carnet: 201816850
+ nombre: Hoja de trabajo 2 de Matematica Intermedia 2
+ descripcio: Empezar la Hoja de trabajo 2 de Matematica Intermedia 2
+ materia: Matematica Intermedia 2
+ fecha: 27/10/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x729490"[label="Carnet: 201537627
+ nombre: Proyecto 2 de Lenguajes Formales y de Programacion
+ descripcio: Hacer el Proyecto 2 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 27/10/2021
+ hora: 13
+ Estado: Incumplido"];
+"0x7297f0"[label="Carnet: 201147451
+ nombre: Tarea de mate
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Matematica Intermedia 1
+ fecha: 27/9/2021
+ hora: 14
+ Estado: Realizado"];
+"0x72a8a0"[label="Carnet: 201774497
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 27/7/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4ad0"[label="Carnet: 201009015
+ nombre: Ensayo de Practica Inicial
+ descripcio: Hacer el Ensayo de Practica Inicial
+ materia: Practica Inicial
+ fecha: 28/9/2021
+ hora: 8
+ Estado: Realizado"];
+"0x6e5a00"[label="Carnet: 201375524
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 28/7/2021
+ hora: 9
+ Estado: Incumplido"];
+"0x6e54f0"[label="Carnet: 201516603
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 28/9/2021
+ hora: 9
+ Estado: Pendiente"];
+"0x7284a0"[label="Carnet: 201489697
+ nombre: Tarea 2 de Matematica Basica 2
+ descripcio: Entregar la Tarea 2 de Matematica Basica 2
+ materia: Matematica Basica 2
+ fecha: 28/9/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728290"[label="Carnet: 201173540
+ nombre: Proyecto 2 de Matematica Intermedia 3
+ descripcio: Realizar el Proyecto 2 de Matematica Intermedia 3
+ materia: Matematica Intermedia 3
+ fecha: 28/11/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x728380"[label="Carnet: 201476680
+ nombre: Tarea 2 de IPC1
+ descripcio: Hacer la Tarea 2 de IPC1
+ materia: IPC1
+ fecha: 28/9/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x7283b0"[label="Carnet: 201774497
+ nombre: Tarea 2 Fisica 2
+ descripcio: Realizar la tarea para el primer parcial
+ materia: Fisica 2
+ fecha: 28/10/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729880"[label="Carnet: 201509061
+ nombre: Tarea 1 de Matematica Computo 1
+ descripcio: Entregar la Tarea 1 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 28/9/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729d00"[label="Carnet: 201954202
+ nombre: Hoja de trabajo 1 de Sistemas Operativos 2
+ descripcio: Hacer la Hoja de trabajo 1 de Sistemas Operativos 2
+ materia: Sistemas Operativos 2
+ fecha: 28/11/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x72aa50"[label="Carnet: 201790782
+ nombre: Hoja de trabajo 3 de Fisica 3
+ descripcio: Terminar la Hoja de trabajo 3 de Fisica 3
+ materia: Fisica 3
+ fecha: 28/11/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a390"[label="Carnet: 201661519
+ nombre: Hoja de trabajo 2 de Matematica Computo 1
+ descripcio: Entregar la Hoja de trabajo 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 28/10/2021
+ hora: 16
+ Estado: Realizado"];
+"0x6e4b00"[label="Carnet: 201043689
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Realizar el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 29/7/2021
+ hora: 8
+ Estado: Pendiente"];
+"0x728860"[label="Carnet: 201709702
+ nombre: Tarea 1 de Estructuras de Datos
+ descripcio: Entregar la Tarea 1 de Estructuras de Datos
+ materia: Estructuras de Datos
+ fecha: 29/8/2021
+ hora: 10
+ Estado: Realizado"];
+"0x728230"[label="Carnet: 201043689
+ nombre: Corto de Sistemas de Bases de Datos 1
+ descripcio: Entregar el Corto de Sistemas de Bases de Datos 1
+ materia: Sistemas de Bases de Datos 1
+ fecha: 29/9/2021
+ hora: 10
+ Estado: Incumplido"];
+"0x728740"[label="Carnet: 201864201
+ nombre: Tarea 1 idioma
+ descripcio: Tarea 1 de indioma 4
+ materia: Idioma Tecnico 1
+ fecha: 29/8/2021
+ hora: 11
+ Estado: Pendiente"];
+"0x728770"[label="Carnet: 201669286
+ nombre: Practica 2 de Fisica 2
+ descripcio: Realizar la Practica 2 de Fisica 2
+ materia: Fisica 2
+ fecha: 29/10/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x728f20"[label="Carnet: 201773473
+ nombre: Proyecto 1 de IPC1
+ descripcio: Entregar el Proyecto 1 de IPC1
+ materia: IPC1
+ fecha: 29/9/2021
+ hora: 12
+ Estado: Pendiente"];
+"0x7292b0"[label="Carnet: 201646518
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 29/10/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x7299a0"[label="Carnet: 201183728
+ nombre: Practica 2 de IPC1
+ descripcio: Realizar la Practica 2 de IPC1
+ materia: IPC1
+ fecha: 29/10/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x72a9c0"[label="Carnet: 201818908
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 29/8/2021
+ hora: 15
+ Estado: Incumplido"];
+"0x72a4b0"[label="Carnet: 201255643
+ nombre: Proyecto 2 de Lenguajes Formales y de Programacion
+ descripcio: Hacer el Proyecto 2 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 29/9/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72abd0"[label="Carnet: 201594265
+ nombre: Tarea 1 de Matematica Computo 1
+ descripcio: Entregar la Tarea 1 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 29/11/2021
+ hora: 16
+ Estado: Pendiente"];
+"0x728b00"[label="Carnet: 201764124
+ nombre: Hoja de trabajo 1 de Social Humanistica 1
+ descripcio: Entregar la Hoja de trabajo 1 de Social Humanistica 1
+ materia: Social Humanistica 1
+ fecha: 30/10/2021
+ hora: 10
+ Estado: Realizado"];
+"0x7283e0"[label="Carnet: 201461415
+ nombre: Practica 3 de Sistemas de Bases de Datos 2
+ descripcio: Terminar la Practica 3 de Sistemas de Bases de Datos 2
+ materia: Sistemas de Bases de Datos 2
+ fecha: 30/11/2021
+ hora: 10
+ Estado: Pendiente"];
+"0x7289e0"[label="Carnet: 201816850
+ nombre: Investigacion de EDD
+ descripcio: empezar a investigar las estructuras en python
+ materia: Estructuras de datos
+ fecha: 30/10/2021
+ hora: 11
+ Estado: Incumplido"];
+"0x729340"[label="Carnet: 201309890
+ nombre: Proyecto 1 de Practica Intermedia
+ descripcio: Hacer el Proyecto 1 de Practica Intermedia
+ materia: Practica Intermedia
+ fecha: 30/8/2021
+ hora: 12
+ Estado: Incumplido"];
+"0x7294c0"[label="Carnet: 201761573
+ nombre: Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ descripcio: Empezar la Tarea 3 de Organizacion de Lenguajes y Compiladores 2
+ materia: Organizacion de Lenguajes y Compiladores 2
+ fecha: 30/11/2021
+ hora: 12
+ Estado: Realizado"];
+"0x729af0"[label="Carnet: 201110247
+ nombre: Tarea 2 de Matematica Computo 1
+ descripcio: Terminar la Tarea 2 de Matematica Computo 1
+ materia: Matematica Computo 1
+ fecha: 30/7/2021
+ hora: 14
+ Estado: Incumplido"];
+"0x729820"[label="Carnet: 201537627
+ nombre: Tarea 1 de Estructuras de Datos
+ descripcio: Entregar la Tarea 1 de Estructuras de Datos
+ materia: Estructuras de Datos
+ fecha: 30/8/2021
+ hora: 14
+ Estado: Realizado"];
+"0x72a3c0"[label="Carnet: 201774497
+ nombre: Proyecto 1 de Fisica 2
+ descripcio: Empezar el Proyecto 1 de Fisica 2
+ materia: Fisica 2
+ fecha: 30/10/2021
+ hora: 15
+ Estado: Realizado"];
+"0x72a960"[label="Carnet: 201509061
+ nombre: Examen de Lenguajes Formales y de Programacion
+ descripcio: Realizar el Examen de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 30/7/2021
+ hora: 16
+ Estado: Incumplido"];
+"0x72a990"[label="Carnet: 201500866
+ nombre: Proyecto 2 de Lenguajes Formales y de Programacion
+ descripcio: Hacer el Proyecto 2 de Lenguajes Formales y de Programacion
+ materia: Lenguajes Formales y de Programacion
+ fecha: 
+ hora: 16
+ Estado: Pendiente"];
+"0x6e4560" -> "0x6e4bc0"[dir="both"];
+"0x6e4bc0" -> "0x6e5a30"[dir="both"];
+"0x6e5a30" -> "0x728710"[dir="both"];
+"0x728710" -> "0x729610"[dir="both"];
+"0x729610" -> "0x729370"[dir="both"];
+"0x729370" -> "0x7297c0"[dir="both"];
+"0x7297c0" -> "0x728e00"[dir="both"];
+"0x728e00" -> "0x729d60"[dir="both"];
+"0x729d60" -> "0x72a540"[dir="both"];
+"0x72a540" -> "0x6e5370"[dir="both"];
+"0x6e5370" -> "0x6e5880"[dir="both"];
+"0x6e5880" -> "0x6e5940"[dir="both"];
+"0x6e5940" -> "0x6e5520"[dir="both"];
+"0x6e5520" -> "0x729190"[dir="both"];
+"0x729190" -> "0x7294f0"[dir="both"];
+"0x7294f0" -> "0x7290d0"[dir="both"];
+"0x7290d0" -> "0x728ef0"[dir="both"];
+"0x728ef0" -> "0x7295b0"[dir="both"];
+"0x7295b0" -> "0x7295e0"[dir="both"];
+"0x7295e0" -> "0x728c50"[dir="both"];
+"0x728c50" -> "0x729e80"[dir="both"];
+"0x729e80" -> "0x729850"[dir="both"];
+"0x729850" -> "0x729ee0"[dir="both"];
+"0x729ee0" -> "0x729c10"[dir="both"];
+"0x729c10" -> "0x72ab70"[dir="both"];
+"0x72ab70" -> "0x72a510"[dir="both"];
+"0x72a510" -> "0x72a480"[dir="both"];
+"0x72a480" -> "0x6e4fb0"[dir="both"];
+"0x6e4fb0" -> "0x6e5280"[dir="both"];
+"0x6e5280" -> "0x6e5400"[dir="both"];
+"0x6e5400" -> "0x6e5850"[dir="both"];
+"0x6e5850" -> "0x6e5490"[dir="both"];
+"0x6e5490" -> "0x6de780"[dir="both"];
+"0x6de780" -> "0x6de4e0"[dir="both"];
+"0x6de4e0" -> "0x728d70"[dir="both"];
+"0x728d70" -> "0x7291f0"[dir="both"];
+"0x7291f0" -> "0x728cb0"[dir="both"];
+"0x728cb0" -> "0x729a30"[dir="both"];
+"0x729a30" -> "0x729f40"[dir="both"];
+"0x729f40" -> "0x6e4920"[dir="both"];
+"0x6e4920" -> "0x6e4950"[dir="both"];
+"0x6e4950" -> "0x6e4e00"[dir="both"];
+"0x6e4e00" -> "0x6e5610"[dir="both"];
+"0x6e5610" -> "0x6e5580"[dir="both"];
+"0x6e5580" -> "0x6d35b0"[dir="both"];
+"0x6d35b0" -> "0x728650"[dir="both"];
+"0x728650" -> "0x728020"[dir="both"];
+"0x728020" -> "0x728410"[dir="both"];
+"0x728410" -> "0x7284d0"[dir="both"];
+"0x7284d0" -> "0x728c20"[dir="both"];
+"0x728c20" -> "0x728f50"[dir="both"];
+"0x728f50" -> "0x728fe0"[dir="both"];
+"0x728fe0" -> "0x729eb0"[dir="both"];
+"0x729eb0" -> "0x729910"[dir="both"];
+"0x729910" -> "0x72a570"[dir="both"];
+"0x72a570" -> "0x6e4da0"[dir="both"];
+"0x6e4da0" -> "0x6e5040"[dir="both"];
+"0x6e5040" -> "0x728140"[dir="both"];
+"0x728140" -> "0x728ad0"[dir="both"];
+"0x728ad0" -> "0x728b60"[dir="both"];
+"0x728b60" -> "0x728ec0"[dir="both"];
+"0x728ec0" -> "0x7298b0"[dir="both"];
+"0x7298b0" -> "0x72a4e0"[dir="both"];
+"0x72a4e0" -> "0x72a660"[dir="both"];
+"0x72a660" -> "0x6e4cb0"[dir="both"];
+"0x6e4cb0" -> "0x6e5910"[dir="both"];
+"0x6e5910" -> "0x6e5760"[dir="both"];
+"0x6e5760" -> "0x6e5a90"[dir="both"];
+"0x6e5a90" -> "0x729130"[dir="both"];
+"0x729130" -> "0x72a900"[dir="both"];
+"0x72a900" -> "0x72a5a0"[dir="both"];
+"0x72a5a0" -> "0x6e4fe0"[dir="both"];
+"0x6e4fe0" -> "0x6e59d0"[dir="both"];
+"0x6e59d0" -> "0x728a70"[dir="both"];
+"0x728a70" -> "0x728bc0"[dir="both"];
+"0x728bc0" -> "0x7296d0"[dir="both"];
+"0x7296d0" -> "0x729970"[dir="both"];
+"0x729970" -> "0x72a120"[dir="both"];
+"0x72a120" -> "0x6e5190"[dir="both"];
+"0x6e5190" -> "0x6e49b0"[dir="both"];
+"0x6e49b0" -> "0x728260"[dir="both"];
+"0x728260" -> "0x728d40"[dir="both"];
+"0x728d40" -> "0x728bf0"[dir="both"];
+"0x728bf0" -> "0x729010"[dir="both"];
+"0x729010" -> "0x729ca0"[dir="both"];
+"0x729ca0" -> "0x729940"[dir="both"];
+"0x729940" -> "0x72a6c0"[dir="both"];
+"0x72a6c0" -> "0x72a240"[dir="both"];
+"0x72a240" -> "0x6e4ec0"[dir="both"];
+"0x6e4ec0" -> "0x728470"[dir="both"];
+"0x728470" -> "0x728830"[dir="both"];
+"0x728830" -> "0x728560"[dir="both"];
+"0x728560" -> "0x728170"[dir="both"];
+"0x728170" -> "0x728e30"[dir="both"];
+"0x728e30" -> "0x728fb0"[dir="both"];
+"0x728fb0" -> "0x7293a0"[dir="both"];
+"0x7293a0" -> "0x729ac0"[dir="both"];
+"0x729ac0" -> "0x7299d0"[dir="both"];
+"0x7299d0" -> "0x729b50"[dir="both"];
+"0x729b50" -> "0x72a690"[dir="both"];
+"0x72a690" -> "0x6e5640"[dir="both"];
+"0x6e5640" -> "0x728a10"[dir="both"];
+"0x728a10" -> "0x7287d0"[dir="both"];
+"0x7287d0" -> "0x7280b0"[dir="both"];
+"0x7280b0" -> "0x728a40"[dir="both"];
+"0x728a40" -> "0x729520"[dir="both"];
+"0x729520" -> "0x729c70"[dir="both"];
+"0x729c70" -> "0x729be0"[dir="both"];
+"0x729be0" -> "0x729a00"[dir="both"];
+"0x729a00" -> "0x72a6f0"[dir="both"];
+"0x72a6f0" -> "0x72a150"[dir="both"];
+"0x72a150" -> "0x6e4c50"[dir="both"];
+"0x6e4c50" -> "0x6e4e90"[dir="both"];
+"0x6e4e90" -> "0x6e5340"[dir="both"];
+"0x6e5340" -> "0x729700"[dir="both"];
+"0x729700" -> "0x729730"[dir="both"];
+"0x729730" -> "0x729550"[dir="both"];
+"0x729550" -> "0x729d30"[dir="both"];
+"0x729d30" -> "0x729b80"[dir="both"];
+"0x729b80" -> "0x7298e0"[dir="both"];
+"0x7298e0" -> "0x729bb0"[dir="both"];
+"0x729bb0" -> "0x72aae0"[dir="both"];
+"0x72aae0" -> "0x6e4dd0"[dir="both"];
+"0x6e4dd0" -> "0x6e5070"[dir="both"];
+"0x6e5070" -> "0x7287a0"[dir="both"];
+"0x7287a0" -> "0x729100"[dir="both"];
+"0x729100" -> "0x72aa80"[dir="both"];
+"0x72aa80" -> "0x72a720"[dir="both"];
+"0x72a720" -> "0x6e4d10"[dir="both"];
+"0x6e4d10" -> "0x6e4980"[dir="both"];
+"0x6e4980" -> "0x6e52b0"[dir="both"];
+"0x6e52b0" -> "0x6e5670"[dir="both"];
+"0x6e5670" -> "0x6e5550"[dir="both"];
+"0x6e5550" -> "0x7288f0"[dir="both"];
+"0x7288f0" -> "0x729250"[dir="both"];
+"0x729250" -> "0x729d90"[dir="both"];
+"0x729d90" -> "0x72a840"[dir="both"];
+"0x72a840" -> "0x6e56a0"[dir="both"];
+"0x6e56a0" -> "0x6e5970"[dir="both"];
+"0x6e5970" -> "0x728920"[dir="both"];
+"0x728920" -> "0x729dc0"[dir="both"];
+"0x729dc0" -> "0x6e53a0"[dir="both"];
+"0x6e53a0" -> "0x6e55e0"[dir="both"];
+"0x6e55e0" -> "0x7286b0"[dir="both"];
+"0x7286b0" -> "0x729670"[dir="both"];
+"0x729670" -> "0x729640"[dir="both"];
+"0x729640" -> "0x728da0"[dir="both"];
+"0x728da0" -> "0x728dd0"[dir="both"];
+"0x728dd0" -> "0x728f80"[dir="both"];
+"0x728f80" -> "0x729f10"[dir="both"];
+"0x729f10" -> "0x729a60"[dir="both"];
+"0x729a60" -> "0x72a750"[dir="both"];
+"0x72a750" -> "0x72a1b0"[dir="both"];
+"0x72a1b0" -> "0x6e5a60"[dir="both"];
+"0x6e5a60" -> "0x6e53d0"[dir="both"];
+"0x6e53d0" -> "0x6e55b0"[dir="both"];
+"0x6e55b0" -> "0x728200"[dir="both"];
+"0x728200" -> "0x7288c0"[dir="both"];
+"0x7288c0" -> "0x7286e0"[dir="both"];
+"0x7286e0" -> "0x7293d0"[dir="both"];
+"0x7293d0" -> "0x729a90"[dir="both"];
+"0x729a90" -> "0x72aa20"[dir="both"];
+"0x72aa20" -> "0x728050"[dir="both"];
+"0x728050" -> "0x728440"[dir="both"];
+"0x728440" -> "0x7285f0"[dir="both"];
+"0x7285f0" -> "0x727ff0"[dir="both"];
+"0x727ff0" -> "0x7289b0"[dir="both"];
+"0x7289b0" -> "0x729430"[dir="both"];
+"0x729430" -> "0x729e20"[dir="both"];
+"0x729e20" -> "0x729e50"[dir="both"];
+"0x729e50" -> "0x72a7e0"[dir="both"];
+"0x72a7e0" -> "0x72a930"[dir="both"];
+"0x72a930" -> "0x6e4ce0"[dir="both"];
+"0x6e4ce0" -> "0x728680"[dir="both"];
+"0x728680" -> "0x728b30"[dir="both"];
+"0x728b30" -> "0x729220"[dir="both"];
+"0x729220" -> "0x729790"[dir="both"];
+"0x729790" -> "0x72a870"[dir="both"];
+"0x72a870" -> "0x72a300"[dir="both"];
+"0x72a300" -> "0x72a2d0"[dir="both"];
+"0x72a2d0" -> "0x6e4e30"[dir="both"];
+"0x6e4e30" -> "0x6e56d0"[dir="both"];
+"0x6e56d0" -> "0x728500"[dir="both"];
+"0x728500" -> "0x728890"[dir="both"];
+"0x728890" -> "0x728e60"[dir="both"];
+"0x728e60" -> "0x7296a0"[dir="both"];
+"0x7296a0" -> "0x729400"[dir="both"];
+"0x729400" -> "0x728c80"[dir="both"];
+"0x728c80" -> "0x72a180"[dir="both"];
+"0x72a180" -> "0x72a8d0"[dir="both"];
+"0x72a8d0" -> "0x6e5100"[dir="both"];
+"0x6e5100" -> "0x6e4e60"[dir="both"];
+"0x6e4e60" -> "0x6e57f0"[dir="both"];
+"0x6e57f0" -> "0x728800"[dir="both"];
+"0x728800" -> "0x728aa0"[dir="both"];
+"0x728aa0" -> "0x728ce0"[dir="both"];
+"0x728ce0" -> "0x729b20"[dir="both"];
+"0x729b20" -> "0x72a210"[dir="both"];
+"0x72a210" -> "0x72a060"[dir="both"];
+"0x72a060" -> "0x6e4860"[dir="both"];
+"0x6e4860" -> "0x6e4890"[dir="both"];
+"0x6e4890" -> "0x6e5700"[dir="both"];
+"0x6e5700" -> "0x6e5430"[dir="both"];
+"0x6e5430" -> "0x7281a0"[dir="both"];
+"0x7281a0" -> "0x7281d0"[dir="both"];
+"0x7281d0" -> "0x7280e0"[dir="both"];
+"0x7280e0" -> "0x728950"[dir="both"];
+"0x728950" -> "0x7291c0"[dir="both"];
+"0x7291c0" -> "0x7290a0"[dir="both"];
+"0x7290a0" -> "0x729460"[dir="both"];
+"0x729460" -> "0x72a5d0"[dir="both"];
+"0x72a5d0" -> "0x6e50a0"[dir="both"];
+"0x6e50a0" -> "0x6e49e0"[dir="both"];
+"0x6e49e0" -> "0x6e5460"[dir="both"];
+"0x6e5460" -> "0x728b90"[dir="both"];
+"0x728b90" -> "0x728080"[dir="both"];
+"0x728080" -> "0x728530"[dir="both"];
+"0x728530" -> "0x729280"[dir="both"];
+"0x729280" -> "0x729c40"[dir="both"];
+"0x729c40" -> "0x729df0"[dir="both"];
+"0x729df0" -> "0x72a2a0"[dir="both"];
+"0x72a2a0" -> "0x72a450"[dir="both"];
+"0x72a450" -> "0x72a780"[dir="both"];
+"0x72a780" -> "0x6e5130"[dir="both"];
+"0x6e5130" -> "0x6e5790"[dir="both"];
+"0x6e5790" -> "0x6e5730"[dir="both"];
+"0x6e5730" -> "0x7282c0"[dir="both"];
+"0x7282c0" -> "0x728980"[dir="both"];
+"0x728980" -> "0x728e90"[dir="both"];
+"0x728e90" -> "0x728d10"[dir="both"];
+"0x728d10" -> "0x72aab0"[dir="both"];
+"0x72aab0" -> "0x72ab40"[dir="both"];
+"0x72ab40" -> "0x72a810"[dir="both"];
+"0x72a810" -> "0x728110"[dir="both"];
+"0x728110" -> "0x7282f0"[dir="both"];
+"0x7282f0" -> "0x729310"[dir="both"];
+"0x729310" -> "0x72a600"[dir="both"];
+"0x72a600" -> "0x72a000"[dir="both"];
+"0x72a000" -> "0x72ab10"[dir="both"];
+"0x72ab10" -> "0x72a1e0"[dir="both"];
+"0x72a1e0" -> "0x72a330"[dir="both"];
+"0x72a330" -> "0x6e48c0"[dir="both"];
+"0x6e48c0" -> "0x6e5820"[dir="both"];
+"0x6e5820" -> "0x6e54c0"[dir="both"];
+"0x6e54c0" -> "0x728320"[dir="both"];
+"0x728320" -> "0x728590"[dir="both"];
+"0x728590" -> "0x729040"[dir="both"];
+"0x729040" -> "0x729cd0"[dir="both"];
+"0x729cd0" -> "0x72a270"[dir="both"];
+"0x72a270" -> "0x72a3f0"[dir="both"];
+"0x72a3f0" -> "0x72aba0"[dir="both"];
+"0x72aba0" -> "0x72a090"[dir="both"];
+"0x72a090" -> "0x72a7b0"[dir="both"];
+"0x72a7b0" -> "0x6e51f0"[dir="both"];
+"0x6e51f0" -> "0x6e5220"[dir="both"];
+"0x6e5220" -> "0x6e4a40"[dir="both"];
+"0x6e4a40" -> "0x6e5250"[dir="both"];
+"0x6e5250" -> "0x6e4a70"[dir="both"];
+"0x6e4a70" -> "0x6e58b0"[dir="both"];
+"0x6e58b0" -> "0x6e57c0"[dir="both"];
+"0x6e57c0" -> "0x728620"[dir="both"];
+"0x728620" -> "0x729070"[dir="both"];
+"0x729070" -> "0x729160"[dir="both"];
+"0x729160" -> "0x729580"[dir="both"];
+"0x729580" -> "0x72a630"[dir="both"];
+"0x72a630" -> "0x72a420"[dir="both"];
+"0x72a420" -> "0x72a360"[dir="both"];
+"0x72a360" -> "0x6e4aa0"[dir="both"];
+"0x6e4aa0" -> "0x6e58e0"[dir="both"];
+"0x6e58e0" -> "0x6e59a0"[dir="both"];
+"0x6e59a0" -> "0x7285c0"[dir="both"];
+"0x7285c0" -> "0x728350"[dir="both"];
+"0x728350" -> "0x729760"[dir="both"];
+"0x729760" -> "0x7292e0"[dir="both"];
+"0x7292e0" -> "0x729490"[dir="both"];
+"0x729490" -> "0x7297f0"[dir="both"];
+"0x7297f0" -> "0x72a8a0"[dir="both"];
+"0x72a8a0" -> "0x6e4ad0"[dir="both"];
+"0x6e4ad0" -> "0x6e5a00"[dir="both"];
+"0x6e5a00" -> "0x6e54f0"[dir="both"];
+"0x6e54f0" -> "0x7284a0"[dir="both"];
+"0x7284a0" -> "0x728290"[dir="both"];
+"0x728290" -> "0x728380"[dir="both"];
+"0x728380" -> "0x7283b0"[dir="both"];
+"0x7283b0" -> "0x729880"[dir="both"];
+"0x729880" -> "0x729d00"[dir="both"];
+"0x729d00" -> "0x72aa50"[dir="both"];
+"0x72aa50" -> "0x72a390"[dir="both"];
+"0x72a390" -> "0x6e4b00"[dir="both"];
+"0x6e4b00" -> "0x728860"[dir="both"];
+"0x728860" -> "0x728230"[dir="both"];
+"0x728230" -> "0x728740"[dir="both"];
+"0x728740" -> "0x728770"[dir="both"];
+"0x728770" -> "0x728f20"[dir="both"];
+"0x728f20" -> "0x7292b0"[dir="both"];
+"0x7292b0" -> "0x7299a0"[dir="both"];
+"0x7299a0" -> "0x72a9c0"[dir="both"];
+"0x72a9c0" -> "0x72a4b0"[dir="both"];
+"0x72a4b0" -> "0x72abd0"[dir="both"];
+"0x72abd0" -> "0x728b00"[dir="both"];
+"0x728b00" -> "0x7283e0"[dir="both"];
+"0x7283e0" -> "0x7289e0"[dir="both"];
+"0x7289e0" -> "0x729340"[dir="both"];
+"0x729340" -> "0x7294c0"[dir="both"];
+"0x7294c0" -> "0x729af0"[dir="both"];
+"0x729af0" -> "0x729820"[dir="both"];
+"0x729820" -> "0x72a3c0"[dir="both"];
+"0x72a3c0" -> "0x72a960"[dir="both"];
+"0x72a960" -> "0x72a990"[dir="both"];
 
 }
 

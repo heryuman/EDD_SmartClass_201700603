@@ -1,6 +1,6 @@
 class task:
     def __init__(self,_carnet,_nombre,_desc,_materia,_fecha,_hora,_estado):
-        self.carnet=_nombre
+        self.carnet=_carnet
         self.nombre=_nombre
         self.desc=_desc
         self.materia=_materia
