@@ -7,6 +7,21 @@ class task:
         self.fecha=_fecha
         self.hora=_hora
         self.estado=_estado
+    
+    def setCarne(self,carnet):
+        self.carnet=carnet
+    def setNombre(self,nombre):
+        self.nombre=nombre
+    def setDes(self,desc):
+        self.desc=desc
+    def setMateria(self,materia):
+        self.materia=materia
+    def setFecha(self,fecha):
+        self.fecha=fecha
+    def setHora(self,hora):
+        self.hora=hora
+    def setEstado(self,estado):
+        self.estado=estado
 
     def getCarnet(self):
         return self.carnet

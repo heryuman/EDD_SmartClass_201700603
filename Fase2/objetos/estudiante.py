@@ -1,6 +1,7 @@
-class estudiant:
+from Estructuras.Lista import LinkedListD
+class estudiant(object):
 
-    def __init__(self,carnet,dpi,nombre,carrera,correo,psw,creditos, edad,lista):
+    def __init__(self,carnet,dpi,nombre,carrera,correo,psw,creditos, edad):
         self.carnet=carnet
         self.dpi=dpi
         self.nombre=nombre
@@ -9,7 +10,25 @@ class estudiant:
         self.psw=psw
         self.creditos=creditos
         self.edad=edad
-        self.lista=lista
+        self.anios=LinkedListD()
+
+    def setCarnet(self,carnet):
+        self.carnet=carnet
+    
+    def setDpi(self,dpi):
+        self.dpi=dpi
+    def setNombre(self,nombre):
+        self.nombre=nombre
+    def setCarrera(self,carrera):
+        self.carrera=carrera
+    def setMail(self,mail):
+        self.correo=mail
+    def setPass(self,pas):
+        self.psw=pas
+    def setCreditos(self,credits):
+        self.creditos=credits
+    def setEdad(self,edad):
+        self.edad=edad
 
     def getCarnet(self):
         return self.carnet
@@ -19,7 +38,8 @@ class estudiant:
 
     def getNombre(self):
         return self.nombre
-
+    def getPass(self):
+        return self.psw
     def getCarrera(self):
         return self.carrera
 
@@ -32,8 +52,22 @@ class estudiant:
     def getAge(self):
         return self.edad
 
-    def getList(self):
-        return self.lista
+   
 
+    def ExistAnio(self,anio):
+        exist=False
+        for i in range(self.anios.size()):
+            if self.anios.getE(i).numY==anio:
+                exist =True
+        return exist
+
+
+    def getAño(self,anio):
+        exist=None
+        for i in range(self.anios.size()):
+            if self.anios.getE(i).numY==anio:
+                exist =self.anios.getE(i)
+                print("getAnio",exist.numY)
+        return exist
 
       

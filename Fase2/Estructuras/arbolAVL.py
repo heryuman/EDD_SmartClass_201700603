@@ -99,8 +99,8 @@ class AVLTree(object):
 
     def remove(self,key,node):
         if node is None:
-            raise (KeyError,'Error,key not in tree')
-        elif key<node.key:
+            print("el Alumno no existe")
+        elif key<node.elemento.getCarnet():
             node.left=self.remove(key,node.left)
             if (self.height(node.right)-self.height(node.left))==2:
                 if self.height(node.right.right)>=self.height(node.right.left):
@@ -110,7 +110,7 @@ class AVLTree(object):
             node.height=max(self.height(node.left),self.height(node.right))+1
             
                 
-        elif key>node.key:
+        elif key>node.elemento.getCarnet():
             node.right=self.remove(key,node.right)
             if (self.height(node.left)-self.height(node.right))==2:
                 if self.height(node.left.left)>=self.height(node.left.right):
@@ -122,12 +122,12 @@ class AVLTree(object):
         elif node.left and node.right:
             if node.left.height<=node.right.height:
                 minNode=self._findMin(node.right)
-                node.key=minNode.key
-                node.right=self.remove(node.key,node.right)
+                node.elemento=minNode.elemento
+                node.right=self.remove(node.elemento.getCarnet(),node.right)
             else:
                 maxNode=self._findMax(node.left)
-                node.key=maxNode.key
-                node.left=self.remove(node.key,node.left)
+                node.elemento=maxNode.elemento
+                node.left=self.remove(node.elemento.getCarnet(),node.left)
             node.height=max(self.height(node.left),self.height(node.right))+1
         else:
             if node.right:
@@ -145,10 +145,13 @@ class AVLTree(object):
             self.mostrar(root.left)
             print(root.elemento.getCarnet())
             self.mostrar(root.right)
+    def graficar(self):
+        self.unGrafo(self.root)
+
 
     def unGrafo(self, raiz):
 
-        estructura= "digraph G{\n node [shape=circle];\n"
+        estructura= "digraph G{\n node [shape=box];\n"
         acum=""
         acumuladores=[estructura,acum]
         if raiz != None:
@@ -156,7 +159,7 @@ class AVLTree(object):
 
         acumuladores[0]+=acumuladores[1]+ "\n}"
 
-        s= Source(acumuladores[0],filename="arbolBB", format="png")
+        s= Source(acumuladores[0],filename="AVL_Estudiantes", format="svg")
         s.view()
            
                    
@@ -164,7 +167,7 @@ class AVLTree(object):
         leftNone=False
         rightNone=False
         if raiz:
-            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),str(raiz.key))
+            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),str(raiz.elemento.getCarnet())+"\n Nombre:"+str(raiz.elemento.getNombre())+"\n Carrera: "+str(raiz.elemento.getCarrera()))
             
             if raiz.left != None:
                 if raiz.right==None:
@@ -183,15 +186,44 @@ class AVLTree(object):
                     acum[1]+='"{}" -> "{}";\n'.format(str(hash(raiz)),str(hash(raiz.right)))
                  else:
                      acum[1]+='"{}" -> "{}";\n'.format(str(hash(raiz)),str(hash(raiz.right)))
-                    
-
-            
-                
-          
-
-            
-               
-            
-
+        
             self.mostrarArborl(raiz.left,acum)
             self.mostrarArborl(raiz.right,acum)
+
+    def obtenerAlumno(self, carnet):
+        student=[None]
+        self.getAlumno(self.root,carnet,student)
+        if student[0] is not None:
+            print("carnet del alumno buscado",student[0].getCarnet())
+        else:
+            print("el alumno no se encuentra en la BD")
+
+        return student[0]
+
+    def getAlumno(self,root,carnet,student):
+       tmp=None
+       if root is not None:
+            print("buscando")
+            if root.elemento.getCarnet()==carnet:
+                tmp=root.elemento
+                student[0]=tmp
+                print("elemento encontrado: ",tmp.getCarnet())
+                
+                
+
+                
+            else:
+                
+                    if carnet < root.elemento.getCarnet():
+                         print("buscando en los menores ")
+                         self.getAlumno(root.left,carnet,student)
+                    
+                    if carnet> root.elemento.getCarnet():
+                        print("buscando en los mayores")
+                        self.getAlumno(root.right,carnet,student)
+
+           
+       
+            
+
+
