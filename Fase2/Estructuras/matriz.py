@@ -268,7 +268,7 @@ class MatrizD(object):
     def generarGrafo(self):
         print("Generando Grafo")
         acumInfo = """digraph G{
-            node[shape=box, style=filled, color=deepskyblue3];
+            node[shape=box, style=filled, color=chartreuse3];
             edge[color=black];
             rankdir=UD;\n"""
 
@@ -304,7 +304,7 @@ class MatrizD(object):
                 enlacesElementosFila += infoFilas[2] + "\n"
 
 
-                idCabeceraFila += '"{}"[label = "{}"];\n'.format(str(hash(eFila)),"fila:"+str(eFila.numero))
+                idCabeceraFila += '"{}"[label = "{}"];\n'.format(str(hash(eFila)),"Hora:"+str(eFila.numero))
                 if eFila.siguiente != None:
                     #filas
                     cabeceraFila += '"{}" -> "{}";\n'.format(str(hash(eFila)),str(hash(eFila.siguiente)))
@@ -342,15 +342,16 @@ class MatrizD(object):
                      cabeceraElementosColumna + cabeceraCol + \
                     cabeceraFila +  enlacesElementosFila + \
                     enlacesElementosColumna + "\n}\n"
+        s= Source(acumInfo,filename="C:\\Users\\ASUS\\Desktop\\Reportes_F2\\matrixRecordatorios", format="svg")
+        s.view()
+        #f = open('C:\\Users\\ASUS\\Desktop\\Reportes_F2\\grafo.dot','w')
+       # try:
+        #    f.write(acumInfo)
+        #finally:
+        #    f.close()
 
-        f = open('grafo.dot','w')
-        try:
-            f.write(acumInfo)
-        finally:
-            f.close()
-
-        prog = "dot -Tpng  grafo.dot -o matrizRecordatorios.png"
-        os.system(prog)
+        #prog = "dot -Tpng  grafo.dot -o matrizRecordatorios.png"
+        #os.system(prog)
 
     def recorrerFilasMatriz(self,nodoFil):
         nodoFila=nodoFil

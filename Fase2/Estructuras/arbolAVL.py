@@ -159,8 +159,9 @@ class AVLTree(object):
 
         acumuladores[0]+=acumuladores[1]+ "\n}"
 
-        s= Source(acumuladores[0],filename="AVL_Estudiantes", format="svg")
+        s= Source(acumuladores[0],filename="C:\\Users\\ASUS\\Desktop\\Reportes_F2\\AVL_Estudiantes", format="svg")
         s.view()
+        
            
                    
     def mostrarArborl(self,raiz, acum):
