@@ -163,7 +163,7 @@ def cargar():
         Lestudiantes=[]
         Ltareas=[]
         for i in range(len(datosTXT)):
-            if datosTXT[i].lower()=='user':
+            if datosTXT[i].lower()=='user' and len(datosTXT[i+1])==9 and len(datosTXT[i+2])==13:
                 nEstudiante=estudiant(int(datosTXT[i+1]),
                                       datosTXT[i+2],
                                       datosTXT[i+3],
@@ -257,12 +257,12 @@ def stripDate(element):
              month=_date[1].strip("0")
 
          if len(hour)==4:
-             h=hour.strip(":")
+             h=hour.split(":")
              houra=h[0]
          elif len(hour)==5:
-             h=hour.strip(":")
+             h=hour.split(":")
              houra=h[0]
-             houra+=h[1]
+            
          else:
              houra=hour
 
@@ -299,13 +299,17 @@ def reportar():
         mes=request.json['mes']
         dia=request.json['dia']
         hora=request.json['hora']
+        fecha=str(dia)+"/"+str(mes)+"/"+str(anio)
+        unatarea=task("","","","",fecha,hora,"")
+        date=stripDate(unatarea)
+        lhora=date.getHour()
         if BD_Almumnos.obtenerAlumno(int(carnet)) is not None:
             alumno=BD_Almumnos.obtenerAlumno(int (carnet))
             if alumno.ExistAnio(int(anio)) !=False:
                 elAnio=alumno.getAño(int(anio))
                 if elAnio.ExistMes(int(mes)) != False:
                     elMes=elAnio.getMes(int(mes))
-                    elMes.GraficarLista(int(hora),int(dia))
+                    elMes.GraficarLista(int(lhora),int(dia))
                     return "se Generó el grafo de la lista de Tareas"
             else:
                 return "NO existen datos con esas Coordenadas"
