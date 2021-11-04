@@ -57,7 +57,7 @@ class TablaHash:
     def buscarPos(self, actual, i ):
         # SE USA LA FUNCION S(llv,1) = (llv mod m) * i
        # pos = (actual.llv % self.tamanio) * i
-        pos= i*i
+        pos= (actual.llv +i*i) % self.tamanio
 
 
         if self.buscarLlv(pos): # LA POSICION YA ESTA OCUPADA POR LO TANTO SE DEBE BUSCAR OTRA POSICION

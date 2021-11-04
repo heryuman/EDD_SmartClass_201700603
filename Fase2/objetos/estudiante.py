@@ -1,4 +1,5 @@
 from Estructuras.Lista import LinkedListD
+from cryptography.fernet import Fernet
 class estudiant(object):
 
     def __init__(self,carnet,dpi,nombre,carrera,correo,psw,creditos, edad):
@@ -70,4 +71,9 @@ class estudiant(object):
                 print("getAnio",exist.numY)
         return exist
 
-      
+    def getCarnetDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.carnet)
+        return int(desencriptado)

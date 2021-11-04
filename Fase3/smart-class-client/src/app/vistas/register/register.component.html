@@ -1,1 +1,21 @@
-<p>register works!</p>
+
+
+    <div class="head">
+        <marquee>REGISTRO DE ESTUDIANTES-FASE 3 EDD-B</marquee>
+</div>
+
+<form [formGroup]="registerForm"(ngSubmit)="onRegister(registerForm.value)">
+    <div class="row">
+      <div class="col">
+          <input type="text" class="form-control" placeholder="Nombres y Apellidos" formControlName="nombre">
+          <input type="text" class="form-control" placeholder="CUI" formControlName="dpi">
+          <input type="text" class="form-control" placeholder="Carnet" formControlName="carnet">
+          <input type="text" class="form-control" placeholder="Carrera" formControlName="carrera">
+          <input type="email" class="form-control" placeholder="Correo" formControlName="correo">
+          <input type="password" class="form-control" placeholder="Password" formControlName="password">
+          <input type="text" class="form-control" placeholder="Edad" formControlName="edad">
+          <button class="btn btn-info btn-block login" type="submit">Registar</button>
+     </div>
+    </div>
+</form>
+

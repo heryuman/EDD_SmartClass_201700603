@@ -7,15 +7,17 @@ import { LoginComponent } from './vistas/login/login.component';
 import { AdminComponent } from './vistas/admin/admin.component';
 import { RegisterComponent } from './vistas/register/register.component';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
-
+import {CookieService} from 'ngx-cookie-service';
 import{HttpClientModule} from '@angular/common/http';
+import { DashboardComponent } from './vistas/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     AdminComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent
    
   ],
   imports: [
@@ -25,7 +27,7 @@ import{HttpClientModule} from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

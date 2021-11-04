@@ -1,1 +1,123 @@
-<p>admin works!</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                <div class="logo">
+                    <a [routerLink]="['/admin']">
+                        <img class="imglog" src="assets/login.png">
+                    </a>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li class="active"><a href="#" [routerLink]="['/admin']" ><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                        <li><a (click)="op=1"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Carga Estudiantes</span></a></li>
+                        <li><a (click)="op=2"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Pensum</span></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Estudiante</span></a></li>
+                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes</span></a></li>
+                        <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Blockchain</span></a></li>
+                        <li><a href="#"><i aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes Estudiante</span></a></li>
+                        <li><a (click)="op=3"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Estudiantes Registrados</span></a></li>
+                        <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Grafo Prerequisitos</span></a></li>
+                        <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Arbol Merkle</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                <div class="row">
+                    <header>
+                        <div class="col-md-7">
+                            <nav class="navbar-default pull-left">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                            </nav>
+                           
+                        </div>
+                        <div class="col-md-5">
+                            <div class="header-rightside">
+                                <ul class="list-inline header-top pull-right">
+                                    <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Cerrar Sesion</a></li>
+                                    
+                                   
+
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="user-dashboard">
+                    <h1>BIENVENIDO, ADMIN</h1>
+
+                  <form >
+                    <div [ngSwitch]="op">
+                        <div *ngSwitchCase="1" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                            <form [formGroup]="chargueForm"(ngSubmit)="upLoadEstudents(chargueForm.value)" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                                <h4>Ingrese el JSON de estudiantes:</h4>
+                                <textarea  style=" width:800px; height:300px; border-radius: 15px; background-color: rgb(190, 190, 190);" formControlName="dato_text_Area"></textarea>
+                                <button type="submit" class="btn btn-primary" style="width:150px; margin-top: 20px; float:right;">enviar</button>
+                            </form>
+                        </div>
+
+                        <div *ngSwitchCase="2" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                            <form style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                                <h4>Ingrese el JSON de Pensum:</h4>
+                                <textarea  style=" width:800px; height:300px; border-radius: 15px; background-color: rgb(173, 94, 94); color: #fff;" ></textarea>
+                                <button class="btn btn-primary" style="width:150px; margin-top: 20px; float:right;">enviar</button>
+                            </form>
+                        </div>
+
+                        <div *ngSwitchCase="3" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                            <form [formGroup]="chargueForm"(ngSubmit)="getReporteCero()">
+                                <h4>Reporte de Estudiantes:</h4>
+                                <button class="btn btn-primary" style="width:150px; margin-top: 20px;">Generar Reporte</button>
+                            </form>
+                        </div>
+                    </div>
+                   
+                  </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="add_project" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header login-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Add Project</h4>
+                </div>
+                <div class="modal-body">
+                            <input type="text" placeholder="Project Title" name="name">
+                            <input type="text" placeholder="Post of Post" name="mail">
+                            <input type="text" placeholder="Author" name="passsword">
+                            <textarea placeholder="Desicrption"></textarea>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="cancel" data-dismiss="modal">Close</button>
+                    <button type="button" class="add-project" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>

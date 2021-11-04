@@ -14,9 +14,9 @@ class AVLTree(object):
     def _find(self,key,node):
         if node is None: # si el nodo está vacío devuelve null, si no verifica si la key recivida es menor que la key actual si es así usa recursividad  le pasa la key y el nodo en la direccion izq
             return None
-        elif key.getCarnet()<node.elemento.getCarnet():
+        elif key.getCarnetDecript()<node.elemento.getCarnetDecript():
             return self._find(key,self.left)
-        elif key.getCarnet()>node.elemento.getCarnet():#si la key es mayor que la key actual usa recursividad y le pasa la nueva key y la direccion derecha del nodo
+        elif key.getCarnetDecript()>node.elemento.getCarnetDecript():#si la key es mayor que la key actual usa recursividad y le pasa la nueva key y la direccion derecha del nodo
             return self._find(key,self.right)
         else:
             return node  #si no es ninguno de los casos retorna el nodo, posiblemente no ingrese si la key se está repitiendo
@@ -74,18 +74,18 @@ class AVLTree(object):
     def _put(self,key,node):
         if node is None:
             node=Node(key)
-        elif key.getCarnet()<node.elemento.getCarnet():
+        elif key.getCarnetDecript()<node.elemento.getCarnetDecript():
             node.left=self._put(key,node.left)
             if (self.height(node.left)-self.height(node.right))==2:
-                if key.getCarnet()<node.left.elemento.getCarnet():
+                if key.getCarnetDecript()<node.left.elemento.getCarnetDecript():
                     node=self.singleLeftRotate(node)
                 else:
                     node=self.doubleLeftRotate(node)
             
-        elif key.getCarnet()>node.elemento.getCarnet():
+        elif key.getCarnetDecript()>node.elemento.getCarnetDecript():
             node.right=self._put(key,node.right)
             if (self.height(node.right)-self.height(node.left))==2:
-                if key.getCarnet()<node.right.elemento.getCarnet():
+                if key.getCarnetDecript()<node.right.elemento.getCarnetDecript():
                     node=self.doubleRightRotate(node)
                 else:
                     node=self.singleRightRotate(node)
@@ -100,7 +100,7 @@ class AVLTree(object):
     def remove(self,key,node):
         if node is None:
             print("el Alumno no existe")
-        elif key<node.elemento.getCarnet():
+        elif key<node.elemento.getCarnetDecript():
             node.left=self.remove(key,node.left)
             if (self.height(node.right)-self.height(node.left))==2:
                 if self.height(node.right.right)>=self.height(node.right.left):
@@ -110,7 +110,7 @@ class AVLTree(object):
             node.height=max(self.height(node.left),self.height(node.right))+1
             
                 
-        elif key>node.elemento.getCarnet():
+        elif key>node.elemento.getCarnetDecript():
             node.right=self.remove(key,node.right)
             if (self.height(node.left)-self.height(node.right))==2:
                 if self.height(node.left.left)>=self.height(node.left.right):
@@ -123,11 +123,11 @@ class AVLTree(object):
             if node.left.height<=node.right.height:
                 minNode=self._findMin(node.right)
                 node.elemento=minNode.elemento
-                node.right=self.remove(node.elemento.getCarnet(),node.right)
+                node.right=self.remove(node.elemento.getCarnetDecript(),node.right)
             else:
                 maxNode=self._findMax(node.left)
                 node.elemento=maxNode.elemento
-                node.left=self.remove(node.elemento.getCarnet(),node.left)
+                node.left=self.remove(node.elemento.getCarnetDecript(),node.left)
             node.height=max(self.height(node.left),self.height(node.right))+1
         else:
             if node.right:
@@ -143,7 +143,7 @@ class AVLTree(object):
             
             
             self.mostrar(root.left)
-            print(root.elemento.getCarnet())
+            print(root.elemento.getCarnetDecript())
             self.mostrar(root.right)
     def graficar(self):
         self.unGrafo(self.root)
@@ -168,7 +168,7 @@ class AVLTree(object):
         leftNone=False
         rightNone=False
         if raiz:
-            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),str(raiz.elemento.getCarnet())+"\n Nombre:"+str(raiz.elemento.getNombre())+"\n Carrera: "+str(raiz.elemento.getCarrera()))
+            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),"carnet: "+str(raiz.elemento.getCarnet())+"\n Nombre:"+str(raiz.elemento.getNombre())+"\n Carrera: "+str(raiz.elemento.getCarrera()))
             
             if raiz.left != None:
                 if raiz.right==None:
@@ -195,7 +195,7 @@ class AVLTree(object):
         student=[None]
         self.getAlumno(self.root,carnet,student)
         if student[0] is not None:
-            print("carnet del alumno buscado",student[0].getCarnet())
+            print("carnet del alumno buscado",student[0].getCarnetDecript())
         else:
             print("el alumno no se encuentra en la BD")
 
@@ -205,26 +205,27 @@ class AVLTree(object):
        tmp=None
        if root is not None:
             print("buscando")
-            if root.elemento.getCarnet()==carnet:
+            if root.elemento.getCarnetDecript()==carnet:
                 tmp=root.elemento
                 student[0]=tmp
-                print("elemento encontrado: ",tmp.getCarnet())
+                print("elemento encontrado: ",tmp.getCarnetDecript())
                 
                 
 
                 
             else:
                 
-                    if carnet < root.elemento.getCarnet():
+                    if carnet < root.elemento.getCarnetDecript():
                          print("buscando en los menores ")
                          self.getAlumno(root.left,carnet,student)
                     
-                    if carnet> root.elemento.getCarnet():
+                    if carnet> root.elemento.getCarnetDecript():
                         print("buscando en los mayores")
                         self.getAlumno(root.right,carnet,student)
 
            
-       
+       #-----------Obtener por Mail-----------
             
+   
 
-
+    

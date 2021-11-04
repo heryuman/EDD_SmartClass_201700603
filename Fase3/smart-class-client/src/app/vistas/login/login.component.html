@@ -5,13 +5,19 @@
                <img class="imglog" src="assets/login.png">
             </div>
             <div class="form-box">
-                <form action="" method="" [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+
+            <!--LOGIN FORM-->
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)" action="" method=""  >
                     <input  type="text" placeholder="username" formControlName="usuario">
                     <input type="password" placeholder="password" formControlName="password">
                     <button class="btn btn-info btn-block login" type="submit">Login</button>
                 </form>
+
+                <div class="login-help">
+					<a href="#" [routerLink]="['/register']">Registrate</a> - <a href="#">Olvidaste tu Password</a>
+				  </div>
             </div>
-        </div>
+    </div>
         
 </div>
 

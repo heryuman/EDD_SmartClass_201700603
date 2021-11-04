@@ -135,11 +135,14 @@ from Estructuras.nods import Head
 print()
 #---------------------------INICIO DE LA API----------------------------------------
 
-from flask import Flask,jsonify,request
+from flask import Flask, json,jsonify,request
 from Analizadores.ASintactico import parser
 from Analizadores.ASintactico import lista as datosTXT
 from objetos.date import the_date
 from objetos.año import year
+from cryptography.fernet import Fernet
+import hashlib
+
 
 main=Flask(__name__)
 
@@ -149,11 +152,20 @@ BD_Almumnos=AVLTree()
 def ping():
     return'Pong'
 
+@main.after_request
+def after_request(response):
+    response.headers["Access-Control-Allow-Origin"] = "*" # <- You can change "*" for a domain for example "http://localhost"
+    response.headers["Access-Control-Allow-Credentials"] = "true"
+    response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS, PUT, DELETE"
+    response.headers["Access-Control-Allow-Headers"] = "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+    return response
+
+
 @main.route('/carga',methods=['POST'])
 def cargar():
     tipo_de_Cargar=request.json['tipo']
 #-------------------------------SECCION DE CARGA ESTUDIANTES Y TAREAS-------------------------------------------------
-    if tipo_de_Cargar.lower() == 'estudiante':
+    if tipo_de_Cargar == 'estudiante':
         dirTxt=request.json['path']
         f=open(dirTxt,"r", encoding="utf-8")
         entrada=f.read()
@@ -163,7 +175,10 @@ def cargar():
         Lestudiantes=[]
         Ltareas=[]
         for i in range(len(datosTXT)):
-            if datosTXT[i].lower()=='user' and len(datosTXT[i+1])==9 and len(datosTXT[i+2])==13:
+            if datosTXT[i]=='user' and len(datosTXT[i+1])==9 and len(datosTXT[i+2])==13:
+            
+
+
                 nEstudiante=estudiant(int(datosTXT[i+1]),
                                       datosTXT[i+2],
                                       datosTXT[i+3],
@@ -174,7 +189,7 @@ def cargar():
                                       datosTXT[i+8])
                 Lestudiantes.append(nEstudiante)
 
-            elif datosTXT[i].lower()=='task':
+            elif datosTXT[i]=='task':
                 nTarea=task(int(datosTXT[i+1]),
                             datosTXT[i+2],
                             datosTXT[i+3],
@@ -240,7 +255,13 @@ def cargar():
 
 
 
-    return 'cargando archivos!'
+    return jsonify(
+        {
+            'status':'ok',
+             'msg_c':'CargaExitosa'
+        }
+
+    )
 def stripDate(element):
          date=element.getFecha()
 
@@ -270,14 +291,47 @@ def stripDate(element):
          newDate=the_date(int(day),int(month),int(year),int(houra))
          return newDate
 
+#------------------------------CARGA MASIVA DE ESTUDIANTES--------------------------------------------
+
+@main.route('/masivaEstudiantes',methods=['POST'])
+def masivaEstudiantes():
+    print()
+    if request.method == 'POST':
+        arrayEstudiantes= request.json["estudiantes"]
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        for item in arrayEstudiantes:
+            carnet=f.encrypt(str(item['carnet']).encode())
+            dpi= f.encrypt(str(item['DPI']).encode())
+            nombre=f.encrypt(str(item['nombre']).encode())
+            carrera=f.encrypt(str(item['carrera']).encode())
+            correo=f.encrypt(str(item['correo']).encode())
+            psw=f.encrypt(hashlib.sha256(str(item['password']).encode()).digest())
+            edad=f.encrypt(str(item['edad']).encode())
+
+            nEstudiante=estudiant(carnet,dpi,nombre,carrera,correo,psw,"",edad)
+            BD_Almumnos.put(nEstudiante)
+            
+            
+
+
+        return {
+            'msg_masive':'La carga masiva de estudiantes fue exitosa!!',
+            'status':'ok'
+        }
+
 #------------------------------SECCION DE REPORTES--------------------------------------------------------------------------------
 
-@main.route('/reporte',methods=['GET'])
+@main.route('/reporte',methods=['POST'])
 def reportar():
     tipo=request.json['tipo']
     if tipo==0:
         BD_Almumnos.graficar()
-        return "la grafica se Generó con Exito!!!!"
+        return {
+            "status":'ok',
+            "msg_r0":'Se generó el reporte de estudiantes correctamente'
+        }
     elif tipo==1:
         carnet=request.json['carnet']
         anio=request.json['año']
@@ -415,19 +469,53 @@ def estudiantes():
 #------------------------------CRUD ESTUDIANTE---------------------------------------                        
 @main.route('/estudiante',methods=['GET','POST','PUT','DELETE'])
 def CRUD_ESTUDIANTES():
-    print
-    if request.method=='POST':
-        carnet=int(request.json['carnet'])
-        dpi=int(request.json['DPI'])
-        nombre=request.json['nombre']
-        carrera=request.json['carrera']
-        mail=request.json['correo']
-        psw=request.json['password']
-        credits=int(request.json['creditos'])
-        edad=int(request.json['edad'])
-        nEstudiante=estudiant(carnet,dpi,nombre,carrera,mail,psw,credits,edad)
-        BD_Almumnos.put(nEstudiante)
-        return "Alumno: "+str(carnet)+" ingresado Exitosamente"
+    
+    if request.method == 'POST':
+        carnet=int(request.json['usuario'])
+        pswd= str(request.json['password'])
+
+
+
+        if BD_Almumnos.obtenerAlumno(carnet) is not None:
+            elAlumno=BD_Almumnos.obtenerAlumno(carnet)
+            pswhash=hashlib.sha256(pswd.encode())
+            key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+            f=Fernet(key)
+            passAlumno=f.decrypt(elAlumno.getPass())
+            print(passAlumno)
+            print(pswhash.digest())
+
+            if pswhash.digest() == passAlumno:
+                print
+                return  {
+                   'status':'200',
+                    'result':{
+                    "carnet":str(elAlumno.getCarnet()),
+                    "dpi":str(elAlumno.getDpi()),
+                    "nombre":str(elAlumno.getNombre()),
+                    "carrera":str(elAlumno.getCarrera()),
+                    "edad":str(elAlumno.getAge())
+                 }
+                }
+            else:
+                return jsonify(
+                    {
+                        'status':'error',
+                         'error_msg':'Contraseña Incorrecta'
+                    }
+                            )
+
+
+            
+        else:
+            return jsonify(
+                    {
+                        'status':'error',
+                         'error_msg':'el estuadiante con correo: '+str(carnet)+' no existe'
+                    }
+                            )
+
+
 
     elif request.method=='DELETE':
         carnet=int(request.json['carnet'])
@@ -460,24 +548,40 @@ def CRUD_ESTUDIANTES():
             return "El alumno: "+nombre+" se ha actualizado correctamente!"
         else:
             return "El Alumno: "+str(carnet)+ " no existe!!"
-    
-    elif request.method == 'GET':
-        carnet=int(request.json['carnet'])
-        if BD_Almumnos.obtenerAlumno(carnet) is not None:
-            elAlumno=BD_Almumnos.obtenerAlumno(carnet)
-            return jsonify(
-                {
-                    "carnet": elAlumno.getCarnet(),
-                    "dpi":elAlumno.getDpi(),
-                    "nombre":elAlumno.getNombre(),
-                    "carrera":elAlumno.getCarrera(),
-                    "correo":elAlumno.getMail(),
-                    "password":elAlumno.getPass(),
-                    "creditos":elAlumno.getCredits(),
-                    "edad":elAlumno.getAge()
-                })
-        else:
-            return "El estudiante no Existe en la BD"
+
+@main.route('/registro',methods=['GET','POST','PUT','DELETE'])
+def regEstudiante():
+
+       if request.method=='POST':
+        carnet=str(request.json['carnet'])
+        dpi=str(request.json['dpi'])
+        nombre=str(request.json['nombre'])
+        carrera=str(request.json['carrera'])
+        mail=str(request.json['correo'])
+        psw=str(request.json['password'])
+    #credits=int(request.json['creditos'])
+        edad=(str(request.json['edad']))
+
+    #---------ENCRIPTAMOS LOS DATOS----------
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+        carnetEnc=f.encrypt(carnet.encode())
+        dpiEnc=f.encrypt(dpi.encode())
+        nombreEnc=f.encrypt(nombre.encode())
+        carreraEnc=f.encrypt(carrera.encode())
+        mailEnc=f.encrypt(mail.encode())
+        pswhash=hashlib.sha256(psw.encode())
+        pswEnc=f.encrypt(pswhash.digest())
+        edadEnc=f.encrypt(edad.encode())
+        nEstudiante=estudiant(carnetEnc,dpiEnc,nombreEnc,carreraEnc,mailEnc,pswEnc,"",edadEnc)
+        BD_Almumnos.put(nEstudiante)
+        print()
+        return jsonify(
+                    {
+                        'status':'ok',
+                         'msg':'el estuadiante con carnet: '+str(carnet)+' se ingresó con exito!'
+                    }
+                            )
 #------------------------------------CRUD RECORDATORIOS---------------------------------------------------------------------
 @main.route('/recordatorios',methods=['GET','POST','PUT','DELETE'])
 def CRUD_RECORDATORIOS():
