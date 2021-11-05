@@ -42,6 +42,7 @@ export class ApiService {
 
   }
 
+
   masivePensum(form:MasivaI):Observable<ResponseI>{
 
     let dir=this.url+'cursosPensum'
@@ -51,6 +52,21 @@ export class ApiService {
 
   }
 
+  masiveCursoEstudiant(form:MasivaI):Observable<ResponseI>{
+
+    let dir=this.url+'cursosEstudiante'
+    let obj_json=JSON.parse(form.dato_text_Area)
+    return this.http.post<ResponseI>(dir,obj_json)
+  }
+
+  masiveApuntes(form:MasivaI):Observable<ResponseI>{
+
+    let dir=this.url+'masivaApuntes'
+    let obj_json=JSON.parse(form.dato_text_Area)
+    
+    return this.http.post<ResponseI>(dir,obj_json)
+
+  }
   reprote0():Observable<ResponseI>{
 
     let dir=this.url+'reporte'
@@ -59,4 +75,6 @@ export class ApiService {
     return this.http.post<ResponseI>(dir,reporte0)
 
   }
+
+
 }

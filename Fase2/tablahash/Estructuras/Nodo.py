@@ -1,6 +1,10 @@
-class Nodo:
-    def __init__(self,_llv, _carnet, _nombre ):
+class Nodo(object):
+    def __init__(self,_llv, _carnet,apunte):
         self.llv = _llv
-        self.nombre = _nombre
+        self.lista_apuntes =[] 
         self.carnet = _carnet
         self.siguiente = None
+
+        self.lista_apuntes.append(apunte)
+
+    

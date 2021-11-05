@@ -35,8 +35,12 @@ export class AdminComponent implements OnInit {
       if(data.status == 'ok'){
 
         alert("La carga masiva se produjo exitosamente")
+        
       }
    })
+   this.chargueForm.controls['dato_text_Area'].setValue("")
+
+   
 
   }
 
@@ -49,18 +53,53 @@ export class AdminComponent implements OnInit {
         alert("la carga masiva de pensum se produjo exitosamente")
       }
     })
+
+    this.chargueForm.controls['dato_text_Area'].setValue("")
+  }
+  cursosEstudiant(carga_masiva:MasivaI){
+
+    this.api.masiveCursoEstudiant(carga_masiva).subscribe(data=>{
+
+      if(data.status=='ok'){
+
+        alert("se ha cargado los cursos del estudiante")
+      }
+    })
+
+    this.chargueForm.controls['dato_text_Area'].setValue("")
+  }
+  
+  upLoadApuntes(carga_masiva:MasivaI){
+
+    this.api.masiveApuntes(carga_masiva).subscribe(data=>{
+
+      if(data.status == 'ok'){
+
+        
+        alert(data.result)
+      }else{
+
+        if(data.status=='error'){
+
+          alert(data.result)
+        }
+      }
+    })
+
+    this.chargueForm.controls['dato_text_Area'].setValue("")
   }
 
   getReporteCero(){
 
-   this.api.reprote0().subscribe(data=>{
-
-      if(data.status=='ok'){
-
-        alert("se ha generado el Reporte de estudiantes correctamente");
-      }
-
-   })
-  }
+    this.api.reprote0().subscribe(data=>{
+ 
+       if(data.status=='ok'){
+ 
+         alert("se ha generado el Reporte de estudiantes correctamente");
+       }
+ 
+    })
+   }
+ 
 
 }

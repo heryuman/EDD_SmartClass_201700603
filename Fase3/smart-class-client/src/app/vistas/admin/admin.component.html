@@ -18,8 +18,8 @@
                         <li class="active"><a href="#" [routerLink]="['/admin']" ><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
                         <li><a (click)="op=1"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Carga Estudiantes</span></a></li>
                         <li><a (click)="op=2"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Pensum</span></a></li>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Estudiante</span></a></li>
-                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes</span></a></li>
+                        <li><a (click)="op=5"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Estudiante</span></a></li>
+                        <li><a (click)="op=4"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes</span></a></li>
                         <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Blockchain</span></a></li>
                         <li><a href="#"><i aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes Estudiante</span></a></li>
                         <li><a (click)="op=3"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Estudiantes Registrados</span></a></li>
@@ -71,9 +71,9 @@
                         </div>
 
                         <div *ngSwitchCase="2" style="display: flex; flex-wrap: wrap; flex-direction: column;">
-                            <form style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                            <form  [formGroup]="chargueForm"(ngSubmit)="upLoadPensum(chargueForm.value)" style="display: flex; flex-wrap: wrap; flex-direction: column;">
                                 <h4>Ingrese el JSON de Pensum:</h4>
-                                <textarea  style=" width:800px; height:300px; border-radius: 15px; background-color: rgb(173, 94, 94); color: #fff;" ></textarea>
+                                <textarea  style=" width:800px; height:300px; border-radius: 15px; background-color: rgb(173, 94, 94); color: #fff;" formControlName="dato_text_Area" ></textarea>
                                 <button class="btn btn-primary" style="width:150px; margin-top: 20px; float:right;">enviar</button>
                             </form>
                         </div>
@@ -84,6 +84,22 @@
                                 <button class="btn btn-primary" style="width:150px; margin-top: 20px;">Generar Reporte</button>
                             </form>
                         </div>
+
+                        <div *ngSwitchCase="4" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                            <form [formGroup]="chargueForm"(ngSubmit)="upLoadApuntes(chargueForm.value)" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                                <h4>Ingrese el JSON de Apuntes:</h4>
+                                <textarea  style=" width:800px; height:300px; border-radius: 15px; background-color: rgb(173, 94, 94); color: #fff;" formControlName="dato_text_Area" ></textarea>
+                                <button class="btn btn-primary" style="width:150px; margin-top: 20px; float:right;">enviar</button>
+                            </form>
+                        </div>
+                        <div *ngSwitchCase="5" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                            <form [formGroup]="chargueForm"(ngSubmit)="cursosEstudiant(chargueForm.value)" style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                                <h4>Ingrese el JSON de Cursos Estudiante:</h4>
+                                <textarea  style=" width:800px; height:300px; border-radius: 15px;  " formControlName="dato_text_Area" ></textarea>
+                                <button class="btn btn-primary" style="width:150px; margin-top: 20px; float:right;">enviar</button>
+                            </form>
+                        </div>
+                        
                     </div>
                    
                   </form>

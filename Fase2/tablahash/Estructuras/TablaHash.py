@@ -1,4 +1,4 @@
-from Estructuras.Nodo import  Nodo
+from tablahash.Estructuras.Nodo import  Nodo
 
 class TablaHash:
     def __init__(self, _tamanio):
@@ -7,20 +7,32 @@ class TablaHash:
         self.factorCarga = 0.0
         self.id = 0
 
-    def insertarHash(self, carnet, nombre):
+    def insertarHash(self, carnet, apunte):
         #CALCULAMOS EL FACTOR DE CARGA
         self.factorCarga = (self.id / self.tamanio) * 100
         if self.factorCarga < 56 and self.factorCarga >=0: #aun tiene capacidad para almacenar valores
             llv = carnet % self.tamanio #metodo de la division
-            self.insertar(carnet, nombre, llv)
-            print("antes", carnet,nombre)
+
+            if self.id==0:# verificamos si el tamaño es cero no hay nodos insertados aun por loq ue el metodo getNOdoHash no funciona aun
+                print("se iserta primer nodo")
+                self.insertar(carnet, apunte, llv)
+            elif self.id>0 and self.getNodoHash(carnet) is None: #en esta validacion ya usamos getNodoHash para saber si existe el carnte 
+                                                                 #y vemos que id sea >0 para que entre aqui
+                print("se inserta un nodo nuevo")
+                self.insertar(carnet, apunte, llv)
+            else:#si ninguna de las validaciones anteriores se cumple es porque existe el carnet y por lo tanto se agrega a la lista
+                print("se inserta el apunte en un nodo existene")
+                elNodo=self.getNodoHash(carnet)
+                elNodo.lista_apuntes.append(apunte)
+
+            
         else:#factor de carga ya sobre paso
             #REALIZAR UN REHASH
             self.tamanio += 2 #se aumenta en 2 para que sigua impar
-            self.reHash(carnet,nombre)
+            self.reHash(carnet,apunte)
 
-    def reHash(self,carnet,nombre):
-        print("para el rehash", carnet,nombre)
+    def reHash(self,carnet,apunte):
+        print("para el rehash", carnet,apunte)
         auxiliar=self.primero
         bandera=False
         self.factorCarga = (self.id / self.tamanio) * 100
@@ -45,10 +57,10 @@ class TablaHash:
                 auxiliar.llv=posicion
             else:
                 auxiliar.llv=llv
-        self.insertarHash(carnet,nombre)
+        self.insertarHash(carnet,apunte)
 
-    def insertar(self, carnet, nombre, llv):
-        nuevo = Nodo(llv,carnet, nombre)
+    def insertar(self, carnet, apunte, llv):
+        nuevo = Nodo(llv,carnet, apunte)
         if self.primero == None: #lista vacia
             self.primero = nuevo
             self.id += 1
@@ -58,7 +70,7 @@ class TablaHash:
         if self.buscarLlv(llv): #TRUE
             i = 0
             posicion = self.buscarposicion(nuevo, i)
-            self.insertar(carnet, nombre, posicion)
+            self.insertar(carnet, apunte, posicion)
         else:
             auxiliar = self.primero
             if nuevo.llv < auxiliar.llv: #INSERSION AL INICIO
@@ -96,3 +108,17 @@ class TablaHash:
                 return True
             auxiliar = auxiliar.siguiente
         return False
+
+    def getNodoHash(self,carnet):
+        existe=None
+        tmp=self.primero
+
+        while tmp is not None:
+            if tmp.carnet== carnet:
+                existe=tmp
+                print("existe")
+                return existe
+            else:
+                tmp= tmp.siguiente
+        
+        return existe

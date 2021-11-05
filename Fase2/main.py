@@ -320,6 +320,35 @@ def masivaEstudiantes():
             'msg_masive':'La carga masiva de estudiantes fue exitosa!!',
             'status':'ok'
         }
+#------------------------------CARGA MASIVA DE APUNTES---------------------------------------------------------------------------
+from tablahash.Estructuras.TablaHash import TablaHash
+from objetos.apunte import apunte
+
+hashApuntes= TablaHash(7)
+@main.route('/masivaApuntes',methods=['POST'])
+def masivaApuntes():
+    if request.method=='POST':
+    
+        for item in request.json['usuarios']:
+            for item2 in item['apuntes']:
+                if BD_Almumnos.obtenerAlumno(int(item['carnet'])) is not None:
+                    print(item['carnet'])
+                    print(item2['Título'])
+                    print(item2['Contenido'])
+                    print('-------------------')
+                    hashApuntes.insertarHash(int(item['carnet']),apunte(str(item2['Título']),str(item2['Contenido'])))
+                else:
+                    return {
+                            'status':'error',
+                            'result':'No se pudo efectuar la carga porque uno o varios estudiantes no existen'
+                    }
+                
+    return {
+        'status':'ok',
+         'result':'La Carma masiva de apuntes se realizó con exito'
+    }
+
+
 
 #------------------------------SECCION DE REPORTES--------------------------------------------------------------------------------
 
@@ -430,7 +459,7 @@ def estudiantes():
                          print("Semestre: ",item3['Semestre'])
                          print("codigo: ",item4['Codigo'])
                          print("Nombre: ",item4['Nombre'])
-                         print("Creditos: ",item4['Creditos'])
+                         print("Creditos: ","")
                          print("Prererq: ",item4['Prerequisitos'])
                          print("Oblig: ",item4['Obligatorio'])
                          print("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/")
@@ -441,24 +470,24 @@ def estudiantes():
                                  elAnio=alumno.getAño(int(item2['Año']))
                                  if elAnio.semestres.isEmpty()==True:
                                      nSemestre=semester(int(item3['Semestre']))
-                                     cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],item4['Creditos'],item4['Prerequisitos'],item4['Obligatorio'])
+                                     cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],"",item4['Prerequisitos'],item4['Obligatorio'])
                                      nSemestre.cursos.insertar(cursoAlumno)
                                      elAnio.semestres.push(nSemestre)
                                  else:
                                     if elAnio.getSemestre(int(item3['Semestre'])) is None:
                                         nSemestre=semester(int(item3['Semestre']))
-                                        cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],item4['Creditos'],item4['Prerequisitos'],item4['Obligatorio'])
+                                        cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],"",item4['Prerequisitos'],item4['Obligatorio'])
                                         nSemestre.cursos.insertar(cursoAlumno)
                                         elAnio.semestres.push(nSemestre)
 
                                     else:
                                         elsemestre=elAnio.getSemestre(int(item3['Semestre']))
-                                        cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],item4['Creditos'],item4['Prerequisitos'],item4['Obligatorio'])
+                                        cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],"",item4['Prerequisitos'],item4['Obligatorio'])
                                         elsemestre.cursos.insertar(cursoAlumno)
                              else:
                                  nAnio=year(int(item2['Año']))
                                  nSemestre=semester(int(item3['Semestre']))
-                                 cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],item4['Creditos'],item4['Prerequisitos'],item4['Obligatorio'])
+                                 cursoAlumno=course(int(item4['Codigo']),item4['Nombre'],"",item4['Prerequisitos'],item4['Obligatorio'])
                                  nSemestre.cursos.insertar(cursoAlumno)
                                  nAnio.semestres.push(nSemestre)
                                  alumno.anios.push(nAnio)
