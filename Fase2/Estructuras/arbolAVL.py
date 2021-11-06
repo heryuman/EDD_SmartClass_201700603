@@ -140,11 +140,11 @@ class AVLTree(object):
         
     def mostrar(self, root):
         if root:
-            
-            
             self.mostrar(root.left)
             print(root.elemento.getCarnetDecript())
             self.mostrar(root.right)
+
+
     def graficar(self):
         self.unGrafo(self.root)
 
@@ -168,7 +168,7 @@ class AVLTree(object):
         leftNone=False
         rightNone=False
         if raiz:
-            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),"carnet: "+str(raiz.elemento.getCarnet())+"\n Nombre:"+str(raiz.elemento.getNombre())+"\n Carrera: "+str(raiz.elemento.getCarrera()))
+            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),"carnet: "+str(raiz.elemento.getCarnet())[-6:]+"\n Nombre:"+str(raiz.elemento.getNombre())[-6:]+"\n Carrera: "+str(raiz.elemento.getCarrera())[-6:])
             
             if raiz.left != None:
                 if raiz.right==None:
@@ -224,7 +224,53 @@ class AVLTree(object):
                         self.getAlumno(root.right,carnet,student)
 
            
-       #-----------Obtener por Mail-----------
+       #-----------grafica desencriptada-----------
+
+    def graficarDecript(self):
+        self.unGrafoDecript(self.root)
+
+
+    def unGrafoDecript(self, raiz):
+
+        estructura= "digraph G{\n node [shape=box];\n"
+        acum=""
+        acumuladores=[estructura,acum]
+        if raiz != None:
+            self.mostrarArborlDecript(raiz,acumuladores)
+
+        acumuladores[0]+=acumuladores[1]+ "\n}"
+
+        s= Source(acumuladores[0],filename="C:\\Users\\ASUS\\Desktop\\Reportes_F2\\AVL_Estudiantes", format="svg")
+        s.view()
+        
+           
+                   
+    def mostrarArborlDecript(self,raiz, acum):
+        leftNone=False
+        rightNone=False
+        if raiz:
+            acum[1]+='"{}"[label="{}"];\n'.format(str(hash(raiz)),"carnet: "+str(raiz.elemento.getCarnetDecript())+"\n Nombre:"+str(raiz.elemento.getNombreDecript())+"\n Carrera: "+str(raiz.elemento.getCarreraDecript()))
+            
+            if raiz.left != None:
+                if raiz.right==None:
+                    acum[1]+='"'+str(self.vacios)+'"[label="R" style= invis];\n'
+                    acum[1]+='"{}" -> "{}"[style=invis];\n'.format(str(hash(raiz)),str(hash(self.vacios)))
+                    self.vacios+=1
+                    acum[1]+='"{}" -> "{}";\n'.format(str(hash(raiz)),str(hash(raiz.left)))
+                else:
+                    acum[1]+='"{}" -> "{}";\n'.format(str(hash(raiz)),str(hash(raiz.left)))
+                    
+            if raiz.right!=None:
+                 if raiz.left==None:
+                    acum[1]+='"'+str(self.vacios)+'"[label="R" style= invis];\n'
+                    acum[1]+='"{}" -> "{}"[style=invis];\n'.format(str(hash(raiz)),str(hash(self.vacios)))
+                    self.vacios+=1
+                    acum[1]+='"{}" -> "{}";\n'.format(str(hash(raiz)),str(hash(raiz.right)))
+                 else:
+                     acum[1]+='"{}" -> "{}";\n'.format(str(hash(raiz)),str(hash(raiz.right)))
+        
+            self.mostrarArborlDecript(raiz.left,acum)
+            self.mostrarArborlDecript(raiz.right,acum)
             
    
 

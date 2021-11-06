@@ -348,7 +348,45 @@ def masivaApuntes():
          'result':'La Carma masiva de apuntes se realizó con exito'
     }
 
+#------------------------------------carga de un apunte-----------------------------------------------------------------
+@main.route('/apunte', methods=['POST','GET'])
+def cargarApunte():
+    if request.method =='POST':
+        carnet= int(request.json['carnet'])
+        titulo=str(request.json['titulo'])
+        cont=str(request.json['contenido'])
+        if BD_Almumnos.obtenerAlumno(carnet) is not None:
+            hashApuntes.insertarHash(carnet,apunte(titulo,cont))
+            return {
+                'status':'ok',
+                'result':'Se ha agregado la nota exitosamente!'
+            }
 
+    elif request.method== 'GET':
+        print(request.method)
+        carnet=request.args()
+        print(carnet)
+        return 'exito'
+    
+    return 'fail'
+
+@main.route('/getapunte',methods=['POST'])
+def getApuntes():
+    if request.method=='POST':
+        carnet= int(request.json['carnet'])
+        apuntes=hashApuntes.getlistaApuntes(carnet)
+        json_data={}
+        json_data['apuntes']=[]
+        for apunte in apuntes:
+            arreglo_json={
+                'titulo':str(apunte.title),
+                'contenido':str(apunte.content)
+            }
+            json_data['apuntes'].append(arreglo_json)
+        
+        #print(json_data['apuntes'])
+    
+        return jsonify(json_data['apuntes'])
 
 #------------------------------SECCION DE REPORTES--------------------------------------------------------------------------------
 
@@ -359,8 +397,27 @@ def reportar():
         BD_Almumnos.graficar()
         return {
             "status":'ok',
+            "result":'Se generó el reporte de estudiantes correctamente'
+        }
+
+    elif tipo==5:
+        BD_Almumnos.graficarDecript()
+        return {
+            "status":'ok',
             "msg_r0":'Se generó el reporte de estudiantes correctamente'
         }
+    elif tipo==6:
+        if hashApuntes.id>0:
+            hashApuntes.graficaHash()
+            return{"status":'ok',
+                   'result':'Se genero el reporte de la TablaHash'
+                   }
+        else:
+            return {"status":'error',
+                   'result':'Se produjo un error porque no hay apuntes en la lista'
+                   }
+        
+
     elif tipo==1:
         carnet=request.json['carnet']
         anio=request.json['año']
@@ -495,11 +552,12 @@ def estudiantes():
 
                          #hay que crear un archivo de carga para esta prueba
 
-#------------------------------CRUD ESTUDIANTE---------------------------------------                        
+#------------------------------CRUD ESTUDIANTE---------------------------------------  
+                      
 @main.route('/estudiante',methods=['GET','POST','PUT','DELETE'])
 def CRUD_ESTUDIANTES():
     
-    if request.method == 'POST':
+    if request.method == 'POST':#--------------login
         carnet=int(request.json['usuario'])
         pswd= str(request.json['password'])
 
@@ -516,16 +574,16 @@ def CRUD_ESTUDIANTES():
 
             if pswhash.digest() == passAlumno:
                 print
-                return  {
+                return jsonify( {
                    'status':'200',
                     'result':{
-                    "carnet":str(elAlumno.getCarnet()),
+                    "carnet":str(elAlumno.getCarnetDecript()),
                     "dpi":str(elAlumno.getDpi()),
                     "nombre":str(elAlumno.getNombre()),
                     "carrera":str(elAlumno.getCarrera()),
                     "edad":str(elAlumno.getAge())
                  }
-                }
+                })
             else:
                 return jsonify(
                     {

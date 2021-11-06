@@ -44,9 +44,12 @@ export class LoginComponent implements OnInit {
     
        if(data.status== '200'){
 
-        localStorage.setItem('token_user',data.result)
+        localStorage.setItem('token_user',JSON.stringify(data.result))
         this.router.navigate(['dashboard'])
+     
 
+
+       
 
        }else{
 

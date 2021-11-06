@@ -1,4 +1,5 @@
 from tablahash.Estructuras.Nodo import  Nodo
+from graphviz.files import Source
 
 class TablaHash:
     def __init__(self, _tamanio):
@@ -122,3 +123,43 @@ class TablaHash:
                 tmp= tmp.siguiente
         
         return existe
+
+    def getlistaApuntes(self,carnet):
+        existe=None
+        tmp=self.primero
+
+        while tmp is not None:
+            if tmp.carnet== carnet:
+                existe=tmp.lista_apuntes
+                print("existe")
+                return existe
+            else:
+                tmp= tmp.siguiente
+        
+        return existe
+
+    def graficaHash(self):
+        acum="digraph G{\n node [shape=box];\n"
+        if self.id>0:
+            tmp=self.primero
+            while tmp is not None:
+                acum+='"{}"[label="{}"];\n'.format(str(hash(tmp)),"carnet: "+str(tmp.carnet))
+                acum+=' \n { rank=same'
+                acum+='"{}"[label="{}"];\n'.format(str(hash(tmp.lista_apuntes[0])),"titulo:"+str(tmp.lista_apuntes[0].title))
+                acum+='"{}"-> "{}";\n'.format(str(hash(tmp)),str(hash((tmp.lista_apuntes[0]))))
+                for i in range(len(tmp.lista_apuntes)):
+                    if i< len(tmp.lista_apuntes)-1:
+                        acum+='"{}"[label="{}"];\n'.format(str(hash(tmp.lista_apuntes[i+1])),"titulo:"+str(tmp.lista_apuntes[i+1].title))
+                        acum+='"{}"-> "{}";\n'.format(str(hash((tmp.lista_apuntes[i]))),str(hash((tmp.lista_apuntes[i+1]))))
+                    
+                acum+='\n}'
+              
+                if tmp.siguiente is not None:
+                    acum+='\n rankdir="TB"'
+                    acum+='"{}" -> "{}";\n'.format(str(hash(tmp)),str(hash(tmp.siguiente)))
+                tmp=tmp.siguiente
+
+        acum+="\n}"
+
+        s=Source(acum,filename="C:\\Users\\ASUS\\Desktop\\Reportes_F2\\AVL_Estudiantes", format="svg")
+        s.view()

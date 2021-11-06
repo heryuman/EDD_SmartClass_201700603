@@ -100,6 +100,34 @@ export class AdminComponent implements OnInit {
  
     })
    }
+
+   getReporteCinco(){
+
+    this.api.reprote5().subscribe(data=>{
+ 
+       if(data.status=='ok'){
+ 
+         alert("se ha generado el Reporte de estudiantes correctamente");
+       }
+ 
+    })
+   }
+
+   generarReporteseis(){
+
+    this.api.reporte6().subscribe(data=>{
+
+      if(data.status=='ok'){
+
+        alert(data.result)
+      }else{
+
+        if(data.status=='error'){
+          alert(data.result)
+        }
+      }
+    })
+   }
  
 
 }

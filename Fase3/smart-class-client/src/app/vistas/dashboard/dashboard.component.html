@@ -1,1 +1,183 @@
-<p>dashboard works!</p>
+
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                <div class="logo">
+                    <a hef="home.html"><img src="https://png.pngtree.com/element_origin_min_pic/00/00/06/12575cb97a22f0f.jpg" alt="merkery_logo" style="border-radius: 50%;">
+                        
+                    </a>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li class="active"><a [routerLink]="['/dashboard']"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Inicio</span></a></li>
+                        <li><a (click)="op=1"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes</span></a></li>
+                        <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Tareas</span></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Red de cursos</span></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                <div class="row">
+                    <header>
+                        <div class="col-md-7">
+                            <nav class="navbar-default pull-left">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                            </nav>
+                           
+                        </div>
+                        <div class="col-md-5">
+                            <div class="header-rightside">
+                                <ul class="list-inline header-top pull-right">
+                                    <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Cerrar Sesion</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                
+                <!----------------------------------iniciamos el dashboard---------------------------------->
+                <div class="user-dashboard">
+                    <label style="font-size:32px;">Bienvenido:{{nombre}}</label>
+                    <div [ngSwitch]="op">
+
+                        <div *ngSwitchCase="1" style="margin-top: 50px;">
+                            
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 " >
+                                        <button class="btn btn-primary" (click)="apunte=1" style="float: right; border-radius: 25px;" >Nuevo apunte</button>
+                                        </div>
+                                    <div class="col-md-5 col-sm-7 col-xs-12">
+                                        <button class="btn btn-secondary" (click)="apunte=2" style="float: left; border-radius: 25px;">Ver apuntes</button>   
+                                    </div>
+                                </div>
+                                <div *ngIf="!(apunte==1) else nuevoApunte ">
+                                    
+
+                                </div> 
+                                <div *ngIf="!(apunte==2) else verApuntes">
+
+                                </div>
+
+                                <ng-template #nuevoApunte>
+                                    <div> 
+                                            <form [formGroup]="apunteForm"(ngSubmit)="upApunte(apunteForm.value)">
+                                                <div style="margin-top: 50px; margin-left: 150px;">
+                                                    <div>
+                                                        <div>
+                                                            <label>Carnet:{{carnet}}</label>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div>    
+                                                        <input  id="tituloApunte" type="text" name="tituloApunte" value="" placeholder="Titulo" formControlName="titulo">
+                                                    </div>
+                                                    <textarea style="width: 600px; height:300px; margin-top: 20px; border-radius: 10px;" formControlName="contenido" ></textarea>
+                                                    <div>
+                                                        <button type="submit">Guardar</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                    </div>
+
+                                </ng-template>
+
+                                <ng-template #verApuntes>
+                                    <form>
+                                        <div style="margin-top: 25px; margin-left: 70px;">
+                                            <label (click)="listaApunte()">lista de Apuntes:</label>
+                                            <table class="table table-dark">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">titulo</th> 
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr *ngFor="let apunte of apuntes; let indice=index">
+                                                    <th scope="row">{{indice+1}}</th>
+                                                    <td>{{apunte.titulo}}</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+
+                                    </form>
+                                </ng-template>
+
+
+
+                                
+                        </div>
+
+                        <div *ngSwitchCase="2">
+                            
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 col-xs-12 gutter">
+
+                                    <div class="sales">
+                                    <button type="submit" >Ver apuntes</button>
+                                    <button type="submit">Nuevo Apunte</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7 col-xs-12 gutter">
+
+                                    <div class="sales report">
+                                        <h2>Report</h2>
+                     
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+
+                         
+                    </div>
+
+                </div>
+
+            <!------------------------------------------FIN PLANTILLA DASHBOARD--------------------------------------->
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="add_project" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header login-header">
+                   
+                    <h4 class="modal-title">Cerrar Sesion</h4>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function(){
+   $('[data-toggle="offcanvas"]').click(function(){
+       $("#navigation").toggleClass("hidden-xs");
+   });
+});
+
+
+
+</script>
+

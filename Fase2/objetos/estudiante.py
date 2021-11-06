@@ -77,3 +77,42 @@ class estudiant(object):
 
         desencriptado=f.decrypt(self.carnet)
         return int(desencriptado)
+
+    def getDpiDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.dpi)
+        return int(desencriptado)
+
+    def getNombreDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.nombre)
+        return str(desencriptado)
+    def getPassDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.psw)
+        return (desencriptado)
+    def getCarreraDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.carrera)
+        return (desencriptado)
+    def getMailDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.correo)
+        return (desencriptado)
+    
+    def getAgeDecript(self):
+        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+        f=Fernet(key)
+
+        desencriptado=f.decrypt(self.edad)
+        return int(desencriptado)

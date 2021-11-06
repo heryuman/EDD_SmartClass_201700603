@@ -15,16 +15,16 @@
                 </div>
                 <div class="navi">
                     <ul>
-                        <li class="active"><a href="#" [routerLink]="['/admin']" ><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                        <li class="active"><a [routerLink]="['/admin']" ><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
                         <li><a (click)="op=1"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Carga Estudiantes</span></a></li>
                         <li><a (click)="op=2"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Pensum</span></a></li>
                         <li><a (click)="op=5"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Cursos Estudiante</span></a></li>
                         <li><a (click)="op=4"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes</span></a></li>
-                        <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Blockchain</span></a></li>
-                        <li><a href="#"><i aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes Estudiante</span></a></li>
+                        <li><a ><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Blockchain</span></a></li>
+                        <li><a (click)="generarReporteseis()"><i aria-hidden="true"></i><span class="hidden-xs hidden-sm">Apuntes Estudiante</span></a></li>
                         <li><a (click)="op=3"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Estudiantes Registrados</span></a></li>
-                        <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Grafo Prerequisitos</span></a></li>
-                        <li><a href="#"><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Arbol Merkle</span></a></li>
+                        <li><a ><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Grafo Prerequisitos</span></a></li>
+                        <li><a ><i  aria-hidden="true"></i><span class="hidden-xs hidden-sm">Arbol Merkle</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -79,9 +79,16 @@
                         </div>
 
                         <div *ngSwitchCase="3" style="display: flex; flex-wrap: wrap; flex-direction: column;">
-                            <form [formGroup]="chargueForm"(ngSubmit)="getReporteCero()">
-                                <h4>Reporte de Estudiantes:</h4>
-                                <button class="btn btn-primary" style="width:150px; margin-top: 20px;">Generar Reporte</button>
+                            <form >
+                                <div style="margin-bottom: 10px;">
+                                    <h4>Reporte de Estudiantes Encriptados:</h4>
+                                    <button class="btn btn-primary"(click)="getReporteCero()" style="width:150px; margin-top: 20px;">Generar Reporte</button>
+                                </div>
+                                <div style="margin-top: 10px;">
+                                    <h4 style="margin-top: 10px;">Reporte Estudiantes Desencriptados:</h4>
+                                    <button class="btn btn-primary" (click)="getReporteCinco()" style="width:150px; margin-top: 20px;">Generar Reporte</button>
+                                </div>
+
                             </form>
                         </div>
 

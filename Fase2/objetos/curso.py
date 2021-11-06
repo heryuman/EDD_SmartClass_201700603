@@ -8,7 +8,5 @@ class course(object):
 
     def getCodigo(self):
         return self.codigoCurso
-
-    
     def getNombre(self):
         return  self.nombreCurso
