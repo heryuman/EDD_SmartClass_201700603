@@ -29,7 +29,7 @@ export class LogguardGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    const localS=localStorage.getItem('token_acces')
+    const localS=localStorage.getItem('token_user')
     let redir=this.redirect(localS)
     
     return redir;

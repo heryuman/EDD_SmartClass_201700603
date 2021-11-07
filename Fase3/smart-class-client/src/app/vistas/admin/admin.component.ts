@@ -128,6 +128,13 @@ export class AdminComponent implements OnInit {
       }
     })
    }
+
+
+   cerrarSesion(){
+
+    localStorage.clear()
+    this.router.navigate(['login'])
+   }
  
 
 }

@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
 
     console.log("el usuario es: "+form.password);
     console.log("el pass es: "+form.password);
-    localStorage.setItem('token_acces',admin.result)
+    localStorage.setItem('token_user',admin.result)
     
     this.router.navigate(['admin'])
   }else{

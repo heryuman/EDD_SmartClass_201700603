@@ -85,4 +85,10 @@ contadorApuntes=0;
   
   }
 
+  cerrarSesion(){
+
+    localStorage.clear()
+    this.router.navigate(['login'])
+   }
+
 }
