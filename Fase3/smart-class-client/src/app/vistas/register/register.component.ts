@@ -39,7 +39,10 @@ export class RegisterComponent implements OnInit {
 
       }else{
 
-        alert("No se pudo registrar")
+         if(data.status=='error'){
+
+          alert(data.result)
+         }
       }
     })
 

@@ -302,16 +302,28 @@ def masivaEstudiantes():
         f=Fernet(key)
 
         for item in arrayEstudiantes:
-            carnet=f.encrypt(str(item['carnet']).encode())
-            dpi= f.encrypt(str(item['DPI']).encode())
-            nombre=f.encrypt(str(item['nombre']).encode())
-            carrera=f.encrypt(str(item['carrera']).encode())
-            correo=f.encrypt(str(item['correo']).encode())
-            psw=f.encrypt(hashlib.sha256(str(item['password']).encode()).digest())
-            edad=f.encrypt(str(item['edad']).encode())
+            if len(str(item['carnet']))==9:
+                if len(str(item['DPI']))==13:
+                    carnet=f.encrypt(str(item['carnet']).encode())
+                    dpi= f.encrypt(str(item['DPI']).encode())
+                    nombre=f.encrypt(str(item['nombre']).encode())
+                    carrera=f.encrypt(str(item['carrera']).encode())
+                    correo=f.encrypt(str(item['correo']).encode())
+                    psw=f.encrypt(hashlib.sha256(str(item['password']).encode()).digest())
+                    edad=f.encrypt(str(item['edad']).encode())
 
-            nEstudiante=estudiant(carnet,dpi,nombre,carrera,correo,psw,"",edad)
-            BD_Almumnos.put(nEstudiante)
+                    nEstudiante=estudiant(carnet,dpi,nombre,carrera,correo,psw,"",edad)
+                    BD_Almumnos.put(nEstudiante)
+                else:
+                     return{
+                    'status':'error',
+                    'result':'el DPI: '+str(item['DPI'])+'no tiene la cantidad de digitos permitida'
+                }
+            else:
+                return{
+                    'status':'error',
+                    'result':'el carnet: '+str(item['carnet'])+'no tiene la cantidad de digitos permitida'
+                }
             
             
 
@@ -598,7 +610,7 @@ def CRUD_ESTUDIANTES():
             return jsonify(
                     {
                         'status':'error',
-                         'error_msg':'el estuadiante con correo: '+str(carnet)+' no existe'
+                         'error_msg':'el estuadiante con carnet: '+str(carnet)+' no existe'
                     }
                             )
 
@@ -640,33 +652,49 @@ def CRUD_ESTUDIANTES():
 def regEstudiante():
 
        if request.method=='POST':
-        carnet=str(request.json['carnet'])
-        dpi=str(request.json['dpi'])
-        nombre=str(request.json['nombre'])
-        carrera=str(request.json['carrera'])
-        mail=str(request.json['correo'])
-        psw=str(request.json['password'])
+           if len(request.json['carnet'])==9:
+               if len(request.json['dpi'])==13:
+                   carnet=str(request.json['carnet'])
+                   dpi=str(request.json['dpi'])
+                   nombre=str(request.json['nombre'])
+                   carrera=str(request.json['carrera'])
+                   mail=str(request.json['correo'])
+                   psw=str(request.json['password'])
     #credits=int(request.json['creditos'])
-        edad=(str(request.json['edad']))
+                   edad=(str(request.json['edad']))
 
     #---------ENCRIPTAMOS LOS DATOS----------
-        key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
-        f=Fernet(key)
-        carnetEnc=f.encrypt(carnet.encode())
-        dpiEnc=f.encrypt(dpi.encode())
-        nombreEnc=f.encrypt(nombre.encode())
-        carreraEnc=f.encrypt(carrera.encode())
-        mailEnc=f.encrypt(mail.encode())
-        pswhash=hashlib.sha256(psw.encode())
-        pswEnc=f.encrypt(pswhash.digest())
-        edadEnc=f.encrypt(edad.encode())
-        nEstudiante=estudiant(carnetEnc,dpiEnc,nombreEnc,carreraEnc,mailEnc,pswEnc,"",edadEnc)
-        BD_Almumnos.put(nEstudiante)
-        print()
-        return jsonify(
+                   key=b'XHvL5SIbLZWAPq-u0jgwkG6TMJ3ivo6ZbxwrdL6W8K4='
+                   f=Fernet(key)
+                   carnetEnc=f.encrypt(carnet.encode())
+                   dpiEnc=f.encrypt(dpi.encode())
+                   nombreEnc=f.encrypt(nombre.encode())
+                   carreraEnc=f.encrypt(carrera.encode())
+                   mailEnc=f.encrypt(mail.encode())
+                   pswhash=hashlib.sha256(psw.encode())
+                   pswEnc=f.encrypt(pswhash.digest())
+                   edadEnc=f.encrypt(edad.encode())
+                   nEstudiante=estudiant(carnetEnc,dpiEnc,nombreEnc,carreraEnc,mailEnc,pswEnc,"",edadEnc)
+                   BD_Almumnos.put(nEstudiante)
+                   print()
+                   return jsonify(
                     {
                         'status':'ok',
-                         'msg':'el estuadiante con carnet: '+str(carnet)+' se ingresó con exito!'
+                         'result':'el estuadiante con carnet: '+str(carnet)+' se ingresó con exito!'
+                    }
+                            )
+               else:
+                    return jsonify(
+                    {
+                        'status':'error',
+                         'result':'el DPI que se ingreso no tiene la cantidad correcta de digitos!'
+                    }
+                            )
+           else:
+                    return jsonify(
+                    {
+                        'status':'error',
+                         'result':'el carnet que se ingreso no tiene la cantidad correcta de digitos!'
                     }
                             )
 #------------------------------------CRUD RECORDATORIOS---------------------------------------------------------------------

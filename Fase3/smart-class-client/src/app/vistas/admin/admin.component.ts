@@ -36,6 +36,12 @@ export class AdminComponent implements OnInit {
 
         alert("La carga masiva se produjo exitosamente")
         
+      }else{
+
+        if(data.status=='error'){
+
+          alert(data.result)
+        }
       }
    })
    this.chargueForm.controls['dato_text_Area'].setValue("")
@@ -51,6 +57,9 @@ export class AdminComponent implements OnInit {
       if(data.status == 'ok'){
 
         alert("la carga masiva de pensum se produjo exitosamente")
+      }else{
+
+        alert("hubo un error al cargar los cursos del pensum")
       }
     })
 
