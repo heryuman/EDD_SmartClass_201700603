@@ -137,7 +137,7 @@ class Arbol_B:
 
         acumuladores[0]+=acumuladores[1]+ "\n}"
 
-        s= Source(acumuladores[0],filename="C:\\Users\\ASUS\Desktop\\Reportes_F2\\arbolB_Cursos", format="svg")
+        s= Source(acumuladores[0],filename="C:\\Users\\ASUS\Desktop\\Reportes_F3\\arbolB_Cursos", format="svg")
         s.view()
         
            

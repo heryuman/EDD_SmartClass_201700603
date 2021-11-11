@@ -144,7 +144,7 @@ class LinkedListD(object):
         acum+='"{}"[label="{}"];\n'.format(str(hash(tmp)),'carnet:'+str(hash(tmp.getElement().getCarnet()))+'\n Nombre: '+str((tmp.getElement().getNombre()))+'\n Descripcion: '+str((tmp.getElement().getDes()))+'\n Materia: '+str((tmp.getElement().getMateria()))+'\n Fecha: '+str((tmp.getElement().getFecha()))+'\n Hora: '+str((tmp.getElement().getHora()))+'\n Estado: '+str((tmp.getElement().getEstado())))
         acum+='\n } \n'
 
-        s= Source(acum,filename="C:\\Users\\ASUS\Desktop\\Reportes_F2\\Grafica_tareas", format="svg")
+        s= Source(acum,filename="C:\\Users\\ASUS\Desktop\\Reportes_F3\\Grafica_tareas", format="svg")
         s.view()
 
        

@@ -161,5 +161,5 @@ class TablaHash:
 
         acum+="\n}"
 
-        s=Source(acum,filename="C:\\Users\\ASUS\\Desktop\\Reportes_F2\\AVL_Estudiantes", format="svg")
+        s=Source(acum,filename="C:\\Users\\ASUS\\Desktop\\Reportes_F3\\ReporteHash", format="svg")
         s.view()
